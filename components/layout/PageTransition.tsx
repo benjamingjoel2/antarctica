@@ -2,7 +2,7 @@
 
 import { motion, useAnimationControls } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Twelve-bar "ice shelf" wipe: two rows of six bars close over the page on
@@ -20,6 +20,7 @@ export function PageTransition() {
   const bottom = useAnimationControls();
   const busy = useRef(false);
   const first = useRef(true);
+  const [off, setOff] = useState(false);
 
   const run = (to: number) => {
     const t = { duration: COVER, ease: [0.65, 0, 0.35, 1] as const, delay: 0 };
@@ -33,8 +34,7 @@ export function PageTransition() {
   useEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) {
-      top.set({ scaleY: 0 });
-      bottom.set({ scaleY: 0 });
+      setOff(true);
       busy.current = false;
       return;
     }
@@ -83,6 +83,8 @@ export function PageTransition() {
         className={`h-full flex-1 ${tones[i]} -mx-px`}
       />
     ));
+
+  if (off) return null;
 
   return (
     <div id="page-transition" aria-hidden className="pointer-events-none fixed inset-0 z-[100] flex flex-col">

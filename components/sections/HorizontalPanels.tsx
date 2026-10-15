@@ -27,7 +27,7 @@ function Panel({ ship, index, total }: { ship: Ship; index: number; total: numbe
     <article className="relative flex w-full shrink-0 flex-col bg-ice text-ink md:h-full md:min-h-screen md:w-screen md:flex-row" aria-labelledby={`ship-${ship.slug}`}>
       <div className="relative h-[55vh] w-full md:h-auto md:w-[40vw]">
         <Image src={ship.image.src} alt={ship.image.alt} fill sizes="(min-width:768px) 40vw, 100vw" className="object-cover" />
-        <span className="t-mono absolute bottom-[1.25rem] left-[1.25rem] text-white mix-blend-difference">
+        <span className="t-mono absolute bottom-[1.25rem] left-[1.25rem] bg-ink px-[0.3rem] py-[0.15rem] text-ice">
           {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
         </span>
       </div>

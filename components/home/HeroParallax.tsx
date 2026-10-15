@@ -68,9 +68,9 @@ export function HeroParallax() {
         {/* Mono quick links + small video embed (reference hero nav row) */}
         <motion.div className="absolute inset-x-0 top-[42%] z-10 md:top-[46%]" style={{ opacity: navO }}>
           <div className="flex items-start justify-between px-[1.25rem] text-white md:px-[5.2rem]">
-            <nav aria-label="Quick links" className="flex w-full flex-wrap justify-between gap-y-[0.6rem] mix-blend-difference">
+            <nav aria-label="Quick links" className="flex w-full flex-wrap justify-between gap-[0.6rem]">
               {quick.map((q) => (
-                <Link key={q.href} href={q.href} className="t-mono hover:opacity-60">{q.label}</Link>
+                <Link key={q.href} href={q.href} className="t-mono bg-ink px-[0.3rem] py-[0.15rem] text-ice transition-colors hover:bg-ice hover:text-ink">{q.label}</Link>
               ))}
             </nav>
           </div>

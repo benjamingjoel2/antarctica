@@ -50,7 +50,7 @@ export function DrakeRibbon() {
                 {ribbon.map((r, i) => (
                   <Image key={r.src} src={r.src} alt={r.alt} fill sizes="(min-width:768px) 28rem, 15rem" className={`object-cover transition-opacity duration-300 ${i === idx ? "opacity-100" : "opacity-0"}`} />
                 ))}
-                <span className="t-mono absolute bottom-[0.6rem] left-[0.6rem] text-white mix-blend-difference">
+                <span className="t-mono absolute bottom-[0.6rem] left-[0.6rem] bg-ink px-[0.3rem] py-[0.15rem] text-ice">
                   {String(idx + 1).padStart(2, "0")} / {String(ribbon.length).padStart(2, "0")}
                 </span>
               </motion.div>

@@ -1,14 +1,14 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 /**
  * Four offset cards that drift at different speeds (reference "wave" grid).
  * Sits absolutely at the bottom of a hero/video section.
  */
-export function WaveCards({ items, tone = "dark", className }: { items: string[]; tone?: "dark" | "light"; className?: string }) {
+export function WaveCards({ items, tone = "dark", className }: { items: ReactNode[]; tone?: "dark" | "light"; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const speeds = [-40, 30, -70, 10];
@@ -18,7 +18,7 @@ export function WaveCards({ items, tone = "dark", className }: { items: string[]
     useTransform(scrollYProgress, [0, 1], [0, speeds[2]]),
     useTransform(scrollYProgress, [0, 1], [0, speeds[3]]),
   ];
-  const four = [...items, "", "", "", ""].slice(0, 4);
+  const four: ReactNode[] = [...items, "", "", "", ""].slice(0, 4);
   const offsets = ["md:col-start-1 md:mt-0", "md:col-start-2 md:mt-[6rem]", "md:col-start-3 md:mt-[2rem]", "md:col-start-4 md:mt-[8rem]"];
 
   return (

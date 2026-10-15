@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360">
+  <defs><filter id="b" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="22"/></filter></defs>
+  <g filter="url(#b)" fill="#ffffff">
+    <ellipse cx="680" cy="210" rx="210" ry="80" opacity=".95"/>
+    <ellipse cx="420" cy="180" rx="220" ry="95" opacity=".9"/>
+    <ellipse cx="260" cy="220" rx="200" ry="70" opacity=".85"/>
+    <ellipse cx="560" cy="140" rx="140" ry="70" opacity=".8"/>
+  </g>
+</svg>

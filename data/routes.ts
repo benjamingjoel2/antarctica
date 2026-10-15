@@ -1,0 +1,147 @@
+import type { Route } from "./types";
+import { img } from "./images";
+
+const VERIFY = "Placeholder — verify durations, prices and inclusions with partner operators before launch.";
+
+export const routes: Route[] = [
+  {
+    slug: "classic-antarctic-peninsula",
+    name: "Classic Antarctic Peninsula",
+    titleLines: ["classic", "peninsula"],
+    tagline: "Two days of open ocean, then a world made of ice.",
+    embarkation: "Ushuaia, Argentina",
+    disembarkation: "Ushuaia, Argentina",
+    durationDays: [10, 12],
+    crossesDrake: true,
+    fliesDrake: false,
+    wildlife: ["Gentoo penguins", "Chinstrap penguins", "Adélie penguins", "Humpback whales", "Weddell seals", "Leopard seals"],
+    bestMonths: ["Nov", "Dec", "Jan", "Feb", "Mar"],
+    summary:
+      "The voyage most people mean when they say Antarctica: a sea crossing of the Drake Passage followed by five or so days among the channels, bays and colonies of the Antarctic Peninsula.",
+    body:
+      "You earn this one. Leaving Ushuaia through the Beagle Channel, the ship heads south across the Drake Passage — roughly two days of open Southern Ocean, albatrosses wheeling off the stern, the water cooling degree by degree until the first iceberg slides past the window.\n\nThen the Peninsula opens up: the Gerlache Strait, Neko Harbour, the narrow walls of the Lemaire Channel when ice allows. Days are built around zodiac landings and cruises, chosen each morning by the expedition team according to weather, ice and wildlife. It is the most flexible, most popular and usually most accessible way to stand on the continent.",
+    image: { src: img.icebergsReflect, alt: "Icebergs mirrored in still water along the Antarctic Peninsula" },
+    fromPriceUSD: 9500,
+    verifyNote: VERIFY,
+  },
+  {
+    slug: "fly-the-drake",
+    name: "Fly the Drake",
+    titleLines: ["fly", "the drake"],
+    tagline: "Two hours in the air instead of two days at sea.",
+    embarkation: "Punta Arenas, Chile (flight to King George Island)",
+    disembarkation: "Punta Arenas, Chile (flight from King George Island)",
+    durationDays: [6, 8],
+    crossesDrake: false,
+    fliesDrake: true,
+    wildlife: ["Gentoo penguins", "Chinstrap penguins", "Humpback whales", "Fur seals", "Elephant seals"],
+    bestMonths: ["Dec", "Jan", "Feb"],
+    summary:
+      "A charter flight from Punta Arenas to King George Island in the South Shetlands, where you board your ship already in Antarctic waters — ideal when time is short or the Drake is a worry.",
+    body:
+      "Fly-cruise voyages trade the Drake crossing for a short flight across it. You board in the South Shetland Islands and are among glaciers and penguin colonies within hours rather than days, which makes a week-long trip genuinely worthwhile.\n\nThe trade-off is weather: flights to King George Island depend on conditions at a gravel runway at the edge of the world, and delays of a day or more do happen. We'll explain how each operator handles delays, and what your contingency days look like, before you book.",
+    image: { src: img.peaksAboveCloud, alt: "Mountain peaks rising above a layer of cloud seen from the air" },
+    fromPriceUSD: 12000,
+    verifyNote: VERIFY,
+  },
+  {
+    slug: "falklands-south-georgia-antarctica",
+    name: "Falklands, South Georgia & Antarctica",
+    titleLines: ["falklands,", "south georgia", "& antarctica"],
+    tagline: "The great Southern Ocean voyage, end to end.",
+    embarkation: "Ushuaia, Argentina",
+    disembarkation: "Ushuaia, Argentina",
+    durationDays: [18, 23],
+    crossesDrake: true,
+    fliesDrake: false,
+    wildlife: ["King penguins", "Rockhopper penguins", "Gentoo penguins", "Wandering albatrosses", "Elephant seals", "Fur seals", "Humpback whales"],
+    bestMonths: ["Nov", "Dec", "Jan", "Feb"],
+    summary:
+      "Three worlds in one voyage: the windswept Falkland Islands, the overwhelming wildlife of South Georgia, and the ice of the Antarctic Peninsula.",
+    body:
+      "South Georgia is, for many expedition staff, the most extraordinary place on Earth — beaches carpeted with hundreds of thousands of king penguins, elephant seals sprawled among the tussock, and the grave of Sir Ernest Shackleton at Grytviken.\n\nThis voyage links it with the Falklands' rockhopper and albatross colonies and finishes in the ice of the Peninsula. It involves several sea days, so it rewards travellers who love the ocean itself: the birds, the swell, the long light on deck.",
+    image: { src: img.kingPenguins, alt: "A dense colony of king penguins on a South Georgia beach" },
+    fromPriceUSD: 18000,
+    verifyNote: VERIFY,
+  },
+  {
+    slug: "antarctic-circle",
+    name: "Across the Antarctic Circle",
+    titleLines: ["across", "the circle"],
+    tagline: "South of 66°33′ S, where the ice thickens and the colonies change.",
+    embarkation: "Ushuaia, Argentina",
+    disembarkation: "Ushuaia, Argentina",
+    durationDays: [12, 14],
+    crossesDrake: true,
+    fliesDrake: false,
+    wildlife: ["Adélie penguins", "Crabeater seals", "Leopard seals", "Minke whales", "Humpback whales", "Snow petrels"],
+    bestMonths: ["Jan", "Feb", "Mar"],
+    summary:
+      "An extended Peninsula voyage that pushes south beyond the Antarctic Circle at 66°33′ S, ice permitting, into quieter waters and Adélie penguin country.",
+    body:
+      "Crossing the Circle is a line on the chart, but the change is real: fewer ships, more sea ice, and a landscape that feels further from everywhere. Many voyages aim for Marguerite Bay and the islands around Crystal Sound.\n\nIce decides everything here. A good captain and expedition leader will only push south when conditions allow, and every operator is clear that the crossing is an aim rather than a guarantee. Later-season departures usually give the best odds.",
+    image: { src: img.snowPeaks, alt: "Snow-covered peaks under a pale polar sky" },
+    fromPriceUSD: 13000,
+    verifyNote: VERIFY,
+  },
+  {
+    slug: "emperor-penguins",
+    name: "Emperor Penguin Expeditions",
+    titleLines: ["emperor", "penguins"],
+    tagline: "A rare, early-season search for the largest penguin on Earth.",
+    embarkation: "Ushuaia, Argentina",
+    disembarkation: "Ushuaia, Argentina",
+    durationDays: [10, 14],
+    crossesDrake: true,
+    fliesDrake: false,
+    wildlife: ["Emperor penguins", "Adélie penguins", "Weddell seals", "Snow petrels", "Antarctic petrels"],
+    bestMonths: ["Oct", "Nov"],
+    summary:
+      "Specialist voyages with very limited departures that head into the Weddell Sea towards the Snow Hill Island area in late October and November, some supported by helicopters.",
+    body:
+      "Emperor penguins breed on sea ice in the depths of winter, which puts most colonies far beyond the reach of a ship. A handful of voyages each year try for the Snow Hill Island area in the Weddell Sea, where — on some departures — helicopters fly guests over the ice to walk the last stretch towards the colony.\n\nThese are true expeditions. Heavy ice can stop a ship well short of its goal, and nobody can promise a sighting. We'll be candid about success rates and what happens if conditions close in, so you go with your eyes open.",
+    image: { src: img.penguinsSnow, alt: "Penguins standing together on snow and ice" },
+    fromPriceUSD: 22000,
+    verifyNote: VERIFY,
+  },
+  {
+    slug: "ross-sea-east-antarctica",
+    name: "Ross Sea & East Antarctica",
+    titleLines: ["ross sea", "& east antarctica"],
+    tagline: "The deep south of the heroic age, a month from anywhere.",
+    embarkation: "Bluff or Lyttelton, New Zealand, or Hobart, Australia",
+    disembarkation: "Bluff or Lyttelton, New Zealand, or Hobart, Australia",
+    durationDays: [25, 30],
+    crossesDrake: false,
+    fliesDrake: false,
+    wildlife: ["Adélie penguins", "Emperor penguins", "Weddell seals", "Orcas", "Minke whales", "Royal albatrosses"],
+    bestMonths: ["Jan", "Feb"],
+    summary:
+      "A month-long voyage from New Zealand or Tasmania via the sub-Antarctic islands to the Ross Sea, the Ross Ice Shelf and the historic huts of the heroic age.",
+    body:
+      "This is the far side of Antarctica, and few people ever see it. Voyages call at sub-Antarctic islands on the way south, then enter the Ross Sea: the towering face of the Ross Ice Shelf, the smoking summit of Mount Erebus, and the preserved huts from which Scott and Shackleton set out.\n\nDistances are vast and weather governs every plan, so these voyages carry a premium and depart only in the heart of summer. For travellers drawn to polar history, there is nothing else like it.",
+    image: { src: img.glacier, alt: "A vast glacier face meeting dark polar water" },
+    fromPriceUSD: 30000,
+    verifyNote: VERIFY,
+  },
+  {
+    slug: "luxury-expeditions",
+    name: "Luxury Expeditions",
+    titleLines: ["luxury", "expeditions"],
+    tagline: "The same wild landings, returning to a suite.",
+    embarkation: "Ushuaia, Argentina, or Punta Arenas, Chile (fly-cruise)",
+    disembarkation: "Ushuaia, Argentina, or Punta Arenas, Chile (fly-cruise)",
+    durationDays: [10, 14],
+    crossesDrake: true,
+    fliesDrake: false,
+    wildlife: ["Gentoo penguins", "Chinstrap penguins", "Humpback whales", "Orcas", "Leopard seals"],
+    bestMonths: ["Nov", "Dec", "Jan", "Feb", "Mar"],
+    summary:
+      "Smaller, high-end expedition ships with suites, fine dining and generous guide ratios, sailing from Ushuaia or combined with a fly-cruise over the Drake.",
+    body:
+      "Luxury in Antarctica doesn't mean less adventure. These ships still carry fleets of zodiacs and experienced expedition teams — they simply add spacious suites, often with balconies, excellent kitchens, spa facilities and more staff per guest.\n\nThe smaller guest numbers matter on shore, too: fewer people means more time at each landing within the limits that apply to every visit. We'll help you weigh which inclusions are worth paying for and which are simply polish.",
+    image: { src: img.fjordReflect, alt: "A calm fjord reflecting snow-capped mountains" },
+    fromPriceUSD: 19000,
+    verifyNote: VERIFY,
+  },
+];

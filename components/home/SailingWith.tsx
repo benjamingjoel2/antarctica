@@ -1,49 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Ship } from "@/data/types";
-import { cn } from "@/lib/cn";
 
-function Cell({ ship, className }: { ship: Ship; className?: string }) {
+/** Reference "Supported by": square photo cells; hover lifts the photo to reveal the wordmark. */
+function Cell({ ship }: { ship: Ship }) {
   return (
-    <Link
-      href={`/ships/${ship.slug}`}
-      className={cn("group relative grid aspect-square place-items-center overflow-hidden rounded-[1rem] bg-snow md:aspect-[5/4]", className)}
-    >
+    <Link href={`/ships/${ship.slug}`} className="group relative grid aspect-square place-items-center overflow-hidden rounded-[0.3rem] bg-ice ring-1 ring-ink/10">
+      <span className="relative z-[1] text-center text-ink">
+        <span className="t-mono block opacity-60">MV</span>
+        <span className="block font-display text-[2.4rem] uppercase leading-[0.85] tracking-[-0.03em] [font-stretch:82%]">{ship.name.replace(/^MV\s+/, "")}</span>
+        <span className="t-mono mt-[0.5rem] block text-[0.9rem] opacity-60">{ship.operator}</span>
+      </span>
       <Image
         src={ship.image.src}
         alt={ship.image.alt}
         fill
-        sizes="(min-width: 768px) 25vw, 50vw"
-        className="scale-110 object-cover opacity-0 transition duration-700 ease-[var(--ease-expo)] group-hover:scale-100 group-hover:opacity-100 group-focus-visible:opacity-100"
+        sizes="(min-width:768px) 30vw, 50vw"
+        className="z-[2] object-cover transition-[opacity,transform] duration-700 ease-[var(--ease-out-expo)] group-hover:scale-105 group-hover:opacity-0 group-focus-visible:opacity-0"
       />
-      <span className="absolute inset-0 bg-navy/0 transition-colors duration-700 group-hover:bg-navy/35" />
-      <span className="relative text-center transition-colors duration-500 group-hover:text-glacier">
-        <span className="block font-mono text-[0.62rem] uppercase tracking-[0.2em]">MV</span>
-        <span className="block font-display text-[1.6rem] font-extrabold uppercase leading-[0.85] tracking-[-0.02em] [font-stretch:70%] md:text-[2rem]">
-          {ship.name.replace(/^MV\s+/, "")}
-        </span>
-        <span className="mt-[0.4rem] block text-[0.62rem] uppercase tracking-[0.12em] opacity-70">{ship.operator}</span>
-      </span>
     </Link>
   );
 }
 
-/** Partner logo grid with photo reveal on hover (reference "Supported by"). */
 export function SailingWith({ ships }: { ships: Ship[] }) {
   const [a, b, ...rest] = ships;
   return (
-    <section aria-labelledby="sailing-with" className="bg-glacier py-[8rem] md:pt-[14rem]">
+    <section aria-labelledby="sailing-with" className="bg-ice pb-[1.3rem] pt-[12rem] text-ink">
       <div className="container-site">
-        <div className="grid grid-cols-2 gap-[0.6rem] md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-[1.3rem] md:grid-cols-3">
           <Cell ship={a} />
-          <div className="col-span-2 order-first grid place-items-center py-[2rem] text-center md:order-none md:py-0">
-            <div>
-              <h2 id="sailing-with" className="t-split text-[clamp(3.4rem,8vw,7rem)]">sailing with</h2>
-              <p className="t-label mt-[1rem] text-slate">Independent advisors · IAATO-member operators · placeholder partners</p>
+          <div className="order-first col-span-2 grid place-items-center py-[3rem] md:order-none md:col-span-1 md:py-0">
+            <div className="text-center">
+              <h2 id="sailing-with" className="t-h3">Sailing with</h2>
+              <p className="t-mono mt-[0.8rem] opacity-60">IAATO-member operators · placeholders</p>
             </div>
           </div>
           <Cell ship={b} />
-          {rest.map((s) => (
+          {rest.slice(0, 3).map((s) => (
             <Cell key={s.slug} ship={s} />
           ))}
         </div>

@@ -15,30 +15,25 @@ export const metadata = buildMetadata({
 });
 
 export default function ExpeditionsPage() {
-  const departures = expeditions
-    .flatMap((e) => e.departures.map((d) => ({ e, d })))
-    .sort((a, b) => a.d.start.localeCompare(b.d.start));
-
+  const departures = expeditions.flatMap((e) => e.departures.map((d) => ({ e, d }))).sort((a, b) => a.d.start.localeCompare(b.d.start));
   return (
     <>
-      <PageHero label={`Expeditions (${String(expeditions.length).padStart(2, "0")})`} lines={["choose", "your", "voyage"]} intro="Every voyage below runs with an IAATO-member operator we trust. Filter by route, month, ship or length, then let a specialist tell you which one we'd book in your place." />
-      <section className="bg-glacier pb-[8rem]">
-        <div className="container-site">
-          <ExpeditionsExplorer expeditions={expeditions} routes={routes} />
-          <VerifyNote className="mt-[4rem]">Prices from, per person, in a shared or standard cabin. Placeholder — verify with partner operators before launch.</VerifyNote>
+      <PageHero
+        label={`Expeditions (${String(expeditions.length).padStart(2, "0")})`}
+        lines={["choose", "your voyage"]}
+        intro="Every voyage below runs with an IAATO-member operator we trust. Filter by route, month, ship or length, then let a specialist tell you which one we'd book in your place."
+      />
+      <section className="bg-ink pb-[9rem] text-ice">
+        <ExpeditionsExplorer expeditions={expeditions} routes={routes} />
+        <div className="container-site mt-[4rem]">
+          <VerifyNote>Prices from, per person, in a shared or standard cabin. Placeholder — verify with partner operators before launch.</VerifyNote>
         </div>
       </section>
-      <section className="bg-glacier pb-[8rem]">
+      <section className="bg-ink pb-[10rem] text-ice">
         <div className="container-site">
           <DepartureList
-            heads={["Departure", "Ship", "Season"]}
-            rows={departures.map(({ e, d }) => ({
-              href: `/expeditions/${e.slug}`,
-              a: e.titleLines.join(" "),
-              b: getShip(e.shipSlug)?.name ?? "",
-              c: `${formatDate(d.start)}`,
-              image: e.image,
-            }))}
+            heads={["Departing", "Aboard", "Date"]}
+            rows={departures.map(({ e, d }) => ({ href: `/expeditions/${e.slug}`, a: e.titleLines.join(" "), b: getShip(e.shipSlug)?.name ?? "", c: formatDate(d.start), image: e.image }))}
           />
         </div>
       </section>

@@ -1,22 +1,18 @@
 import type { ReactNode } from "react";
 import { Reveal } from "@/components/ui/Reveal";
 
-/** Big indented paragraph + side label + body (reference paragraph wrapper). */
-export function ParagraphBlock({ lead, side, body }: { lead: ReactNode; side?: ReactNode; body?: ReactNode }) {
+/** Reference paragraph wrapper: big indented paragraph, then a date/side label and a smaller body offset right. */
+export function ParagraphBlock({ lead, side, body, tone = "dark" }: { lead: ReactNode; side?: ReactNode; body?: ReactNode; tone?: "dark" | "light" }) {
   return (
-    <section className="bg-glacier py-[6rem] md:py-[8rem]">
-      <div className="container-site grid-site gap-y-[2.5rem]">
+    <section className={tone === "dark" ? "bg-ink text-ice" : "bg-ice text-ink"}>
+      <div className="container-site grid-site gap-y-[2.5rem] py-[8rem]">
         <Reveal className="col-span-12 lg:col-span-9">
-          <div className="t-h2 indent-space">{lead}</div>
+          <div className="t-h2">{lead}</div>
         </Reveal>
-        {side && (
-          <div className="col-span-12 lg:col-span-3">
-            <div className="t-label text-slate">{side}</div>
-          </div>
-        )}
+        <div className="col-span-12 lg:col-span-3">{side && <div className="t-mono opacity-70">{side}</div>}</div>
         {body && (
-          <Reveal className={side ? "col-span-12 lg:col-span-6" : "col-span-12 lg:col-span-6 lg:col-start-4"} delay={0.1}>
-            <div className="space-y-[1em] text-[1.05rem] leading-[1.6] text-slate">{body}</div>
+          <Reveal className="col-span-12 lg:col-span-9" delay={0.1}>
+            <div className="t-small max-w-[44rem] space-y-[1em] opacity-80">{body}</div>
           </Reveal>
         )}
       </div>

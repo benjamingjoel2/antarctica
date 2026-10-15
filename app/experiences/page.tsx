@@ -15,8 +15,8 @@ export default function ExperiencesPage() {
   return (
     <>
       <PageHero label={`Experiences (${String(experiences.length).padStart(2, "0")})`} lines={["what you", "will", "remember"]} intro="Paddle among brash ice, sleep under a sky that never quite gets dark, or simply sit very still while a colony goes about its business. Here's what a day in Antarctica can hold." />
-      <section className="bg-glacier pb-[8rem]">
-        <div className="container-site">
+      <section className="bg-ink pb-[8rem] text-ice">
+        <div>
           <CardGrid
             cta="Discover"
             items={experiences.map((x) => ({
@@ -26,8 +26,8 @@ export default function ExperiencesPage() {
               image: x.image,
               body: (
                 <>
-                  <span className="block font-display text-[2rem] font-extrabold lowercase leading-[0.92] tracking-[-0.03em] [font-stretch:75%]">{x.name}</span>
-                  <span className="mt-[0.6rem] block max-w-[30rem] text-[0.98rem] text-slate">{x.summary}</span>
+                  <span className="t-h3 block">{x.name}</span>
+                  <span className="t-small mt-[0.5rem] block max-w-[30rem] opacity-75">{x.summary}</span>
                 </>
               ),
             }))}

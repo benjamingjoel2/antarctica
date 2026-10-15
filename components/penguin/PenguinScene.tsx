@@ -58,19 +58,16 @@ export function PenguinScene({ compact = false }: { compact?: boolean }) {
     return () => el.removeEventListener("pointermove", move);
   }, [reduce, x, y]);
 
-  const words = Array.from({ length: 6 }, () => "waddle");
 
   return (
-    <div ref={area} className={`relative isolate overflow-hidden bg-iceberg-soft text-navy ${compact ? "min-h-[100svh]" : "h-full"}`}>
-      {/* giant repeating type */}
-      <div aria-hidden className="absolute inset-0 flex flex-col justify-center gap-[1vw] select-none">
+    <div ref={area} className={`relative isolate overflow-hidden bg-ice text-ink ${compact ? "min-h-[100svh]" : "h-full"}`}>
+      {/* reference shaka grid: the word repeated 3 × 3 in mono */}
+      <div aria-hidden className="absolute inset-0 grid grid-rows-3 px-[1.25rem] py-[4.5rem] select-none">
         {[0, 1, 2].map((row) => (
-          <div key={row} className="flex w-max" style={{ animation: reduce ? undefined : `marquee ${18 + row * 6}s linear infinite ${row % 2 ? "reverse" : ""}` }}>
-            {[...words, ...words].map((w, i) => (
-              <span key={i} className={`t-hero px-[2vw] ${row === 1 ? "text-navy" : "text-transparent [-webkit-text-stroke:2px_#0b1b2e]"}`}>
-                {w}
-              </span>
-            ))}
+          <div key={row} className="t-mono flex items-start justify-between">
+            <span>Waddle</span>
+            <span>Waddle</span>
+            <span>Waddle</span>
           </div>
         ))}
       </div>
@@ -88,9 +85,9 @@ export function PenguinScene({ compact = false }: { compact?: boolean }) {
         >
           <Link
             href="/journal/what-to-pack-for-antarctica"
-            className="block rounded-[0.8rem] bg-snow px-[0.9rem] py-[0.6rem] text-[0.78rem] font-medium uppercase shadow-[0_10px_30px_-12px_rgba(11,27,46,0.5)] hover:bg-orange"
+            className="t-mono block bg-ink px-[0.3rem] py-[0.15rem] text-ice hover:bg-orange hover:text-ink"
           >
-            <span className="mr-[0.4rem] font-mono text-slate">{String(i + 1).padStart(2, "0")}</span>
+            <span className="mr-[0.4rem] opacity-60">{String(i + 1).padStart(2, "0")}</span>
             {g}
           </Link>
         </motion.div>
@@ -112,7 +109,7 @@ export function PenguinScene({ compact = false }: { compact?: boolean }) {
             <PenguinSvg pose="wave" title="Seventh Continent penguin" className={`w-[9rem] origin-bottom md:w-[12rem] ${reduce ? "" : "animate-[waddle_0.9s_ease-in-out_infinite]"}`} />
           )}
         </button>
-        <p className="mt-[0.8rem] rounded-full bg-navy px-[1rem] py-[0.4rem] t-label text-glacier">Click me · I belly-slide</p>
+        <p className="t-mono mt-[0.8rem] bg-ink px-[0.3rem] py-[0.15rem] text-ice">Click me · I belly-slide</p>
       </div>
 
       {/* cursor queue */}

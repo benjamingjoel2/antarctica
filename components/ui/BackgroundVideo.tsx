@@ -71,7 +71,7 @@ export function BackgroundVideo({
           onClick={toggle}
           aria-label={playing ? `Pause video: ${label}` : `Play video: ${label}`}
           className={cn(
-            "absolute bottom-[1rem] right-[1rem] z-20 grid h-[2.4rem] w-[2.4rem] cursor-pointer place-items-center rounded-full bg-white/20 text-white backdrop-blur-md transition hover:bg-white hover:text-navy",
+            "absolute bottom-[1.25rem] right-[1.25rem] z-20 grid h-[1.8rem] w-[1.8rem] cursor-pointer place-items-center bg-ice text-ink transition hover:bg-orange",
             controlClassName,
           )}
         >

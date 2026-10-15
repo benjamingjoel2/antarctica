@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CreditsGrid } from "@/components/sections/CreditsGrid";
-import { CtaBand } from "@/components/sections/CtaBand";
 import { DetailHero } from "@/components/sections/DetailHero";
 import { ImagePairs } from "@/components/sections/ImagePairs";
 import { Itinerary } from "@/components/sections/Itinerary";
+import { MoreStrip } from "@/components/sections/MoreStrip";
 import { ParagraphBlock } from "@/components/sections/ParagraphBlock";
 import { PricingTable } from "@/components/sections/PricingTable";
 import { RouteMap } from "@/components/sections/RouteMap";
@@ -29,6 +29,7 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
   if (!e) notFound();
   const route = getRoute(e.routeSlug);
   const ship = getShip(e.shipSlug);
+  const more = expeditions.filter((x) => x.slug !== e.slug).slice(0, 3);
 
   return (
     <>
@@ -38,8 +39,8 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
         description={<p>{e.summary}</p>}
         actions={
           <>
-            <Pill href={`/plan-my-expedition?route=${e.routeSlug}`} variant="accent">Enquire about this voyage</Pill>
-            <Pill href="#itinerary" variant="light" className="ring-1 ring-rule" data-no-transition>Day by day</Pill>
+            <Pill href={`/plan-my-expedition?route=${e.routeSlug}`} variant="accent">Enquire</Pill>
+            <Pill href="#itinerary" variant="dark" data-no-transition>Day by day</Pill>
           </>
         }
         media={{ image: e.gallery[0] ?? e.image, video: e.video }}
@@ -53,24 +54,22 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
         body={
           <>
             {e.overview.split("\n\n").slice(1).map((p, i) => <p key={i}>{p}</p>)}
-            <p className="text-navy">
-              From <Price usd={e.fromPriceUSD} className="font-semibold" /> per person.
-            </p>
+            <p>From <Price usd={e.fromPriceUSD} /> per person.</p>
           </>
         }
       />
 
       <ImagePairs images={e.gallery} />
 
-      <section id="itinerary" className="scroll-mt-[6rem] bg-glacier py-[5rem]">
+      <section id="itinerary" className="scroll-mt-[5rem] bg-ink py-[6rem] text-ice">
         <div className="container-site grid-site gap-y-[3rem]">
           <div className="col-span-12 lg:col-span-7">
-            <h2 className="t-split mb-[2rem] text-[clamp(3rem,8vw,6.5rem)]">day by day</h2>
+            <h2 className="t-mono mb-[2rem] opacity-60">Day by day</h2>
             <Itinerary days={e.itinerary} />
             <VerifyNote className="mt-[1rem]">Itineraries are a guide: weather and ice decide the day. {e.verifyNote}</VerifyNote>
           </div>
           <div className="col-span-12 lg:col-span-4 lg:col-start-9">
-            <div className="lg:sticky lg:top-[6rem]">
+            <div className="lg:sticky lg:top-[5rem]">
               <RouteMap routeSlug={e.routeSlug} title={route?.name ?? e.name} />
             </div>
           </div>
@@ -82,8 +81,8 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
           {
             title: "Ship & cabins",
             items: [
-              ship ? <Link key="s" href={`/ships/${ship.slug}`} className="underline underline-offset-4">{ship.name}</Link> : shipSizeLabel[e.shipType],
-              ship ? `${ship.passengers} guests · ${ship.operator}` : "",
+              ship ? <Link key="s" href={`/ships/${ship.slug}`} className="underline underline-offset-2">{ship.name}</Link> : shipSizeLabel[e.shipType],
+              ship ? `${ship.passengers} guests` : "",
               ...e.cabins.map((c) => `${cabinLabel[c.type]} — ${c.label}`),
             ].filter(Boolean),
           },
@@ -93,21 +92,19 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
         ]}
       />
 
-      <section className="bg-glacier pb-[6rem]">
+      <section className="bg-ink pb-[8rem] text-ice">
         <div className="container-site grid-site gap-y-[3rem]">
           <div className="col-span-12 lg:col-span-6">
-            <h2 className="t-split mb-[1.5rem] text-[clamp(3rem,8vw,6.5rem)]">pricing</h2>
+            <h2 className="t-mono mb-[1.5rem] opacity-60">Pricing</h2>
             <PricingTable cabins={e.cabins} note={e.verifyNote} />
           </div>
           <div className="col-span-12 lg:col-span-5 lg:col-start-8">
-            <h2 className="t-h3 mb-[1.2rem] mt-[1rem]">Departures</h2>
-            <ul className="border-t border-navy">
+            <h2 className="t-mono mb-[1.5rem] opacity-60">Departures</h2>
+            <ul className="border-t border-ice/30">
               {e.departures.map((d) => (
-                <li key={d.start} className="flex items-center justify-between border-b border-rule py-[1rem]">
-                  <span className="font-mono text-[0.9rem]">{formatDate(d.start)} → {formatDate(d.end)}</span>
-                  <Link href={`/plan-my-expedition?route=${e.routeSlug}`} className="text-[0.75rem] font-medium uppercase underline underline-offset-4 hover:text-iceberg-deep">
-                    Enquire
-                  </Link>
+                <li key={d.start} className="flex items-center justify-between border-b border-ice/15 py-[0.9rem]">
+                  <span className="t-mono">{formatDate(d.start)} → {formatDate(d.end)}</span>
+                  <Pill href={`/plan-my-expedition?route=${e.routeSlug}`} size="sm">Enquire</Pill>
                 </li>
               ))}
             </ul>
@@ -115,7 +112,7 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
         </div>
       </section>
 
-      <CtaBand lines={["hold", "a cabin"]} href={`/plan-my-expedition?route=${e.routeSlug}`} label="Enquire about this voyage" text="Cabins on small expedition ships go early. Tell us your dates and we'll check live availability with the operator, at no cost to you." />
+      <MoreStrip words={["Discover", "More", "Expeditions"]} items={more.map((x) => ({ href: `/expeditions/${x.slug}`, title: x.titleLines.join(" "), image: x.image }))} />
 
       <JsonLd
         data={{

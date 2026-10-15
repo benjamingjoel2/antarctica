@@ -105,7 +105,7 @@ export function Menu() {
                         <span className="absolute bottom-[0.6rem] left-[0.6rem] md:hidden">
                           <PillTag variant={active ? "accent" : "light"}>{item.label}</PillTag>
                         </span>
-                        <span className="sr-only md:not-sr-only md:absolute md:left-[0.6rem] md:top-[0.6rem] md:font-mono md:text-[1rem] md:text-white/90 md:mix-blend-difference">
+                        <span className="sr-only md:not-sr-only md:absolute md:left-[0.6rem] md:top-[0.6rem] md:bg-ink md:px-[0.3rem] md:py-[0.15rem] md:font-mono md:text-[1rem] md:uppercase md:text-ice">
                           {String(i + 1).padStart(2, "0")} {item.label}
                         </span>
                       </Link>

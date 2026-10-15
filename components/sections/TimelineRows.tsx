@@ -16,18 +16,21 @@ export type Row = {
 };
 
 function Mask({ children, delay = 0, className }: { children: ReactNode; delay?: number; className?: string }) {
+  // Trigger on the visible wrapper: the inner span starts fully clipped.
   return (
-    <span className={cn("block overflow-hidden", className)}>
+    <motion.span
+      className={cn("block overflow-hidden", className)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: "0px 0px -5% 0px" }}
+    >
       <motion.span
         className="block"
-        initial={{ y: "105%" }}
-        whileInView={{ y: "0%" }}
-        viewport={{ once: true, margin: "0px 0px -5% 0px" }}
-        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay }}
+        variants={{ hidden: { y: "105%" }, show: { y: "0%", transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1], delay } } }}
       >
         {children}
       </motion.span>
-    </span>
+    </motion.span>
   );
 }
 

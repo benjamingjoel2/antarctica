@@ -2,7 +2,6 @@
 
 import { motion, useMotionValueEvent, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { UnderlineLink } from "@/components/ui/UnderlineLink";
 import type { Ship } from "@/data/types";
@@ -24,8 +23,8 @@ function useDesktop() {
 
 function Panel({ ship, index, total }: { ship: Ship; index: number; total: number }) {
   return (
-    <article className="relative flex h-full w-full shrink-0 flex-col md:w-screen md:flex-row" aria-labelledby={`ship-${ship.slug}`}>
-      <div className="relative h-[55vh] w-full md:h-full md:w-[48%]">
+    <article className="relative flex h-full w-full shrink-0 flex-col md:min-h-screen md:w-screen md:flex-row" aria-labelledby={`ship-${ship.slug}`}>
+      <div className="relative h-[55vh] w-full md:h-auto md:w-[48%]">
         <Image src={ship.image.src} alt={ship.image.alt} fill sizes="(min-width:768px) 48vw, 100vw" className="object-cover" />
         <span className="absolute bottom-[1rem] left-[1rem] font-mono text-[0.75rem] text-white/85">
           {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
@@ -107,25 +106,16 @@ export function HorizontalPanels({ ships }: { ships: Ship[] }) {
     </nav>
   );
 
-  if (!horizontal) {
-    return (
-      <section aria-label="Partner ships">
-        {ships.map((s, i) => (
-          <Panel key={s.slug} ship={s} index={i} total={ships.length} />
-        ))}
-      </section>
-    );
-  }
-
   return (
-    <section ref={ref} aria-label="Partner ships" style={{ height: `${ships.length * 100}vh` }} className="relative">
-      <div className="sticky top-0 h-screen overflow-hidden">
-        <motion.div className="flex h-full" style={{ x }}>
+    // The section (and its ref) is always rendered so scroll tracking binds on hydration.
+    <section ref={ref} aria-label="Partner ships" style={horizontal ? { height: `${ships.length * 100}vh` } : undefined} className="relative">
+      <div className={horizontal ? "sticky top-0 h-screen overflow-hidden" : ""}>
+        <motion.div className={horizontal ? "flex h-full" : "flex flex-col"} style={horizontal ? { x } : undefined}>
           {ships.map((s, i) => (
             <Panel key={s.slug} ship={s} index={i} total={ships.length} />
           ))}
         </motion.div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-[1.5rem] z-10">{bar}</div>
+        {horizontal && <div className="pointer-events-none absolute inset-x-0 bottom-[1.5rem] z-10">{bar}</div>}
       </div>
     </section>
   );

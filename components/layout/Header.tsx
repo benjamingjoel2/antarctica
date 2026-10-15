@@ -19,11 +19,11 @@ export function Header() {
         <Logo tone={menuOpen ? "dark" : "light"} />
       </Link>
       <div className="fixed right-[1.25rem] top-[1.25rem] z-[70] flex items-center gap-[0.5rem] md:right-[max(2rem,calc((100vw-89rem)/2+2rem))]">
-        <CurrencySwitcher className="hidden lg:inline-flex" />
-        <PillButton className="hidden md:inline-flex" onClick={() => setPenguin(!penguin)} aria-pressed={penguin}>
+        <CurrencySwitcher className="max-lg:hidden" />
+        <PillButton className="max-md:hidden" onClick={() => setPenguin(!penguin)} aria-pressed={penguin}>
           {"{penguin mode}"}
         </PillButton>
-        <Pill href="/plan-my-expedition" variant="accent" className="hidden sm:inline-flex">
+        <Pill href="/plan-my-expedition" variant="accent" className="max-sm:hidden">
           Plan my expedition
         </Pill>
         <PillButton

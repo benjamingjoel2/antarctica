@@ -98,16 +98,16 @@ export default function ProtectPage() {
       {/* Missions + paragraph */}
       <section className="bg-glacier py-[7rem]">
         <div className="container-site grid-site gap-y-[3rem]">
-          <div className="col-span-12 md:col-span-5 lg:col-span-3 lg:col-start-4">
+          <div className="col-span-12 md:col-span-5 lg:col-span-4 lg:col-start-2">
             <h2 className="t-h3">How we travel</h2>
             <ul className="mt-[1.2rem] space-y-[0.2rem]">
               {commitments.map((c) => (
-                <li key={c} className="t-h4">{c}</li>
+                <li key={c} className="border-b border-rule py-[0.45rem] text-[1.05rem] font-medium uppercase leading-[1.15]">{c}</li>
               ))}
             </ul>
             <VerifyNote className="mt-[1rem]">* IAATO limits — verify current rules with IAATO before launch.</VerifyNote>
           </div>
-          <div className="col-span-12 space-y-[1.2rem] text-[1.05rem] leading-[1.6] text-slate md:col-span-7 lg:col-span-6">
+          <div className="col-span-12 space-y-[1.2rem] text-[1.05rem] leading-[1.6] text-slate md:col-span-7 lg:col-span-6 lg:col-start-7">
             <h2 className="t-h3 text-navy">The Antarctic Treaty</h2>
             <p>
               Signed in Washington on 1 December 1959 by twelve nations and in force since 23 June 1961, the Antarctic Treaty

@@ -13,8 +13,8 @@ export const metadata = buildMetadata({
 export default function FaqPage() {
   return (
     <>
-      <PageHero label={`FAQ (${faqs.length})`} lines={["good", "questions"]} intro="The things everyone asks before going south. Rules and requirements change, so every answer is marked for verification with our partner operators and IAATO." />
-      <section className="bg-glacier pb-[8rem]">
+      <PageHero tone="light" label={`FAQ (${faqs.length})`} lines={["good", "questions"]} intro="The things everyone asks before going south. Rules and requirements change, so every answer is marked for verification with our partner operators and IAATO." />
+      <section className="bg-ice pb-[8rem] pt-[2rem] text-ink">
         <div className="container-site">
           <FaqList faqs={faqs} />
         </div>

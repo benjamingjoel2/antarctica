@@ -19,8 +19,8 @@ export default function AboutPage() {
   return (
     <>
       <PageHero label="About" lines={["one", "specialist,", "one continent"]} intro="We do one thing: Antarctica. Not cruises in general, not the Arctic on the side. Just the White Continent, and getting you there on the voyage that fits." />
-      <section className="bg-glacier">
-        <div className="relative mx-[0.6rem] h-[70vh] min-h-[26rem] overflow-hidden rounded-[1.2rem]">
+      <section className="bg-ink">
+        <div className="relative h-[85vh] min-h-[26rem] overflow-hidden">
           <Image src={img.redParka} alt="A traveller in a red parka on a snow summit" fill sizes="100vw" className="object-cover" />
         </div>
       </section>

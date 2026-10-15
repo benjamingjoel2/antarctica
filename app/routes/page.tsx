@@ -14,43 +14,41 @@ export const metadata = buildMetadata({
   path: "/routes",
 });
 
-const Yes = ({ on }: { on: boolean }) => (
-  <span className={`inline-flex h-[1.6rem] items-center rounded-full px-[0.7rem] text-[0.7rem] font-medium uppercase ${on ? "bg-navy text-glacier" : "bg-snow text-slate ring-1 ring-rule"}`}>{on ? "Yes" : "No"}</span>
-);
+const YesNo = ({ on }: { on: boolean }) => <span className={on ? "bg-ice px-[0.25rem] text-ink" : "opacity-50"}>{on ? "Yes" : "No"}</span>;
 
 export default function RoutesPage() {
   return (
     <>
-      <PageHero label={`Routes (${String(routes.length).padStart(2, "0")})`} lines={["choose", "your way", "south"]} intro="Seven ways to reach the White Continent. The biggest decision is usually the Drake Passage: sail it, fly it, or go the long way round via South Georgia." />
-      <section className="bg-glacier pb-[8rem]">
+      <PageHero label={`Routes (${String(routes.length).padStart(2, "0")})`} lines={["choose", "your way south"]} intro="Seven ways to reach the White Continent. The biggest decision is usually the Drake Passage: sail it, fly it, or go the long way round via South Georgia." />
+      <section className="bg-ink pb-[9rem] text-ice">
         <div className="container-site">
           <div className="overflow-x-auto" data-lenis-prevent>
-            <table className="w-full min-w-[56rem] border-collapse text-left">
+            <table className="w-full min-w-[58rem] border-collapse text-left">
               <caption className="sr-only">Comparison of Antarctic routes</caption>
               <thead>
-                <tr className="border-b border-navy">
-                  {["Route", "Duration", "Crosses the Drake", "Flies the Drake", "Wildlife highlights", "Best months", "From"].map((h) => (
-                    <th key={h} scope="col" className="t-label py-[1rem] pr-[1rem] font-normal text-slate">{h}</th>
+                <tr>
+                  {["Route", "Duration", "Crosses the Drake", "Flies the Drake", "Wildlife", "Best months", "From"].map((h) => (
+                    <th key={h} scope="col" className="t-mono pb-[2rem] pr-[1rem] font-normal opacity-60">{h}</th>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {routes.map((r) => (
-                  <tr key={r.slug} className="group border-b border-rule align-top transition-colors hover:bg-snow">
-                    <th scope="row" className="py-[1.3rem] pr-[1rem]">
+                  <tr key={r.slug} className="group border-t border-ice/15 align-top">
+                    <th scope="row" className="py-[1.2rem] pr-[1rem] font-normal">
                       <Link href={`/routes/${r.slug}`} className="flex items-center gap-[1rem]">
-                        <span className="relative h-[3.6rem] w-[3.6rem] shrink-0 overflow-hidden rounded-[0.6rem]">
+                        <span className="relative h-[4rem] w-[3.4rem] shrink-0 overflow-hidden rounded-[0.3rem]">
                           <Image src={r.image.src} alt="" fill sizes="4rem" className="object-cover transition-transform duration-700 group-hover:scale-110" />
                         </span>
-                        <span className="font-display text-[1.7rem] font-extrabold lowercase leading-[0.9] tracking-[-0.03em] [font-stretch:75%] group-hover:text-iceberg-deep">{r.name}</span>
+                        <span className="t-h3 group-hover:opacity-60">{r.name}</span>
                       </Link>
                     </th>
-                    <td className="py-[1.3rem] pr-[1rem] font-mono text-[0.85rem]">{durationLabel(r.durationDays)}</td>
-                    <td className="py-[1.3rem] pr-[1rem]"><Yes on={r.crossesDrake} /></td>
-                    <td className="py-[1.3rem] pr-[1rem]"><Yes on={r.fliesDrake} /></td>
-                    <td className="py-[1.3rem] pr-[1rem] text-[0.92rem] text-slate">{r.wildlife.slice(0, 4).join(", ")}</td>
-                    <td className="py-[1.3rem] pr-[1rem] font-mono text-[0.8rem]">{r.bestMonths.join(" · ")}</td>
-                    <td className="py-[1.3rem] font-medium"><Price usd={r.fromPriceUSD} /></td>
+                    <td className="t-mono py-[1.2rem] pr-[1rem]">{durationLabel(r.durationDays)}</td>
+                    <td className="t-mono py-[1.2rem] pr-[1rem]"><YesNo on={r.crossesDrake} /></td>
+                    <td className="t-mono py-[1.2rem] pr-[1rem]"><YesNo on={r.fliesDrake} /></td>
+                    <td className="t-small py-[1.2rem] pr-[1rem] opacity-80">{r.wildlife.slice(0, 4).join(", ")}</td>
+                    <td className="t-mono py-[1.2rem] pr-[1rem]">{r.bestMonths.join(" ")}</td>
+                    <td className="t-mono py-[1.2rem]"><Price usd={r.fromPriceUSD} /></td>
                   </tr>
                 ))}
               </tbody>

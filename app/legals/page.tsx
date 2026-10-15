@@ -7,12 +7,12 @@ export const metadata = buildMetadata({ title: "Legal notice & privacy", path: "
 
 export default function LegalsPage() {
   return (
-    <section className="bg-glacier pt-[8.5rem] pb-[8rem] md:pt-[11rem]">
+    <section className="bg-ice pb-[8rem] pt-[8rem] text-ink">
       <div className="container-site">
         <div className="grid-site mb-[5rem]">
-          <div className="col-span-12 lg:col-span-9 lg:col-start-4">
-            <h1 className="t-split">legal notice</h1>
-            <p className="t-label mt-[1rem] text-slate">Last updated: October 2026 · Draft — to be reviewed by counsel before launch</p>
+          <div className="col-span-12 lg:col-span-9 lg:col-start-3">
+            <h1 className="t-h2">Legal Notice</h1>
+            <p className="t-small mt-[0.6rem] opacity-60">Last updated: October 2026 · Draft — to be reviewed by counsel before launch</p>
           </div>
         </div>
         <NumberedClauses

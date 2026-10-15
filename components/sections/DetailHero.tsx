@@ -5,8 +5,9 @@ import { SplitWords } from "@/components/ui/SplitWords";
 import { WaveCards } from "@/components/ui/WaveCards";
 
 /**
- * Detail page hero (reference project page): two-line title + description + CTAs,
- * a portrait media card, then a full-bleed image carrying wave cards.
+ * Reference project hero: light panel, giant centred title in dark caps,
+ * a short centred description and actions, a centred media card, then a
+ * full-bleed photo that closes with dark wave bars.
  */
 export function DetailHero({
   label,
@@ -26,31 +27,24 @@ export function DetailHero({
   waves: ReactNode[];
 }) {
   return (
-    <section className="bg-glacier">
-      <div className="container-site pt-[8.5rem] md:pt-[11rem]">
-        <div className="grid-site gap-y-[2.5rem]">
-          <div className="col-span-12 lg:col-span-8">
-            <p className="t-label text-slate">{label}</p>
-            <SplitWords as="h1" onMount delay={0.5} className="t-split mt-[1rem]" lines={lines.map((l, i) => ({ text: l, className: i === 1 ? "md:pl-[12%]" : undefined }))} />
-            <div className="mt-[2rem] max-w-[34rem] text-[1.05rem] leading-[1.5] text-slate">{description}</div>
-            {actions && <div className="mt-[1.8rem] flex flex-wrap gap-[0.5rem]">{actions}</div>}
-          </div>
-          <div className="col-span-10 col-start-2 sm:col-span-6 sm:col-start-4 lg:col-span-4 lg:col-start-9 lg:pt-[4rem]">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.2rem] bg-iceberg-soft">
-              {media.video ? (
-                <BackgroundVideo src={media.video} poster={`${media.image.src}&w=900`} label={media.image.alt} />
-              ) : (
-                <Image src={media.image.src} alt={media.image.alt} fill priority sizes="(min-width:1024px) 30vw, 70vw" className="object-cover" />
-              )}
-            </div>
-          </div>
+    <section className="bg-ice text-ink">
+      <div className="container-site pt-[6.5rem] text-center md:pt-[5rem]">
+        <p className="t-mono opacity-60">{label}</p>
+        <SplitWords as="h1" onMount delay={0.5} className="t-giant mt-[1.2rem]" lines={lines.map((l) => ({ text: l, className: "justify-center" }))} />
+        <div className="t-small mx-auto mt-[1.4rem] max-w-[46rem]">{description}</div>
+        {actions && <div className="mt-[1.4rem] flex flex-wrap justify-center gap-[0.3rem]">{actions}</div>}
+        <div className="relative z-[2] mx-auto mt-[2rem] aspect-[4/3] w-[80%] max-w-[29rem] overflow-hidden rounded-[0.3rem] md:w-[33%]">
+          {media.video ? (
+            <BackgroundVideo src={media.video} poster={`${media.image.src}&w=900`} label={media.image.alt} />
+          ) : (
+            <Image src={media.image.src} alt={media.image.alt} fill priority sizes="(min-width:768px) 33vw, 80vw" className="object-cover" />
+          )}
         </div>
       </div>
-      <div className="relative mt-[5rem] h-[70vh] min-h-[28rem] overflow-hidden">
+      <div className="relative -mt-[8rem] h-[85vh] min-h-[30rem] overflow-hidden">
         <Image src={background.src} alt={background.alt} fill sizes="100vw" className="object-cover" />
-        <div className="absolute inset-0 bg-navy/15" />
-        <div className="container-site absolute inset-x-0 bottom-[2rem]">
-          <WaveCards items={waves} tone="light" />
+        <div className="absolute inset-x-0 bottom-0">
+          <WaveCards items={waves} tone="dark" />
         </div>
       </div>
     </section>

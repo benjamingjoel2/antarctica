@@ -1,18 +1,15 @@
 import { cn } from "@/lib/cn";
 
-/** Text logo placeholder with a compass-south mark. */
-export function Logo({ className, tone = "dark" }: { className?: string; tone?: "dark" | "light" }) {
+/** Text logo placeholder: compass-south mark + small wordmark. */
+export function Logo({ className }: { className?: string }) {
   return (
-    <span className={cn("inline-flex items-center gap-[0.55rem]", tone === "light" ? "text-glacier" : "text-navy", className)}>
+    <span className={cn("inline-flex items-center gap-[0.5rem] text-current", className)}>
       <svg viewBox="0 0 32 32" className="h-[1.6rem] w-[1.6rem]" aria-hidden>
-        <circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M16 4 L19.5 16 L16 28 L12.5 16 Z" fill="currentColor" opacity="0.18" />
-        <path d="M16 28 L19.5 16 L12.5 16 Z" fill="#ff5b1f" />
-        <text x="16" y="13.4" textAnchor="middle" fontSize="7.5" fontWeight="800" fill="currentColor" fontFamily="system-ui">
-          7
-        </text>
+        <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" strokeWidth="1.2" />
+        <path d="M16 5 L18.6 16 L16 27 L13.4 16 Z" fill="none" stroke="currentColor" strokeWidth="1" />
+        <path d="M16 27 L18.6 16 L13.4 16 Z" fill="#ff5b1f" />
       </svg>
-      <span className="font-display text-[1.05rem] font-extrabold uppercase leading-[0.85] tracking-[-0.02em] [font-stretch:80%]">
+      <span className="font-mono text-[1.05rem] uppercase leading-[0.85]">
         Seventh
         <br />
         Continent

@@ -5,13 +5,13 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 /**
- * Twelve-bar "ice shelf" wipe: two rows of six bars close over the page on
- * internal navigation, then open on the next page. Reduced motion: disabled.
+ * Reference "wave" transition: twelve glacier-white bars (two columns × six
+ * rows) sweep across on internal navigation, then sweep away on the new page.
+ * Reduced motion: disabled.
  */
-const COLS = 6;
-const COVER = 0.55;
-const STAGGER = 0.045;
-const tones = ["bg-navy", "bg-navy-2", "bg-iceberg-deep", "bg-navy", "bg-navy-2", "bg-navy"];
+const ROWS = 6;
+const COVER = 0.6;
+const STAGGER = 0.05;
 
 export function PageTransition() {
   const router = useRouter();
@@ -23,10 +23,10 @@ export function PageTransition() {
   const [off, setOff] = useState(false);
 
   const run = (to: number) => {
-    const t = { duration: COVER, ease: [0.65, 0, 0.35, 1] as const, delay: 0 };
+    const t = { duration: COVER, ease: [0.65, 0, 0.35, 1] as const };
     return Promise.all([
-      top.start((i: number) => ({ scaleY: to, transition: { ...t, delay: i * STAGGER } })),
-      bottom.start((i: number) => ({ scaleY: to, transition: { ...t, delay: (COLS - 1 - i) * STAGGER } })),
+      top.start((i: number) => ({ scaleX: to, transition: { ...t, delay: i * 2 * STAGGER } })),
+      bottom.start((i: number) => ({ scaleX: to, transition: { ...t, delay: (i * 2 + 1) * STAGGER } })),
     ]);
   };
 
@@ -72,24 +72,17 @@ export function PageTransition() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
 
-  const bars = (controls: typeof top, origin: "top" | "bottom") =>
-    Array.from({ length: COLS }, (_, i) => (
-      <motion.div
-        key={i}
-        custom={i}
-        animate={controls}
-        initial={{ scaleY: 1 }}
-        style={{ originY: origin === "top" ? 0 : 1 }}
-        className={`h-full flex-1 ${tones[i]} -mx-px`}
-      />
+  const bars = (controls: typeof top) =>
+    Array.from({ length: ROWS }, (_, i) => (
+      <motion.div key={i} custom={i} animate={controls} initial={{ scaleX: 1 }} style={{ originX: 0 }} className="-my-px h-[calc(100%/6+1px)] w-full bg-ice" />
     ));
 
   if (off) return null;
 
   return (
-    <div id="page-transition" aria-hidden className="pointer-events-none fixed inset-0 z-[100] flex flex-col">
-      <div className="flex h-1/2">{bars(top, "top")}</div>
-      <div className="flex h-1/2">{bars(bottom, "bottom")}</div>
+    <div id="page-transition" aria-hidden className="pointer-events-none fixed inset-0 z-[100] flex">
+      <div className="flex h-full w-1/2 flex-col">{bars(top)}</div>
+      <div className="-ml-px flex h-full w-1/2 flex-col">{bars(bottom)}</div>
       <noscript>
         <style>{"#page-transition{display:none}"}</style>
       </noscript>

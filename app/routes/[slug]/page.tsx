@@ -38,7 +38,7 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
         waves={[durationLabel(r.durationDays), drake, r.bestMonths.join(" · "), <Price key="p" usd={r.fromPriceUSD} prefix="From" />]}
       />
       <ParagraphBlock lead={r.body.split("\n\n")[0]} side={<>From {r.embarkation}<br />to {r.disembarkation}</>} body={r.body.split("\n\n").slice(1).map((p, i) => <p key={i}>{p}</p>)} />
-      <section className="bg-glacier pb-[4rem]">
+      <section className="bg-ink pb-[4rem] text-ice">
         <div className="container-site grid-site">
           <div className="col-span-12 lg:col-span-8 lg:col-start-3">
             <RouteMap routeSlug={r.slug} title={r.name} />
@@ -55,9 +55,9 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
         ]}
       />
       {voyages.length > 0 && (
-        <section className="bg-glacier pb-[8rem] pt-[2rem]">
-          <div className="container-site">
-            <h2 className="t-split mb-[3rem] text-[clamp(3rem,8vw,6.5rem)]">voyages</h2>
+        <section className="bg-ink pb-[8rem] pt-[2rem] text-ice">
+          <div>
+            <h2 className="t-mono mb-[3rem] px-[1.25rem] opacity-60">voyages</h2>
             <CardGrid
               cta="View expedition"
               items={voyages.map((e) => ({
@@ -66,7 +66,7 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
                 meta: <Price usd={e.fromPriceUSD} prefix="From" />,
                 image: e.image,
                 video: e.video,
-                body: <span className="block font-display text-[2rem] font-extrabold lowercase leading-[0.92] tracking-[-0.03em] [font-stretch:75%]">{e.name}</span>,
+                body: <span className="t-h3 block">{e.name}</span>,
               }))}
             />
           </div>

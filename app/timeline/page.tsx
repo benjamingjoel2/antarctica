@@ -15,7 +15,7 @@ export default function TimelinePage() {
   return (
     <>
       <PageHero label={`Timeline (${timeline.length})`} lines={["two", "centuries", "of ice"]} intro="Every voyage south follows a wake laid down by sealers, scientists and stubborn explorers. Hover or tap a year to look closer." />
-      <section className="bg-glacier pb-[6rem]">
+      <section className="bg-ink text-ice">
         <TimelineRows
           filters={[
             { id: "exploration", label: "Exploration" },

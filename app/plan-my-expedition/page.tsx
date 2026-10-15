@@ -11,13 +11,13 @@ export const metadata = buildMetadata({
 
 export default function PlanPage() {
   return (
-    <section className="bg-glacier pt-[8rem] pb-[8rem] md:pt-[10rem]">
+    <section className="bg-ice pb-[8rem] pt-[7rem] text-ink">
       <div className="container-site">
         <div className="grid-site gap-y-[2rem]">
           <div className="col-span-12 lg:col-span-3">
-            <p className="t-label text-slate">Expedition planner</p>
-            <h1 className="mt-[1rem] t-h3 normal-case">Plan my expedition</h1>
-            <p className="mt-[1rem] text-[0.95rem] text-slate">
+            <p className="t-mono opacity-60">Expedition planner</p>
+            <h1 className="t-h2 mt-[0.8rem]">Plan my expedition</h1>
+            <p className="t-small mt-[1rem] opacity-70">
               Five steps, about three minutes. No payment, no obligation: just enough for your specialist to shortlist the right
               voyages.
             </p>

@@ -12,8 +12,8 @@ export default function JournalPage() {
   return (
     <>
       <PageHero label={`Journal (${String(posts.length).padStart(2, "0")})`} lines={["field", "notes"]} intro="Straight answers to the questions we hear most: which ship, which month, what to pack, and whether to brave the Drake." />
-      <section className="bg-glacier pb-[8rem]">
-        <div className="container-site">
+      <section className="bg-ink pb-[8rem] text-ice">
+        <div>
           <CardGrid
             cta="Read"
             items={sorted.map((p) => ({
@@ -23,8 +23,8 @@ export default function JournalPage() {
               image: p.cover,
               body: (
                 <>
-                  <span className="block font-display text-[2.2rem] font-extrabold lowercase leading-[0.92] tracking-[-0.03em] [font-stretch:75%]">{p.title}</span>
-                  <span className="mt-[0.6rem] block max-w-[30rem] text-[0.98rem] text-slate">{p.excerpt}</span>
+                  <span className="t-h3 block">{p.title}</span>
+                  <span className="t-small mt-[0.5rem] block max-w-[30rem] opacity-75">{p.excerpt}</span>
                 </>
               ),
             }))}

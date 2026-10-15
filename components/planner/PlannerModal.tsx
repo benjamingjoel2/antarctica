@@ -31,7 +31,7 @@ export function PlannerModal({ initialRoute }: { initialRoute?: string }) {
         type="button"
         aria-label="Close planner"
         onClick={() => router.back()}
-        className="absolute inset-0 cursor-default bg-navy/60 backdrop-blur-sm"
+        className="absolute inset-0 cursor-default bg-ink/70"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       />
@@ -42,14 +42,14 @@ export function PlannerModal({ initialRoute }: { initialRoute?: string }) {
         aria-modal="true"
         aria-label="Plan my expedition"
         data-lenis-prevent
-        className="absolute inset-x-0 bottom-0 top-[4vh] overflow-y-auto rounded-t-[1.6rem] bg-glacier outline-none md:inset-x-[3vw] md:rounded-t-[2rem]"
+        className="absolute inset-x-0 bottom-0 top-[4vh] overflow-y-auto bg-ice text-ink outline-none md:inset-x-[3vw]"
         initial={{ y: "100%" }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="sticky top-0 z-10 flex items-center justify-between bg-glacier/90 px-[1.5rem] py-[1rem] backdrop-blur md:px-[2.5rem]">
-          <p className="t-label text-slate">Expedition planner</p>
-          <button type="button" onClick={() => router.back()} className="cursor-pointer rounded-full bg-navy px-[1.1rem] py-[0.55rem] text-[0.75rem] uppercase text-glacier hover:bg-orange hover:text-navy">
+        <div className="sticky top-0 z-10 flex items-center justify-between bg-ice/95 px-[1.25rem] py-[1rem] md:px-[2.5rem]">
+          <p className="t-mono opacity-60">Expedition planner</p>
+          <button type="button" onClick={() => router.back()} className="t-mono cursor-pointer bg-ink px-[0.3rem] py-[0.15rem] text-ice hover:bg-orange hover:text-ink">
             Close
           </button>
         </div>

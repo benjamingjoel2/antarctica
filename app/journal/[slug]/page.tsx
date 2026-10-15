@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CtaBand } from "@/components/sections/CtaBand";
 import { SplitWords } from "@/components/ui/SplitWords";
 import { posts } from "@/data/posts";
 import { formatDate, getPost } from "@/lib/data";
@@ -25,16 +24,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      <article className="bg-glacier">
-        <header className="container-site pt-[8.5rem] md:pt-[11rem]">
-          <p className="t-label text-slate">
+      <article className="bg-ink text-ice">
+        <header className="container-site pt-[6.5rem] text-center md:pt-[5rem]">
+          <p className="t-mono opacity-60">
             <Link href="/journal" className="hover:underline">Journal</Link> · {formatDate(p.date)} · {p.readMinutes} min read
           </p>
-          <SplitWords as="h1" onMount delay={0.5} className="t-split mt-[1rem] text-[clamp(3.2rem,10vw,8.5rem)]" lines={p.titleLines.map((l, i) => ({ text: l, className: i % 2 ? "md:pl-[12%]" : undefined }))} />
+          <SplitWords as="h1" onMount delay={0.5} className="t-giant mt-[1.2rem]" lines={p.titleLines.map((l) => ({ text: l, className: "justify-center" }))} />
           <span className="sr-only">{p.title}</span>
-          <p className="mt-[2rem] max-w-[40rem] t-large text-slate">{p.excerpt}</p>
+          <p className="t-small mx-auto mt-[1.6rem] max-w-[40rem] opacity-80">{p.excerpt}</p>
         </header>
-        <div className="relative mx-[0.6rem] mt-[4rem] h-[70vh] min-h-[24rem] overflow-hidden rounded-[1.2rem]">
+        <div className="relative mt-[4rem] h-[85vh] min-h-[24rem] overflow-hidden">
           <Image src={p.cover.src} alt={p.cover.alt} fill priority sizes="100vw" className="object-cover" />
         </div>
         <div className="container-site grid-site py-[5rem]">
@@ -42,16 +41,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <Body />
           </div>
         </div>
-        <nav className="container-site border-t border-rule py-[3rem]" aria-label="Next article">
+        <nav className="container-site border-t border-ice/15 py-[3rem]" aria-label="Next article">
           <Link href={`/journal/${next.slug}`} className="group block">
-            <span className="t-label text-slate">Next</span>
-            <span className="mt-[0.6rem] block font-display text-[clamp(2rem,5vw,4rem)] font-extrabold lowercase leading-[0.92] tracking-[-0.03em] [font-stretch:75%] group-hover:text-iceberg-deep">
+            <span className="t-mono opacity-60">Next</span>
+            <span className="t-h2 mt-[0.6rem] block group-hover:opacity-60">
               {next.title} →
             </span>
           </Link>
         </nav>
       </article>
-      <CtaBand />
+      
       <JsonLd data={{ "@context": "https://schema.org", "@type": "Article", headline: p.title, datePublished: p.date, image: p.cover.src, author: { "@type": "Organization", name: "Seventh Continent" } }} />
     </>
   );

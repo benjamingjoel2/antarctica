@@ -21,40 +21,30 @@ function useDesktop() {
   return ok;
 }
 
+/** Reference partner card: 100vw × 100vh, photo 40vw on the left, logo box + paragraph + mono links on the right. */
 function Panel({ ship, index, total }: { ship: Ship; index: number; total: number }) {
   return (
-    <article className="relative flex h-full w-full shrink-0 flex-col md:min-h-screen md:w-screen md:flex-row" aria-labelledby={`ship-${ship.slug}`}>
-      <div className="relative h-[55vh] w-full md:h-auto md:w-[48%]">
-        <Image src={ship.image.src} alt={ship.image.alt} fill sizes="(min-width:768px) 48vw, 100vw" className="object-cover" />
-        <span className="absolute bottom-[1rem] left-[1rem] font-mono text-[0.75rem] text-white/85">
+    <article className="relative flex w-full shrink-0 flex-col bg-ice text-ink md:h-full md:min-h-screen md:w-screen md:flex-row" aria-labelledby={`ship-${ship.slug}`}>
+      <div className="relative h-[55vh] w-full md:h-auto md:w-[40vw]">
+        <Image src={ship.image.src} alt={ship.image.alt} fill sizes="(min-width:768px) 40vw, 100vw" className="object-cover" />
+        <span className="t-mono absolute bottom-[1.25rem] left-[1.25rem] text-white mix-blend-difference">
           {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
         </span>
       </div>
-      <div className="flex flex-1 items-center bg-glacier px-[1.25rem] py-[3rem] md:px-[4vw] md:pt-[7rem]">
-        <div className="max-w-[34rem]">
-          <p className="t-label text-slate">
-            {shipSizeLabel[ship.size]} · {ship.passengers} guests · {ship.operator}
-          </p>
-          <h2 id={`ship-${ship.slug}`} className="mt-[1rem] font-display text-[clamp(3rem,7vw,6.5rem)] font-extrabold uppercase leading-[0.82] tracking-[-0.035em] [font-stretch:68%]">
-            {ship.name.replace(/^MV\s+/, "")}
-          </h2>
-          <p className="mt-[1.5rem] text-[1.05rem] leading-[1.55] text-slate">{ship.blurb}</p>
-          <dl className="mt-[1.8rem] grid grid-cols-3 gap-[1rem] border-t border-rule pt-[1.2rem]">
-            {[
-              ["Length", `${ship.lengthM} m`],
-              ["Guests", String(ship.passengers)],
-              ["Zodiacs", String(ship.zodiacs)],
-            ].map(([k, v]) => (
-              <div key={k}>
-                <dt className="t-label text-slate">{k}</dt>
-                <dd className="mt-[0.3rem] font-display text-[1.8rem] font-extrabold [font-stretch:75%]">{v}</dd>
-              </div>
-            ))}
-          </dl>
-          <div className="mt-[2rem] flex flex-wrap gap-x-[1.6rem] gap-y-[0.6rem]">
+      <div className="flex flex-1 items-center px-[1.25rem] py-[3rem] md:px-[1.25rem] md:pl-[2rem]">
+        <div className="max-w-[36rem]">
+          <div className="grid h-[13.6rem] w-[13.6rem] place-items-center rounded-[0.3rem] border border-ink/20 text-center">
+            <span>
+              <span className="t-mono block opacity-60">MV</span>
+              <span id={`ship-${ship.slug}`} className="block font-display text-[2.6rem] uppercase leading-[0.85] tracking-[-0.03em] [font-stretch:82%]">{ship.name.replace(/^MV\s+/, "")}</span>
+            </span>
+          </div>
+          <p className="t-h3 mt-[0.6rem]">{ship.blurb} {shipSizeLabel[ship.size]}, {ship.passengers} guests, {ship.lengthM} m, {ship.zodiacs} zodiacs.</p>
+          <p className="t-mono mt-[0.8rem] opacity-60">{ship.operator}</p>
+          <div className="mt-[2.2rem] flex flex-col items-start gap-[0.2rem]">
             <UnderlineLink href={`/ships/${ship.slug}`}>View ship</UnderlineLink>
             <UnderlineLink href={`/ships/${ship.slug}#voyages`}>Expeditions on this ship</UnderlineLink>
-            <span className="text-[0.82rem] uppercase text-slate">Deck plan (soon)</span>
+            <span className="t-mono opacity-40">Deck plan (soon)</span>
           </div>
         </div>
       </div>
@@ -63,9 +53,9 @@ function Panel({ ship, index, total }: { ship: Ship; index: number; total: numbe
 }
 
 /**
- * Horizontal-scroll showcase (reference partners page): vertical scrolling
- * drives the panels sideways; a logo bar on top marks the current panel.
- * Stacks vertically on mobile and for reduced-motion users.
+ * Horizontal-scroll showcase (reference partners page). Vertical scroll drives
+ * panels sideways; a top bar of names marks the current one. Stacks vertically
+ * on mobile and for reduced-motion users.
  */
 export function HorizontalPanels({ ships }: { ships: Ship[] }) {
   const desktop = useDesktop();
@@ -86,36 +76,31 @@ export function HorizontalPanels({ ships }: { ships: Ship[] }) {
     else window.scrollTo({ top, behavior: "smooth" });
   };
 
-  const bar = (
-    <nav aria-label="Ships" className="pointer-events-auto mx-auto flex w-max max-w-[calc(100vw-2rem)] gap-[0.3rem] overflow-x-auto rounded-full bg-snow/90 p-[0.3rem] backdrop-blur">
-      {ships.map((s, i) => (
-        <button
-          key={s.slug}
-          type="button"
-          onClick={() => goTo(i)}
-          aria-current={active === i ? "true" : undefined}
-          className={cn(
-            "relative h-[2.2rem] cursor-pointer whitespace-nowrap rounded-full px-[0.9rem] text-[0.7rem] font-medium uppercase transition-colors",
-            active === i ? "text-glacier" : "text-navy hover:text-iceberg-deep",
-          )}
-        >
-          {active === i && <motion.span layoutId="ship-highlight" className="absolute inset-0 rounded-full bg-navy" transition={{ type: "spring", stiffness: 400, damping: 34 }} />}
-          <span className="relative">{s.name.replace(/^MV\s+/, "")}</span>
-        </button>
-      ))}
-    </nav>
-  );
-
   return (
     // The section (and its ref) is always rendered so scroll tracking binds on hydration.
-    <section ref={ref} aria-label="Partner ships" style={horizontal ? { height: `${ships.length * 100}vh` } : undefined} className="relative">
+    <section ref={ref} aria-label="Partner ships" style={horizontal ? { height: `${ships.length * 100}vh` } : undefined} className="relative bg-ice">
       <div className={horizontal ? "sticky top-0 h-screen overflow-hidden" : ""}>
         <motion.div className={horizontal ? "flex h-full" : "flex flex-col"} style={horizontal ? { x } : undefined}>
           {ships.map((s, i) => (
             <Panel key={s.slug} ship={s} index={i} total={ships.length} />
           ))}
         </motion.div>
-        {horizontal && <div className="pointer-events-none absolute inset-x-0 bottom-[1.5rem] z-10">{bar}</div>}
+        {horizontal && (
+          <nav aria-label="Ships" className="absolute bottom-[1.25rem] left-[40vw] z-10 flex gap-[0.3rem] pl-[2rem]">
+            {ships.map((s, i) => (
+              <button
+                key={s.slug}
+                type="button"
+                onClick={() => goTo(i)}
+                aria-current={active === i ? "true" : undefined}
+                className={cn("t-mono relative cursor-pointer px-[0.3rem] py-[0.15rem] text-[1rem] transition-colors", active === i ? "text-ice" : "text-ink hover:opacity-60")}
+              >
+                {active === i && <motion.span layoutId="ship-highlight" className="absolute inset-0 bg-ink" transition={{ type: "spring", stiffness: 400, damping: 34 }} />}
+                <span className="relative">{s.name.replace(/^MV\s+/, "")}</span>
+              </button>
+            ))}
+          </nav>
+        )}
       </div>
     </section>
   );

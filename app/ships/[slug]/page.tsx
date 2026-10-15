@@ -47,9 +47,9 @@ export default async function ShipPage({ params }: { params: Promise<{ slug: str
           { title: "Operator", items: [s.operator, "IAATO member (placeholder — verify)"] },
         ]}
       />
-      <section id="voyages" className="scroll-mt-[6rem] bg-glacier pb-[8rem] pt-[2rem]">
-        <div className="container-site">
-          <h2 className="t-split mb-[3rem] text-[clamp(3rem,8vw,6.5rem)]">voyages on board</h2>
+      <section id="voyages" className="scroll-mt-[5rem] bg-ink pb-[8rem] pt-[2rem] text-ice">
+        <div>
+          <h2 className="t-mono mb-[3rem] px-[1.25rem] opacity-60">voyages on board</h2>
           {voyages.length ? (
             <CardGrid
               cta="View expedition"
@@ -59,11 +59,11 @@ export default async function ShipPage({ params }: { params: Promise<{ slug: str
                 meta: <Price usd={e.fromPriceUSD} prefix="From" />,
                 image: e.image,
                 video: e.video,
-                body: <span className="block font-display text-[2rem] font-extrabold lowercase leading-[0.92] tracking-[-0.03em] [font-stretch:75%]">{e.name}</span>,
+                body: <span className="t-h3 block">{e.name}</span>,
               }))}
             />
           ) : (
-            <p className="text-slate">New departures for this ship are coming soon. Ask your specialist.</p>
+            <p className="t-small px-[1.25rem] opacity-70">New departures for this ship are coming soon. Ask your specialist.</p>
           )}
         </div>
       </section>

@@ -1,7 +1,6 @@
 import { CtaBand } from "@/components/sections/CtaBand";
 import { PageHero } from "@/components/sections/PageHero";
 import { Pill } from "@/components/ui/Pill";
-import { UnderlineLink } from "@/components/ui/UnderlineLink";
 import { season } from "@/config/season";
 import { site, whatsappHref } from "@/config/site";
 import { buildMetadata } from "@/lib/seo";
@@ -16,34 +15,32 @@ export default function ContactPage() {
   ];
   return (
     <>
-      <PageHero label="Contact" lines={["say", "hello"]} />
-      <section className="bg-glacier pb-[8rem]">
+      <PageHero label="Contact" lines={["say hello"]} intro="Tell us where you dream of standing. One polar specialist replies within one working day, with honest advice and no obligation." />
+      <section className="bg-ink pb-[8rem] text-ice">
         <div className="container-site">
-          <p className="t-h2 indent-space max-w-[60rem] md:text-[3.2rem]">
-            Tell us where you dream of standing. One polar specialist will reply within one working day, with honest advice and
-            no obligation.
-          </p>
-          <div className="mt-[4rem] grid grid-cols-1 gap-[1rem] md:grid-cols-3">
+          <ul>
             {methods.map((m) => (
-              <a key={m.label} href={m.href} className="group rounded-[1.2rem] bg-snow p-[1.6rem] transition-colors hover:bg-navy hover:text-glacier" target={m.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer">
-                <p className="t-label text-slate group-hover:text-iceberg">{m.label}</p>
-                <p className="mt-[2.5rem] font-display text-[2rem] font-extrabold lowercase leading-[0.95] tracking-[-0.03em] [font-stretch:75%] break-words">{m.value}</p>
-              </a>
+              <li key={m.label} className="border-t border-ice/15">
+                <a href={m.href} target={m.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="group grid-site items-baseline py-[1.6rem]">
+                  <span className="t-mono col-span-12 opacity-60 md:col-span-3">{m.label}</span>
+                  <span className="t-h2 col-span-12 break-words transition-opacity group-hover:opacity-60 md:col-span-9">{m.value}</span>
+                </a>
+              </li>
             ))}
-          </div>
-          <div className="mt-[3rem] grid-site gap-y-[1.5rem]">
+          </ul>
+          <div className="mt-[4rem] grid-site gap-y-[2rem] border-t border-ice/15 pt-[2rem]">
             <div className="col-span-12 md:col-span-6">
-              <p className="t-label text-slate">Hours</p>
-              <p className="mt-[0.4rem]">{site.contact.hours}</p>
-              <p className="t-label mt-[1.2rem] text-slate">Address</p>
-              <p className="mt-[0.4rem]">{site.contact.address}</p>
+              <p className="t-mono opacity-60">Hours</p>
+              <p className="t-small mt-[0.4rem]">{site.contact.hours}</p>
+              <p className="t-mono mt-[1.2rem] opacity-60">Address</p>
+              <p className="t-small mt-[0.4rem]">{site.contact.address}</p>
             </div>
             <div className="col-span-12 md:col-span-6">
-              <p className="t-label text-slate">Next season</p>
-              <p className="mt-[0.4rem]">{season.nextSeason} · {season.label}</p>
-              <div className="mt-[1.2rem] flex flex-wrap items-center gap-[1rem]">
+              <p className="t-mono opacity-60">Next season</p>
+              <p className="t-small mt-[0.4rem]">{season.nextSeason} · {season.label}</p>
+              <div className="mt-[1.2rem] flex gap-[0.3rem]">
                 <Pill href="/plan-my-expedition" variant="accent">Plan my expedition</Pill>
-                <UnderlineLink href="/faq">Read the FAQ</UnderlineLink>
+                <Pill href="/faq">Read the FAQ</Pill>
               </div>
             </div>
           </div>

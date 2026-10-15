@@ -9,16 +9,16 @@ export const metadata = buildMetadata({ title: "Testimonials", description: "Wha
 export default function TestimonialsPage() {
   return (
     <>
-      <PageHero label="Testimonials" lines={["back", "on dry", "land"]} intro="Placeholder reviews for layout only. Replace with real, verified guest testimonials before launch." />
-      <section className="bg-glacier pb-[8rem]">
+      <PageHero label="Testimonials" lines={["back on", "dry land"]} intro="Placeholder reviews for layout only. Replace with real, verified guest testimonials before launch." />
+      <section className="bg-ink pb-[8rem] text-ice">
         <div className="container-site">
-          <ul className="border-t border-navy">
+          <ul>
             {testimonials.map((t, i) => (
-              <li key={i} className="grid-site gap-y-[1.5rem] border-b border-rule py-[3.5rem]">
+              <li key={i} className="grid-site gap-y-[1.5rem] border-t border-ice/15 py-[3.5rem]">
                 <div className="col-span-12 lg:col-span-3">
-                  <span className="inline-block rounded-full bg-orange px-[0.8rem] py-[0.3rem] font-mono text-[0.65rem] uppercase text-navy">Placeholder</span>
-                  <p className="mt-[1rem] font-medium uppercase">{t.name}</p>
-                  <p className="text-[0.85rem] text-slate">{t.trip} · {t.year}</p>
+                  <span className="t-mono bg-orange px-[0.25rem] text-ink">Placeholder</span>
+                  <p className="t-mono mt-[1rem]">{t.name}</p>
+                  <p className="t-mono opacity-60">{t.trip} · {t.year}</p>
                 </div>
                 <Reveal className="col-span-12 lg:col-span-9">
                   <blockquote className="t-h2 indent-space">“{t.quote}”</blockquote>

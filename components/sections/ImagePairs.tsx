@@ -1,24 +1,21 @@
 import Image from "next/image";
 import { Reveal } from "@/components/ui/Reveal";
 
-/** Two offset rows of paired images (reference project images). */
+/** Reference project image collage: four frames scattered across the grid at different sizes. */
 export function ImagePairs({ images }: { images: { src: string; alt: string }[] }) {
-  const rows = [images.slice(0, 2), images.slice(2, 4)].filter((r) => r.length);
+  const slots = [
+    "col-span-6 col-start-2 md:col-span-3 md:col-start-2 aspect-[4/3]",
+    "col-span-5 col-start-8 mt-[4rem] md:col-span-3 md:col-start-9 md:mt-0 aspect-[4/3]",
+    "col-span-7 col-start-1 md:col-span-3 md:col-start-1 md:-mt-[2rem] aspect-[3/4]",
+    "col-span-5 col-start-8 mt-[6rem] md:col-span-3 md:col-start-6 md:mt-[6rem] aspect-[3/4]",
+  ];
   return (
-    <section className="bg-glacier pb-[6rem]">
-      <div className="container-site flex flex-col gap-[1.25rem]">
-        {rows.map((row, ri) => (
-          <div key={ri} className={ri === 0 ? "grid-site" : "grid-site"}>
-            <div className={`col-span-12 grid grid-cols-2 gap-[1.25rem] lg:col-span-9 ${ri === 0 ? "lg:col-start-4" : ""}`}>
-              {row.map((im, i) => (
-                <Reveal key={im.src + i} delay={i * 0.1} className={i === 1 ? "mt-[3rem]" : ""}>
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-[1.1rem]">
-                    <Image src={im.src} alt={im.alt} fill sizes="(min-width:1024px) 36vw, 46vw" className="object-cover" />
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </div>
+    <section className="bg-ink pb-[8rem]">
+      <div className="container-site grid-site gap-y-[2rem]">
+        {images.slice(0, 4).map((im, i) => (
+          <Reveal key={im.src + i} className={`relative overflow-hidden rounded-[0.3rem] ${slots[i]}`} delay={i * 0.08}>
+            <Image src={im.src} alt={im.alt} fill sizes="(min-width:768px) 25vw, 50vw" className="object-cover" />
+          </Reveal>
         ))}
       </div>
     </section>

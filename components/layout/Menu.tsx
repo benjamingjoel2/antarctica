@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -9,124 +9,123 @@ import { mainNav } from "@/config/nav";
 import { site, whatsappHref } from "@/config/site";
 import { CursorFollow } from "@/components/ui/CursorFollow";
 import { Pill, PillTag } from "@/components/ui/Pill";
-import { cn } from "@/lib/cn";
 import { useUi } from "@/lib/ui";
 import { CurrencySwitcher } from "./CurrencySwitcher";
 import { useLenis } from "./SmoothScroll";
 
 /**
- * Image-led full-screen menu: one tall photo tile per destination.
- * Hovered tile widens; a pill follows the cursor with the tile's label.
+ * Image-led menu (reference): a light band drops from the top holding a row of
+ * photo tiles that pans with the pointer; a box label follows the cursor; the
+ * page below is dimmed. Tiles scroll natively on touch and follow keyboard focus.
  */
 export function Menu() {
   const { menuOpen, setMenuOpen } = useUi();
   const [hovered, setHovered] = useState<number | null>(null);
-  const area = useRef<HTMLElement>(null);
-  const panel = useRef<HTMLDivElement>(null);
+  const band = useRef<HTMLDivElement>(null);
+  const row = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const lenis = useLenis();
+  const x = useMotionValue(0);
+  const sx = useSpring(x, { stiffness: 120, damping: 24 });
 
-  // Close on navigation
   useEffect(() => setMenuOpen(false), [pathname, setMenuOpen]);
 
-  // Scroll lock, Esc to close, focus management
   useEffect(() => {
     if (!menuOpen) return;
     lenis?.stop();
-    document.documentElement.style.overflow = "hidden";
     const prev = document.activeElement as HTMLElement | null;
-    const t = setTimeout(() => panel.current?.querySelector<HTMLElement>("a")?.focus(), 400);
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setMenuOpen(false);
-    };
+    const t = setTimeout(() => row.current?.querySelector<HTMLElement>("a")?.focus({ preventScroll: true }), 500);
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setMenuOpen(false);
     window.addEventListener("keydown", onKey);
     return () => {
       clearTimeout(t);
       lenis?.start();
-      document.documentElement.style.overflow = "";
       window.removeEventListener("keydown", onKey);
       prev?.focus?.();
     };
   }, [menuOpen, lenis, setMenuOpen]);
 
+  const pan = (clientX: number) => {
+    const el = row.current;
+    if (!el || !window.matchMedia("(pointer: fine)").matches) return;
+    const max = el.scrollWidth - window.innerWidth;
+    if (max > 0) x.set(-(clientX / window.innerWidth) * max);
+  };
+  const focusTile = (i: number) => {
+    const el = row.current;
+    if (!el || !window.matchMedia("(pointer: fine)").matches) return;
+    const max = el.scrollWidth - window.innerWidth;
+    x.set(-(i / (mainNav.length - 1)) * Math.max(0, max));
+  };
+
   return (
     <AnimatePresence>
       {menuOpen && (
-        <motion.div
-          id="site-menu"
-          ref={panel}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Site menu"
-          data-lenis-prevent
-          className="fixed inset-0 z-[55] flex flex-col overflow-y-auto bg-glacier"
-          initial={{ clipPath: "inset(0 0 100% 0)" }}
-          animate={{ clipPath: "inset(0 0 0% 0)" }}
-          exit={{ clipPath: "inset(0 0 100% 0)" }}
-          transition={{ duration: 0.8, ease: [0.65, 0, 0.35, 1] }}
-        >
-          <div className="container-site flex flex-1 flex-col pt-[6rem] pb-[1.5rem]">
-            <nav ref={area} aria-label="Main" className="flex flex-1 flex-col gap-[0.5rem] lg:flex-row lg:gap-[0.6rem]">
-              {mainNav.map((item, i) => {
-                const active = pathname === item.href || pathname.startsWith(item.href + "/");
-                return (
-                  <motion.div
-                    key={item.href}
-                    className={cn(
-                      "relative min-h-[5.5rem] overflow-hidden rounded-[1rem] transition-[flex-grow] duration-700 ease-[var(--ease-expo)] lg:min-h-0",
-                      hovered === i ? "lg:flex-[2.4]" : "lg:flex-1",
-                    )}
-                    initial={{ clipPath: "inset(100% 0 0 0)" }}
-                    animate={{ clipPath: "inset(0% 0 0 0)" }}
-                    transition={{ duration: 0.9, ease: [0.65, 0, 0.35, 1], delay: 0.25 + i * 0.05 }}
-                  >
-                    <Link
-                      href={item.href}
-                      onMouseEnter={() => setHovered(i)}
-                      onMouseLeave={() => setHovered(null)}
-                      onFocus={() => setHovered(i)}
-                      className="group absolute inset-0 block outline-offset-[-4px]"
-                      aria-current={active ? "page" : undefined}
+        <motion.div id="site-menu" role="dialog" aria-modal="true" aria-label="Site menu" className="fixed inset-0 z-[55]" initial={{ opacity: 1 }} exit={{ opacity: 1 }}>
+          <motion.button
+            type="button"
+            aria-label="Close menu"
+            onClick={() => setMenuOpen(false)}
+            className="absolute inset-0 cursor-default bg-ink/70"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          />
+          <motion.div
+            ref={band}
+            onMouseMove={(e) => pan(e.clientX)}
+            className="relative overflow-hidden bg-ice pb-[1.25rem] pt-[4rem] text-ink"
+            initial={{ clipPath: "inset(0 0 100% 0)" }}
+            animate={{ clipPath: "inset(0 0 0% 0)" }}
+            exit={{ clipPath: "inset(0 0 100% 0)" }}
+            transition={{ duration: 0.8, ease: [0.65, 0, 0.35, 1] }}
+          >
+            <motion.nav aria-label="Main" style={{ x: sx }} className="max-md:overflow-x-auto">
+              <div ref={row} className="flex w-max snap-x snap-mandatory">
+                {mainNav.map((item, i) => {
+                  const active = pathname === item.href || pathname.startsWith(item.href + "/");
+                  return (
+                    <motion.div
+                      key={item.href}
+                      className="relative h-[16.6rem] w-[72vw] shrink-0 snap-start overflow-hidden sm:w-[42vw] md:w-[24vw]"
+                      initial={{ clipPath: "inset(0 0 100% 0)" }}
+                      animate={{ clipPath: "inset(0 0 0% 0)" }}
+                      transition={{ duration: 0.9, ease: [0.65, 0, 0.35, 1], delay: 0.2 + i * 0.04 }}
                     >
-                      <Image
-                        src={item.image}
-                        alt={item.alt}
-                        fill
-                        sizes="(min-width: 1024px) 25vw, 100vw"
-                        className={cn(
-                          "object-cover transition duration-700 ease-[var(--ease-expo)] group-hover:scale-105",
-                          hovered !== null && hovered !== i && "lg:grayscale-[60%] lg:brightness-[0.8]",
-                        )}
-                      />
-                      <span className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent" />
-                      <span className="absolute bottom-[0.8rem] left-[0.8rem] flex items-center gap-[0.5rem]">
-                        <PillTag variant={active ? "accent" : "light"}>{item.label}</PillTag>
-                      </span>
-                      <span className="absolute right-[0.9rem] top-[0.8rem] font-mono text-[0.7rem] text-white/80">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                    </Link>
-                  </motion.div>
-                );
-              })}
-            </nav>
-            <CursorFollow area={area} show={hovered !== null}>
-              <PillTag variant="dark">{hovered !== null ? mainNav[hovered].label : "Explore"}</PillTag>
-            </CursorFollow>
-            <motion.div
-              className="mt-[1.2rem] flex flex-wrap items-center justify-between gap-[0.8rem]"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-            >
-              <p className="t-label text-slate">{site.tagline}</p>
-              <div className="flex flex-wrap items-center gap-[0.5rem]">
-                <CurrencySwitcher className="lg:hidden" />
-                <Pill href={whatsappHref()} variant="light">WhatsApp</Pill>
+                      <Link
+                        href={item.href}
+                        onMouseEnter={() => setHovered(i)}
+                        onMouseLeave={() => setHovered(null)}
+                        onFocus={() => (setHovered(i), focusTile(i))}
+                        aria-current={active ? "page" : undefined}
+                        className="group absolute inset-0 block outline-offset-[-3px]"
+                      >
+                        <Image src={item.image} alt={item.alt} fill sizes="(min-width:768px) 24vw, 72vw" className="object-cover transition-transform duration-1000 ease-[var(--ease-out-expo)] group-hover:scale-105" />
+                        <span className="absolute bottom-[0.6rem] left-[0.6rem] md:hidden">
+                          <PillTag variant={active ? "accent" : "light"}>{item.label}</PillTag>
+                        </span>
+                        <span className="sr-only md:not-sr-only md:absolute md:left-[0.6rem] md:top-[0.6rem] md:font-mono md:text-[1rem] md:text-white/90 md:mix-blend-difference">
+                          {String(i + 1).padStart(2, "0")} {item.label}
+                        </span>
+                      </Link>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </motion.nav>
+            <div className="container-site mt-[1.25rem] flex flex-wrap items-center justify-between gap-[0.6rem]">
+              <p className="t-mono opacity-60">{site.tagline}</p>
+              <div className="flex flex-wrap items-center gap-[0.3rem]">
+                <CurrencySwitcher tone="dark" className="lg:hidden" />
+                <Pill href={whatsappHref()} variant="dark">WhatsApp</Pill>
                 <Pill href="/plan-my-expedition" variant="accent">Plan my expedition</Pill>
               </div>
-            </motion.div>
-          </div>
+            </div>
+            <CursorFollow area={band} show={hovered !== null} offset={{ x: 18, y: 18 }}>
+              <PillTag variant="dark">{hovered !== null ? mainNav[hovered].label : ""}</PillTag>
+            </CursorFollow>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

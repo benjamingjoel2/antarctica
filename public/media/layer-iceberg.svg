@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 560" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e6f1f7"/></linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfe0ee"/><stop offset="1" stop-color="#6fb2d1"/></linearGradient>
+    <linearGradient id="deep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5aa7cb"/><stop offset="1" stop-color="#2d6f93"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#13283f"/><stop offset="1" stop-color="#0b1b2e"/></linearGradient>
+  </defs>
+  <!-- left berg -->
+  <path fill="url(#top)" d="M-20 300 L60 250 L210 236 L300 262 L360 300 L-20 330 Z"/>
+  <path fill="url(#face)" d="M-20 330 L360 300 L380 470 L-20 480 Z"/>
+  <path fill="url(#deep)" opacity=".55" d="M120 318 L180 314 L190 470 L130 472 Z M260 308 L300 305 L315 470 L270 470 Z"/>
+  <!-- right tabular berg -->
+  <path fill="url(#top)" d="M1020 330 L1080 286 L1300 270 L1500 278 L1620 300 L1620 340 Z"/>
+  <path fill="url(#face)" d="M1020 330 L1620 340 L1620 480 L1000 480 Z"/>
+  <path fill="url(#deep)" opacity=".5" d="M1120 336 L1160 337 L1170 480 L1125 480 Z M1330 338 L1390 339 L1400 480 L1335 480 Z M1520 340 L1550 340 L1560 480 L1525 480 Z"/>
+  <!-- water line -->
+  <path fill="url(#water)" d="M0 460 Q 200 448 400 462 T 800 458 T 1200 464 T 1600 456 L1600 560 L0 560 Z"/>
+  <g stroke="#9ccfe4" stroke-opacity=".35" stroke-width="2" fill="none">
+    <path d="M40 486 L220 486 M420 500 L560 500 M1060 490 L1300 490 M1380 512 L1540 512"/>
+  </g>
+</svg>

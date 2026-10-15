@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                       */
+/* ------------------------------------------------------------------ */
+@theme {
+  --color-glacier: #f4f7f9;
+  --color-snow: #ffffff;
+  --color-navy: #0b1b2e;
+  --color-navy-2: #13283f;
+  --color-iceberg: #9ccfe4;
+  --color-iceberg-soft: #dcedf5;
+  --color-iceberg-deep: #3e89ae;
+  --color-slate: #5e6b78;
+  --color-rule: #d5dde3;
+  --color-orange: #ff5b1f;
+
+  --font-display: var(--font-archivo), "Arial Narrow", system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  --ease-expo: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --container-site: 89rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Fluid root size: everything is rem, so the whole layout scales.     */
+/* ------------------------------------------------------------------ */
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 240px) {
+  html { font-size: calc(12px + 4 * ((100vw - 240px) / 528)); }
+}
+@media (min-width: 768px) {
+  html { font-size: calc(13.3px + 2.7 * ((100vw - 768px) / 224)); }
+}
+@media (min-width: 992px) {
+  html { font-size: calc(12px + 4 * ((100vw - 992px) / 448)); }
+}
+@media (min-width: 1440px) {
+  html { font-size: calc(16px + 5.5 * ((100vw - 1440px) / 480)); }
+}
+@media (min-width: 1920px) {
+  html { font-size: 21.5px; }
+}
+
+body {
+  background: var(--color-glacier);
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+  overscroll-behavior: none;
+}
+
+::selection {
+  background: var(--color-navy);
+  color: var(--color-glacier);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 3px;
+}
+
+input, textarea, select {
+  appearance: none;
+  border-radius: 0;
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* ------------------------------------------------------------------ */
+/* Typography                                                          */
+/* ------------------------------------------------------------------ */
+@layer components {
+  .container-site {
+    width: 100%;
+    max-width: var(--container-site);
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-site { padding-inline: 2rem; }
+  }
+
+  .grid-site {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 1.25rem;
+  }
+
+  /* Giant split words (hero) */
+  .t-hero {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-stretch: 75%;
+    text-transform: lowercase;
+    letter-spacing: -0.045em;
+    line-height: 0.82;
+    font-size: clamp(4.5rem, 19vw, 17rem);
+  }
+  /* Section split titles */
+  .t-split {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-stretch: 75%;
+    text-transform: lowercase;
+    letter-spacing: -0.04em;
+    line-height: 0.85;
+    font-size: clamp(3.75rem, 14vw, 10.5rem);
+  }
+  .t-display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-stretch: 75%;
+    text-transform: lowercase;
+    letter-spacing: -0.035em;
+    line-height: 0.9;
+  }
+  .t-h2 {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+    font-size: clamp(1.6rem, 4.6vw, 2.75rem);
+  }
+  .t-h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-stretch: 85%;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    font-size: 1.6rem;
+  }
+  .t-h4 {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    font-size: clamp(1.05rem, 2.6vw, 1.6rem);
+  }
+  .t-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .t-small {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+  .t-large {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    font-size: clamp(1.3rem, 3vw, 1.9rem);
+  }
+  /* Indent at start of big paragraphs (reference "paragraph__space") */
+  .indent-space::before {
+    content: "";
+    display: inline-block;
+    width: 18%;
+  }
+
+  .verify-note {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-slate);
+  }
+
+  /* Rich text (journal / MDX) */
+  .prose-polar { font-size: 1.1rem; line-height: 1.65; }
+  .prose-polar > * + * { margin-top: 1.1em; }
+  .prose-polar h2 {
+    font-family: var(--font-display); font-weight: 800; font-stretch: 75%;
+    text-transform: lowercase; letter-spacing: -0.03em; line-height: 0.95;
+    font-size: 2.6rem; margin-top: 2.2em;
+  }
+  .prose-polar h3 { font-weight: 600; font-size: 1.3rem; margin-top: 1.8em; }
+  .prose-polar ul { list-style: none; padding: 0; }
+  .prose-polar ul li { position: relative; padding-left: 1.4em; }
+  .prose-polar ul li::before { content: "—"; position: absolute; left: 0; color: var(--color-iceberg-deep); }
+  .prose-polar ol { list-style: decimal; padding-left: 1.3em; }
+  .prose-polar a { text-decoration: underline; text-underline-offset: 0.2em; }
+  .prose-polar a:hover { color: var(--color-iceberg-deep); }
+  .prose-polar blockquote {
+    border-left: 2px solid var(--color-orange); padding-left: 1.2em;
+    font-size: 1.5rem; line-height: 1.25; letter-spacing: -0.02em; font-weight: 500;
+  }
+  .prose-polar strong { font-weight: 600; }
+}
+
+/* ------------------------------------------------------------------ */
+/* Marquee keyframes                                                   */
+/* ------------------------------------------------------------------ */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes waddle {
+  0%, 100% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+}
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

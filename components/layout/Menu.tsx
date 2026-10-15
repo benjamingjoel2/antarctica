@@ -110,7 +110,7 @@ export function Menu() {
                 );
               })}
             </nav>
-            <CursorFollow area={area}>
+            <CursorFollow area={area} show={hovered !== null}>
               <PillTag variant="dark">{hovered !== null ? mainNav[hovered].label : "Explore"}</PillTag>
             </CursorFollow>
             <motion.div

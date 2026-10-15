@@ -12,11 +12,14 @@ export function CursorFollow({
   children,
   offset = { x: 16, y: 16 },
   stiffness = 350,
+  show = true,
 }: {
   area: RefObject<HTMLElement | null>;
   children: ReactNode;
   offset?: { x: number; y: number };
   stiffness?: number;
+  /** Extra visibility gate, e.g. only while a card is hovered. */
+  show?: boolean;
 }) {
   const x = useMotionValue(-200);
   const y = useMotionValue(-200);
@@ -57,7 +60,7 @@ export function CursorFollow({
       aria-hidden
       className="pointer-events-none fixed left-0 top-0 z-[80] hidden md:block"
       style={{ x: sx, y: sy }}
-      animate={{ scale: active ? 1 : 0, opacity: active ? 1 : 0 }}
+      animate={{ scale: active && show ? 1 : 0, opacity: active && show ? 1 : 0 }}
       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}

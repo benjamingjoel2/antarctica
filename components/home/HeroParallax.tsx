@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useTransform } from "framer-motion";
+import { useSectionProgress } from "@/lib/useSectionProgress";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -26,7 +27,7 @@ const quick = [
  */
 export function HeroParallax() {
   const wrap = useRef<HTMLDivElement>(null);
-  const { scrollYProgress: p } = useScroll({ target: wrap, offset: ["start start", "end end"] });
+  const p = useSectionProgress(wrap);
 
   const bgScale = useTransform(p, [0, 1], [1, 1.25]);
   const fgScale = useTransform(p, [0, 1], [1, 1.55]);
@@ -36,8 +37,9 @@ export function HeroParallax() {
   const cloudLX = useTransform(p, [0, 0.6], ["0%", "-55%"]);
   const cloudRX = useTransform(p, [0, 0.6], ["0%", "55%"]);
   const navO = useTransform(p, [0, 0.15], [1, 0]);
-  const mask = useTransform(p, [0.3, 0.6], [0, 0.55]);
-  const aboutO = useTransform(p, [0.38, 0.55], [0, 1]);
+  // Fully black before the about text arrives (reference about mask)
+  const mask = useTransform(p, [0.26, 0.4], [0, 1]);
+  const aboutO = useTransform(p, [0.4, 0.52], [0, 1]);
   const aboutY = useTransform(p, [0.38, 0.75], ["30%", "-20%"]);
 
   return (
@@ -66,7 +68,7 @@ export function HeroParallax() {
         </motion.div>
 
         {/* Mono quick links + small video embed (reference hero nav row) */}
-        <motion.div className="absolute inset-x-0 top-[42%] z-10 md:top-[46%]" style={{ opacity: navO }}>
+        <motion.div className="absolute inset-x-0 top-[42%] md:top-[46%]" style={{ opacity: navO }}>
           <div className="flex items-start justify-between px-[1.25rem] text-white md:px-[5.2rem]">
             <nav aria-label="Quick links" className="flex w-full flex-wrap justify-between gap-[0.6rem]">
               {quick.map((q) => (
@@ -79,7 +81,8 @@ export function HeroParallax() {
           </Link>
         </motion.div>
 
-        <motion.div aria-hidden className="pointer-events-none absolute inset-0 bg-ink" style={{ opacity: mask }} />
+        {/* Everything above sits beneath this cover; only the about text rides on top */}
+        <motion.div aria-hidden className="pointer-events-none absolute inset-0 z-10 bg-ink" style={{ opacity: mask }} />
 
         {/* About: rises over the darkening scene */}
         <motion.div className="absolute inset-x-0 top-1/2 z-20 -translate-y-1/2" style={{ opacity: aboutO, y: aboutY }}>

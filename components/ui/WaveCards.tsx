@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useTransform } from "framer-motion";
+import { useSectionProgress } from "@/lib/useSectionProgress";
 import { useRef, type ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
@@ -11,7 +12,7 @@ import { cn } from "@/lib/cn";
  */
 export function WaveCards({ items, tone = "dark", className }: { items: ReactNode[]; tone?: "dark" | "light"; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+  const scrollYProgress = useSectionProgress(ref, "through");
   const x1 = useTransform(scrollYProgress, [0, 0.6], ["-38%", "0%"]);
   const x2 = useTransform(scrollYProgress, [0, 0.6], ["38%", "0%"]);
   const x3 = useTransform(scrollYProgress, [0, 0.7], ["-22%", "0%"]);

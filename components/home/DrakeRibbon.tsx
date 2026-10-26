@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
+import { motion, useMotionValueEvent, useTransform } from "framer-motion";
+import { useSectionProgress } from "@/lib/useSectionProgress";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { Reveal } from "@/components/ui/Reveal";
@@ -26,7 +27,7 @@ const ribbon = [
  */
 export function DrakeRibbon() {
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
+  const scrollYProgress = useSectionProgress(ref);
   const [idx, setIdx] = useState(0);
   useMotionValueEvent(scrollYProgress, "change", (v) => setIdx(Math.min(ribbon.length - 1, Math.max(0, Math.floor(v * ribbon.length)))));
   const scale = useTransform(scrollYProgress, [0, 1], [0.92, 1.04]);

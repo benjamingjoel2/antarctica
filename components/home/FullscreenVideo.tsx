@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useTransform } from "framer-motion";
+import { useSectionProgress } from "@/lib/useSectionProgress";
 import { useRef } from "react";
 import { BackgroundVideo } from "@/components/ui/BackgroundVideo";
 import { SplitWords } from "@/components/ui/SplitWords";
@@ -12,7 +13,7 @@ import { WaveCards } from "@/components/ui/WaveCards";
  */
 export function FullscreenVideo({ facts }: { facts: string[] }) {
   const ref = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
+  const scrollYProgress = useSectionProgress(ref);
   const scale = useTransform(scrollYProgress, [0, 1], [1.15, 1]);
 
   return (

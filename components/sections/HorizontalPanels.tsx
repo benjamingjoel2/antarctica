@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useMotionValueEvent, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { motion, useMotionValueEvent, useReducedMotion, useTransform } from "framer-motion";
+import { useSectionProgress } from "@/lib/useSectionProgress";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { UnderlineLink } from "@/components/ui/UnderlineLink";
@@ -63,7 +64,7 @@ export function HorizontalPanels({ ships }: { ships: Ship[] }) {
   const horizontal = desktop && !reduce;
   const ref = useRef<HTMLElement>(null);
   const lenis = useLenis();
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
+  const scrollYProgress = useSectionProgress(ref);
   const x = useTransform(scrollYProgress, [0, 1], ["0vw", `-${(ships.length - 1) * 100}vw`]);
   const [active, setActive] = useState(0);
   useMotionValueEvent(scrollYProgress, "change", (v) => setActive(Math.min(ships.length - 1, Math.round(v * (ships.length - 1)))));

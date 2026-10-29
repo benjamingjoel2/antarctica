@@ -2,15 +2,14 @@ import { CtaBand } from "@/components/sections/CtaBand";
 import { PageHero } from "@/components/sections/PageHero";
 import { Pill } from "@/components/ui/Pill";
 import { season } from "@/config/season";
-import { site, whatsappHref } from "@/config/site";
+import { site } from "@/config/site";
 import { buildMetadata } from "@/lib/seo";
 
-export const metadata = buildMetadata({ title: "Contact", description: "Talk to a polar specialist by email, WhatsApp or phone.", path: "/contact" });
+export const metadata = buildMetadata({ title: "Contact", description: "Talk to a polar specialist by email or phone.", path: "/contact" });
 
 export default function ContactPage() {
   const methods = [
     { label: "Email", value: site.contact.email, href: `mailto:${site.contact.email}` },
-    { label: "WhatsApp", value: "Message a specialist", href: whatsappHref() },
     { label: "Telephone", value: site.contact.phone, href: `tel:${site.contact.phone.replace(/\s/g, "")}` },
   ];
   return (

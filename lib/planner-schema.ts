@@ -14,7 +14,7 @@ export const budgetBands = [
   { id: "25-40", min: 25000, max: 40000 },
   { id: "40plus", min: 40000, max: null },
 ] as const;
-export const contactMethods = ["Email", "WhatsApp", "Telephone"] as const;
+export const contactMethods = ["Email", "Telephone"] as const;
 
 export const plannerSchema = z
   .object({

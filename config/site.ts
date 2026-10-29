@@ -10,16 +10,10 @@ export const site = {
   contact: {
     email: "seventhcontinent@tourground.com",
     phone: "+00 000 000 000", // TODO: replace with real number
-    whatsapp: "[NUMBER]", // TODO: international format, digits only, e.g. 447700900000
     address: "Registered office address — TODO",
     hours: "Mon–Fri, 9:00–18:00 (UTC) — TODO",
   },
-  socials: [
-    { label: "Instagram", href: "https://instagram.com/" },
-    { label: "YouTube", href: "https://youtube.com/" },
-    { label: "LinkedIn", href: "https://linkedin.com/" },
-  ],
+  /** Add social profiles here when they exist; the footer lists them automatically. */
+  socials: [] as { label: string; href: string }[],
 } as const;
 
-export const whatsappHref = (text = "Hello Seventh Continent, I'd like to talk about Antarctica.") =>
-  `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(text)}`;

@@ -7,7 +7,6 @@ import { Header } from "@/components/layout/Header";
 import { Menu } from "@/components/layout/Menu";
 import { PageTransition } from "@/components/layout/PageTransition";
 import { Providers } from "@/components/layout/Providers";
-import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { PenguinMode } from "@/components/penguin/PenguinMode";
 import { site } from "@/config/site";
 import { buildMetadata, JsonLd } from "@/lib/seo";
@@ -45,7 +44,6 @@ export default function RootLayout({ children, modal }: { children: ReactNode; m
           <Menu />
           <main id="main">{children}</main>
           <Footer />
-          <WhatsAppButton />
           <CookieConsent />
           <PenguinMode />
           {modal}

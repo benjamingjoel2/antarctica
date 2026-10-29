@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRef } from "react";
 import { footerNav } from "@/config/nav";
-import { site, whatsappHref } from "@/config/site";
+import { site } from "@/config/site";
 import { CursorFollow } from "@/components/ui/CursorFollow";
 import { PenguinSvg } from "@/components/penguin/PenguinSvg";
 import { useConsent } from "@/lib/consent";
@@ -15,7 +15,6 @@ export function Footer() {
   const { openPrefs } = useConsent();
   const socials = [
     ...site.socials,
-    { label: "WhatsApp", href: whatsappHref() },
     { label: "Mail", href: `mailto:${site.contact.email}` },
   ];
 

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { mainNav } from "@/config/nav";
-import { site, whatsappHref } from "@/config/site";
+import { site } from "@/config/site";
 import { CursorFollow } from "@/components/ui/CursorFollow";
 import { Pill, PillTag } from "@/components/ui/Pill";
 import { useUi } from "@/lib/ui";
@@ -118,7 +118,6 @@ export function Menu() {
               <p className="t-mono opacity-60">{site.tagline}</p>
               <div className="flex flex-wrap items-center gap-[0.3rem]">
                 <CurrencySwitcher tone="dark" className="lg:hidden" />
-                <Pill href={whatsappHref()} variant="dark">WhatsApp</Pill>
                 <Pill href="/plan-my-expedition" variant="accent">Plan my expedition</Pill>
               </div>
             </div>

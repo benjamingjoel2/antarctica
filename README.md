@@ -24,10 +24,10 @@ The site follows the reference's design language, re-skinned for Seventh Contine
 
 | Path | What |
 | --- | --- |
-| `config/` | Brand, contact details and WhatsApp number (`site.ts`), navigation (`nav.ts`), currencies and FX rates (`currency.ts`), season dates (`season.ts`) |
+| `config/` | Brand, contact details and social profiles (`site.ts`), navigation (`nav.ts`), currencies and FX rates (`currency.ts`), season dates (`season.ts`) |
 | `data/` | Typed content: routes, expeditions, ships, experiences, timeline, facts, testimonials, FAQs, months, posts, and the image registry. Pages are generated from these files, so they can be swapped for a CMS later. |
 | `content/journal/*.mdx` | Journal post bodies. Post metadata is in `data/posts.ts`. |
-| `components/layout` | Header, image-led menu, footer + newsletter, cookie consent, page transition, smooth scroll, WhatsApp button |
+| `components/layout` | Header, image-led menu, footer + newsletter, cookie consent, page transition, smooth scroll |
 | `components/home` | Layered parallax hero, Drake ribbon, discover counters, full-screen video, "Sailing with" grid |
 | `components/sections` | Reusable inner-page sections (card grid, detail hero, credits grid, timeline rows, horizontal ships…) |
 | `components/planner` | 5-step expedition planner (`/plan-my-expedition`, also opened as an intercepted-route modal) |
@@ -40,7 +40,7 @@ The site follows the reference's design language, re-skinned for Seventh Contine
 - [ ] Replace placeholder ships and operators (`data/ships.ts`, `placeholder: true`) once partner agreements exist.
 - [ ] Verify every duration, price, rule, limit and requirement with partner operators and IAATO. Look for `verify` / `Placeholder` strings.
 - [ ] Replace the placeholder testimonials and the Seventh Continent milestones in `data/timeline.ts`.
-- [ ] Set real contact details and the WhatsApp number (`config/site.ts`), plus `NEXT_PUBLIC_SITE_URL`.
+- [ ] Set the real phone number, address and hours (`config/site.ts`); add social profiles there when they exist.
 - [ ] Replace the Unsplash placeholder photos (`data/images.ts`) and the generated video loops in `public/media/` with licensed footage. Keep the `.vtt` caption files.
 - [ ] Wire up `/api/plan` and `/api/newsletter`, and gate analytics on `useConsent()`.
 - [ ] Swap the static FX rates in `config/currency.ts` for a live source.

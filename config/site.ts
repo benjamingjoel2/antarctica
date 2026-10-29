@@ -8,7 +8,7 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://seventhcontinent.tourground.com",
   locale: "en",
   contact: {
-    email: "hello@seventhcontinent.travel", // TODO: replace with real inbox
+    email: "seventhcontinent@tourground.com",
     phone: "+00 000 000 000", // TODO: replace with real number
     whatsapp: "[NUMBER]", // TODO: international format, digits only, e.g. 447700900000
     address: "Registered office address — TODO",

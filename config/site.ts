@@ -5,7 +5,7 @@ export const site = {
   promise: "The right Antarctic expedition for you, planned by one dedicated polar specialist.",
   description:
     "Independent Antarctica expedition specialists. We match you with the right IAATO-member ship, route and season, and one polar specialist plans every detail.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://seventh-continent.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://seventhcontinent.tourground.com",
   locale: "en",
   contact: {
     email: "hello@seventhcontinent.travel", // TODO: replace with real inbox

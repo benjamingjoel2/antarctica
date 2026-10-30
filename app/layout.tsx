@@ -58,6 +58,7 @@ export default function RootLayout({ children, modal }: { children: ReactNode; m
             description: site.description,
             url: site.url,
             email: site.contact.email,
+            address: { "@type": "PostalAddress", streetAddress: "Avenida Coronel Niceto Vega 4736, Palermo", addressLocality: "Buenos Aires", addressCountry: "AR" },
             areaServed: "Antarctica",
           }}
         />

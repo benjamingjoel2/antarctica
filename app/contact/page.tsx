@@ -5,12 +5,11 @@ import { season } from "@/config/season";
 import { site } from "@/config/site";
 import { buildMetadata } from "@/lib/seo";
 
-export const metadata = buildMetadata({ title: "Contact", description: "Talk to a polar specialist by email or phone.", path: "/contact" });
+export const metadata = buildMetadata({ title: "Contact", description: "Talk to a polar specialist by email.", path: "/contact" });
 
 export default function ContactPage() {
   const methods = [
     { label: "Email", value: site.contact.email, href: `mailto:${site.contact.email}` },
-    { label: "Telephone", value: site.contact.phone, href: `tel:${site.contact.phone.replace(/\s/g, "")}` },
   ];
   return (
     <>
@@ -29,9 +28,7 @@ export default function ContactPage() {
           </ul>
           <div className="mt-[4rem] grid-site gap-y-[2rem] border-t border-ice/15 pt-[2rem]">
             <div className="col-span-12 md:col-span-6">
-              <p className="t-mono opacity-60">Hours</p>
-              <p className="t-small mt-[0.4rem]">{site.contact.hours}</p>
-              <p className="t-mono mt-[1.2rem] opacity-60">Address</p>
+              <p className="t-mono opacity-60">Address</p>
               <p className="t-small mt-[0.4rem]">{site.contact.address}</p>
             </div>
             <div className="col-span-12 md:col-span-6">

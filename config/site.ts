@@ -9,11 +9,8 @@ export const site = {
   locale: "en",
   contact: {
     email: "seventhcontinent@tourground.com",
-    phone: "+00 000 000 000", // TODO: replace with real number
-    address: "Registered office address — TODO",
-    hours: "Mon–Fri, 9:00–18:00 (UTC) — TODO",
+    /** Business address: La Maquinita Palermo Soho coworking, Buenos Aires (lamaquinita.co/sedes). No phone by owner's decision. */
+    address: "Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina",
   },
-  /** Add social profiles here when they exist; the footer lists them automatically. */
-  socials: [] as { label: string; href: string }[],
 } as const;
 

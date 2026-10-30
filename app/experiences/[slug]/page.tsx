@@ -33,7 +33,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
         actions={<Pill href="/plan-my-expedition" variant="accent">Add to my plan</Pill>}
         media={{ image: x.image }}
         background={others[0]?.image ?? x.image}
-        waves={[x.months.join(" · "), x.addOnFromUSD ? <Price key="p" usd={x.addOnFromUSD} prefix="Add-on from" /> : "Usually included", `${x.routes.length} routes`, "Weather permitting"]}
+        waves={[x.months.join(" · "), x.addOnFromUSD ? <Price key="p" usd={x.addOnFromUSD} prefix="From" suffix="as an add-on" /> : "Usually included", `${x.routes.length} routes`, "Weather permitting"]}
       />
       <ParagraphBlock
         lead={x.body.split("\n\n")[0]}

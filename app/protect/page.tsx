@@ -31,7 +31,7 @@ const commitments = [
 export default function ProtectPage() {
   return (
     <>
-      {/* Reference cause hero: full-bleed photo, testimonial over it, wave bars at the foot */}
+      {/* Reference cause hero: full-bleed photo, statement over it, wave bars at the foot */}
       <section className="relative min-h-[100svh] overflow-hidden text-white">
         <Image src={img.penguinsSnow} alt="Penguins on snow, watched from a respectful distance" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-ink/45" />
@@ -42,17 +42,6 @@ export default function ProtectPage() {
               <span className="underline underline-offset-[0.15em]">the Antarctic Treaty</span> and IAATO&apos;s guidelines, so the continent
               looks the same after we leave as it did when we arrived.
             </h1>
-            <div className="mt-[2.5rem] flex items-center gap-[0.6rem]">
-              <span className="t-mono grid h-[2.6rem] w-[2.6rem] place-items-center bg-ice text-[0.8rem] text-ink">IAATO*</span>
-              <span className="relative h-[2.6rem] w-[2.6rem] overflow-hidden">
-                <Image src={img.redParka} alt="Portrait placeholder" fill sizes="3rem" className="object-cover" />
-              </span>
-              <span className="ml-[0.4rem] text-[0.8rem] leading-[1.2]">
-                Name to come
-                <br />
-                <span className="opacity-70">Head of Polar Operations (placeholder)</span>
-              </span>
-            </div>
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0">

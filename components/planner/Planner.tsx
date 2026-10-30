@@ -412,7 +412,7 @@ export function Planner({ initialRoute, variant = "page", onClose }: { initialRo
                   <input type="checkbox" {...register("consent")} className="mt-[0.2rem] h-[1.1rem] w-[1.1rem] shrink-0 cursor-pointer border border-ink checked:bg-ink" />
                   <span className="text-[0.9rem]">
                     I agree that Seventh Continent may contact me about this enquiry, as described in the{" "}
-                    <Link href="/legals#privacy" className="underline">Privacy Policy</Link>.
+                    <Link href="/privacy" className="underline">Privacy Policy</Link>.
                   </span>
                 </label>
                 {errors.consent && <p role="alert" className="mt-[0.4rem] text-[0.85rem] font-medium text-orange">{errors.consent.message as string}</p>}

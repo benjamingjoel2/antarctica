@@ -9,14 +9,11 @@ import { PenguinSvg } from "@/components/penguin/PenguinSvg";
 import { useConsent } from "@/lib/consent";
 import { NewsletterForm } from "./NewsletterForm";
 
-/** Reference footer: light, big intro paragraph, giant social list, mono link columns, newsletter. */
+/** Reference footer: light, big intro paragraph, giant contact link, mono link columns, newsletter. */
 export function Footer() {
   const area = useRef<HTMLElement>(null);
   const { openPrefs } = useConsent();
-  const socials = [
-    ...site.socials,
-    { label: "Mail", href: `mailto:${site.contact.email}` },
-  ];
+  const socials = [{ label: "Mail", href: `mailto:${site.contact.email}` }];
 
   return (
     <footer ref={area} className="relative overflow-hidden bg-ice text-ink">
@@ -62,9 +59,11 @@ export function Footer() {
 
         <div className="mt-[5rem] flex flex-col gap-[0.6rem] border-t border-ink/20 pt-[1rem] text-[0.75rem] opacity-70 md:flex-row md:justify-between">
           <p>© {new Date().getFullYear()} {site.name} · Independent Antarctica specialists · Voyages operated by IAATO-member partners</p>
-          <div className="flex gap-[1.2rem]">
+          <div className="flex flex-wrap gap-x-[1.2rem] gap-y-[0.3rem]">
             <button type="button" onClick={openPrefs} className="t-mono cursor-pointer text-[1rem] hover:opacity-50">Cookie preferences</button>
-            <Link href="/legals" className="t-mono text-[1rem] hover:opacity-50">Legals</Link>
+            <Link href="/privacy" className="t-mono text-[1rem] hover:opacity-50">Privacy policy</Link>
+            <Link href="/terms" className="t-mono text-[1rem] hover:opacity-50">Booking terms</Link>
+            <Link href="/cookies" className="t-mono text-[1rem] hover:opacity-50">Cookie policy</Link>
           </div>
         </div>
       </div>

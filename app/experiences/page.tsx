@@ -22,7 +22,7 @@ export default function ExperiencesPage() {
             items={experiences.map((x) => ({
               href: `/experiences/${x.slug}`,
               title: x.name,
-              meta: x.addOnFromUSD ? <Price usd={x.addOnFromUSD} prefix="Add-on from" /> : "Included",
+              meta: x.addOnFromUSD ? <Price usd={x.addOnFromUSD} prefix="From" suffix="as an add-on" /> : "Included",
               image: x.image,
               body: (
                 <>

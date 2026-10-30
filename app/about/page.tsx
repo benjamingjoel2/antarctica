@@ -37,7 +37,7 @@ export default function AboutPage() {
             <p>
               We sell voyages operated by partner members of IAATO, the International Association of Antarctica Tour Operators, and
               we brief every guest on visitor guidelines before departure. Bookings are made with the operating company under its
-              terms; we stay with you throughout. (Team bios and company details: placeholders to complete before launch.)
+              terms; we stay with you throughout.
             </p>
           </>
         }

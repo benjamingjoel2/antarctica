@@ -12,6 +12,21 @@ const nextConfig = {
     loaderFile: "./lib/image-loader.ts",
   },
   eslint: { ignoreDuringBuilds: true },
+  // Retired pages (owner's fix list, October 2026).
+  ...(isExport
+    ? {}
+    : {
+        async redirects() {
+          return [
+            { source: "/legals", destination: "/privacy", permanent: true },
+            { source: "/testimonials", destination: "/about", permanent: true },
+          ];
+        },
+        // Browsers ask for /favicon.ico regardless of <link rel="icon">.
+        async rewrites() {
+          return [{ source: "/favicon.ico", destination: "/icon.svg" }];
+        },
+      }),
 };
 
 const withMDX = createMDX({});

@@ -48,7 +48,7 @@ export default function RoutesPage() {
                     <td className="t-mono py-[1.2rem] pr-[1rem]"><YesNo on={r.fliesDrake} /></td>
                     <td className="t-small py-[1.2rem] pr-[1rem] opacity-80">{r.wildlife.slice(0, 4).join(", ")}</td>
                     <td className="t-mono py-[1.2rem] pr-[1rem]">{r.bestMonths.join(" ")}</td>
-                    <td className="t-mono py-[1.2rem]"><Price usd={r.fromPriceUSD} /></td>
+                    <td className="t-mono py-[1.2rem]"><Price usd={r.fromPriceUSD} prefix="From" /></td>
                   </tr>
                 ))}
               </tbody>

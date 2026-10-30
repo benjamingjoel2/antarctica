@@ -8,6 +8,7 @@ import { useRef } from "react";
 import { BackgroundVideo } from "@/components/ui/BackgroundVideo";
 import { SplitWords } from "@/components/ui/SplitWords";
 import { WaveCards } from "@/components/ui/WaveCards";
+import { HeroLayer } from "./HeroLayer";
 import { facts } from "@/data/facts";
 import { img } from "@/data/images";
 
@@ -47,10 +48,10 @@ export function HeroParallax() {
       <section aria-label="Introduction" className="sticky top-0 h-[100svh] overflow-hidden bg-ink">
         {/* Sky fill: a blurred copy extends the sky above the lowered photo */}
         <div aria-hidden className="absolute inset-0 scale-125 blur-2xl">
-          <Image src="/media/hero-background.webp" alt="" fill sizes="100vw" className="object-cover object-top" unoptimized />
+          <HeroLayer name="hero-background" className="object-cover object-top" />
         </div>
         <motion.div className="absolute inset-x-0 bottom-0 top-[16%] origin-bottom [mask-image:linear-gradient(to_bottom,transparent,black_22%)]" style={{ scale: bgScale }}>
-          <Image src="/media/hero-background.webp" alt="" priority fill sizes="100vw" className="object-cover object-bottom" unoptimized />
+          <HeroLayer name="hero-background" priority className="object-cover object-bottom" />
         </motion.div>
         <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/10 to-transparent" />
 
@@ -64,7 +65,7 @@ export function HeroParallax() {
         </motion.div>
 
         <motion.div className="absolute inset-x-0 bottom-0 top-[16%] origin-bottom" style={{ scale: fgScale, y: fgY }}>
-          <Image src="/media/hero-foreground.webp" alt="" aria-hidden fill sizes="100vw" className="object-cover object-bottom" unoptimized />
+          <HeroLayer name="hero-foreground" priority className="object-cover object-bottom" />
         </motion.div>
 
         {/* Mono quick links + small video embed (reference hero nav row) */}

@@ -1,7 +1,8 @@
 "use client";
 
-import { motion, useMotionValue, useReducedMotion, useSpring } from "framer-motion";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useState, type ReactNode, type RefObject } from "react";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 
 /**
  * Element that trails the pointer while it is inside `area` (desktop pointers only).
@@ -26,7 +27,7 @@ export function CursorFollow({
   const sx = useSpring(x, { stiffness, damping: 30, mass: 0.6 });
   const sy = useSpring(y, { stiffness, damping: 30, mass: 0.6 });
   const [active, setActive] = useState(false);
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
 
   useEffect(() => {
     const el = area.current;

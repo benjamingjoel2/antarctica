@@ -1,13 +1,14 @@
 "use client";
 
-import { animate, useInView, useReducedMotion } from "framer-motion";
+import { animate, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 
 /** Two-digit counter "(06)" that counts up when it scrolls into view. */
 export function Counter({ value, pad = 2, className }: { value: number; pad?: number; className?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true });
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
   const [n, setN] = useState(reduce ? value : 0);
 
   useEffect(() => {

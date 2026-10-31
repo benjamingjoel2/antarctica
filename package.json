@@ -9,7 +9,9 @@
     "typecheck": "node scripts/i18n-build.mjs && tsc --noEmit",
     "i18n": "node scripts/i18n-build.mjs",
     "i18n:extract": "node scripts/i18n-build.mjs extract",
-    "i18n:missing": "node scripts/i18n-build.mjs missing"
+    "i18n:missing": "node scripts/i18n-build.mjs missing",
+    "cf-build": "opennextjs-cloudflare build",
+    "cf-pages": "node scripts/cf-pages.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
@@ -25,13 +27,15 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.15",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/mdx": "^2.0.13",
     "@types/node": "^22.15.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "wrangler": "^4.156.0"
   },
   "engines": {
     "node": ">=20"

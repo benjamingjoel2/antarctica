@@ -12,3 +12,10 @@ next-env.d.ts
 /app/fr
 /app/de
 /app/es
+
+# Cloudflare (OpenNext / Wrangler / Pages build output)
+/.open-next
+/.wrangler
+/dist-pages
+/.cf-bundle
+.dev.vars*

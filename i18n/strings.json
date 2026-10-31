@@ -731,7 +731,7 @@
  "Two days of open ocean stand between South America and the White Continent. Some sail it, some fly over it. All of them arrive changed. We&apos;ll help you choose your way across.": [
   "components/home/DrakeRibbon.tsx:67"
  ],
- "We don&apos;t own a ship, and that&apos;s the point. Seventh Continent is an independent specialist. We sell voyages run by IAATO-member expedition operators, so our only loyalty is to the right fit for you: ship size, landing time, cabin, route and season, compared honestly, with one polar specialist who tells you which voyage they&apos;d choose in your place.": [
+ "We don&apos;t own ships, so we can recommend the right one. Every voyage we sell is run by an IAATO-member operator, and your specialist tells you which one they&apos;d choose in your place.": [
   "components/home/DrakeRibbon.tsx:73"
  ],
  "A calm polar channel walled by snow peaks": [
@@ -920,7 +920,7 @@
   "components/layout/LanguageSwitcher.tsx:10"
  ],
  "Language": [
-  "components/layout/LanguageSwitcher.tsx:23"
+  "components/layout/LanguageSwitcher.tsx:26"
  ],
  "English": [
   "components/layout/LanguageSwitcher.tsx:7",
@@ -4202,9 +4202,9 @@
   "lib/planner-schema.ts:48"
  ],
  "{0} | Antarctica expeditions, planned by one polar specialist": [
-  "lib/seo.tsx:23"
+  "lib/seo.tsx:28"
  ],
  "{0}&w=1200&h=630": [
-  "lib/seo.tsx:24"
+  "lib/seo.tsx:29"
  ]
 }

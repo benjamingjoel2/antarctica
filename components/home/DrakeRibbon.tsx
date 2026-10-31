@@ -70,10 +70,8 @@ export function DrakeRibbon() {
           </Reveal>
           <Reveal className="col-span-12 md:col-span-9 md:col-start-4" delay={0.1}>
             <p className="t-small max-w-[44rem] opacity-80">
-              We don&apos;t own a ship, and that&apos;s the point. Seventh Continent is an independent specialist. We sell
-              voyages run by IAATO-member expedition operators, so our only loyalty is to the right fit for you: ship size,
-              landing time, cabin, route and season, compared honestly, with one polar specialist who tells you which voyage
-              they&apos;d choose in your place.
+              We don&apos;t own ships, so we can recommend the right one. Every voyage we sell is run by an IAATO-member
+              operator, and your specialist tells you which one they&apos;d choose in your place.
             </p>
           </Reveal>
         </div>

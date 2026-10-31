@@ -8,7 +8,7 @@ import { Pill } from "@/components/ui/Pill";
 import { Price } from "@/components/ui/Price";
 import { VerifyNote } from "@/components/ui/VerifyNote";
 import { experiences } from "@/data/experiences";
-import { getExperience, getRoute } from "@/lib/data";
+import { getExperience, getRoute, showMonths } from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
@@ -33,7 +33,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
         actions={<Pill href="/plan-my-expedition" variant="accent">Add to my plan</Pill>}
         media={{ image: x.image }}
         background={others[0]?.image ?? x.image}
-        waves={[x.months.join(" · "), x.addOnFromUSD ? <Price key="p" usd={x.addOnFromUSD} prefix="From" suffix="as an add-on" /> : "Usually included", `${x.routes.length} routes`, "Weather permitting"]}
+        waves={[showMonths(x.months).join(" · "), x.addOnFromUSD ? <Price key="p" usd={x.addOnFromUSD} prefix="From" suffix="as an add-on" /> : "Usually included", `${x.routes.length} routes`, "Weather permitting"]}
       />
       <ParagraphBlock
         lead={x.body.split("\n\n")[0]}
@@ -43,7 +43,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
       <CreditsGrid
         columns={[
           { title: "Good to know", items: x.goodToKnow },
-          { title: "Best months", items: x.months },
+          { title: "Best months", items: showMonths(x.months) },
           { title: "Routes", items: x.routes.map((r) => <Link key={r} href={`/routes/${r}`} className="underline underline-offset-4">{getRoute(r)?.name ?? r}</Link>) },
           { title: "More experiences", items: others.map((o) => <Link key={o.slug} href={`/experiences/${o.slug}`} className="underline underline-offset-4">{o.name}</Link>) },
         ]}

@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { Price } from "@/components/ui/Price";
 import type { Expedition, Month, Route, ShipSize } from "@/data/types";
-import { shipSizeLabel } from "@/lib/data";
+import { shipSizeLabel, monthLabel } from "@/lib/data";
 import { cn } from "@/lib/cn";
 import { CardGrid, type CardItem } from "./CardGrid";
 
@@ -80,7 +80,7 @@ export function ExpeditionsExplorer({ expeditions, routes }: { expeditions: Expe
     <div>
       <div className="mb-[3rem] flex flex-wrap items-center gap-[0.3rem] px-[1.25rem]" role="group" aria-label="Filter expeditions">
         <Select label="Route" value={route} onChange={setRoute} options={routes.map((r) => ({ value: r.slug, label: r.name }))} />
-        <Select label="Month" value={month} onChange={setMonth} options={monthOrder.map((m) => ({ value: m, label: m }))} />
+        <Select label="Month" value={month} onChange={setMonth} options={monthOrder.map((m) => ({ value: m, label: monthLabel[m] }))} />
         <Select label="Ship" value={size} onChange={setSize} options={(Object.keys(shipSizeLabel) as ShipSize[]).map((s) => ({ value: s, label: shipSizeLabel[s] }))} />
         <Select label="Length" value={dur} onChange={setDur} options={durations.map((d) => ({ value: d.id, label: d.label }))} />
         {active && (

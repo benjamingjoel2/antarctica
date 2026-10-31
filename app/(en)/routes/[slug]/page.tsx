@@ -9,7 +9,7 @@ import { Pill } from "@/components/ui/Pill";
 import { Price } from "@/components/ui/Price";
 import { VerifyNote } from "@/components/ui/VerifyNote";
 import { routes } from "@/data/routes";
-import { durationLabel, expeditionsForRoute, getRoute, getShip } from "@/lib/data";
+import { durationLabel, expeditionsForRoute, getRoute, getShip, showMonths } from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
@@ -35,7 +35,7 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
         actions={<Pill href={`/plan-my-expedition?route=${r.slug}`} variant="accent">Plan this route</Pill>}
         media={{ image: r.image }}
         background={voyages[0]?.image ?? r.image}
-        waves={[durationLabel(r.durationDays), drake, r.bestMonths.join(" · "), <Price key="p" usd={r.fromPriceUSD} prefix="From" />]}
+        waves={[durationLabel(r.durationDays), drake, showMonths(r.bestMonths).join(" · "), <Price key="p" usd={r.fromPriceUSD} prefix="From" />]}
       />
       <ParagraphBlock lead={r.body.split("\n\n")[0]} side={<>From {r.embarkation}<br />to {r.disembarkation}</>} body={r.body.split("\n\n").slice(1).map((p, i) => <p key={i}>{p}</p>)} />
       <section className="bg-ink pb-[4rem] text-ice">
@@ -51,7 +51,7 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
           { title: "Duration", items: [durationLabel(r.durationDays), `Embark: ${r.embarkation}`, `Disembark: ${r.disembarkation}`] },
           { title: "The Drake", items: [r.crossesDrake ? "Crossed by sea (around two days each way)" : "Not crossed by sea", r.fliesDrake ? "Flight to King George Island" : "No flight segment"] },
           { title: "Wildlife", items: r.wildlife },
-          { title: "Best months", items: r.bestMonths },
+          { title: "Best months", items: showMonths(r.bestMonths) },
         ]}
       />
       {voyages.length > 0 && (

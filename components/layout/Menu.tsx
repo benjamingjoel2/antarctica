@@ -11,6 +11,7 @@ import { CursorFollow } from "@/components/ui/CursorFollow";
 import { Pill, PillTag } from "@/components/ui/Pill";
 import { useUi } from "@/lib/ui";
 import { CurrencySwitcher } from "./CurrencySwitcher";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLenis } from "./SmoothScroll";
 
 /**
@@ -84,7 +85,7 @@ export function Menu() {
             <motion.nav aria-label="Main" style={{ x: sx }} className="max-md:overflow-x-auto">
               <div ref={row} className="flex w-max snap-x snap-mandatory">
                 {mainNav.map((item, i) => {
-                  const active = pathname === item.href || pathname.startsWith(item.href + "/");
+                  const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
                   return (
                     <motion.div
                       key={item.href}
@@ -117,6 +118,7 @@ export function Menu() {
             <div className="container-site mt-[1.25rem] flex flex-wrap items-center justify-between gap-[0.6rem]">
               <p className="t-mono opacity-60">{site.tagline}</p>
               <div className="flex flex-wrap items-center gap-[0.3rem]">
+                <LanguageSwitcher tone="dark" />
                 <CurrencySwitcher tone="dark" className="lg:hidden" />
                 <Pill href="/plan-my-expedition" variant="accent">Plan my expedition</Pill>
               </div>

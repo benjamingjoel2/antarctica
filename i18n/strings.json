@@ -1,0 +1,4210 @@
+{
+ "About us": [
+  "app/(en)/about/page.tsx:13"
+ ],
+ "Seventh Continent is an independent Antarctica specialist. One polar specialist plans your journey with IAATO-member operators.": [
+  "app/(en)/about/page.tsx:14"
+ ],
+ "We do one thing: Antarctica. Not cruises in general, not the Arctic on the side. Just the White Continent, and getting you there on the voyage that fits.": [
+  "app/(en)/about/page.tsx:21"
+ ],
+ "one continent": [
+  "app/(en)/about/page.tsx:21"
+ ],
+ "specialist,": [
+  "app/(en)/about/page.tsx:21"
+ ],
+ "one": [
+  "app/(en)/about/page.tsx:21"
+ ],
+ "About": [
+  "app/(en)/about/page.tsx:21",
+  "config/nav.ts:33"
+ ],
+ "A traveller in a red parka on a snow summit": [
+  "app/(en)/about/page.tsx:24"
+ ],
+ "We don't operate ships. We match people with them. That independence is the whole idea: our advice follows your priorities, not a fleet we need to fill.": [
+  "app/(en)/about/page.tsx:28"
+ ],
+ "How it works": [
+  "app/(en)/about/page.tsx:29"
+ ],
+ "Every traveller gets one dedicated polar specialist, from the first message to the moment you step back onto dry land. They know the ships, the operators, the landing sites and the months, and they&apos;ll tell you when a cheaper cabin or a different week is the smarter choice.": [
+  "app/(en)/about/page.tsx:33"
+ ],
+ "We sell voyages operated by partner members of IAATO, the International Association of Antarctica Tour Operators, and we brief every guest on visitor guidelines before departure. Bookings are made with the operating company under its terms; we stay with you throughout.": [
+  "app/(en)/about/page.tsx:38"
+ ],
+ "Icebergs in still water": [
+  "app/(en)/about/page.tsx:47",
+  "app/(en)/page.tsx:22"
+ ],
+ "Expeditions": [
+  "app/(en)/about/page.tsx:47",
+  "app/(en)/expeditions/[slug]/page.tsx:115",
+  "app/(en)/page.tsx:22"
+ ],
+ "An expedition-style ship": [
+  "app/(en)/about/page.tsx:48"
+ ],
+ "Ships": [
+  "app/(en)/about/page.tsx:48",
+  "app/(en)/page.tsx:23",
+  "components/home/HeroParallax.tsx:19"
+ ],
+ "Peaks under a starry sky": [
+  "app/(en)/about/page.tsx:49"
+ ],
+ "Timeline": [
+  "app/(en)/about/page.tsx:49",
+  "app/(en)/page.tsx:24",
+  "components/home/HeroParallax.tsx:17"
+ ],
+ "Email": [
+  "app/(en)/contact/page.tsx:12",
+  "components/planner/Planner.tsx:397",
+  "components/planner/Planner.tsx:45"
+ ],
+ "Tell us where you dream of standing. One polar specialist replies within one working day, with honest advice and no obligation.": [
+  "app/(en)/contact/page.tsx:16"
+ ],
+ "say hello": [
+  "app/(en)/contact/page.tsx:16"
+ ],
+ "Contact": [
+  "app/(en)/contact/page.tsx:16",
+  "app/(en)/contact/page.tsx:8",
+  "components/home/HeroParallax.tsx:20"
+ ],
+ "Address": [
+  "app/(en)/contact/page.tsx:31"
+ ],
+ "Next season": [
+  "app/(en)/contact/page.tsx:35"
+ ],
+ "Plan my expedition": [
+  "app/(en)/contact/page.tsx:38",
+  "app/(en)/plan-my-expedition/page.tsx:19",
+  "app/(en)/plan-my-expedition/page.tsx:7"
+ ],
+ "Read the FAQ": [
+  "app/(en)/contact/page.tsx:39"
+ ],
+ "Talk to a polar specialist by email.": [
+  "app/(en)/contact/page.tsx:8"
+ ],
+ "Departures": [
+  "app/(en)/expeditions/[slug]/page.tsx:102"
+ ],
+ "Enquire": [
+  "app/(en)/expeditions/[slug]/page.tsx:107",
+  "app/(en)/expeditions/[slug]/page.tsx:42"
+ ],
+ "More": [
+  "app/(en)/expeditions/[slug]/page.tsx:115"
+ ],
+ "Discover": [
+  "app/(en)/expeditions/[slug]/page.tsx:115",
+  "app/(en)/experiences/page.tsx:21",
+  "components/home/DiscoverCounters.tsx:53"
+ ],
+ "Expedition cruise": [
+  "app/(en)/expeditions/[slug]/page.tsx:123"
+ ],
+ "{0} · {1} days": [
+  "app/(en)/expeditions/[slug]/page.tsx:37"
+ ],
+ "Expedition": [
+  "app/(en)/expeditions/[slug]/page.tsx:37"
+ ],
+ "Season": [
+  "app/(en)/expeditions/[slug]/page.tsx:53"
+ ],
+ "per person.": [
+  "app/(en)/expeditions/[slug]/page.tsx:57"
+ ],
+ "From": [
+  "app/(en)/expeditions/[slug]/page.tsx:57",
+  "app/(en)/expeditions/[slug]/page.tsx:48",
+  "app/(en)/experiences/[slug]/page.tsx:36"
+ ],
+ "Day by day": [
+  "app/(en)/expeditions/[slug]/page.tsx:67",
+  "app/(en)/expeditions/[slug]/page.tsx:43"
+ ],
+ "Itineraries are a guide: weather and ice decide the day.": [
+  "app/(en)/expeditions/[slug]/page.tsx:69"
+ ],
+ "Ship & cabins": [
+  "app/(en)/expeditions/[slug]/page.tsx:82"
+ ],
+ "Included": [
+  "app/(en)/expeditions/[slug]/page.tsx:89",
+  "app/(en)/experiences/page.tsx:25"
+ ],
+ "Not included": [
+  "app/(en)/expeditions/[slug]/page.tsx:90"
+ ],
+ "Good to know": [
+  "app/(en)/expeditions/[slug]/page.tsx:91",
+  "app/(en)/experiences/[slug]/page.tsx:45",
+  "app/(en)/experiences/[slug]/page.tsx:40"
+ ],
+ "Pricing": [
+  "app/(en)/expeditions/[slug]/page.tsx:98"
+ ],
+ "Antarctica expeditions": [
+  "app/(en)/expeditions/page.tsx:12"
+ ],
+ "Hand-picked Antarctic voyages on IAATO-member ships: classic Peninsula, fly the Drake, South Georgia, the Antarctic Circle, emperor penguins and the Ross Sea.": [
+  "app/(en)/expeditions/page.tsx:13"
+ ],
+ "Expeditions ({0})": [
+  "app/(en)/expeditions/page.tsx:22"
+ ],
+ "your voyage": [
+  "app/(en)/expeditions/page.tsx:23"
+ ],
+ "choose": [
+  "app/(en)/expeditions/page.tsx:23",
+  "app/(en)/routes/page.tsx:22"
+ ],
+ "Every voyage below runs with an IAATO-member operator we trust. Filter by route, month, ship or length, then let a specialist tell you which one we'd book in your place.": [
+  "app/(en)/expeditions/page.tsx:24"
+ ],
+ "Prices from, per person, in a shared or standard cabin. Placeholder — verify with partner operators before launch.": [
+  "app/(en)/expeditions/page.tsx:29"
+ ],
+ "Date": [
+  "app/(en)/expeditions/page.tsx:35"
+ ],
+ "Aboard": [
+  "app/(en)/expeditions/page.tsx:35"
+ ],
+ "Departing": [
+  "app/(en)/expeditions/page.tsx:35"
+ ],
+ "Experience": [
+  "app/(en)/experiences/[slug]/page.tsx:30"
+ ],
+ "Add to my plan": [
+  "app/(en)/experiences/[slug]/page.tsx:33"
+ ],
+ "Weather permitting": [
+  "app/(en)/experiences/[slug]/page.tsx:36"
+ ],
+ "Usually included": [
+  "app/(en)/experiences/[slug]/page.tsx:36"
+ ],
+ "Best months": [
+  "app/(en)/experiences/[slug]/page.tsx:46",
+  "app/(en)/routes/[slug]/page.tsx:54",
+  "app/(en)/routes/page.tsx:30"
+ ],
+ "Routes": [
+  "app/(en)/experiences/[slug]/page.tsx:47",
+  "config/nav.ts:21",
+  "config/nav.ts:8"
+ ],
+ "More experiences": [
+  "app/(en)/experiences/[slug]/page.tsx:48"
+ ],
+ "Zodiac landings, sea kayaking, camping on the ice, the polar plunge, whales, penguins, citizen science and Shackleton's South Georgia.": [
+  "app/(en)/experiences/page.tsx:10"
+ ],
+ "Paddle among brash ice, sleep under a sky that never quite gets dark, or simply sit very still while a colony goes about its business. Here's what a day in Antarctica can hold.": [
+  "app/(en)/experiences/page.tsx:17"
+ ],
+ "remember": [
+  "app/(en)/experiences/page.tsx:17"
+ ],
+ "will": [
+  "app/(en)/experiences/page.tsx:17"
+ ],
+ "what you": [
+  "app/(en)/experiences/page.tsx:17"
+ ],
+ "Experiences ({0})": [
+  "app/(en)/experiences/page.tsx:17"
+ ],
+ "Antarctic experiences": [
+  "app/(en)/experiences/page.tsx:9"
+ ],
+ "The things everyone asks before going south. Rules and requirements change, so every answer is marked for verification with our partner operators and IAATO.": [
+  "app/(en)/faq/page.tsx:16"
+ ],
+ "questions": [
+  "app/(en)/faq/page.tsx:16"
+ ],
+ "good": [
+  "app/(en)/faq/page.tsx:16"
+ ],
+ "FAQ ({0})": [
+  "app/(en)/faq/page.tsx:16"
+ ],
+ "Ask a specialist": [
+  "app/(en)/faq/page.tsx:22"
+ ],
+ "wondering?": [
+  "app/(en)/faq/page.tsx:22"
+ ],
+ "still": [
+  "app/(en)/faq/page.tsx:22"
+ ],
+ "Antarctica travel FAQ": [
+  "app/(en)/faq/page.tsx:8"
+ ],
+ "Getting to Ushuaia and Punta Arenas, the Drake Passage, seasickness, IAATO landing rules, cabins, insurance, packing and environmental rules.": [
+  "app/(en)/faq/page.tsx:9"
+ ],
+ "min read": [
+  "app/(en)/journal/[slug]/page.tsx:30"
+ ],
+ "Journal": [
+  "app/(en)/journal/[slug]/page.tsx:30",
+  "app/(en)/journal/page.tsx:8",
+  "config/nav.ts:29"
+ ],
+ "Next article": [
+  "app/(en)/journal/[slug]/page.tsx:44"
+ ],
+ "Next": [
+  "app/(en)/journal/[slug]/page.tsx:46"
+ ],
+ "Seventh Continent": [
+  "app/(en)/journal/[slug]/page.tsx:54",
+  "app/(en)/timeline/page.tsx:24",
+  "config/site.ts:2"
+ ],
+ "Straight answers to the questions we hear most: which ship, which month, what to pack, and whether to brave the Drake.": [
+  "app/(en)/journal/page.tsx:14"
+ ],
+ "notes": [
+  "app/(en)/journal/page.tsx:14"
+ ],
+ "field": [
+  "app/(en)/journal/page.tsx:14"
+ ],
+ "Journal ({0})": [
+  "app/(en)/journal/page.tsx:14"
+ ],
+ "Read": [
+  "app/(en)/journal/page.tsx:18"
+ ],
+ "{0} min read": [
+  "app/(en)/journal/page.tsx:21"
+ ],
+ "Practical, honest guides to planning an Antarctica expedition.": [
+  "app/(en)/journal/page.tsx:8"
+ ],
+ "Skip to content": [
+  "app/(en)/layout.tsx:40"
+ ],
+ "Buenos Aires": [
+  "app/(en)/layout.tsx:61"
+ ],
+ "Avenida Coronel Niceto Vega 4736, Palermo": [
+  "app/(en)/layout.tsx:61"
+ ],
+ "Antarctica": [
+  "app/(en)/layout.tsx:62"
+ ],
+ "404 · 90° S": [
+  "app/(en)/not-found.tsx:12"
+ ],
+ "The page you are looking for has drifted off the ice.": [
+  "app/(en)/not-found.tsx:13"
+ ],
+ "Back to homepage": [
+  "app/(en)/not-found.tsx:15"
+ ],
+ "A lost penguin": [
+  "app/(en)/not-found.tsx:9"
+ ],
+ "An expedition-style ship at sea": [
+  "app/(en)/page.tsx:23",
+  "components/home/DrakeRibbon.tsx:14"
+ ],
+ "Snow peaks under the stars": [
+  "app/(en)/page.tsx:24"
+ ],
+ "Penguin mode": [
+  "app/(en)/penguin-mode/page.tsx:9",
+  "app/(en)/penguin-mode/page.tsx:4",
+  "components/penguin/PenguinMode.tsx:32"
+ ],
+ "Expedition planner": [
+  "app/(en)/plan-my-expedition/page.tsx:18",
+  "components/planner/PlannerModal.tsx:51"
+ ],
+ "Five steps, about three minutes. No payment, no obligation: just enough for your specialist to shortlist the right voyages.": [
+  "app/(en)/plan-my-expedition/page.tsx:21"
+ ],
+ "Rules and limits mentioned here are placeholders to verify with partner operators and IAATO.": [
+  "app/(en)/plan-my-expedition/page.tsx:24"
+ ],
+ "Five short steps. One polar specialist matches you with the right Antarctic ship, route and season.": [
+  "app/(en)/plan-my-expedition/page.tsx:8"
+ ],
+ "Keep your distance (IAATO guidance is typically at least 5 m from penguins and more for seals; verify), give animals right of way, stay low and quiet, and never feed or touch.": [
+  "app/(en)/protect/page.tsx:101"
+ ],
+ "Wildlife.": [
+  "app/(en)/protect/page.tsx:101"
+ ],
+ "Antarctica holds about 90% of the world&apos;s ice. Many voyages host citizen-science projects; we favour itineraries that support research and help you understand and reduce your trip&apos;s footprint.": [
+  "app/(en)/protect/page.tsx:105"
+ ],
+ "Climate &amp; ice science.": [
+  "app/(en)/protect/page.tsx:105"
+ ],
+ "Read IAATO visitor guidelines": [
+  "app/(en)/protect/page.tsx:109"
+ ],
+ "Ask us which operators carry citizen-science programmes and how each one approaches its footprint.": [
+  "app/(en)/protect/page.tsx:113"
+ ],
+ "lightly": [
+  "app/(en)/protect/page.tsx:113"
+ ],
+ "travel": [
+  "app/(en)/protect/page.tsx:113"
+ ],
+ "Protect Antarctica": [
+  "app/(en)/protect/page.tsx:12"
+ ],
+ "How we travel responsibly: IAATO visitor guidelines, the Antarctic Treaty, biosecurity, wildlife distances and climate science.": [
+  "app/(en)/protect/page.tsx:13"
+ ],
+ "Biosecurity before every landing": [
+  "app/(en)/protect/page.tsx:19",
+  "data/facts.ts:52"
+ ],
+ "Wildlife distances respected*": [
+  "app/(en)/protect/page.tsx:20"
+ ],
+ "No more than 100 ashore at once*": [
+  "app/(en)/protect/page.tsx:21"
+ ],
+ "One ship per landing site*": [
+  "app/(en)/protect/page.tsx:22"
+ ],
+ "Leave nothing behind": [
+  "app/(en)/protect/page.tsx:23"
+ ],
+ "Take nothing away": [
+  "app/(en)/protect/page.tsx:24"
+ ],
+ "Citizen science on board": [
+  "app/(en)/protect/page.tsx:25"
+ ],
+ "Carbon-aware trip planning": [
+  "app/(en)/protect/page.tsx:26"
+ ],
+ "Supporting climate & ice science": [
+  "app/(en)/protect/page.tsx:27"
+ ],
+ "Respect for the Treaty": [
+  "app/(en)/protect/page.tsx:28"
+ ],
+ "Penguins on snow, watched from a respectful distance": [
+  "app/(en)/protect/page.tsx:36"
+ ],
+ "We visit as guests, and Antarctica sets the rules. Every landing we plan is shaped by": [
+  "app/(en)/protect/page.tsx:41"
+ ],
+ "and IAATO&apos;s guidelines, so the continent looks the same after we leave as it did when we arrived.": [
+  "app/(en)/protect/page.tsx:42"
+ ],
+ "the Antarctic Treaty": [
+  "app/(en)/protect/page.tsx:42"
+ ],
+ "A gentoo penguin on rock": [
+  "app/(en)/protect/page.tsx:53"
+ ],
+ "About IAATO": [
+  "app/(en)/protect/page.tsx:58"
+ ],
+ "The International Association of Antarctica Tour Operators was founded in 1991 to advocate and promote safe and environmentally responsible travel to Antarctica. Members follow visitor guidelines covering landings, wildlife, biosecurity and site management. We only sell voyages run by IAATO members, and we brief every guest before they go. (Verify membership details and current guidelines with IAATO before launch.)": [
+  "app/(en)/protect/page.tsx:61"
+ ],
+ "A single snowflake: biosecurity starts small": [
+  "app/(en)/protect/page.tsx:70"
+ ],
+ "A glacier, an archive of climate": [
+  "app/(en)/protect/page.tsx:71"
+ ],
+ "King penguins at a distance": [
+  "app/(en)/protect/page.tsx:72"
+ ],
+ "How we travel": [
+  "app/(en)/protect/page.tsx:81"
+ ],
+ "* IAATO limits — verify current rules with IAATO": [
+  "app/(en)/protect/page.tsx:87"
+ ],
+ "Signed in Washington on 1 December 1959 by twelve nations and in force since 23 June 1961, it sets the continent aside for peace and science. The 1991 Protocol on Environmental Protection (the Madrid Protocol) designates Antarctica a natural reserve and prohibits mineral resource activities other than scientific research.": [
+  "app/(en)/protect/page.tsx:91"
+ ],
+ "The Antarctic Treaty.": [
+  "app/(en)/protect/page.tsx:91"
+ ],
+ "Seeds, soil and microbes hitch rides on boots, Velcro and camera bags. Before landings you&apos;ll vacuum outer layers and disinfect boots, and nothing but footprints is left ashore.": [
+  "app/(en)/protect/page.tsx:97"
+ ],
+ "Biosecurity.": [
+  "app/(en)/protect/page.tsx:97"
+ ],
+ "No Drake crossing": [
+  "app/(en)/routes/[slug]/page.tsx:28"
+ ],
+ "Sail the Drake": [
+  "app/(en)/routes/[slug]/page.tsx:28"
+ ],
+ "Fly over the Drake": [
+  "app/(en)/routes/[slug]/page.tsx:28"
+ ],
+ "Route · from {0}": [
+  "app/(en)/routes/[slug]/page.tsx:32"
+ ],
+ "Plan this route": [
+  "app/(en)/routes/[slug]/page.tsx:35"
+ ],
+ "Disembark: {0}": [
+  "app/(en)/routes/[slug]/page.tsx:51"
+ ],
+ "Embark: {0}": [
+  "app/(en)/routes/[slug]/page.tsx:51"
+ ],
+ "Duration": [
+  "app/(en)/routes/[slug]/page.tsx:51",
+  "app/(en)/routes/page.tsx:30"
+ ],
+ "No flight segment": [
+  "app/(en)/routes/[slug]/page.tsx:52"
+ ],
+ "Flight to King George Island": [
+  "app/(en)/routes/[slug]/page.tsx:52"
+ ],
+ "Not crossed by sea": [
+  "app/(en)/routes/[slug]/page.tsx:52"
+ ],
+ "Crossed by sea (around two days each way)": [
+  "app/(en)/routes/[slug]/page.tsx:52"
+ ],
+ "The Drake": [
+  "app/(en)/routes/[slug]/page.tsx:52"
+ ],
+ "Wildlife": [
+  "app/(en)/routes/[slug]/page.tsx:53",
+  "app/(en)/routes/page.tsx:30",
+  "app/(en)/when-to-go/page.tsx:40"
+ ],
+ "View expedition": [
+  "app/(en)/routes/[slug]/page.tsx:62",
+  "app/(en)/ships/[slug]/page.tsx:55",
+  "components/sections/ExpeditionsExplorer.tsx:96"
+ ],
+ "Antarctic routes compared": [
+  "app/(en)/routes/page.tsx:12"
+ ],
+ "Compare every way south: duration, Drake Passage crossing or flight, wildlife highlights and the best months for each Antarctic route.": [
+  "app/(en)/routes/page.tsx:13"
+ ],
+ "No": [
+  "app/(en)/routes/page.tsx:17"
+ ],
+ "Yes": [
+  "app/(en)/routes/page.tsx:17"
+ ],
+ "Seven ways to reach the White Continent. The biggest decision is usually the Drake Passage: sail it, fly it, or go the long way round via South Georgia.": [
+  "app/(en)/routes/page.tsx:22"
+ ],
+ "your way south": [
+  "app/(en)/routes/page.tsx:22"
+ ],
+ "Routes ({0})": [
+  "app/(en)/routes/page.tsx:22"
+ ],
+ "Comparison of Antarctic routes": [
+  "app/(en)/routes/page.tsx:27"
+ ],
+ "Flies the Drake": [
+  "app/(en)/routes/page.tsx:30"
+ ],
+ "Crosses the Drake": [
+  "app/(en)/routes/page.tsx:30"
+ ],
+ "Route": [
+  "app/(en)/routes/page.tsx:30",
+  "components/sections/ExpeditionsExplorer.tsx:82"
+ ],
+ "Durations, months and prices are placeholders — verify with partner operators before launch.": [
+  "app/(en)/routes/page.tsx:57"
+ ],
+ "Seasickness, time off work, budget, wildlife wish-list: tell us what matters and we'll recommend the route, honestly.": [
+  "app/(en)/routes/page.tsx:60"
+ ],
+ "which way?": [
+  "app/(en)/routes/page.tsx:60"
+ ],
+ "not sure": [
+  "app/(en)/routes/page.tsx:60"
+ ],
+ "Ask about this ship": [
+  "app/(en)/ships/[slug]/page.tsx:35"
+ ],
+ "Placeholder ship and operator. Specifications to verify before launch.": [
+  "app/(en)/ships/[slug]/page.tsx:40"
+ ],
+ "Length {0} m": [
+  "app/(en)/ships/[slug]/page.tsx:44"
+ ],
+ "Specifications": [
+  "app/(en)/ships/[slug]/page.tsx:44"
+ ],
+ "Cabins": [
+  "app/(en)/ships/[slug]/page.tsx:45"
+ ],
+ "Activities": [
+  "app/(en)/ships/[slug]/page.tsx:46"
+ ],
+ "IAATO member (placeholder — verify)": [
+  "app/(en)/ships/[slug]/page.tsx:47"
+ ],
+ "Operator": [
+  "app/(en)/ships/[slug]/page.tsx:47",
+  "app/(en)/ships/[slug]/page.tsx:40"
+ ],
+ "voyages on board": [
+  "app/(en)/ships/[slug]/page.tsx:52"
+ ],
+ "New departures for this ship are coming soon. Ask your specialist.": [
+  "app/(en)/ships/[slug]/page.tsx:66"
+ ],
+ "We don't own ships, so we can recommend the right one. Compare partner expedition ships run by IAATO-member operators.": [
+  "app/(en)/ships/page.tsx:10"
+ ],
+ "Ships ({0})": [
+  "app/(en)/ships/page.tsx:18"
+ ],
+ "for you": [
+  "app/(en)/ships/page.tsx:19"
+ ],
+ "ship": [
+  "app/(en)/ships/page.tsx:19"
+ ],
+ "the right": [
+  "app/(en)/ships/page.tsx:19"
+ ],
+ "We don't own a single ship, and that's the point. We work across IAATO-member operators and recommend the vessel that suits you: small and nimble for maximum landings, or larger and more comfortable for the crossing.": [
+  "app/(en)/ships/page.tsx:20"
+ ],
+ "All ship and operator names on this page are placeholders until partner agreements are signed.": [
+  "app/(en)/ships/page.tsx:22"
+ ],
+ "is yours?": [
+  "app/(en)/ships/page.tsx:25"
+ ],
+ "which ship": [
+  "app/(en)/ships/page.tsx:25"
+ ],
+ "Expedition ships": [
+  "app/(en)/ships/page.tsx:9"
+ ],
+ "From Cook's first crossing of the Antarctic Circle to the discovery of Endurance: exploration, science and the treaty that protects a continent.": [
+  "app/(en)/timeline/page.tsx:10"
+ ],
+ "Every voyage south follows a wake laid down by sealers, scientists and stubborn explorers. Hover or tap a year to look closer.": [
+  "app/(en)/timeline/page.tsx:17"
+ ],
+ "of ice": [
+  "app/(en)/timeline/page.tsx:17"
+ ],
+ "centuries": [
+  "app/(en)/timeline/page.tsx:17"
+ ],
+ "two": [
+  "app/(en)/timeline/page.tsx:17"
+ ],
+ "Timeline ({0})": [
+  "app/(en)/timeline/page.tsx:17"
+ ],
+ "Exploration": [
+  "app/(en)/timeline/page.tsx:21"
+ ],
+ "Science": [
+  "app/(en)/timeline/page.tsx:22"
+ ],
+ "Treaty": [
+  "app/(en)/timeline/page.tsx:23"
+ ],
+ "Our story · placeholder": [
+  "app/(en)/timeline/page.tsx:30"
+ ],
+ "Seventh Continent milestones are placeholders to confirm before launch.": [
+  "app/(en)/timeline/page.tsx:37"
+ ],
+ "own chapter": [
+  "app/(en)/timeline/page.tsx:40"
+ ],
+ "add your": [
+  "app/(en)/timeline/page.tsx:40"
+ ],
+ "Timeline of Antarctic exploration": [
+  "app/(en)/timeline/page.tsx:9"
+ ],
+ "When to go to Antarctica": [
+  "app/(en)/when-to-go/page.tsx:11"
+ ],
+ "A month-by-month guide to the Antarctic season, November to March: snow, penguin chicks, long days and peak whale season.": [
+  "app/(en)/when-to-go/page.tsx:12"
+ ],
+ "The Antarctic season is short and every month has its own character: pristine snow, fluffy chicks or breaching whales.": [
+  "app/(en)/when-to-go/page.tsx:19"
+ ],
+ "the light": [
+  "app/(en)/when-to-go/page.tsx:19"
+ ],
+ "follow": [
+  "app/(en)/when-to-go/page.tsx:19"
+ ],
+ "Season · {0}": [
+  "app/(en)/when-to-go/page.tsx:19"
+ ],
+ "Daylight": [
+  "app/(en)/when-to-go/page.tsx:37"
+ ],
+ "Temperature": [
+  "app/(en)/when-to-go/page.tsx:38"
+ ],
+ "your month": [
+  "app/(en)/when-to-go/page.tsx:52"
+ ],
+ "pick": [
+  "app/(en)/when-to-go/page.tsx:52"
+ ],
+ "The Southern Ocean at dusk": [
+  "components/home/DrakeRibbon.tsx:12",
+  "data/expeditions.ts:471",
+  "data/expeditions.ts:260"
+ ],
+ "A rolling swell in the Drake Passage": [
+  "components/home/DrakeRibbon.tsx:13"
+ ],
+ "Chinstrap penguins on snow": [
+  "components/home/DrakeRibbon.tsx:15"
+ ],
+ "Icebergs reflected in still water": [
+  "components/home/DrakeRibbon.tsx:16"
+ ],
+ "A still channel walled by peaks": [
+  "components/home/DrakeRibbon.tsx:17"
+ ],
+ "A humpback whale breaching": [
+  "components/home/DrakeRibbon.tsx:18"
+ ],
+ "A tent pitched for a night on the ice": [
+  "components/home/DrakeRibbon.tsx:19"
+ ],
+ "A king penguin backlit by low sun": [
+  "components/home/DrakeRibbon.tsx:20"
+ ],
+ "Crossing the Drake Passage": [
+  "components/home/DrakeRibbon.tsx:40"
+ ],
+ "crossing": [
+  "components/home/DrakeRibbon.tsx:42",
+  "data/posts.ts:17"
+ ],
+ "the": [
+  "components/home/DrakeRibbon.tsx:44",
+  "components/home/FullscreenVideo.tsx:35"
+ ],
+ "drake": [
+  "components/home/DrakeRibbon.tsx:45"
+ ],
+ "passage": [
+  "components/home/DrakeRibbon.tsx:47"
+ ],
+ "Two days of open ocean stand between South America and the White Continent. Some sail it, some fly over it. All of them arrive changed. We&apos;ll help you choose your way across.": [
+  "components/home/DrakeRibbon.tsx:67"
+ ],
+ "We don&apos;t own a ship, and that&apos;s the point. Seventh Continent is an independent specialist. We sell voyages run by IAATO-member expedition operators, so our only loyalty is to the right fit for you: ship size, landing time, cabin, route and season, compared honestly, with one polar specialist who tells you which voyage they&apos;d choose in your place.": [
+  "components/home/DrakeRibbon.tsx:73"
+ ],
+ "A calm polar channel walled by snow peaks": [
+  "components/home/FullscreenVideo.tsx:27"
+ ],
+ "The bottom of the world": [
+  "components/home/FullscreenVideo.tsx:33"
+ ],
+ "bottom": [
+  "components/home/FullscreenVideo.tsx:37"
+ ],
+ "of the": [
+  "components/home/FullscreenVideo.tsx:38"
+ ],
+ "world": [
+  "components/home/FullscreenVideo.tsx:40"
+ ],
+ "Arriving on the Antarctic Peninsula": [
+  "components/home/FullscreenVideo.tsx:43"
+ ],
+ "64° 49′ S, 63° 30′ W": [
+  "components/home/FullscreenVideo.tsx:44"
+ ],
+ "The engines hush, the light turns blue, and the first iceberg slides past the window. You made it.": [
+  "components/home/FullscreenVideo.tsx:46"
+ ],
+ "Protect": [
+  "components/home/HeroParallax.tsx:18",
+  "config/nav.ts:27",
+  "config/nav.ts:12"
+ ],
+ "Introduction": [
+  "components/home/HeroParallax.tsx:48"
+ ],
+ "of the world": [
+  "components/home/HeroParallax.tsx:63"
+ ],
+ "the edge": [
+  "components/home/HeroParallax.tsx:63"
+ ],
+ "— the edge of the world is closer than you think.": [
+  "components/home/HeroParallax.tsx:64"
+ ],
+ "Quick links": [
+  "components/home/HeroParallax.tsx:74"
+ ],
+ "Watch: penguins on snow — view expeditions": [
+  "components/home/HeroParallax.tsx:80"
+ ],
+ "Penguins on snow": [
+  "components/home/HeroParallax.tsx:81"
+ ],
+ "Gentoo penguin": [
+  "components/home/HeroParallax.tsx:93"
+ ],
+ "Independent Antarctica specialists. We match every traveller with the right ship, route and season, then one polar specialist plans every detail.": [
+  "components/home/HeroParallax.tsx:97"
+ ],
+ "Sailing with": [
+  "components/home/SailingWith.tsx:34"
+ ],
+ "IAATO-member operators · placeholders": [
+  "components/home/SailingWith.tsx:35"
+ ],
+ "Anonymous counts of which pages and voyages people read, so we can improve the site.": [
+  "components/layout/CookieConsent.tsx:10"
+ ],
+ "Analytics": [
+  "components/layout/CookieConsent.tsx:10"
+ ],
+ "Reject all": [
+  "components/layout/CookieConsent.tsx:106"
+ ],
+ "Accept all": [
+  "components/layout/CookieConsent.tsx:107"
+ ],
+ "Save choices": [
+  "components/layout/CookieConsent.tsx:108"
+ ],
+ "Remembers choices like your currency and the routes you looked at.": [
+  "components/layout/CookieConsent.tsx:11"
+ ],
+ "Personalisation": [
+  "components/layout/CookieConsent.tsx:11"
+ ],
+ "Close": [
+  "components/layout/CookieConsent.tsx:113",
+  "components/layout/Header.tsx:28",
+  "components/planner/Planner.tsx:227"
+ ],
+ "Lets us measure campaigns and show relevant departures on other sites.": [
+  "components/layout/CookieConsent.tsx:12"
+ ],
+ "Marketing": [
+  "components/layout/CookieConsent.tsx:12"
+ ],
+ "Escape": [
+  "components/layout/CookieConsent.tsx:24",
+  "components/layout/Menu.tsx:39",
+  "components/penguin/PenguinMode.tsx:18"
+ ],
+ "Cookie consent": [
+  "components/layout/CookieConsent.tsx:37"
+ ],
+ "Cookies, like footprints in snow, leave a trace. Accepting them helps us understand what you read and remember your preferences. See our": [
+  "components/layout/CookieConsent.tsx:45"
+ ],
+ "Privacy Policy": [
+  "components/layout/CookieConsent.tsx:47",
+  "components/layout/NewsletterForm.tsx:59",
+  "components/planner/Planner.tsx:421"
+ ],
+ "for details.": [
+  "components/layout/CookieConsent.tsx:49"
+ ],
+ "Accept": [
+  "components/layout/CookieConsent.tsx:52"
+ ],
+ "Reject": [
+  "components/layout/CookieConsent.tsx:53"
+ ],
+ "Preferences": [
+  "components/layout/CookieConsent.tsx:55"
+ ],
+ "Close preferences": [
+  "components/layout/CookieConsent.tsx:65"
+ ],
+ "Manage consent preferences": [
+  "components/layout/CookieConsent.tsx:78"
+ ],
+ "Essentials": [
+  "components/layout/CookieConsent.tsx:82"
+ ],
+ "Always active": [
+  "components/layout/CookieConsent.tsx:83"
+ ],
+ "Needed for the site to work: security, your consent choice, the planner&apos;s saved progress.": [
+  "components/layout/CookieConsent.tsx:85"
+ ],
+ "Currency": [
+  "components/layout/CurrencySwitcher.tsx:11"
+ ],
+ "Mail": [
+  "components/layout/Footer.tsx:16"
+ ],
+ "Tell us where you dream of standing. One polar specialist will match you with the right ship, route and season, and stay with you until you step back onto dry land.": [
+  "components/layout/Footer.tsx:22"
+ ],
+ "Footer {0}": [
+  "components/layout/Footer.tsx:45"
+ ],
+ "· Independent Antarctica specialists · Voyages operated by IAATO-member partners": [
+  "components/layout/Footer.tsx:61"
+ ],
+ "Cookie preferences": [
+  "components/layout/Footer.tsx:63"
+ ],
+ "Privacy policy": [
+  "components/layout/Footer.tsx:64",
+  "data/legal.ts:7",
+  "config/nav.ts:35"
+ ],
+ "Booking terms": [
+  "components/layout/Footer.tsx:65",
+  "data/legal.ts:75",
+  "config/nav.ts:36"
+ ],
+ "Cookie policy": [
+  "components/layout/Footer.tsx:66",
+  "data/legal.ts:167",
+  "config/nav.ts:37"
+ ],
+ "Seventh Continent — home": [
+  "components/layout/Header.tsx:15"
+ ],
+ "{Penguin mode}": [
+  "components/layout/Header.tsx:22"
+ ],
+ "Menu": [
+  "components/layout/Header.tsx:28"
+ ],
+ "Español": [
+  "components/layout/LanguageSwitcher.tsx:10"
+ ],
+ "ES": [
+  "components/layout/LanguageSwitcher.tsx:10"
+ ],
+ "Language": [
+  "components/layout/LanguageSwitcher.tsx:23"
+ ],
+ "English": [
+  "components/layout/LanguageSwitcher.tsx:7",
+  "components/ui/BackgroundVideo.tsx:105"
+ ],
+ "EN": [
+  "components/layout/LanguageSwitcher.tsx:7"
+ ],
+ "Français": [
+  "components/layout/LanguageSwitcher.tsx:8"
+ ],
+ "FR": [
+  "components/layout/LanguageSwitcher.tsx:8"
+ ],
+ "Deutsch": [
+  "components/layout/LanguageSwitcher.tsx:9"
+ ],
+ "DE": [
+  "components/layout/LanguageSwitcher.tsx:9"
+ ],
+ "Manage cookie preferences": [
+  "components/layout/ManageCookiesButton.tsx:10"
+ ],
+ "Site menu": [
+  "components/layout/Menu.tsx:65"
+ ],
+ "Close menu": [
+  "components/layout/Menu.tsx:68"
+ ],
+ "Main": [
+  "components/layout/Menu.tsx:85"
+ ],
+ "inset(0 0 100% 0)": [
+  "components/layout/Menu.tsx:93",
+  "components/layout/Menu.tsx:82",
+  "components/layout/Menu.tsx:80"
+ ],
+ "inset(0 0 0% 0)": [
+  "components/layout/Menu.tsx:94",
+  "components/layout/Menu.tsx:81"
+ ],
+ "Please enter a valid email address.": [
+  "components/layout/NewsletterForm.tsx:16"
+ ],
+ "Something went wrong. Please try again.": [
+  "components/layout/NewsletterForm.tsx:26"
+ ],
+ "Join our field notes for new departures, early cabins and the occasional penguin.": [
+  "components/layout/NewsletterForm.tsx:33"
+ ],
+ "Thanks — you&apos;re on the list.": [
+  "components/layout/NewsletterForm.tsx:35"
+ ],
+ "Email address": [
+  "components/layout/NewsletterForm.tsx:45",
+  "components/layout/NewsletterForm.tsx:38"
+ ],
+ "By subscribing, you agree to our": [
+  "components/layout/NewsletterForm.tsx:58"
+ ],
+ "circle(150% at 90% 4%)": [
+  "components/penguin/PenguinMode.tsx:35"
+ ],
+ "circle(0% at 90% 4%)": [
+  "components/penguin/PenguinMode.tsx:36",
+  "components/penguin/PenguinMode.tsx:34"
+ ],
+ "Back to serious mode": [
+  "components/penguin/PenguinMode.tsx:42"
+ ],
+ "Waterproof parka": [
+  "components/penguin/PenguinScene.tsx:10"
+ ],
+ "Make the penguin belly-slide": [
+  "components/penguin/PenguinScene.tsx:103"
+ ],
+ "Muck boots": [
+  "components/penguin/PenguinScene.tsx:11"
+ ],
+ "Seventh Continent penguin": [
+  "components/penguin/PenguinScene.tsx:110"
+ ],
+ "Click me · I belly-slide": [
+  "components/penguin/PenguinScene.tsx:113"
+ ],
+ "Binoculars": [
+  "components/penguin/PenguinScene.tsx:12"
+ ],
+ "Polarised sunglasses": [
+  "components/penguin/PenguinScene.tsx:13"
+ ],
+ "Merino base layer": [
+  "components/penguin/PenguinScene.tsx:14"
+ ],
+ "Waterproof trousers": [
+  "components/penguin/PenguinScene.tsx:15"
+ ],
+ "Warm hat": [
+  "components/penguin/PenguinScene.tsx:16"
+ ],
+ "Liner gloves": [
+  "components/penguin/PenguinScene.tsx:17"
+ ],
+ "Dry bag": [
+  "components/penguin/PenguinScene.tsx:18"
+ ],
+ "Seasickness remedy": [
+  "components/penguin/PenguinScene.tsx:19"
+ ],
+ "Spare batteries": [
+  "components/penguin/PenguinScene.tsx:20"
+ ],
+ "SPF 50": [
+  "components/penguin/PenguinScene.tsx:21"
+ ],
+ "Waddle": [
+  "components/penguin/PenguinScene.tsx:71",
+  "components/penguin/PenguinScene.tsx:70",
+  "components/penguin/PenguinScene.tsx:69"
+ ],
+ "thank you": [
+  "components/planner/Planner.tsx:210"
+ ],
+ "Your polar specialist will be in touch within one working day": [
+  "components/planner/Planner.tsx:213"
+ ],
+ ". We&apos;ll compare departures across our IAATO-member partners and come back with two or three voyages we&apos;d genuinely choose for you.": [
+  "components/planner/Planner.tsx:217"
+ ],
+ "Reference": [
+  "components/planner/Planner.tsx:217"
+ ],
+ "In the meantime, read up on the crossing.": [
+  "components/planner/Planner.tsx:220"
+ ],
+ "Drake vs flying": [
+  "components/planner/Planner.tsx:223"
+ ],
+ "Back to home": [
+  "components/planner/Planner.tsx:231"
+ ],
+ "Planner progress": [
+  "components/planner/Planner.tsx:244"
+ ],
+ "Step": [
+  "components/planner/Planner.tsx:270"
+ ],
+ "The season runs roughly November to March; emperor voyages start in late October.": [
+  "components/planner/Planner.tsx:287"
+ ],
+ "Preferred month(s)": [
+  "components/planner/Planner.tsx:287"
+ ],
+ "Are your dates flexible?": [
+  "components/planner/Planner.tsx:292"
+ ],
+ "Yes, flexible": [
+  "components/planner/Planner.tsx:293"
+ ],
+ "No, fixed dates": [
+  "components/planner/Planner.tsx:294"
+ ],
+ "Trip length": [
+  "components/planner/Planner.tsx:296"
+ ],
+ "Choose one or more journeys": [
+  "components/planner/Planner.tsx:305"
+ ],
+ "· from": [
+  "components/planner/Planner.tsx:316"
+ ],
+ "Not sure?": [
+  "components/planner/Planner.tsx:328"
+ ],
+ "help me choose": [
+  "components/planner/Planner.tsx:329"
+ ],
+ "Tell us what matters and your specialist will shortlist routes.": [
+  "components/planner/Planner.tsx:330"
+ ],
+ "Smaller ships usually mean more time ashore: IAATO limits how many guests can land at once. (Verify with partner operators.)": [
+  "components/planner/Planner.tsx:339"
+ ],
+ "Ship size": [
+  "components/planner/Planner.tsx:339"
+ ],
+ "to go": [
+  "components/planner/Planner.tsx:34"
+ ],
+ "when": [
+  "components/planner/Planner.tsx:34"
+ ],
+ "When": [
+  "components/planner/Planner.tsx:34"
+ ],
+ "Cabin type": [
+  "components/planner/Planner.tsx:344"
+ ],
+ "Must-have activities (optional)": [
+  "components/planner/Planner.tsx:349"
+ ],
+ "journey": [
+  "components/planner/Planner.tsx:35"
+ ],
+ "which": [
+  "components/planner/Planner.tsx:35"
+ ],
+ "Journey": [
+  "components/planner/Planner.tsx:35"
+ ],
+ "comfort": [
+  "components/planner/Planner.tsx:36"
+ ],
+ "ship &": [
+  "components/planner/Planner.tsx:36"
+ ],
+ "Ship & comfort": [
+  "components/planner/Planner.tsx:36"
+ ],
+ "Adults": [
+  "components/planner/Planner.tsx:360"
+ ],
+ "Children": [
+  "components/planner/Planner.tsx:363"
+ ],
+ "Children's ages": [
+  "components/planner/Planner.tsx:367"
+ ],
+ "e.g. 9, 13": [
+  "components/planner/Planner.tsx:368"
+ ],
+ "Minimum age rules vary by operator, often 8–12 years. (Verify with partner operators.)": [
+  "components/planner/Planner.tsx:369"
+ ],
+ "coming": [
+  "components/planner/Planner.tsx:37"
+ ],
+ "who's": [
+  "components/planner/Planner.tsx:37"
+ ],
+ "Who": [
+  "components/planner/Planner.tsx:37"
+ ],
+ "Mobility or medical needs (optional)": [
+  "components/planner/Planner.tsx:372"
+ ],
+ "Zodiac transfers need some agility. Tell us anything that helps us choose the right ship.": [
+  "components/planner/Planner.tsx:373"
+ ],
+ "Seasickness & the Drake Passage": [
+  "components/planner/Planner.tsx:376"
+ ],
+ "touch": [
+  "components/planner/Planner.tsx:38"
+ ],
+ "stay in": [
+  "components/planner/Planner.tsx:38"
+ ],
+ "Budget per person ({0})": [
+  "components/planner/Planner.tsx:381"
+ ],
+ "Under {0}": [
+  "components/planner/Planner.tsx:384"
+ ],
+ "Full name": [
+  "components/planner/Planner.tsx:394"
+ ],
+ "Code": [
+  "components/planner/Planner.tsx:401"
+ ],
+ "Phone": [
+  "components/planner/Planner.tsx:404"
+ ],
+ "How should we contact you?": [
+  "components/planner/Planner.tsx:409"
+ ],
+ "Anything else? (optional)": [
+  "components/planner/Planner.tsx:414"
+ ],
+ "Celebrations, dream sightings, photography gear, dietary needs…": [
+  "components/planner/Planner.tsx:415"
+ ],
+ "I agree that Seventh Continent may contact me about this enquiry, as described in the": [
+  "components/planner/Planner.tsx:420"
+ ],
+ "24+ days": [
+  "components/planner/Planner.tsx:43",
+  "lib/planner-schema.ts:4"
+ ],
+ "18–23 days": [
+  "components/planner/Planner.tsx:43",
+  "lib/planner-schema.ts:4"
+ ],
+ "13–17 days": [
+  "components/planner/Planner.tsx:43",
+  "lib/planner-schema.ts:4"
+ ],
+ "9–12 days": [
+  "components/planner/Planner.tsx:43",
+  "lib/planner-schema.ts:4"
+ ],
+ "6–8 days": [
+  "components/planner/Planner.tsx:43",
+  "lib/planner-schema.ts:4"
+ ],
+ "Something went wrong sending your plan. Your answers are saved: please try again.": [
+  "components/planner/Planner.tsx:431"
+ ],
+ "← Back": [
+  "components/planner/Planner.tsx:436"
+ ],
+ "Next →": [
+  "components/planner/Planner.tsx:443"
+ ],
+ "Send my plan": [
+  "components/planner/Planner.tsx:447"
+ ],
+ "Sending…": [
+  "components/planner/Planner.tsx:447"
+ ],
+ "Telephone": [
+  "components/planner/Planner.tsx:45",
+  "lib/planner-schema.ts:17"
+ ],
+ "Progress is saved on this device, so you can come back later.": [
+  "components/planner/Planner.tsx:451"
+ ],
+ "March": [
+  "components/planner/Planner.tsx:48",
+  "data/months.ts:54",
+  "config/season.ts:5"
+ ],
+ "February": [
+  "components/planner/Planner.tsx:48",
+  "data/months.ts:42"
+ ],
+ "January": [
+  "components/planner/Planner.tsx:48",
+  "data/months.ts:30"
+ ],
+ "December": [
+  "components/planner/Planner.tsx:48",
+  "data/months.ts:18"
+ ],
+ "November": [
+  "components/planner/Planner.tsx:48",
+  "data/months.ts:6",
+  "config/season.ts:4"
+ ],
+ "October": [
+  "components/planner/Planner.tsx:48"
+ ],
+ "Under ~150 guests: more time ashore": [
+  "components/planner/Planner.tsx:51"
+ ],
+ "Small & intimate": [
+  "components/planner/Planner.tsx:51",
+  "lib/data.ts:18"
+ ],
+ "~150–200 guests: more facilities": [
+  "components/planner/Planner.tsx:52"
+ ],
+ "Mid-size": [
+  "components/planner/Planner.tsx:52",
+  "lib/data.ts:19"
+ ],
+ "Suites, fine dining, extra space": [
+  "components/planner/Planner.tsx:53"
+ ],
+ "Luxury": [
+  "components/planner/Planner.tsx:53",
+  "lib/data.ts:20"
+ ],
+ "Advise me": [
+  "components/planner/Planner.tsx:54"
+ ],
+ "No preference": [
+  "components/planner/Planner.tsx:54"
+ ],
+ "Suite": [
+  "components/planner/Planner.tsx:56",
+  "lib/data.ts:31",
+  "data/expeditions.ts:171"
+ ],
+ "Balcony": [
+  "components/planner/Planner.tsx:56",
+  "lib/data.ts:30"
+ ],
+ "Standard": [
+  "components/planner/Planner.tsx:56",
+  "lib/data.ts:29"
+ ],
+ "Shared (triple/quad)": [
+  "components/planner/Planner.tsx:56"
+ ],
+ "Antarctic Circle": [
+  "components/planner/Planner.tsx:58"
+ ],
+ "Photography": [
+  "components/planner/Planner.tsx:58"
+ ],
+ "Camping on the ice": [
+  "components/planner/Planner.tsx:58",
+  "data/ships.ts:78",
+  "data/ships.ts:15"
+ ],
+ "Sea kayaking": [
+  "components/planner/Planner.tsx:58",
+  "data/ships.ts:120",
+  "data/ships.ts:99"
+ ],
+ "Two days each way, part of the journey": [
+  "components/planner/Planner.tsx:61"
+ ],
+ "Happy to sail the Drake": [
+  "components/planner/Planner.tsx:61"
+ ],
+ "Fly Punta Arenas → King George Island": [
+  "components/planner/Planner.tsx:62"
+ ],
+ "I'd rather fly the Drake": [
+  "components/planner/Planner.tsx:62"
+ ],
+ "Talk me through it": [
+  "components/planner/Planner.tsx:63"
+ ],
+ "Not sure yet": [
+  "components/planner/Planner.tsx:63"
+ ],
+ "Close planner": [
+  "components/planner/PlannerModal.tsx:32"
+ ],
+ "View": [
+  "components/sections/CardGrid.tsx:36"
+ ],
+ "Tell us when, who and what you dream of seeing. One polar specialist will shortlist the right voyages, free and without obligation.": [
+  "components/sections/CtaBand.tsx:11"
+ ],
+ "when you are": [
+  "components/sections/CtaBand.tsx:5"
+ ],
+ "{0}&w=900": [
+  "components/sections/DetailHero.tsx:38"
+ ],
+ "Mar": [
+  "components/sections/ExpeditionsExplorer.tsx:10",
+  "lib/data.ts:24",
+  "lib/planner-schema.ts:3"
+ ],
+ "Feb": [
+  "components/sections/ExpeditionsExplorer.tsx:10",
+  "lib/data.ts:24",
+  "lib/planner-schema.ts:3"
+ ],
+ "Jan": [
+  "components/sections/ExpeditionsExplorer.tsx:10",
+  "lib/data.ts:24",
+  "lib/planner-schema.ts:3"
+ ],
+ "Dec": [
+  "components/sections/ExpeditionsExplorer.tsx:10",
+  "lib/data.ts:24",
+  "lib/planner-schema.ts:3"
+ ],
+ "Nov": [
+  "components/sections/ExpeditionsExplorer.tsx:10",
+  "lib/data.ts:24",
+  "lib/planner-schema.ts:3"
+ ],
+ "Oct": [
+  "components/sections/ExpeditionsExplorer.tsx:10",
+  "lib/data.ts:24",
+  "lib/planner-schema.ts:3"
+ ],
+ "Up to 10 days": [
+  "components/sections/ExpeditionsExplorer.tsx:12"
+ ],
+ "11–16 days": [
+  "components/sections/ExpeditionsExplorer.tsx:13"
+ ],
+ "17+ days": [
+  "components/sections/ExpeditionsExplorer.tsx:14"
+ ],
+ "days ·": [
+  "components/sections/ExpeditionsExplorer.tsx:62"
+ ],
+ "per person": [
+  "components/sections/ExpeditionsExplorer.tsx:70"
+ ],
+ "Filter expeditions": [
+  "components/sections/ExpeditionsExplorer.tsx:81"
+ ],
+ "Month": [
+  "components/sections/ExpeditionsExplorer.tsx:83"
+ ],
+ "Ship": [
+  "components/sections/ExpeditionsExplorer.tsx:84"
+ ],
+ "Length": [
+  "components/sections/ExpeditionsExplorer.tsx:85"
+ ],
+ "Clear": [
+  "components/sections/ExpeditionsExplorer.tsx:88"
+ ],
+ "No departures match those filters yet. Try widening the month or ask your specialist.": [
+  "components/sections/ExpeditionsExplorer.tsx:98"
+ ],
+ "To verify with partner operators and IAATO before launch": [
+  "components/sections/FaqList.tsx:19"
+ ],
+ "m,": [
+  "components/sections/HorizontalPanels.tsx:44"
+ ],
+ "guests,": [
+  "components/sections/HorizontalPanels.tsx:44"
+ ],
+ "View ship": [
+  "components/sections/HorizontalPanels.tsx:47"
+ ],
+ "Expeditions on this ship": [
+  "components/sections/HorizontalPanels.tsx:48"
+ ],
+ "Deck plan (soon)": [
+  "components/sections/HorizontalPanels.tsx:49"
+ ],
+ "Partner ships": [
+  "components/sections/HorizontalPanels.tsx:83"
+ ],
+ "Last updated:": [
+  "components/sections/LegalDocument.tsx:22"
+ ],
+ "Cabin": [
+  "components/sections/PricingTable.tsx:12"
+ ],
+ "Per person": [
+  "components/sections/PricingTable.tsx:13"
+ ],
+ "Indicative prices per person by cabin": [
+  "components/sections/PricingTable.tsx:9"
+ ],
+ "M210 120 C 240 230, 300 300, 300 360 S 260 430, 250 450": [
+  "components/sections/RouteMap.tsx:18",
+  "components/sections/RouteMap.tsx:17"
+ ],
+ "M150 95 Q 300 200 300 360": [
+  "components/sections/RouteMap.tsx:20"
+ ],
+ "M300 360 S 260 430, 250 450": [
+  "components/sections/RouteMap.tsx:21"
+ ],
+ "M210 120 C 290 110, 340 115, 400 120 C 520 130, 640 170, 700 210 C 620 300, 420 330, 300 360 S 260 430, 250 450": [
+  "components/sections/RouteMap.tsx:24"
+ ],
+ "M210 120 C 240 230, 300 300, 300 360 S 260 430, 250 450 S 220 530, 215 560": [
+  "components/sections/RouteMap.tsx:26"
+ ],
+ "M210 120 C 260 230, 330 300, 330 370 S 400 440, 440 470": [
+  "components/sections/RouteMap.tsx:27"
+ ],
+ "Ushuaia": [
+  "components/sections/RouteMap.tsx:31"
+ ],
+ "Punta Arenas": [
+  "components/sections/RouteMap.tsx:32",
+  "data/expeditions.ts:213",
+  "data/expeditions.ts:162"
+ ],
+ "Falklands": [
+  "components/sections/RouteMap.tsx:33"
+ ],
+ "South Georgia": [
+  "components/sections/RouteMap.tsx:34",
+  "data/expeditions.ts:322",
+  "data/expeditions.ts:268"
+ ],
+ "South Shetlands": [
+  "components/sections/RouteMap.tsx:35"
+ ],
+ "Lemaire Channel": [
+  "components/sections/RouteMap.tsx:36"
+ ],
+ "66°33′ S": [
+  "components/sections/RouteMap.tsx:37"
+ ],
+ "Weddell Sea": [
+  "components/sections/RouteMap.tsx:38"
+ ],
+ "Route map placeholder: {0}": [
+  "components/sections/RouteMap.tsx:45"
+ ],
+ "ANTARCTIC CIRCLE 66°33′ S": [
+  "components/sections/RouteMap.tsx:60"
+ ],
+ "DRAKE PASSAGE": [
+  "components/sections/RouteMap.tsx:61"
+ ],
+ "ROSS SEA ROUTE — DEDICATED MAP TO COME": [
+  "components/sections/RouteMap.tsx:68"
+ ],
+ "Indicative route · not to scale": [
+  "components/sections/RouteMap.tsx:81"
+ ],
+ "Placeholder map": [
+  "components/sections/RouteMap.tsx:82"
+ ],
+ "Dashed = flight": [
+  "components/sections/RouteMap.tsx:82"
+ ],
+ "Filter": [
+  "components/sections/TimelineRows.tsx:35"
+ ],
+ "All": [
+  "components/sections/TimelineRows.tsx:36"
+ ],
+ "Play video: {0}": [
+  "components/ui/BackgroundVideo.tsx:111"
+ ],
+ "Pause video: {0}": [
+  "components/ui/BackgroundVideo.tsx:111"
+ ],
+ "300px 0px": [
+  "components/ui/BackgroundVideo.tsx:56"
+ ],
+ "Seventh": [
+  "components/ui/Logo.tsx:13"
+ ],
+ "Continent": [
+  "components/ui/Logo.tsx:15"
+ ],
+ "Placeholder — verify with partner operators and IAATO before launch.": [
+  "components/ui/VerifyNote.tsx:7"
+ ],
+ "en-US": [
+  "config/currency.ts:18"
+ ],
+ "de-DE": [
+  "config/currency.ts:19"
+ ],
+ "en-GB": [
+  "config/currency.ts:20"
+ ],
+ "en-AU": [
+  "config/currency.ts:21"
+ ],
+ "en-CA": [
+  "config/currency.ts:22"
+ ],
+ "Traveller in a red parka on snow": [
+  "config/nav.ts:10"
+ ],
+ "Snow peaks under a starry sky": [
+  "config/nav.ts:11"
+ ],
+ "Gentoo penguin standing on rock": [
+  "config/nav.ts:12"
+ ],
+ "Mountains rising through mist": [
+  "config/nav.ts:13"
+ ],
+ "Two king penguins": [
+  "config/nav.ts:14"
+ ],
+ "Home": [
+  "config/nav.ts:19"
+ ],
+ "Experiences": [
+  "config/nav.ts:23",
+  "config/nav.ts:10"
+ ],
+ "When to go": [
+  "config/nav.ts:28"
+ ],
+ "FAQ": [
+  "config/nav.ts:30"
+ ],
+ "Icebergs reflected in still polar water": [
+  "config/nav.ts:7"
+ ],
+ "Open ocean at dusk": [
+  "config/nav.ts:8"
+ ],
+ "Expedition-style ship at sea": [
+  "config/nav.ts:9"
+ ],
+ "November to March": [
+  "config/season.ts:3"
+ ],
+ "Season dates vary by operator and ice conditions. Verify with partner operators before launch.": [
+  "config/season.ts:7"
+ ],
+ "seventhcontinent@tourground.com": [
+  "config/site.ts:11"
+ ],
+ "Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina": [
+  "config/site.ts:13"
+ ],
+ "7th Continent": [
+  "config/site.ts:3"
+ ],
+ "The edge of the world is closer than you think.": [
+  "config/site.ts:4"
+ ],
+ "The right Antarctic expedition for you, planned by one dedicated polar specialist.": [
+  "config/site.ts:5"
+ ],
+ "Independent Antarctica expedition specialists. We match you with the right IAATO-member ship, route and season, and one polar specialist plans every detail.": [
+  "config/site.ts:7"
+ ],
+ "All meals on board": [
+  "data/expeditions.ts:10"
+ ],
+ "Snow-covered peaks above a channel": [
+  "data/expeditions.ts:101"
+ ],
+ "Penguins walking along a snow highway": [
+  "data/expeditions.ts:102"
+ ],
+ "A calm fjord with mirror reflections": [
+  "data/expeditions.ts:103"
+ ],
+ "A wave breaking on the open ocean": [
+  "data/expeditions.ts:104"
+ ],
+ "Board and sail the Beagle Channel towards open water.": [
+  "data/expeditions.ts:107"
+ ],
+ "Settle into ship life with lectures on wildlife, ice and history.": [
+  "data/expeditions.ts:108"
+ ],
+ "First landing among chinstrap and gentoo penguins, conditions permitting.": [
+  "data/expeditions.ts:109"
+ ],
+ "South Shetland Islands": [
+  "data/expeditions.ts:109"
+ ],
+ "Day 4": [
+  "data/expeditions.ts:109"
+ ],
+ "Polar parka to keep (verify)": [
+  "data/expeditions.ts:11"
+ ],
+ "Daily landings and zodiac cruises, with a possible attempt at the Lemaire Channel.": [
+  "data/expeditions.ts:110"
+ ],
+ "Days 5–9": [
+  "data/expeditions.ts:110"
+ ],
+ "Northbound crossing and farewell gatherings.": [
+  "data/expeditions.ts:111"
+ ],
+ "Junior suite": [
+  "data/expeditions.ts:118"
+ ],
+ "Waterproof boots on loan (verify)": [
+  "data/expeditions.ts:12"
+ ],
+ "March departures bring longer nights and dramatic low light.": [
+  "data/expeditions.ts:123"
+ ],
+ "The polar plunge is optional and subject to the expedition leader's judgement.": [
+  "data/expeditions.ts:124"
+ ],
+ "Share cabins are matched by gender where available (verify).": [
+  "data/expeditions.ts:125"
+ ],
+ "Lectures and briefings by the expedition team": [
+  "data/expeditions.ts:13"
+ ],
+ "Fly the Drake aboard MV Petrel Light": [
+  "data/expeditions.ts:136"
+ ],
+ "the drake": [
+  "data/expeditions.ts:137",
+  "data/posts.ts:17",
+  "data/routes.ts:30"
+ ],
+ "Fly from Punta Arenas to King George Island": [
+  "data/expeditions.ts:145"
+ ],
+ "Board in the South Shetlands and be among penguins the same day": [
+  "data/expeditions.ts:146"
+ ],
+ "Citizen-science programme on every departure": [
+  "data/expeditions.ts:147"
+ ],
+ "Skip the Drake crossing by air and spend your time where it counts — in Antarctic waters.": [
+  "data/expeditions.ts:150"
+ ],
+ "Fly from Punta Arenas across the Drake Passage to King George Island, then board Petrel Light for a compact voyage through the South Shetlands and along the Peninsula. Ideal if you're short on time or wary of the open ocean.\n\nFlights depend on weather at both ends, so build in buffer days before and after; we'll explain each operator's delay policy before you book.": [
+  "data/expeditions.ts:152"
+ ],
+ "Peaks emerging above cloud on the flight south": [
+  "data/expeditions.ts:153"
+ ],
+ "A gentoo penguin standing on rocks": [
+  "data/expeditions.ts:156"
+ ],
+ "The ship lit at anchor in the evening": [
+  "data/expeditions.ts:157"
+ ],
+ "Icebergs drifting near the South Shetlands": [
+  "data/expeditions.ts:158"
+ ],
+ "A humpback whale near a zodiac": [
+  "data/expeditions.ts:159"
+ ],
+ "Pre-departure briefing and welcome dinner in Patagonia.": [
+  "data/expeditions.ts:162"
+ ],
+ "Charter flight across the Drake, then zodiac transfer to the ship (weather permitting).": [
+  "data/expeditions.ts:163"
+ ],
+ "Landings, zodiac cruises and wildlife encounters.": [
+  "data/expeditions.ts:164"
+ ],
+ "South Shetlands & Peninsula": [
+  "data/expeditions.ts:164"
+ ],
+ "Days 3–6": [
+  "data/expeditions.ts:164"
+ ],
+ "Transfer to the airport for onward flights.": [
+  "data/expeditions.ts:166"
+ ],
+ "Day 8": [
+  "data/expeditions.ts:166"
+ ],
+ "Flights to the embarkation port": [
+  "data/expeditions.ts:17"
+ ],
+ "Flight delays of a day or more are possible; plan flexible onward travel.": [
+  "data/expeditions.ts:176"
+ ],
+ "Baggage allowances on the charter flight are strict (verify).": [
+  "data/expeditions.ts:177"
+ ],
+ "You'll still sail open water around the islands — pack seasickness remedies.": [
+  "data/expeditions.ts:178"
+ ],
+ "Pre/post hotel nights": [
+  "data/expeditions.ts:18"
+ ],
+ "Fly & Sail Short Escape aboard MV Meridian South": [
+  "data/expeditions.ts:188"
+ ],
+ "& sail": [
+  "data/expeditions.ts:189"
+ ],
+ "fly": [
+  "data/expeditions.ts:189",
+  "data/expeditions.ts:137",
+  "data/routes.ts:30"
+ ],
+ "Personal gear": [
+  "data/expeditions.ts:19"
+ ],
+ "Shortest practical way to reach the Antarctic Peninsula": [
+  "data/expeditions.ts:197"
+ ],
+ "Four full days in the South Shetlands and Peninsula": [
+  "data/expeditions.ts:198"
+ ],
+ "Small ship, fast landings": [
+  "data/expeditions.ts:199"
+ ],
+ "Mandatory travel, medical and evacuation insurance": [
+  "data/expeditions.ts:20"
+ ],
+ "A tightly focused week: fly over the Drake, sail the islands, fly home.": [
+  "data/expeditions.ts:202"
+ ],
+ "Designed for travellers with a single week, this fly-cruise packs four days of landings into a seven-day trip. Meridian South's small size keeps landings efficient so none of that precious time is wasted.\n\nAs with all fly-cruises, the schedule bends around the weather at King George Island.": [
+  "data/expeditions.ts:204"
+ ],
+ "A gentoo penguin on a rocky Antarctic shore": [
+  "data/expeditions.ts:205"
+ ],
+ "Penguins gathered on snow": [
+  "data/expeditions.ts:207"
+ ],
+ "A glacier spilling into the sea": [
+  "data/expeditions.ts:208"
+ ],
+ "A sea of cloud below the summits": [
+  "data/expeditions.ts:209"
+ ],
+ "Gratuities for crew and expedition staff": [
+  "data/expeditions.ts:21"
+ ],
+ "A guest photographing the landscape": [
+  "data/expeditions.ts:210"
+ ],
+ "Arrive, briefing and overnight.": [
+  "data/expeditions.ts:213"
+ ],
+ "Flight south and boarding in Maxwell Bay, weather permitting.": [
+  "data/expeditions.ts:214"
+ ],
+ "Fly to King George Island": [
+  "data/expeditions.ts:214",
+  "data/expeditions.ts:163"
+ ],
+ "Day 2": [
+  "data/expeditions.ts:214",
+  "data/expeditions.ts:163"
+ ],
+ "Daily landings and zodiac cruising.": [
+  "data/expeditions.ts:215"
+ ],
+ "Peninsula & South Shetlands": [
+  "data/expeditions.ts:215"
+ ],
+ "Days 3–5": [
+  "data/expeditions.ts:215"
+ ],
+ "Fly back to Punta Arenas, weather permitting.": [
+  "data/expeditions.ts:216",
+  "data/expeditions.ts:165"
+ ],
+ "Return flight": [
+  "data/expeditions.ts:216",
+  "data/expeditions.ts:165"
+ ],
+ "Day 6": [
+  "data/expeditions.ts:216"
+ ],
+ "Onward travel.": [
+  "data/expeditions.ts:217"
+ ],
+ "Departure": [
+  "data/expeditions.ts:217",
+  "data/expeditions.ts:166"
+ ],
+ "Day 7": [
+  "data/expeditions.ts:217",
+  "data/expeditions.ts:165"
+ ],
+ "Optional activities such as kayaking or camping": [
+  "data/expeditions.ts:22"
+ ],
+ "Twin porthole cabin": [
+  "data/expeditions.ts:220",
+  "data/expeditions.ts:63"
+ ],
+ "Owner's suite": [
+  "data/expeditions.ts:221",
+  "data/expeditions.ts:64"
+ ],
+ "Charter flights Punta Arenas – King George Island (verify)": [
+  "data/expeditions.ts:223",
+  "data/expeditions.ts:173"
+ ],
+ "Allow at least one buffer night in Punta Arenas after the trip.": [
+  "data/expeditions.ts:226"
+ ],
+ "Charter baggage limits apply (verify).": [
+  "data/expeditions.ts:227"
+ ],
+ "Optional activities are limited on shorter voyages.": [
+  "data/expeditions.ts:228"
+ ],
+ "Falklands, South Georgia & Antarctica aboard MV Halcyon Ice": [
+  "data/expeditions.ts:238"
+ ],
+ "& antarctica": [
+  "data/expeditions.ts:239",
+  "data/routes.ts:50"
+ ],
+ "falklands,": [
+  "data/expeditions.ts:239",
+  "data/routes.ts:50"
+ ],
+ "November 2026 – January 2027": [
+  "data/expeditions.ts:244"
+ ],
+ "King penguin colonies numbering in the hundreds of thousands": [
+  "data/expeditions.ts:247"
+ ],
+ "Shackleton's grave and the old whaling station at Grytviken": [
+  "data/expeditions.ts:248"
+ ],
+ "Rockhopper penguins and albatrosses in the Falklands": [
+  "data/expeditions.ts:249"
+ ],
+ "Finish among the ice of the Antarctic Peninsula": [
+  "data/expeditions.ts:250"
+ ],
+ "The grand Southern Ocean voyage on a steady, spacious ship built for long passages.": [
+  "data/expeditions.ts:253"
+ ],
+ "Three weeks across the Southern Ocean: the Falklands, then South Georgia's extraordinary wildlife and Shackleton history, then the Antarctic Peninsula. Halcyon Ice's stabilisers and generous public spaces make the sea days a pleasure rather than an endurance test.\n\nSea days are filled with lectures, seabird watching from the bridge wings and time to simply take it all in.": [
+  "data/expeditions.ts:255"
+ ],
+ "Thousands of king penguins on a South Georgia plain": [
+  "data/expeditions.ts:256"
+ ],
+ "A king penguin in warm low light": [
+  "data/expeditions.ts:259"
+ ],
+ "Misty peaks above a South Georgia bay": [
+  "data/expeditions.ts:261"
+ ],
+ "Icebergs in the Antarctic Sound": [
+  "data/expeditions.ts:262"
+ ],
+ "Board and sail east along the Beagle Channel.": [
+  "data/expeditions.ts:265"
+ ],
+ "Landings at outer islands for rockhoppers and albatrosses, and a visit to Stanley.": [
+  "data/expeditions.ts:266"
+ ],
+ "Days 2–4": [
+  "data/expeditions.ts:266"
+ ],
+ "Lectures and biosecurity preparation for South Georgia.": [
+  "data/expeditions.ts:267"
+ ],
+ "Days 5–6": [
+  "data/expeditions.ts:267"
+ ],
+ "King penguin colonies, Grytviken and, conditions permitting, a walk towards Stromness.": [
+  "data/expeditions.ts:268"
+ ],
+ "Southwest across the Scotia Sea towards the ice.": [
+  "data/expeditions.ts:269"
+ ],
+ "Days 11–12": [
+  "data/expeditions.ts:269"
+ ],
+ "Landings and zodiac cruises in the South Shetlands and along the Peninsula.": [
+  "data/expeditions.ts:270"
+ ],
+ "Days 13–17": [
+  "data/expeditions.ts:270"
+ ],
+ "The northbound crossing.": [
+  "data/expeditions.ts:271"
+ ],
+ "Days 18–20": [
+  "data/expeditions.ts:271"
+ ],
+ "Day 21": [
+  "data/expeditions.ts:272"
+ ],
+ "Classic Antarctic Peninsula aboard MV Meridian South": [
+  "data/expeditions.ts:28"
+ ],
+ "South Georgia has strict biosecurity checks; all outer gear is inspected (verify).": [
+  "data/expeditions.ts:282"
+ ],
+ "The Falklands use their own currency and pound sterling (verify).": [
+  "data/expeditions.ts:283"
+ ],
+ "Expect several sea days — ideal for birders and ocean lovers.": [
+  "data/expeditions.ts:284"
+ ],
+ "classic": [
+  "data/expeditions.ts:29",
+  "data/routes.ts:10"
+ ],
+ "South Georgia & Antarctica in Suites aboard MV Southern Lantern": [
+  "data/expeditions.ts:294"
+ ],
+ "in suites": [
+  "data/expeditions.ts:295"
+ ],
+ "south georgia": [
+  "data/expeditions.ts:295",
+  "data/expeditions.ts:239",
+  "data/routes.ts:50"
+ ],
+ "November 2026 – February 2027": [
+  "data/expeditions.ts:300",
+  "data/expeditions.ts:34"
+ ],
+ "Extended time in South Georgia": [
+  "data/expeditions.ts:304"
+ ],
+ "Spa and fine dining after long days ashore": [
+  "data/expeditions.ts:305"
+ ],
+ "The Falklands, South Georgia and the Peninsula, with a suite to return to every evening.": [
+  "data/expeditions.ts:308"
+ ],
+ "A slightly shorter take on the grand voyage, aboard an all-suite ship with a high guide-to-guest ratio. Fewer guests means smoother landing rotations and more time at each site within the limits that apply to every visit.\n\nIdeal for travellers who want South Georgia's wildlife without compromising on comfort.": [
+  "data/expeditions.ts:310"
+ ],
+ "A king penguin standing in soft golden light": [
+  "data/expeditions.ts:311"
+ ],
+ "A vast king penguin colony": [
+  "data/expeditions.ts:313"
+ ],
+ "A reflective bay in South Georgia": [
+  "data/expeditions.ts:314"
+ ],
+ "Peaks under a twilight sky": [
+  "data/expeditions.ts:315"
+ ],
+ "A glacier meeting the sea": [
+  "data/expeditions.ts:316"
+ ],
+ "Board and set sail.": [
+  "data/expeditions.ts:319"
+ ],
+ "Wildlife landings and a visit to Stanley.": [
+  "data/expeditions.ts:320"
+ ],
+ "Falkland Islands": [
+  "data/expeditions.ts:320",
+  "data/expeditions.ts:266"
+ ],
+ "King penguins, elephant seals and Grytviken.": [
+  "data/expeditions.ts:322"
+ ],
+ "Crossing the Scotia Sea.": [
+  "data/expeditions.ts:323"
+ ],
+ "At sea": [
+  "data/expeditions.ts:323",
+  "data/expeditions.ts:321",
+  "data/expeditions.ts:269"
+ ],
+ "Landings and zodiac cruises.": [
+  "data/expeditions.ts:324"
+ ],
+ "Days 12–16": [
+  "data/expeditions.ts:324"
+ ],
+ "Northbound crossing and disembarkation.": [
+  "data/expeditions.ts:325"
+ ],
+ "Days 17–19": [
+  "data/expeditions.ts:325"
+ ],
+ "Suites sell out early on this departure.": [
+  "data/expeditions.ts:334"
+ ],
+ "Biosecurity checks apply before every South Georgia landing (verify).": [
+  "data/expeditions.ts:335"
+ ],
+ "Dress is relaxed — there is no formal night requirement (verify).": [
+  "data/expeditions.ts:336"
+ ],
+ "Across the Antarctic Circle aboard MV Tern Arc": [
+  "data/expeditions.ts:346"
+ ],
+ "the circle": [
+  "data/expeditions.ts:347",
+  "data/routes.ts:70"
+ ],
+ "across": [
+  "data/expeditions.ts:347",
+  "data/routes.ts:70"
+ ],
+ "January – March 2027": [
+  "data/expeditions.ts:352"
+ ],
+ "Attempt to cross 66°33′ S, ice permitting": [
+  "data/expeditions.ts:355"
+ ],
+ "Adélie penguin colonies of the southern Peninsula": [
+  "data/expeditions.ts:356"
+ ],
+ "Quieter waters with fewer ships": [
+  "data/expeditions.ts:357"
+ ],
+ "Push beyond the classic Peninsula towards the Antarctic Circle and Marguerite Bay.": [
+  "data/expeditions.ts:360"
+ ],
+ "This voyage extends south beyond the busier Peninsula sites, aiming to cross the Antarctic Circle and explore the ice-filled waters beyond. Tern Arc's ice-strengthened hull gives it the reach — but the ice always has the final say.\n\nLater-season departures generally offer the best chance of open water to the south.": [
+  "data/expeditions.ts:362"
+ ],
+ "Snow peaks near the Antarctic Circle": [
+  "data/expeditions.ts:363"
+ ],
+ "Tabular icebergs in still water": [
+  "data/expeditions.ts:365"
+ ],
+ "Adélie penguins walking across snow": [
+  "data/expeditions.ts:366"
+ ],
+ "A wide pale polar sky": [
+  "data/expeditions.ts:367"
+ ],
+ "A wind-sculpted snow ridge": [
+  "data/expeditions.ts:368"
+ ],
+ "Cross the Drake Passage with albatrosses in the ship's wake": [
+  "data/expeditions.ts:37"
+ ],
+ "Briefings and lectures on ice navigation.": [
+  "data/expeditions.ts:372"
+ ],
+ "First landings among gentoo and chinstrap penguins.": [
+  "data/expeditions.ts:373"
+ ],
+ "Northern Peninsula": [
+  "data/expeditions.ts:373"
+ ],
+ "Days 4–5": [
+  "data/expeditions.ts:373",
+  "data/expeditions.ts:321"
+ ],
+ "Southward through Crystal Sound towards Marguerite Bay, ice permitting.": [
+  "data/expeditions.ts:374"
+ ],
+ "Crossing the Circle": [
+  "data/expeditions.ts:374"
+ ],
+ "Days 6–9": [
+  "data/expeditions.ts:374",
+  "data/expeditions.ts:322"
+ ],
+ "Further landings as conditions allow.": [
+  "data/expeditions.ts:375"
+ ],
+ "Northbound along the Peninsula": [
+  "data/expeditions.ts:375"
+ ],
+ "Crossing north and disembarkation.": [
+  "data/expeditions.ts:376"
+ ],
+ "Drake Passage & Ushuaia": [
+  "data/expeditions.ts:376",
+  "data/expeditions.ts:325"
+ ],
+ "Days 12–13": [
+  "data/expeditions.ts:376"
+ ],
+ "Quad share cabin": [
+  "data/expeditions.ts:379",
+  "data/expeditions.ts:115"
+ ],
+ "Up to five days of landings among Peninsula bays and channels": [
+  "data/expeditions.ts:38"
+ ],
+ "Crossing the Circle is an aim, not a guarantee.": [
+  "data/expeditions.ts:386"
+ ],
+ "Sea ice can change plans at short notice.": [
+  "data/expeditions.ts:387"
+ ],
+ "Expect cooler temperatures than on the northern Peninsula.": [
+  "data/expeditions.ts:388"
+ ],
+ "Small-ship ratios for faster, longer time ashore": [
+  "data/expeditions.ts:39"
+ ],
+ "In Search of Emperors aboard MV Katabatic": [
+  "data/expeditions.ts:398"
+ ],
+ "penguins": [
+  "data/expeditions.ts:399",
+  "data/routes.ts:90"
+ ],
+ "emperor": [
+  "data/expeditions.ts:399",
+  "data/routes.ts:90"
+ ],
+ "Placeholder — verify durations, prices and inclusions with partner operators before launch.": [
+  "data/expeditions.ts:4",
+  "data/routes.ts:4"
+ ],
+ "Optional kayaking and camping (limited places)": [
+  "data/expeditions.ts:40"
+ ],
+ "Late October – November 2026": [
+  "data/expeditions.ts:404"
+ ],
+ "Attempt to reach emperor penguins near Snow Hill Island": [
+  "data/expeditions.ts:407"
+ ],
+ "Helicopter flights over the sea ice, conditions permitting": [
+  "data/expeditions.ts:408"
+ ],
+ "Early-season Weddell Sea ice and pristine snow": [
+  "data/expeditions.ts:409"
+ ],
+ "A specialist, helicopter-supported attempt to reach an emperor penguin colony in the Weddell Sea.": [
+  "data/expeditions.ts:412"
+ ],
+ "Very few voyages each year attempt this. Katabatic heads into the Weddell Sea in late October, aiming for the emperor penguin colony near Snow Hill Island. If ice and weather allow, helicopters carry guests over the sea ice for the final approach on foot.\n\nNothing about this trip is guaranteed — that is what makes it an expedition. We'll share candid context on past conditions before you commit.": [
+  "data/expeditions.ts:414"
+ ],
+ "Penguins standing on sea ice in early season": [
+  "data/expeditions.ts:415"
+ ],
+ "Wind-carved snow on the sea ice": [
+  "data/expeditions.ts:418"
+ ],
+ "Misty Weddell Sea coastline": [
+  "data/expeditions.ts:419"
+ ],
+ "A close view of fresh snow crystals": [
+  "data/expeditions.ts:420"
+ ],
+ "Peaks above cloud seen during a helicopter flight": [
+  "data/expeditions.ts:421"
+ ],
+ "Board and sail for the Drake Passage.": [
+  "data/expeditions.ts:424"
+ ],
+ "Helicopter safety briefings and emperor penguin lectures.": [
+  "data/expeditions.ts:425"
+ ],
+ "Navigating the ice towards the colony, with helicopter operations as conditions allow.": [
+  "data/expeditions.ts:426"
+ ],
+ "Weddell Sea & Snow Hill Island": [
+  "data/expeditions.ts:426"
+ ],
+ "Days 4–9": [
+  "data/expeditions.ts:426"
+ ],
+ "Days 10–11": [
+  "data/expeditions.ts:427",
+  "data/expeditions.ts:375",
+  "data/expeditions.ts:323"
+ ],
+ "Day 12": [
+  "data/expeditions.ts:428",
+  "data/expeditions.ts:112"
+ ],
+ "The essential Antarctic voyage on a small, landing-focused ship — ideal for a first time south.": [
+  "data/expeditions.ts:43"
+ ],
+ "Signature suite": [
+  "data/expeditions.ts:432"
+ ],
+ "Helicopter operations, weather permitting (verify)": [
+  "data/expeditions.ts:434"
+ ],
+ "Reaching the colony depends entirely on ice and weather.": [
+  "data/expeditions.ts:437"
+ ],
+ "Early-season temperatures are noticeably colder (verify).": [
+  "data/expeditions.ts:438"
+ ],
+ "Departures are very limited and book out well ahead.": [
+  "data/expeditions.ts:439"
+ ],
+ "Ross Sea & East Antarctica aboard MV Halcyon Ice": [
+  "data/expeditions.ts:449"
+ ],
+ "Sail from Ushuaia across the Drake Passage to the Antarctic Peninsula, where each day is shaped around zodiac landings, ice cruising and wildlife. With just over a hundred guests, Meridian South gets everyone ashore quickly and keeps the focus where it belongs: outside.\n\nThe route below is indicative. In Antarctica, weather, ice and wildlife write the real itinerary each morning.": [
+  "data/expeditions.ts:45"
+ ],
+ "& east antarctica": [
+  "data/expeditions.ts:450",
+  "data/routes.ts:110"
+ ],
+ "ross sea": [
+  "data/expeditions.ts:450",
+  "data/routes.ts:110"
+ ],
+ "January – February 2027": [
+  "data/expeditions.ts:455",
+  "data/expeditions.ts:194"
+ ],
+ "The towering face of the Ross Ice Shelf": [
+  "data/expeditions.ts:458"
+ ],
+ "Heroic-age huts of Scott and Shackleton, conditions permitting": [
+  "data/expeditions.ts:459"
+ ],
+ "Icebergs reflected in a calm Antarctic bay": [
+  "data/expeditions.ts:46"
+ ],
+ "Sub-Antarctic islands on the voyage south": [
+  "data/expeditions.ts:460"
+ ],
+ "Mount Erebus and the Ross Sea's emperor and Adélie penguins": [
+  "data/expeditions.ts:461"
+ ],
+ "A month-long voyage from New Zealand to the Ross Sea — the far side of Antarctica, rarely seen.": [
+  "data/expeditions.ts:464"
+ ],
+ "Depart New Zealand and sail via the sub-Antarctic islands to the Ross Sea, home to the Ross Ice Shelf, Mount Erebus and the preserved huts of the heroic age. Halcyon Ice's long-voyage design makes the many sea days comfortable.\n\nWeather and ice dictate every landing on this route, and helicopter or zodiac access to historic sites cannot be guaranteed.": [
+  "data/expeditions.ts:466"
+ ],
+ "An immense ice face rising from the Ross Sea": [
+  "data/expeditions.ts:467"
+ ],
+ "Volcanic peaks under a polar twilight": [
+  "data/expeditions.ts:469"
+ ],
+ "A snow-covered hut in an Antarctic landscape": [
+  "data/expeditions.ts:470"
+ ],
+ "Icebergs drifting in the Ross Sea": [
+  "data/expeditions.ts:472"
+ ],
+ "Embark and sail south into the Southern Ocean.": [
+  "data/expeditions.ts:475"
+ ],
+ "Landings or zodiac cruises at sub-Antarctic islands, conditions permitting.": [
+  "data/expeditions.ts:476"
+ ],
+ "Sub-Antarctic islands": [
+  "data/expeditions.ts:476"
+ ],
+ "Days 2–6": [
+  "data/expeditions.ts:476"
+ ],
+ "Crossing towards the Antarctic coast, watching for the first pack ice.": [
+  "data/expeditions.ts:477"
+ ],
+ "Days 7–10": [
+  "data/expeditions.ts:477",
+  "data/expeditions.ts:268"
+ ],
+ "Cape Adare, the Ross Ice Shelf, Ross Island and historic huts, conditions permitting.": [
+  "data/expeditions.ts:478"
+ ],
+ "Ross Sea": [
+  "data/expeditions.ts:478"
+ ],
+ "Days 11–20": [
+  "data/expeditions.ts:478"
+ ],
+ "The long voyage north with lectures and reflection.": [
+  "data/expeditions.ts:479"
+ ],
+ "Southern Ocean": [
+  "data/expeditions.ts:479",
+  "data/expeditions.ts:477"
+ ],
+ "Days 21–27": [
+  "data/expeditions.ts:479"
+ ],
+ "Disembark.": [
+  "data/expeditions.ts:480"
+ ],
+ "Bluff, New Zealand": [
+  "data/expeditions.ts:480",
+  "data/expeditions.ts:475"
+ ],
+ "Day 28": [
+  "data/expeditions.ts:480"
+ ],
+ "Twin window cabin": [
+  "data/expeditions.ts:483",
+  "data/expeditions.ts:380",
+  "data/expeditions.ts:275"
+ ],
+ "Balcony stateroom": [
+  "data/expeditions.ts:484",
+  "data/expeditions.ts:381",
+  "data/expeditions.ts:276"
+ ],
+ "Grand suite": [
+  "data/expeditions.ts:485",
+  "data/expeditions.ts:277"
+ ],
+ "A gentoo penguin on a rocky landing site": [
+  "data/expeditions.ts:49"
+ ],
+ "This is a long voyage with many sea days.": [
+  "data/expeditions.ts:490"
+ ],
+ "Access to historic huts is subject to permits and conditions (verify).": [
+  "data/expeditions.ts:491"
+ ],
+ "Departures are few and often book a year or more ahead.": [
+  "data/expeditions.ts:492"
+ ],
+ "A humpback whale fluke rising from the sea": [
+  "data/expeditions.ts:50"
+ ],
+ "Luxury Antarctic Peninsula aboard MV Southern Lantern": [
+  "data/expeditions.ts:502"
+ ],
+ "expeditions": [
+  "data/expeditions.ts:503",
+  "data/routes.ts:130"
+ ],
+ "luxury": [
+  "data/expeditions.ts:503",
+  "data/routes.ts:130"
+ ],
+ "December 2026 – February 2027": [
+  "data/expeditions.ts:508",
+  "data/expeditions.ts:142"
+ ],
+ "A glacier calving face along a Peninsula channel": [
+  "data/expeditions.ts:51"
+ ],
+ "All-suite ship with balconies throughout": [
+  "data/expeditions.ts:511",
+  "data/expeditions.ts:303"
+ ],
+ "High guide-to-guest ratio and small landing groups": [
+  "data/expeditions.ts:512"
+ ],
+ "Spa, fine dining and premium beverages": [
+  "data/expeditions.ts:513"
+ ],
+ "Optional kayaking with dedicated guides": [
+  "data/expeditions.ts:514"
+ ],
+ "The classic Peninsula voyage aboard an all-suite ship, without losing an ounce of the adventure.": [
+  "data/expeditions.ts:517"
+ ],
+ "All the landings and wildlife of the classic Peninsula route, aboard a ship where every suite has a balcony and the kitchen is as serious as the expedition team. Small guest numbers make for unhurried landings.\n\nThe Drake is still the Drake — but you'll cross it in considerable comfort.": [
+  "data/expeditions.ts:519"
+ ],
+ "A guest in a red parka watching the ice": [
+  "data/expeditions.ts:52"
+ ],
+ "A mirror-calm Antarctic bay surrounded by mountains": [
+  "data/expeditions.ts:520"
+ ],
+ "Icebergs seen from a private balcony": [
+  "data/expeditions.ts:522"
+ ],
+ "A humpback whale in calm water": [
+  "data/expeditions.ts:523"
+ ],
+ "A gentoo penguin on rocks": [
+  "data/expeditions.ts:524"
+ ],
+ "Low cloud over Antarctic summits": [
+  "data/expeditions.ts:525"
+ ],
+ "Board and sail the Beagle Channel.": [
+  "data/expeditions.ts:528",
+  "data/expeditions.ts:371"
+ ],
+ "Ushuaia embarkation": [
+  "data/expeditions.ts:528",
+  "data/expeditions.ts:424",
+  "data/expeditions.ts:371"
+ ],
+ "Day 1": [
+  "data/expeditions.ts:528",
+  "data/expeditions.ts:475",
+  "data/expeditions.ts:424"
+ ],
+ "Lectures, spa time and seabird watching.": [
+  "data/expeditions.ts:529",
+  "data/expeditions.ts:321"
+ ],
+ "Days 2–3": [
+  "data/expeditions.ts:529",
+  "data/expeditions.ts:425",
+  "data/expeditions.ts:372"
+ ],
+ "Daily landings, zodiac cruises and optional kayaking.": [
+  "data/expeditions.ts:530"
+ ],
+ "Antarctic Peninsula": [
+  "data/expeditions.ts:530",
+  "data/expeditions.ts:324",
+  "data/expeditions.ts:270"
+ ],
+ "Days 4–8": [
+  "data/expeditions.ts:530",
+  "data/expeditions.ts:57"
+ ],
+ "Northbound crossing.": [
+  "data/expeditions.ts:531",
+  "data/expeditions.ts:427"
+ ],
+ "Drake Passage": [
+  "data/expeditions.ts:531",
+  "data/expeditions.ts:529",
+  "data/expeditions.ts:427"
+ ],
+ "Days 9–10": [
+  "data/expeditions.ts:531",
+  "data/expeditions.ts:58"
+ ],
+ "Disembark after breakfast.": [
+  "data/expeditions.ts:532",
+  "data/expeditions.ts:428",
+  "data/expeditions.ts:272"
+ ],
+ "Ushuaia disembarkation": [
+  "data/expeditions.ts:532",
+  "data/expeditions.ts:428",
+  "data/expeditions.ts:272"
+ ],
+ "Day 11": [
+  "data/expeditions.ts:532",
+  "data/expeditions.ts:59"
+ ],
+ "Veranda suite": [
+  "data/expeditions.ts:535",
+  "data/expeditions.ts:431",
+  "data/expeditions.ts:328"
+ ],
+ "Penthouse suite": [
+  "data/expeditions.ts:536",
+  "data/expeditions.ts:329"
+ ],
+ "Premium beverages on board (verify)": [
+  "data/expeditions.ts:538",
+  "data/expeditions.ts:331"
+ ],
+ "Some departures include a pre-voyage hotel night (verify).": [
+  "data/expeditions.ts:541"
+ ],
+ "Luxury ships observe the same landing limits as all IAATO vessels (verify).": [
+  "data/expeditions.ts:542"
+ ],
+ "Kayaking places are limited — request early.": [
+  "data/expeditions.ts:543"
+ ],
+ "Board in the afternoon and sail down the Beagle Channel as the light fades.": [
+  "data/expeditions.ts:55"
+ ],
+ "Lectures, safety briefings and biosecurity checks, with seabirds following the ship.": [
+  "data/expeditions.ts:56"
+ ],
+ "Landings and zodiac cruises in places such as the Gerlache Strait and Paradise Bay, conditions permitting.": [
+  "data/expeditions.ts:57"
+ ],
+ "Northbound crossing, photo reviews and a final look back at the ice.": [
+  "data/expeditions.ts:58"
+ ],
+ "Arrive in the early morning and transfer to the airport or your hotel.": [
+  "data/expeditions.ts:59"
+ ],
+ "Triple share cabin": [
+  "data/expeditions.ts:62"
+ ],
+ "The Drake can be rough; bring seasickness remedies and speak to your doctor (verify).": [
+  "data/expeditions.ts:69"
+ ],
+ "Landing sites are chosen daily and cannot be guaranteed.": [
+  "data/expeditions.ts:70"
+ ],
+ "Kayaking and camping places are limited and booked in advance.": [
+  "data/expeditions.ts:71"
+ ],
+ "Expedition leaders & naturalist guides": [
+  "data/expeditions.ts:8"
+ ],
+ "Peninsula Explorer aboard MV Tern Arc": [
+  "data/expeditions.ts:82"
+ ],
+ "explorer": [
+  "data/expeditions.ts:83"
+ ],
+ "peninsula": [
+  "data/expeditions.ts:83",
+  "data/expeditions.ts:29",
+  "data/routes.ts:10"
+ ],
+ "December 2026 – March 2027": [
+  "data/expeditions.ts:88"
+ ],
+ "Daily zodiac landings and cruises (weather permitting)": [
+  "data/expeditions.ts:9"
+ ],
+ "An extra day in the Peninsula for more flexibility with weather": [
+  "data/expeditions.ts:91"
+ ],
+ "Glass-walled observation lounge for ice and whale watching": [
+  "data/expeditions.ts:92"
+ ],
+ "Polar plunge for the brave (optional)": [
+  "data/expeditions.ts:93"
+ ],
+ "A slightly longer Peninsula voyage on a comfortable mid-size ship, with room in the schedule for the weather to cooperate.": [
+  "data/expeditions.ts:96"
+ ],
+ "Twelve days gives the expedition team a precious extra day to play with — to wait out a storm, linger with feeding humpbacks or try again for a landing missed earlier. Tern Arc's strengthened hull and large zodiac fleet make the most of every window.\n\nLate-season departures coincide with peak whale activity and fledging penguin chicks.": [
+  "data/expeditions.ts:98"
+ ],
+ "A humpback whale surfacing in Antarctic waters": [
+  "data/expeditions.ts:99"
+ ],
+ "landings": [
+  "data/experiences.ts:10"
+ ],
+ "zodiac": [
+  "data/experiences.ts:10"
+ ],
+ "Whale Watching": [
+  "data/experiences.ts:104"
+ ],
+ "watching": [
+  "data/experiences.ts:105"
+ ],
+ "whale": [
+  "data/experiences.ts:105"
+ ],
+ "Humpbacks, minkes and orcas gather to feed in the krill-rich summer waters.": [
+  "data/experiences.ts:106"
+ ],
+ "As the season advances, the Peninsula's bays fill with whales. Humpbacks bubble-net feed alongside zodiacs, minke whales surface among the brash ice and orca pods patrol the channels.\n\nLate season — February and March — is generally the best time, when whales have fattened on krill and linger close to shore. Expedition teams keep a respectful distance and let curious animals approach on their own terms.": [
+  "data/experiences.ts:108"
+ ],
+ "A humpback whale surfacing near the Antarctic coast": [
+  "data/experiences.ts:109"
+ ],
+ "The heartbeat of every expedition: small inflatable boats that carry you from ship to shore and in among the ice.": [
+  "data/experiences.ts:11"
+ ],
+ "February and March usually offer the most whale activity.": [
+  "data/experiences.ts:113"
+ ],
+ "Approach distances for whales are set by guidelines (verify).": [
+  "data/experiences.ts:114"
+ ],
+ "Binoculars make a real difference — bring your own.": [
+  "data/experiences.ts:115"
+ ],
+ "Penguin Colonies": [
+  "data/experiences.ts:121"
+ ],
+ "colonies": [
+  "data/experiences.ts:122"
+ ],
+ "penguin": [
+  "data/experiences.ts:122"
+ ],
+ "Gentoos, chinstraps, Adélies, kings and, for a lucky few, emperors — in noisy, busy, unforgettable colonies.": [
+  "data/experiences.ts:123"
+ ],
+ "Standing at the edge of a penguin colony is a full-sensory experience: the clamour of thousands of birds, the comic purpose of their 'penguin highways', and yes, the smell. Each species and season tells a different story, from courtship and nest-building to downy chicks and fledging.\n\nWildlife-watching guidelines ask visitors to keep their distance and give right of way. Penguins often approach on their own — the trick is to stay still and let them.": [
+  "data/experiences.ts:125"
+ ],
+ "Penguins walking in single file across the snow": [
+  "data/experiences.ts:126"
+ ],
+ "Zodiacs are how Antarctica is actually experienced. Twice a day, conditions permitting, the expedition team lowers the boats and ferries guests ashore to penguin colonies, historic huts and viewpoints — or simply cruises among icebergs where landing isn't possible.\n\nDrivers are experienced guides who read the ice, the swell and the wildlife constantly. Getting in and out uses a firm sailor's grip and takes a little practice; every operator runs a thorough briefing before the first landing.": [
+  "data/experiences.ts:13"
+ ],
+ "Keep at least 5 m (15 ft) from wildlife (verify).": [
+  "data/experiences.ts:138"
+ ],
+ "Never block a penguin highway — they have right of way.": [
+  "data/experiences.ts:139"
+ ],
+ "Icebergs viewed at water level from a zodiac": [
+  "data/experiences.ts:14"
+ ],
+ "King penguins are seen in South Georgia, not on the Peninsula.": [
+  "data/experiences.ts:140"
+ ],
+ "Citizen Science": [
+  "data/experiences.ts:146"
+ ],
+ "science": [
+  "data/experiences.ts:147"
+ ],
+ "citizen": [
+  "data/experiences.ts:147"
+ ],
+ "Contribute real data to research on clouds, seabirds, whales and plankton while you travel.": [
+  "data/experiences.ts:148"
+ ],
+ "Many expedition ships now run citizen-science programmes that feed into international research projects: photographing whale flukes for identification, logging cloud observations for satellite calibration, sampling phytoplankton or counting seabirds.\n\nIt's a meaningful way to give something back to a place that gives so much, and the expedition team will explain how your observations are used.": [
+  "data/experiences.ts:150"
+ ],
+ "Clear water beneath the surface of the Southern Ocean": [
+  "data/experiences.ts:151"
+ ],
+ "Usually free and open to all guests.": [
+  "data/experiences.ts:155"
+ ],
+ "Programmes vary by ship and departure (verify).": [
+  "data/experiences.ts:156"
+ ],
+ "No scientific background needed.": [
+  "data/experiences.ts:157"
+ ],
+ "Mountaineering & Snowshoeing": [
+  "data/experiences.ts:163"
+ ],
+ "& snowshoeing": [
+  "data/experiences.ts:164"
+ ],
+ "mountaineering": [
+  "data/experiences.ts:164"
+ ],
+ "Rope up with mountain guides for glacier walks and modest ascents with views across the ice.": [
+  "data/experiences.ts:165"
+ ],
+ "On selected voyages, qualified mountain guides lead small, roped groups onto glaciers and up modest peaks above the landing sites. Early in the season, deep snow makes snowshoeing the best way to travel inland.\n\nRoutes are chosen on the day for safety and conditions. You don't need to be an alpinist, but you do need good fitness and a head for open, exposed terrain.": [
+  "data/experiences.ts:167"
+ ],
+ "A wind-sculpted snow ridge under a blue sky": [
+  "data/experiences.ts:168"
+ ],
+ "Good fitness is required; experience requirements vary (verify).": [
+  "data/experiences.ts:173"
+ ],
+ "Harnesses, crampons and ropes are usually provided (verify).": [
+  "data/experiences.ts:174"
+ ],
+ "Snowshoeing is often included at no extra cost (verify).": [
+  "data/experiences.ts:175"
+ ],
+ "Shackleton & Polar History": [
+  "data/experiences.ts:181"
+ ],
+ "history": [
+  "data/experiences.ts:182"
+ ],
+ "shackleton": [
+  "data/experiences.ts:182"
+ ],
+ "Walk in the footsteps of the heroic age in South Georgia: Grytviken, Shackleton's grave and the trail to Stromness.": [
+  "data/experiences.ts:183"
+ ],
+ "South Georgia is where Shackleton's story both ends and turns. In 1916, after the loss of Endurance, he crossed the island's unmapped mountains on foot to reach the whaling station at Stromness and raise a rescue. He returned in 1922 and died aboard his ship at Grytviken, where he is buried.\n\nVoyages typically visit Grytviken's whaling station, museum and cemetery, where guests traditionally raise a toast to 'the Boss'. Conditions permitting, some walk the final stretch of his route towards Stromness.": [
+  "data/experiences.ts:185"
+ ],
+ "Misty mountains rising above a South Georgia bay": [
+  "data/experiences.ts:186"
+ ],
+ "The Stromness walk is weather-dependent and seasonally restricted (verify).": [
+  "data/experiences.ts:190"
+ ],
+ "South Georgia charges a visitor fee, usually included in fares (verify).": [
+  "data/experiences.ts:191"
+ ],
+ "Ross Sea voyages may visit the heroic-age huts of Scott and Shackleton (verify).": [
+  "data/experiences.ts:192"
+ ],
+ "Landings depend on weather, swell and ice and can't be guaranteed.": [
+  "data/experiences.ts:26"
+ ],
+ "Waterproof outer layers are essential — spray is part of the ride.": [
+  "data/experiences.ts:27"
+ ],
+ "Visitor numbers ashore are limited at each site (verify).": [
+  "data/experiences.ts:28"
+ ],
+ "Sea Kayaking": [
+  "data/experiences.ts:34"
+ ],
+ "kayaking": [
+  "data/experiences.ts:35"
+ ],
+ "sea": [
+  "data/experiences.ts:35"
+ ],
+ "Paddle in near-silence among brash ice, with only the crackle of melting bergs and the breath of passing whales.": [
+  "data/experiences.ts:36"
+ ],
+ "From a kayak, Antarctica's scale becomes personal. Small groups paddle with dedicated guides, usually close to the ship, threading between floating ice and along glacier fronts while penguins porpoise past.\n\nMost operators run kayaking as a pre-booked programme with limited places, and require some prior paddling experience. Drysuits and specialist gear are typically provided.": [
+  "data/experiences.ts:38"
+ ],
+ "A still bay among mountains, ideal for kayaking": [
+  "data/experiences.ts:39"
+ ],
+ "Placeholder — verify availability, prices and requirements with partner operators before launch.": [
+  "data/experiences.ts:4"
+ ],
+ "Prior kayaking experience is usually required (verify).": [
+  "data/experiences.ts:44"
+ ],
+ "Places are limited — book at the same time as your voyage.": [
+  "data/experiences.ts:45"
+ ],
+ "Sessions are weather-dependent; refunds for missed outings vary (verify).": [
+  "data/experiences.ts:46"
+ ],
+ "Camping on the Ice": [
+  "data/experiences.ts:52"
+ ],
+ "on the ice": [
+  "data/experiences.ts:53"
+ ],
+ "camping": [
+  "data/experiences.ts:53"
+ ],
+ "Spend a night ashore in a bivvy bag, listening to glaciers groan under a sky that never quite darkens.": [
+  "data/experiences.ts:54"
+ ],
+ "Camping in Antarctica is beautifully simple: a sleeping bag, a bivvy sack, a shallow trench in the snow and the company of a few fellow travellers. No tents on most programmes — just the open sky, the distant calving of ice and perhaps a penguin's call.\n\nNothing is left behind, including human waste, and the night can be cancelled at short notice if the weather turns. Few who do it ever forget it.": [
+  "data/experiences.ts:56"
+ ],
+ "A small camp set up in a snowy landscape": [
+  "data/experiences.ts:57"
+ ],
+ "Usually a single night, weather permitting.": [
+  "data/experiences.ts:62"
+ ],
+ "No food or drink ashore, and no toilets beyond a portable system (verify).": [
+  "data/experiences.ts:63"
+ ],
+ "Minimum ages and fitness criteria apply (verify).": [
+  "data/experiences.ts:64"
+ ],
+ "Polar Plunge": [
+  "data/experiences.ts:70"
+ ],
+ "plunge": [
+  "data/experiences.ts:71"
+ ],
+ "polar": [
+  "data/experiences.ts:71"
+ ],
+ "A few breathless seconds in water just above freezing — the Antarctic rite of passage nobody forgets.": [
+  "data/experiences.ts:72"
+ ],
+ "On many voyages, the expedition team sets aside time for brave guests to leap into the Southern Ocean, from the shore or from the ship's gangway or marina. It is over in moments, followed by towels, cheers and usually a warming drink.\n\nIt's entirely optional, carefully supervised and always subject to conditions. Anyone with heart conditions should seek medical advice first.": [
+  "data/experiences.ts:74"
+ ],
+ "Cold, clear Southern Ocean water": [
+  "data/experiences.ts:75"
+ ],
+ "Water temperatures are typically around 0 °C or just below (verify).": [
+  "data/experiences.ts:79"
+ ],
+ "A waiver and safety line are standard (verify).": [
+  "data/experiences.ts:80"
+ ],
+ "Seek medical advice if you have any cardiovascular condition.": [
+  "data/experiences.ts:81"
+ ],
+ "Photography Voyages": [
+  "data/experiences.ts:87"
+ ],
+ "voyages": [
+  "data/experiences.ts:88"
+ ],
+ "photography": [
+  "data/experiences.ts:88"
+ ],
+ "Departures with professional photographers on board, offering workshops, field coaching and image reviews.": [
+  "data/experiences.ts:89"
+ ],
+ "Zodiac Landings": [
+  "data/experiences.ts:9"
+ ],
+ "Antarctica is extraordinarily photogenic and surprisingly difficult: bright snow fools meters, cold drains batteries and wildlife moves fast. Photography-focused departures carry professional guides who teach on deck, in zodiacs and in the lecture room.\n\nWorkshops typically run at no extra charge on these voyages, and suit everyone from phone photographers to those carrying long lenses.": [
+  "data/experiences.ts:91"
+ ],
+ "A photographer in a red parka overlooking the ice": [
+  "data/experiences.ts:92"
+ ],
+ "Bring spare batteries and keep them warm in an inside pocket.": [
+  "data/experiences.ts:96"
+ ],
+ "Drones are generally not permitted (verify).": [
+  "data/experiences.ts:97"
+ ],
+ "A dry bag for zodiac rides is strongly recommended.": [
+  "data/experiences.ts:98"
+ ],
+ "Katabatic winds pour off the polar plateau towards the coast, with gusts at some coastal sites exceeding 200 km/h.": [
+  "data/facts.ts:10"
+ ],
+ "The driest continent": [
+  "data/facts.ts:13"
+ ],
+ "Much of the interior receives so little precipitation that Antarctica is classed as a polar desert.": [
+  "data/facts.ts:14"
+ ],
+ "The highest continent on average": [
+  "data/facts.ts:17"
+ ],
+ "Thanks to its thick ice sheet, Antarctica has the highest average elevation of any continent — well over 2,000 metres.": [
+  "data/facts.ts:18"
+ ],
+ "About 90% of the world's ice": [
+  "data/facts.ts:21"
+ ],
+ "The Antarctic ice sheet holds roughly 90% of the planet's ice and around 70% of its fresh water.": [
+  "data/facts.ts:22"
+ ],
+ "Protected by treaty since 1961": [
+  "data/facts.ts:25"
+ ],
+ "The Antarctic Treaty, in force since 23 June 1961, reserves the continent for peace and science.": [
+  "data/facts.ts:26"
+ ],
+ "Home to millions of penguins": [
+  "data/facts.ts:29"
+ ],
+ "Antarctica and its surrounding islands support millions of breeding penguins across several species.": [
+  "data/facts.ts:30"
+ ],
+ "No permanent residents": [
+  "data/facts.ts:33"
+ ],
+ "Around 14 million km² of ice and rock with no native population — only scientists and support staff on rotation.": [
+  "data/facts.ts:34"
+ ],
+ "We only work with IAATO-member operators": [
+  "data/facts.ts:40"
+ ],
+ "IAATO sets standards for safe, environmentally responsible travel, including visitor limits and site guidelines (verify current rules with IAATO).": [
+  "data/facts.ts:41"
+ ],
+ "Governed by the Antarctic Treaty": [
+  "data/facts.ts:44"
+ ],
+ "The Treaty system sets aside territorial claims and protects Antarctica for peaceful purposes and science.": [
+  "data/facts.ts:45"
+ ],
+ "Mining is banned under the Madrid Protocol": [
+  "data/facts.ts:48"
+ ],
+ "The Protocol on Environmental Protection designates Antarctica a natural reserve and requires environmental assessment of all activities (verify specifics).": [
+  "data/facts.ts:49"
+ ],
+ "The coldest place on Earth": [
+  "data/facts.ts:5"
+ ],
+ "Boots, clothing and bags are cleaned and inspected to stop non-native seeds and pathogens reaching the ice (verify procedures with your operator).": [
+  "data/facts.ts:53"
+ ],
+ "Season runs roughly November to March (verify)": [
+  "data/facts.ts:58"
+ ],
+ "Up to 20+ hours of daylight in December (verify)": [
+  "data/facts.ts:59"
+ ],
+ "Vostok Station recorded −89.2 °C on 21 July 1983, the lowest air temperature ever measured at a ground station.": [
+  "data/facts.ts:6"
+ ],
+ "Peninsula summer temperatures often near 0 °C (verify)": [
+  "data/facts.ts:60"
+ ],
+ "Whale sightings peak in February and March (verify)": [
+  "data/facts.ts:61"
+ ],
+ "The windiest continent": [
+  "data/facts.ts:9"
+ ],
+ "What are the entry requirements for Argentina and Chile?": [
+  "data/faqs.ts:13"
+ ],
+ "Requirements depend on your nationality. Many passport holders can visit visa-free for short stays, but rules change and some nationalities need a visa or electronic authorisation. Your passport should usually be valid for at least six months beyond your travel dates.": [
+  "data/faqs.ts:14"
+ ],
+ "How rough is the Drake Passage, and will I get seasick?": [
+  "data/faqs.ts:19"
+ ],
+ "The Drake can be anything from a glassy 'Drake Lake' to a properly rough 'Drake Shake'. Modern stabilised ships help, and most people adapt within a day. Speak to your doctor about seasickness medication before you travel, and start it before you feel unwell.": [
+  "data/faqs.ts:20"
+ ],
+ "Should I fly over the Drake or sail across it?": [
+  "data/faqs.ts:25"
+ ],
+ "Flying from Punta Arenas to King George Island saves around four days at sea and avoids the crossing, but flights depend on weather and can be delayed. Sailing is the classic experience, usually less expensive and gives you time to watch seabirds and adjust to ship life. We'll help you weigh the trade-offs.": [
+  "data/faqs.ts:26"
+ ],
+ " (Verify with partner operators and IAATO before launch.)": [
+  "data/faqs.ts:3"
+ ],
+ "Does ship size affect how often I can land?": [
+  "data/faqs.ts:31"
+ ],
+ "Yes. Under IAATO guidelines, ships carrying more than 500 passengers cannot make landings, no more than 100 visitors may be ashore at a site at one time, and only one ship may visit a landing site at a time. Smaller ships cycle guests ashore faster, which usually means more time on land.": [
+  "data/faqs.ts:32"
+ ],
+ "What are the IAATO landing rules?": [
+  "data/faqs.ts:37"
+ ],
+ "IAATO members follow site-specific guidelines covering visitor numbers, guide ratios, approach distances and where you may walk. Typically there is at least one guide for every 20 guests ashore, and you'll be briefed on the rules for each site before landing.": [
+  "data/faqs.ts:38"
+ ],
+ "What's included in the price of an expedition?": [
+  "data/faqs.ts:43"
+ ],
+ "Usually your cabin, all meals on board, zodiac landings and cruises, the expedition team's guiding and lectures, and often a polar parka to keep and boots on loan. Flights to the embarkation port, hotel nights, insurance, gratuities and optional activities such as kayaking are typically extra.": [
+  "data/faqs.ts:44"
+ ],
+ "What cabin types are available?": [
+  "data/faqs.ts:49"
+ ],
+ "Most ships offer shared cabins (triple or quad), standard twin cabins with a window or porthole, balcony staterooms and suites. Luxury ships are often all-suite. Cabin choice doesn't change your time ashore — everyone lands together in rotations.": [
+  "data/faqs.ts:50"
+ ],
+ "How fit do I need to be, and is there an age limit?": [
+  "data/faqs.ts:55"
+ ],
+ "You should be able to walk on uneven, slippery ground and step in and out of a zodiac with help from the crew. Minimum ages vary by operator, and some activities such as kayaking or camping carry their own age limits. Many operators have no upper age limit but may require a medical declaration.": [
+  "data/faqs.ts:56"
+ ],
+ "Are there medical requirements?": [
+  "data/faqs.ts:61"
+ ],
+ "Most operators require a medical form completed and signed by your doctor before departure, because ships are far from hospitals and evacuation is difficult. Ships carry a doctor and a small medical centre, but treatment options are limited.": [
+  "data/faqs.ts:62"
+ ],
+ "Do I need special travel insurance?": [
+  "data/faqs.ts:67"
+ ],
+ "Yes. Operators typically make comprehensive travel, medical and emergency evacuation insurance mandatory. Required coverage amounts vary, but evacuation cover of US$200,000 or more is common. Check that your policy explicitly covers travel to Antarctica.": [
+  "data/faqs.ts:68"
+ ],
+ "How do I get to Ushuaia or Punta Arenas?": [
+  "data/faqs.ts:7"
+ ],
+ "What should I pack, and what gear is provided?": [
+  "data/faqs.ts:73"
+ ],
+ "Pack layers: thermal base layers, fleece or down mid-layers, waterproof over-trousers, warm gloves, a hat, a buff and sunglasses. Many operators provide a polar parka and lend waterproof boots, but check what your ship includes.": [
+  "data/faqs.ts:74"
+ ],
+ "Any photography tips for Antarctica?": [
+  "data/faqs.ts:79"
+ ],
+ "Most travellers fly via Buenos Aires to Ushuaia, Argentina, or via Santiago to Punta Arenas, Chile. Domestic connections can be disrupted by weather, so we strongly recommend arriving at least a day before embarkation — many operators require it.": [
+  "data/faqs.ts:8"
+ ],
+ "Bring more storage and batteries than you think you'll need, and keep spares warm in an inside pocket. Snow fools camera meters, so expose slightly brighter than your camera suggests. A dry bag protects gear in the zodiacs. Drones are generally restricted and usually need advance permission.": [
+  "data/faqs.ts:80"
+ ],
+ "What environmental rules will I need to follow?": [
+  "data/faqs.ts:85"
+ ],
+ "Before every landing, boots, clothing and bags are cleaned and checked to prevent introducing non-native species. Ashore, keep at least 5 m (15 ft) from wildlife — more for seals and for animals that react to you — never feed animals, take nothing away and leave nothing behind.": [
+  "data/faqs.ts:86"
+ ],
+ "Changes by you": [
+  "data/legal.ts:100"
+ ],
+ "If you want to change your trip after it is confirmed, tell us in writing. We will do our best to help. Changes are not always possible, and any extra costs charged by suppliers, plus a reasonable fee for our time, will be passed on to you.": [
+  "data/legal.ts:102"
+ ],
+ "Cancellation by you": [
+  "data/legal.ts:106"
+ ],
+ "You can cancel at any time by telling us in writing. The deposit is non-refundable. The closer to departure you cancel, the higher the charge, up to the full cost of the trip, because accommodation, transport and other services are reserved and paid for on your behalf. The charges that apply to your trip are set out on your quote and confirmation.": [
+  "data/legal.ts:108"
+ ],
+ "Travel insurance may cover cancellation charges in some circumstances.": [
+  "data/legal.ts:109"
+ ],
+ "Who we are": [
+  "data/legal.ts:11"
+ ],
+ "Changes and cancellation by us": [
+  "data/legal.ts:113"
+ ],
+ "We plan carefully, but sometimes we have to change part of a trip, for example because of weather, road or route closures, or a supplier that cannot honour a booking. We will tell you as soon as possible and offer a comparable alternative.": [
+  "data/legal.ts:115"
+ ],
+ "If we have to make a significant change or cancel your trip, you can accept the change, take a comparable alternative if one is available, or cancel and receive a full refund of the money you have paid us.": [
+  "data/legal.ts:116"
+ ],
+ "Events beyond anyone's control": [
+  "data/legal.ts:120"
+ ],
+ "We are not liable for changes, delays or cancellations caused by events beyond our reasonable control, such as war or threat of war, civil unrest, natural disaster, epidemics, government action, airport or border closures, or severe weather. Where such an event affects your trip, we will help you make other arrangements and pass on any refunds we receive from suppliers.": [
+  "data/legal.ts:122"
+ ],
+ "Travel insurance": [
+  "data/legal.ts:126"
+ ],
+ "Comprehensive travel insurance is a condition of booking. It must cover medical treatment, repatriation and cancellation, and any activities in your trip. Please send us your policy details before you travel.": [
+  "data/legal.ts:128"
+ ],
+ "This website is run by Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. In this policy \"we\", \"us\" and \"our\" mean Seventh Continent.": [
+  "data/legal.ts:13"
+ ],
+ "Passports, visas and health": [
+  "data/legal.ts:132"
+ ],
+ "You are responsible for holding a valid passport, any visas or travel authorisations, and any vaccinations or health documents required for Antarctica and its gateway countries (usually Argentina or Chile) and for any country you pass through. Entry rules change, so check them with the relevant embassy and your government's travel advice before you book and again before you travel.": [
+  "data/legal.ts:134"
+ ],
+ "Please tell us before booking about any medical condition or mobility need that could affect your trip, so that we can plan around it.": [
+  "data/legal.ts:135"
+ ],
+ "Your responsibilities": [
+  "data/legal.ts:139"
+ ],
+ "For anything about your personal data, email seventhcontinent@tourground.com.": [
+  "data/legal.ts:14"
+ ],
+ "Please follow local laws and customs, the instructions of guides, drivers, crews and other suppliers, and the safety advice we give you. We may end the trip of anyone whose behaviour puts others at risk or causes serious disruption, without refund.": [
+  "data/legal.ts:141"
+ ],
+ "Our liability": [
+  "data/legal.ts:145"
+ ],
+ "We take reasonable care in planning and arranging your trip. We are not liable for loss, injury or damage caused by you, by someone not connected with the trip, or by events beyond our reasonable control.": [
+  "data/legal.ts:147"
+ ],
+ "Where airlines, hotels and other transport companies are concerned, our liability is limited in the same way as theirs is under the international conventions that apply to them. Nothing in these terms limits our liability for death or personal injury caused by our negligence, or any liability that cannot be limited by law.": [
+  "data/legal.ts:148"
+ ],
+ "Complaints": [
+  "data/legal.ts:152"
+ ],
+ "If something is not right during your trip, tell us straight away so that we can try to fix it on the spot. If it cannot be resolved, please write to seventhcontinent@tourground.com within 28 days of your return and we will reply promptly.": [
+  "data/legal.ts:154"
+ ],
+ "Governing law": [
+  "data/legal.ts:158"
+ ],
+ "These terms are governed by the law that applies to the contract you make with us, as set out in your booking confirmation. You may also have the protection of the consumer law of the country where you live.": [
+  "data/legal.ts:160"
+ ],
+ "Which cookies and similar storage the Seventh Continent website uses, and how to control them.": [
+  "data/legal.ts:168"
+ ],
+ "Short version": [
+  "data/legal.ts:171"
+ ],
+ "We do not run analytics, personalisation or marketing cookies. If we add any in future, they will only load after you allow them in the cookie settings. The only cookies this website sets itself are the strictly necessary ones listed below.": [
+  "data/legal.ts:173"
+ ],
+ "What the site stores in your browser": [
+  "data/legal.ts:177"
+ ],
+ "Your cookie choices are saved in local storage under sc-consent-v1 and mirrored in a first-party cookie, sc_consent, for 180 days, so we do not ask again. If you change the display currency, your choice is saved in local storage under sc-currency. If you start the [expedition planner](/plan-my-expedition), your answers are saved in local storage under sc-planner-v1 so you can come back to them. They stay on your device until you submit the planner, and are cleared when you do. If you switch on penguin mode, that choice is saved in local storage under sc-penguin.": [
+  "data/legal.ts:179"
+ ],
+ "What we collect": [
+  "data/legal.ts:18"
+ ],
+ "Fonts are served from this website. Photos load from the Unsplash image service (images.unsplash.com), which receives your browser's IP address in order to deliver them.": [
+  "data/legal.ts:180"
+ ],
+ "Consent": [
+  "data/legal.ts:184"
+ ],
+ "Anything listed above is strictly necessary for a feature you choose to use, so it does not need your consent. We will not add analytics or advertising cookies without asking you first.": [
+  "data/legal.ts:186"
+ ],
+ "How to remove it or change your mind": [
+  "data/legal.ts:190"
+ ],
+ "You can clear this site's stored data at any time in your browser's settings (usually under Privacy, then Cookies and site data).": [
+  "data/legal.ts:192"
+ ],
+ "Questions about this policy: email seventhcontinent@tourground.com.": [
+  "data/legal.ts:198"
+ ],
+ "Only what you choose to send us: through the enquiry form, through the expedition planner, your name, email address, phone number, how you prefer to be contacted, travel dates, the size of your party, your interests, budget and notes; through the newsletter form, your email address. If you write to us by email, we keep that correspondence.": [
+  "data/legal.ts:20"
+ ],
+ "If you book, we also collect what is needed to arrange the trip, such as the names of everyone travelling, dates of birth and passport details where suppliers require them, dietary and access needs, and emergency contacts.": [
+  "data/legal.ts:21"
+ ],
+ "Please do not send payment card details or detailed health information by email or through the form.": [
+  "data/legal.ts:22"
+ ],
+ "Why we use it": [
+  "data/legal.ts:26"
+ ],
+ "To answer your enquiry, plan a trip with you and, if you go ahead, book and run it. The legal basis is the steps you ask us to take before entering into a contract, the performance of that contract, your consent where we ask for it, and our legitimate interest in replying to people who contact us.": [
+  "data/legal.ts:28"
+ ],
+ "We do not sell your details, and we only send you news or offers if you ask us to.": [
+  "data/legal.ts:29"
+ ],
+ "Who we share it with": [
+  "data/legal.ts:33"
+ ],
+ "Your enquiry reaches us through our own website server (hosted by Vercel Inc., United States), which forwards it to our inbox.": [
+  "data/legal.ts:35"
+ ],
+ "If you book, we share only what is needed with the hotels, lodges, transport companies, guides and local partners in Antarctica and its gateway countries (usually Argentina or Chile) who deliver your trip, and with your travel insurer if you ask us to. Some of them are outside your own country; where that is the case, we share the minimum needed to deliver the service you have asked for.": [
+  "data/legal.ts:36"
+ ],
+ "We may also disclose information where the law requires it.": [
+  "data/legal.ts:37"
+ ],
+ "30 October 2026": [
+  "data/legal.ts:4"
+ ],
+ "Cookies and local storage": [
+  "data/legal.ts:41"
+ ],
+ "We do not run analytics, personalisation or marketing cookies. If we add any in future, they will only load after you allow them in the cookie settings. See the [cookie policy](/cookies/) for what the site stores in your browser.": [
+  "data/legal.ts:43"
+ ],
+ "How long we keep it": [
+  "data/legal.ts:47"
+ ],
+ "We keep enquiries that do not become a booking for 24 months from our last contact, then delete them. Booking records are kept for as long as accounting and consumer law require, usually six years after the trip.": [
+  "data/legal.ts:49"
+ ],
+ "How we protect it": [
+  "data/legal.ts:53"
+ ],
+ "Your details are kept in password-protected email and file storage that only the people planning your trip can reach. The website is served over an encrypted connection (HTTPS).": [
+  "data/legal.ts:55"
+ ],
+ "Your rights": [
+  "data/legal.ts:59"
+ ],
+ "You can ask to see the personal data we hold about you, to correct or delete it, to restrict or object to how we use it, to receive a copy in a portable format, or to withdraw your consent at any time. Email seventhcontinent@tourground.com and we will reply within one month.": [
+  "data/legal.ts:61"
+ ],
+ "If you are unhappy with how we handle your data, please tell us first so that we can put it right. You also have the right to complain to the data-protection authority in the country where you live.": [
+  "data/legal.ts:62"
+ ],
+ "Changes to this policy": [
+  "data/legal.ts:66"
+ ],
+ "We will update this page if the way we use personal data changes. Last updated 30 October 2026.": [
+  "data/legal.ts:68"
+ ],
+ "The terms that apply when you enquire about, and book, a tailor-made trip with Seventh Continent.": [
+  "data/legal.ts:76"
+ ],
+ "About these terms": [
+  "data/legal.ts:79"
+ ],
+ "How Seventh Continent collects, uses and protects the personal details you send us.": [
+  "data/legal.ts:8"
+ ],
+ "These terms apply to every trip planned by Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. Please read them before you book. Your written quote and booking confirmation form part of the contract, together with these terms.": [
+  "data/legal.ts:81"
+ ],
+ "Everything on this website, including itineraries, timings, seasons and experiences, describes the kind of trip we plan. It is not an offer you can accept.": [
+  "data/legal.ts:82"
+ ],
+ "Enquiries and quotes": [
+  "data/legal.ts:86"
+ ],
+ "Sending an enquiry is free and creates no obligation for you or for us.": [
+  "data/legal.ts:88"
+ ],
+ "We reply with ideas and questions, then shape the trip with you. When it is right, we send a written quote. A quote is valid for the period stated on it. Prices for flights, accommodation and services can change until the trip is confirmed, and we will tell you before you commit if they do.": [
+  "data/legal.ts:89"
+ ],
+ "Booking and payment": [
+  "data/legal.ts:93"
+ ],
+ "Your booking is confirmed when you accept the quote in writing, pay the deposit stated on it, and we send you a written confirmation. The person who makes the booking accepts these terms for everyone travelling and must be 18 or over.": [
+  "data/legal.ts:95"
+ ],
+ "The balance is due by the date shown on your quote and confirmation. If it is not paid on time, we may treat the booking as cancelled by you, and the cancellation charges below apply.": [
+  "data/legal.ts:96"
+ ],
+ "−5 °C to 2 °C on the Peninsula (verify)": [
+  "data/months.ts:10"
+ ],
+ "Seabirds returning to breed": [
+  "data/months.ts:11"
+ ],
+ "Elephant seals hauled out in South Georgia": [
+  "data/months.ts:11"
+ ],
+ "Penguin courtship and nest-building": [
+  "data/months.ts:11"
+ ],
+ "Early season is Antarctica at its most untouched. Deep, clean snow blankets the landscape, sea ice still lingers in the bays and penguins are busy courting and building nests from stones. Fewer ships are about, and prices can be a little lower.\n\nExpect colder temperatures and the occasional landing blocked by ice — part of the drama.": [
+  "data/months.ts:13"
+ ],
+ "Fresh, untouched snow on an Antarctic ridge": [
+  "data/months.ts:14"
+ ],
+ "The longest days and the first chicks": [
+  "data/months.ts:20"
+ ],
+ "Up to 20+ hours (verify)": [
+  "data/months.ts:21"
+ ],
+ "Whales arriving to feed": [
+  "data/months.ts:23"
+ ],
+ "Fur seals breeding in South Georgia": [
+  "data/months.ts:23"
+ ],
+ "Penguin chicks begin to hatch": [
+  "data/months.ts:23"
+ ],
+ "Around the solstice, the sun barely sets and the light seems to last forever. Penguin eggs begin to hatch and colonies grow noisier by the day. It's peak season, especially over the holidays, so book well ahead.\n\nTemperatures are among the warmest of the year and landing conditions are often at their most reliable.": [
+  "data/months.ts:25"
+ ],
+ "A gentoo penguin on a rocky nesting site": [
+  "data/months.ts:26"
+ ],
+ "High summer: warmth, chicks and activity everywhere": [
+  "data/months.ts:32"
+ ],
+ "Around 18–20 hours (verify)": [
+  "data/months.ts:33",
+  "data/months.ts:9"
+ ],
+ "−1 °C to 5 °C on the Peninsula (verify)": [
+  "data/months.ts:34"
+ ],
+ "Leopard seals patrolling colonies": [
+  "data/months.ts:35"
+ ],
+ "Humpback and minke whales": [
+  "data/months.ts:35"
+ ],
+ "Downy penguin chicks": [
+  "data/months.ts:35"
+ ],
+ "January is the heart of summer. Chicks are growing fast, adults shuttle food from the sea, and whale numbers rise steadily. Sea ice is at its least, opening routes further south and into the Ross Sea.\n\nIt's the most popular month, so the best cabins go early.": [
+  "data/months.ts:37"
+ ],
+ "Penguins walking across snow in summer light": [
+  "data/months.ts:38"
+ ],
+ "Whale season builds as chicks prepare to fledge": [
+  "data/months.ts:44"
+ ],
+ "Around 15–18 hours (verify)": [
+  "data/months.ts:45"
+ ],
+ "−2 °C to 4 °C on the Peninsula (verify)": [
+  "data/months.ts:46",
+  "data/months.ts:22"
+ ],
+ "Fur seals across the Peninsula": [
+  "data/months.ts:47"
+ ],
+ "Penguin chicks fledging": [
+  "data/months.ts:47"
+ ],
+ "Whale activity near its peak": [
+  "data/months.ts:47"
+ ],
+ "By February the Peninsula's bays are alive with feeding humpbacks, and penguin chicks are moulting into their waterproof feathers. Retreating ice gives the best odds of crossing the Antarctic Circle.\n\nSunsets return, bringing long golden evenings that photographers love.": [
+  "data/months.ts:49"
+ ],
+ "A humpback whale surfacing in a calm bay": [
+  "data/months.ts:50"
+ ],
+ "Peak whales, dramatic light and the season's close": [
+  "data/months.ts:56"
+ ],
+ "Around 12–15 hours (verify)": [
+  "data/months.ts:57"
+ ],
+ "−4 °C to 2 °C on the Peninsula (verify)": [
+  "data/months.ts:58"
+ ],
+ "Fur seals and leopard seals": [
+  "data/months.ts:59"
+ ],
+ "Fledged penguins heading to sea": [
+  "data/months.ts:59"
+ ],
+ "Peak whale watching": [
+  "data/months.ts:59"
+ ],
+ "The last voyages of the season see whales at their most abundant and the light at its most theatrical, with real sunsets and sunrises once more. Colonies thin out as young penguins take to the sea.\n\nWeather becomes more changeable, and late-season deals sometimes appear.": [
+  "data/months.ts:61"
+ ],
+ "Peaks under a deepening late-season sky": [
+  "data/months.ts:62"
+ ],
+ "Pristine snow and the season's first footprints": [
+  "data/months.ts:8"
+ ],
+ "Icebergs mirrored in a calm Antarctic bay": [
+  "data/posts.ts:12"
+ ],
+ "Crossing the Drake vs Flying": [
+  "data/posts.ts:16"
+ ],
+ "or flying": [
+  "data/posts.ts:17"
+ ],
+ "Two days of open ocean or two hours in the air? An honest look at what you gain and give up either way.": [
+  "data/posts.ts:18"
+ ],
+ "A rolling wave on the Drake Passage": [
+  "data/posts.ts:21"
+ ],
+ "What to Pack for Antarctica": [
+  "data/posts.ts:25"
+ ],
+ "for antarctica": [
+  "data/posts.ts:26"
+ ],
+ "what to pack": [
+  "data/posts.ts:26"
+ ],
+ "Layers, not bulk. A practical packing list built around what operators provide and what you really need.": [
+  "data/posts.ts:27"
+ ],
+ "A traveller in a red parka on the ice": [
+  "data/posts.ts:30"
+ ],
+ "When to Go for Penguins and Whales": [
+  "data/posts.ts:34"
+ ],
+ "& whales": [
+  "data/posts.ts:35"
+ ],
+ "for penguins": [
+  "data/posts.ts:35"
+ ],
+ "when to go": [
+  "data/posts.ts:35"
+ ],
+ "Courtship, chicks or whale season? How the short Antarctic summer unfolds, month by month.": [
+  "data/posts.ts:36"
+ ],
+ "A humpback whale surfacing near the ice": [
+  "data/posts.ts:39"
+ ],
+ "How to Choose an Antarctica Expedition": [
+  "data/posts.ts:7"
+ ],
+ "an expedition": [
+  "data/posts.ts:8"
+ ],
+ "how to choose": [
+  "data/posts.ts:8"
+ ],
+ "Route, ship size, season and budget — the four decisions that shape your voyage, and how to weigh them honestly.": [
+  "data/posts.ts:9"
+ ],
+ "Specialist voyages with very limited departures that head into the Weddell Sea towards the Snow Hill Island area in late October and November, some supported by helicopters.": [
+  "data/routes.ts:100"
+ ],
+ "Emperor penguins breed on sea ice in the depths of winter, which puts most colonies far beyond the reach of a ship. A handful of voyages each year try for the Snow Hill Island area in the Weddell Sea, where — on some departures — helicopters fly guests over the ice to walk the last stretch towards the colony.\n\nThese are true expeditions. Heavy ice can stop a ship well short of its goal, and nobody can promise a sighting. We'll be candid about success rates and what happens if conditions close in, so you go with your eyes open.": [
+  "data/routes.ts:102"
+ ],
+ "Penguins standing together on snow and ice": [
+  "data/routes.ts:103"
+ ],
+ "Ross Sea & East Antarctica": [
+  "data/routes.ts:109"
+ ],
+ "Two days of open ocean, then a world made of ice.": [
+  "data/routes.ts:11"
+ ],
+ "The deep south of the heroic age, a month from anywhere.": [
+  "data/routes.ts:111"
+ ],
+ "Bluff or Lyttelton, New Zealand, or Hobart, Australia": [
+  "data/routes.ts:113",
+  "data/routes.ts:112"
+ ],
+ "Royal albatrosses": [
+  "data/routes.ts:117"
+ ],
+ "Minke whales": [
+  "data/routes.ts:117",
+  "data/routes.ts:77"
+ ],
+ "Weddell seals": [
+  "data/routes.ts:117",
+  "data/routes.ts:97",
+  "data/routes.ts:17"
+ ],
+ "Emperor penguins": [
+  "data/routes.ts:117",
+  "data/routes.ts:97"
+ ],
+ "Adélie penguins": [
+  "data/routes.ts:117",
+  "data/routes.ts:97",
+  "data/routes.ts:77"
+ ],
+ "A month-long voyage from New Zealand or Tasmania via the sub-Antarctic islands to the Ross Sea, the Ross Ice Shelf and the historic huts of the heroic age.": [
+  "data/routes.ts:120"
+ ],
+ "This is the far side of Antarctica, and few people ever see it. Voyages call at sub-Antarctic islands on the way south, then enter the Ross Sea: the towering face of the Ross Ice Shelf, the smoking summit of Mount Erebus, and the preserved huts from which Scott and Shackleton set out.\n\nDistances are vast and weather governs every plan, so these voyages carry a premium and depart only in the heart of summer. For travellers drawn to polar history, there is nothing else like it.": [
+  "data/routes.ts:122"
+ ],
+ "A vast glacier face meeting dark polar water": [
+  "data/routes.ts:123"
+ ],
+ "Luxury Expeditions": [
+  "data/routes.ts:129"
+ ],
+ "The same wild landings, returning to a suite.": [
+  "data/routes.ts:131"
+ ],
+ "Ushuaia, Argentina, or Punta Arenas, Chile (fly-cruise)": [
+  "data/routes.ts:133",
+  "data/routes.ts:132"
+ ],
+ "Leopard seals": [
+  "data/routes.ts:137",
+  "data/routes.ts:77",
+  "data/routes.ts:17"
+ ],
+ "Orcas": [
+  "data/routes.ts:137",
+  "data/routes.ts:117"
+ ],
+ "Humpback whales": [
+  "data/routes.ts:137",
+  "data/routes.ts:77",
+  "data/routes.ts:57"
+ ],
+ "Chinstrap penguins": [
+  "data/routes.ts:137",
+  "data/routes.ts:37",
+  "data/routes.ts:17"
+ ],
+ "Gentoo penguins": [
+  "data/routes.ts:137",
+  "data/routes.ts:57",
+  "data/routes.ts:37"
+ ],
+ "Smaller, high-end expedition ships with suites, fine dining and generous guide ratios, sailing from Ushuaia or combined with a fly-cruise over the Drake.": [
+  "data/routes.ts:140"
+ ],
+ "Luxury in Antarctica doesn't mean less adventure. These ships still carry fleets of zodiacs and experienced expedition teams — they simply add spacious suites, often with balconies, excellent kitchens, spa facilities and more staff per guest.\n\nThe smaller guest numbers matter on shore, too: fewer people means more time at each landing within the limits that apply to every visit. We'll help you weigh which inclusions are worth paying for and which are simply polish.": [
+  "data/routes.ts:142"
+ ],
+ "A calm fjord reflecting snow-capped mountains": [
+  "data/routes.ts:143"
+ ],
+ "The voyage most people mean when they say Antarctica: a sea crossing of the Drake Passage followed by five or so days among the channels, bays and colonies of the Antarctic Peninsula.": [
+  "data/routes.ts:20"
+ ],
+ "You earn this one. Leaving Ushuaia through the Beagle Channel, the ship heads south across the Drake Passage — roughly two days of open Southern Ocean, albatrosses wheeling off the stern, the water cooling degree by degree until the first iceberg slides past the window.\n\nThen the Peninsula opens up: the Gerlache Strait, Neko Harbour, the narrow walls of the Lemaire Channel when ice allows. Days are built around zodiac landings and cruises, chosen each morning by the expedition team according to weather, ice and wildlife. It is the most flexible, most popular and usually most accessible way to stand on the continent.": [
+  "data/routes.ts:22"
+ ],
+ "Icebergs mirrored in still water along the Antarctic Peninsula": [
+  "data/routes.ts:23"
+ ],
+ "Fly the Drake": [
+  "data/routes.ts:29"
+ ],
+ "Two hours in the air instead of two days at sea.": [
+  "data/routes.ts:31"
+ ],
+ "Punta Arenas, Chile (flight to King George Island)": [
+  "data/routes.ts:32"
+ ],
+ "Punta Arenas, Chile (flight from King George Island)": [
+  "data/routes.ts:33"
+ ],
+ "A charter flight from Punta Arenas to King George Island in the South Shetlands, where you board your ship already in Antarctic waters — ideal when time is short or the Drake is a worry.": [
+  "data/routes.ts:40"
+ ],
+ "Fly-cruise voyages trade the Drake crossing for a short flight across it. You board in the South Shetland Islands and are among glaciers and penguin colonies within hours rather than days, which makes a week-long trip genuinely worthwhile.\n\nThe trade-off is weather: flights to King George Island depend on conditions at a gravel runway at the edge of the world, and delays of a day or more do happen. We'll explain how each operator handles delays, and what your contingency days look like, before you book.": [
+  "data/routes.ts:42"
+ ],
+ "Mountain peaks rising above a layer of cloud seen from the air": [
+  "data/routes.ts:43"
+ ],
+ "Falklands, South Georgia & Antarctica": [
+  "data/routes.ts:49"
+ ],
+ "The great Southern Ocean voyage, end to end.": [
+  "data/routes.ts:51"
+ ],
+ "Fur seals": [
+  "data/routes.ts:57",
+  "data/routes.ts:37"
+ ],
+ "Elephant seals": [
+  "data/routes.ts:57",
+  "data/routes.ts:37"
+ ],
+ "Wandering albatrosses": [
+  "data/routes.ts:57"
+ ],
+ "Rockhopper penguins": [
+  "data/routes.ts:57"
+ ],
+ "King penguins": [
+  "data/routes.ts:57"
+ ],
+ "Three worlds in one voyage: the windswept Falkland Islands, the overwhelming wildlife of South Georgia, and the ice of the Antarctic Peninsula.": [
+  "data/routes.ts:60"
+ ],
+ "South Georgia is, for many expedition staff, the most extraordinary place on Earth — beaches carpeted with hundreds of thousands of king penguins, elephant seals sprawled among the tussock, and the grave of Sir Ernest Shackleton at Grytviken.\n\nThis voyage links it with the Falklands' rockhopper and albatross colonies and finishes in the ice of the Peninsula. It involves several sea days, so it rewards travellers who love the ocean itself: the birds, the swell, the long light on deck.": [
+  "data/routes.ts:62"
+ ],
+ "A dense colony of king penguins on a South Georgia beach": [
+  "data/routes.ts:63"
+ ],
+ "Across the Antarctic Circle": [
+  "data/routes.ts:69"
+ ],
+ "South of 66°33′ S, where the ice thickens and the colonies change.": [
+  "data/routes.ts:71"
+ ],
+ "Crabeater seals": [
+  "data/routes.ts:77"
+ ],
+ "An extended Peninsula voyage that pushes south beyond the Antarctic Circle at 66°33′ S, ice permitting, into quieter waters and Adélie penguin country.": [
+  "data/routes.ts:80"
+ ],
+ "Crossing the Circle is a line on the chart, but the change is real: fewer ships, more sea ice, and a landscape that feels further from everywhere. Many voyages aim for Marguerite Bay and the islands around Crystal Sound.\n\nIce decides everything here. A good captain and expedition leader will only push south when conditions allow, and every operator is clear that the crossing is an aim rather than a guarantee. Later-season departures usually give the best odds.": [
+  "data/routes.ts:82"
+ ],
+ "Snow-covered peaks under a pale polar sky": [
+  "data/routes.ts:83"
+ ],
+ "Emperor Penguin Expeditions": [
+  "data/routes.ts:89"
+ ],
+ "Classic Antarctic Peninsula": [
+  "data/routes.ts:9"
+ ],
+ "A rare, early-season search for the largest penguin on Earth.": [
+  "data/routes.ts:91"
+ ],
+ "Ushuaia, Argentina": [
+  "data/routes.ts:93",
+  "data/routes.ts:92",
+  "data/routes.ts:73"
+ ],
+ "Antarctic petrels": [
+  "data/routes.ts:97"
+ ],
+ "Snow petrels": [
+  "data/routes.ts:97",
+  "data/routes.ts:77"
+ ],
+ "All-suite comfort and a high guide-to-guest ratio.": [
+  "data/ships.ts:100"
+ ],
+ "Southern Lantern is an all-suite ship where every cabin has a balcony or panoramic window. Dining is a highlight, the spa is a welcome retreat after a cold landing, and a low guest count means more space everywhere — on deck, in the zodiacs and on shore.\n\nPlaceholder profile — specifications, cabin categories and activities to be confirmed with the partner operator.": [
+  "data/ships.ts:102"
+ ],
+ "A mirror-calm fjord surrounded by snowy mountains": [
+  "data/ships.ts:103"
+ ],
+ "Mountain peaks under a night sky": [
+  "data/ships.ts:105"
+ ],
+ "Sculpted icebergs drifting in still water": [
+  "data/ships.ts:106"
+ ],
+ "MV Katabatic": [
+  "data/ships.ts:112"
+ ],
+ "Blue Ice Line (placeholder)": [
+  "data/ships.ts:113",
+  "data/ships.ts:50"
+ ],
+ "Polar Class 5 (verify)": [
+  "data/ships.ts:117",
+  "data/ships.ts:54"
+ ],
+ "Lectures": [
+  "data/ships.ts:120",
+  "data/ships.ts:99",
+  "data/ships.ts:78"
+ ],
+ "Spa": [
+  "data/ships.ts:120",
+  "data/ships.ts:99"
+ ],
+ "Helicopter operations (selected voyages)": [
+  "data/ships.ts:120"
+ ],
+ "Zodiac landings": [
+  "data/ships.ts:120",
+  "data/ships.ts:99",
+  "data/ships.ts:78"
+ ],
+ "A high-end polar vessel with the reach for specialist voyages.": [
+  "data/ships.ts:121"
+ ],
+ "Katabatic pairs luxury suites with genuine polar capability, including a helideck used on selected specialist departures. It's the kind of ship that can take on an emperor penguin voyage in early-season ice and still return you to a heated bathroom floor.\n\nPlaceholder profile — specifications, cabin categories and activities to be confirmed with the partner operator.": [
+  "data/ships.ts:123"
+ ],
+ "Misty peaks fading into low polar cloud": [
+  "data/ships.ts:124"
+ ],
+ "A group of penguins standing in the snow": [
+  "data/ships.ts:126"
+ ],
+ "A sea of cloud below mountain summits": [
+  "data/ships.ts:127"
+ ],
+ "A nimble, no-fuss expedition ship built around time ashore.": [
+  "data/ships.ts:16"
+ ],
+ "Meridian South is the kind of ship expedition staff love: small enough to get everyone ashore quickly, sturdy enough for the Drake, and simple enough that the focus stays outside. Cabins are comfortable rather than lavish, and the lecture lounge doubles as the heart of the ship.\n\nPlaceholder profile — specifications, cabin categories and activities to be confirmed with the partner operator.": [
+  "data/ships.ts:18"
+ ],
+ "An expedition ship silhouetted on dark polar water": [
+  "data/ships.ts:19"
+ ],
+ "Icebergs reflected in calm water seen from the ship": [
+  "data/ships.ts:21"
+ ],
+ "A traveller in a red parka looking out over the ice": [
+  "data/ships.ts:22"
+ ],
+ "MV Petrel Light": [
+  "data/ships.ts:28"
+ ],
+ "Citizen science": [
+  "data/ships.ts:36"
+ ],
+ "Small-ship intimacy with a strong science and photography focus.": [
+  "data/ships.ts:37"
+ ],
+ "Petrel Light carries a dedicated citizen-science programme and photography guides on most departures, with a mudroom designed for fast, clean turnarounds between landings. An open bridge policy (at the captain's discretion) lets guests watch ice navigation first-hand.\n\nPlaceholder profile — specifications, cabin categories and activities to be confirmed with the partner operator.": [
+  "data/ships.ts:39"
+ ],
+ "A small ship lit up at night in polar waters": [
+  "data/ships.ts:40"
+ ],
+ "A humpback whale surfacing beside an expedition ship": [
+  "data/ships.ts:42"
+ ],
+ "A gentoo penguin standing on a rocky shore": [
+  "data/ships.ts:43"
+ ],
+ "MV Tern Arc": [
+  "data/ships.ts:49"
+ ],
+ "Snowshoeing": [
+  "data/ships.ts:57",
+  "data/ships.ts:15"
+ ],
+ "Polar plunge": [
+  "data/ships.ts:57"
+ ],
+ "A modern mid-size ship with real range — from the Peninsula to the Circle.": [
+  "data/ships.ts:58"
+ ],
+ "Tern Arc balances comfort and capability: a strengthened hull for deeper ice, an observation lounge wrapped in glass, and enough zodiacs to run landings in efficient rotations. Its range makes it a regular on Antarctic Circle and South Georgia itineraries.\n\nPlaceholder profile — specifications, cabin categories and activities to be confirmed with the partner operator.": [
+  "data/ships.ts:60"
+ ],
+ "Snow-covered peaks seen from the deck of a ship": [
+  "data/ships.ts:61"
+ ],
+ "A glacier face rising above the water": [
+  "data/ships.ts:63"
+ ],
+ "Penguins walking in a line across the snow": [
+  "data/ships.ts:64"
+ ],
+ "MV Meridian South": [
+  "data/ships.ts:7"
+ ],
+ "MV Halcyon Ice": [
+  "data/ships.ts:70"
+ ],
+ "Southbound Polar Voyages (placeholder)": [
+  "data/ships.ts:71",
+  "data/ships.ts:8"
+ ],
+ "Mountaineering": [
+  "data/ships.ts:78"
+ ],
+ "Spacious and steady, with a long-voyage feel for South Georgia and beyond.": [
+  "data/ships.ts:79"
+ ],
+ "Halcyon Ice was designed for longer voyages: generous public spaces, a library facing the bow, and stabilisers to ease the sea days between the Falklands, South Georgia and the Peninsula. Its expedition team is large enough to run several activity groups at once.\n\nPlaceholder profile — specifications, cabin categories and activities to be confirmed with the partner operator.": [
+  "data/ships.ts:81"
+ ],
+ "The Southern Ocean at dusk under a soft sky": [
+  "data/ships.ts:82"
+ ],
+ "A king penguin lit by low golden light": [
+  "data/ships.ts:84"
+ ],
+ "A rolling wave on the open Southern Ocean": [
+  "data/ships.ts:85"
+ ],
+ "MV Southern Lantern": [
+  "data/ships.ts:91"
+ ],
+ "Highlatitude Expedition Co. (placeholder)": [
+  "data/ships.ts:92",
+  "data/ships.ts:29"
+ ],
+ "Polar Class 6 (verify)": [
+  "data/ships.ts:96",
+  "data/ships.ts:75",
+  "data/ships.ts:33"
+ ],
+ "Photography workshops": [
+  "data/ships.ts:99",
+  "data/ships.ts:36"
+ ],
+ "The first tourist expedition": [
+  "data/timeline.ts:101"
+ ],
+ "Lars-Eric Lindblad led the first expedition cruise for paying travellers to Antarctica, pioneering the model of education-led polar travel.": [
+  "data/timeline.ts:102"
+ ],
+ "A ship silhouetted on polar water": [
+  "data/timeline.ts:104"
+ ],
+ "23 June 1961": [
+  "data/timeline.ts:108"
+ ],
+ "Antarctic Treaty enters into force": [
+  "data/timeline.ts:109"
+ ],
+ "A traveller in a red parka gazing across the ice": [
+  "data/timeline.ts:11"
+ ],
+ "With ratification complete, the Treaty took effect, setting aside territorial claims and preserving the continent for peaceful purposes and scientific cooperation.": [
+  "data/timeline.ts:110"
+ ],
+ "Peaks rising above a layer of cloud": [
+  "data/timeline.ts:112"
+ ],
+ "1 December 1959": [
+  "data/timeline.ts:116"
+ ],
+ "Antarctic Treaty signed": [
+  "data/timeline.ts:117"
+ ],
+ "Twelve nations signed the Antarctic Treaty in Washington, D.C., agreeing that the continent would be used for peaceful purposes only.": [
+  "data/timeline.ts:118"
+ ],
+ "Mountains beneath a night sky": [
+  "data/timeline.ts:120"
+ ],
+ "2 March 1958": [
+  "data/timeline.ts:124"
+ ],
+ "First overland crossing of Antarctica": [
+  "data/timeline.ts:125"
+ ],
+ "Vivian Fuchs's Commonwealth Trans-Antarctic Expedition completed the first land crossing of the continent via the South Pole, supported by Edmund Hillary's New Zealand party.": [
+  "data/timeline.ts:126"
+ ],
+ "A snow-bound hut in a polar landscape": [
+  "data/timeline.ts:128"
+ ],
+ "International Geophysical Year begins": [
+  "data/timeline.ts:132"
+ ],
+ "From July 1957 to December 1958, twelve nations established dozens of Antarctic stations in an unprecedented burst of scientific cooperation.": [
+  "data/timeline.ts:133"
+ ],
+ "A wide polar sky": [
+  "data/timeline.ts:135"
+ ],
+ "A station at the South Pole": [
+  "data/timeline.ts:139"
+ ],
+ "The United States began building the first station at the geographic South Pole; it was completed in early 1957 and later named Amundsen–Scott.": [
+  "data/timeline.ts:140"
+ ],
+ "A white polar plateau beneath snowy peaks": [
+  "data/timeline.ts:142"
+ ],
+ "29 November 1929": [
+  "data/timeline.ts:146"
+ ],
+ "First flight over the South Pole": [
+  "data/timeline.ts:147"
+ ],
+ "Richard E. Byrd and his crew flew from their base on the Ross Ice Shelf over the South Pole and back.": [
+  "data/timeline.ts:148"
+ ],
+ "Mountains seen from the air": [
+  "data/timeline.ts:150"
+ ],
+ "5 January 1922": [
+  "data/timeline.ts:154"
+ ],
+ "Shackleton dies at Grytviken": [
+  "data/timeline.ts:155"
+ ],
+ "On his final expedition, Sir Ernest Shackleton died of a heart attack aboard Quest at South Georgia; he is buried at Grytviken.": [
+  "data/timeline.ts:156"
+ ],
+ "Misty mountains above South Georgia": [
+  "data/timeline.ts:158"
+ ],
+ "First guests across the Drake": [
+  "data/timeline.ts:16"
+ ],
+ "20 May 1916": [
+  "data/timeline.ts:162"
+ ],
+ "Shackleton reaches Stromness": [
+  "data/timeline.ts:163"
+ ],
+ "After an open-boat voyage from Elephant Island and a crossing of South Georgia's mountains, Shackleton, Worsley and Crean walked into the whaling station at Stromness. Every man of the Weddell Sea party survived.": [
+  "data/timeline.ts:164"
+ ],
+ "A king penguin in golden South Georgia light": [
+  "data/timeline.ts:166"
+ ],
+ "Our first travellers sailed south with a partner operator and came home changed. Placeholder — confirm details before launch.": [
+  "data/timeline.ts:17"
+ ],
+ "21 November 1915": [
+  "data/timeline.ts:170"
+ ],
+ "Endurance sinks": [
+  "data/timeline.ts:171"
+ ],
+ "Crushed by the pack ice of the Weddell Sea, Shackleton's ship slipped beneath the ice, leaving her crew camped on the floes.": [
+  "data/timeline.ts:172"
+ ],
+ "Pack ice and icebergs in still water": [
+  "data/timeline.ts:174"
+ ],
+ "17 January 1912": [
+  "data/timeline.ts:178"
+ ],
+ "Scott reaches the South Pole": [
+  "data/timeline.ts:179"
+ ],
+ "Robert Falcon Scott's party reached the Pole to find Amundsen's tent; all five men died on the return journey.": [
+  "data/timeline.ts:180"
+ ],
+ "Wind-blown snow on the polar plateau": [
+  "data/timeline.ts:182"
+ ],
+ "14 December 1911": [
+  "data/timeline.ts:186"
+ ],
+ "Amundsen reaches the South Pole": [
+  "data/timeline.ts:187"
+ ],
+ "Roald Amundsen and four companions became the first people to stand at the geographic South Pole, travelling by ski and dog sledge.": [
+  "data/timeline.ts:188"
+ ],
+ "A wave rolling across the Drake Passage": [
+  "data/timeline.ts:19"
+ ],
+ "Snow peaks on the route to the Pole": [
+  "data/timeline.ts:190"
+ ],
+ "16 January 1909": [
+  "data/timeline.ts:194"
+ ],
+ "South Magnetic Pole reached": [
+  "data/timeline.ts:195"
+ ],
+ "During Shackleton's Nimrod expedition, Edgeworth David, Douglas Mawson and Alistair Mackay reached the South Magnetic Pole — days after Shackleton himself turned back at 88°23′ S, just 97 nautical miles from the geographic Pole, on 9 January.": [
+  "data/timeline.ts:196"
+ ],
+ "A glacier tumbling towards the sea": [
+  "data/timeline.ts:198"
+ ],
+ "Scott's Discovery expedition": [
+  "data/timeline.ts:202"
+ ],
+ "Robert Falcon Scott, Ernest Shackleton and Edward Wilson pushed south across the Ross Ice Shelf to a new farthest south, beginning the great era of inland exploration.": [
+  "data/timeline.ts:203"
+ ],
+ "A hut half-buried in snow": [
+  "data/timeline.ts:205"
+ ],
+ "First winter on the continent": [
+  "data/timeline.ts:209"
+ ],
+ "Carsten Borchgrevink's Southern Cross expedition became the first to overwinter on the Antarctic mainland, in huts at Cape Adare.": [
+  "data/timeline.ts:210"
+ ],
+ "Peaks under a dark polar night": [
+  "data/timeline.ts:212"
+ ],
+ "Belgica trapped in the ice": [
+  "data/timeline.ts:216"
+ ],
+ "Adrien de Gerlache's Belgica became the first ship to overwinter in Antarctic waters, locked in the pack ice of the Bellingshausen Sea through 1898–99.": [
+  "data/timeline.ts:217"
+ ],
+ "A ship in darkness among polar ice": [
+  "data/timeline.ts:219"
+ ],
+ "24 January 1895": [
+  "data/timeline.ts:223"
+ ],
+ "Landing at Cape Adare": [
+  "data/timeline.ts:224"
+ ],
+ "Men from the whaling ship Antarctic landed at Cape Adare, among the first confirmed landings on the Antarctic continent.": [
+  "data/timeline.ts:225"
+ ],
+ "A penguin on a rocky landing beach": [
+  "data/timeline.ts:227"
+ ],
+ "Ross discovers the Ross Sea": [
+  "data/timeline.ts:231"
+ ],
+ "James Clark Ross sailed Erebus and Terror into the sea that now bears his name, charting the great ice barrier — the Ross Ice Shelf — and Mount Erebus.": [
+  "data/timeline.ts:232"
+ ],
+ "A towering wall of ice": [
+  "data/timeline.ts:234"
+ ],
+ "7 February 1821": [
+  "data/timeline.ts:238"
+ ],
+ "First documented landing": [
+  "data/timeline.ts:239"
+ ],
+ "Joined as IAATO associate (placeholder)": [
+  "data/timeline.ts:24"
+ ],
+ "American sealer John Davis is believed to have sent a boat ashore at Hughes Bay on the Antarctic Peninsula — the earliest recorded landing, though historians still debate it.": [
+  "data/timeline.ts:240"
+ ],
+ "A sheltered bay below snowy mountains": [
+  "data/timeline.ts:242"
+ ],
+ "27–30 January 1820": [
+  "data/timeline.ts:246"
+ ],
+ "Antarctica first sighted": [
+  "data/timeline.ts:247"
+ ],
+ "Within days of each other, Fabian von Bellingshausen and Mikhail Lazarev (27–28 January) and Edward Bransfield (30 January) became the first to sight the Antarctic mainland or its ice shelves.": [
+  "data/timeline.ts:248"
+ ],
+ "We committed to IAATO's standards for safe, environmentally responsible travel. Placeholder — confirm membership status and category before launch.": [
+  "data/timeline.ts:25"
+ ],
+ "Distant peaks emerging from cloud": [
+  "data/timeline.ts:250"
+ ],
+ "17 January 1773": [
+  "data/timeline.ts:254"
+ ],
+ "Cook crosses the Antarctic Circle": [
+  "data/timeline.ts:255"
+ ],
+ "James Cook's Resolution and Adventure became the first ships known to cross the Antarctic Circle, though they never sighted the continent itself.": [
+  "data/timeline.ts:256"
+ ],
+ "The open Southern Ocean at dusk": [
+  "data/timeline.ts:258"
+ ],
+ "Icebergs reflected in calm water": [
+  "data/timeline.ts:27"
+ ],
+ "Seventh Continent founded": [
+  "data/timeline.ts:32"
+ ],
+ "Founded to give travellers independent, expert advice on choosing an Antarctic expedition. Placeholder — confirm founding story and date before launch.": [
+  "data/timeline.ts:33"
+ ],
+ "Snow-covered peaks in soft light": [
+  "data/timeline.ts:35"
+ ],
+ "Record-low Antarctic sea ice": [
+  "data/timeline.ts:40"
+ ],
+ "Winter sea ice around Antarctica fell far below anything in the satellite record, alarming scientists and sharpening questions about the Southern Ocean's future.": [
+  "data/timeline.ts:41"
+ ],
+ "A pale sky over open polar water": [
+  "data/timeline.ts:43"
+ ],
+ "5 March 2022": [
+  "data/timeline.ts:47"
+ ],
+ "Endurance found": [
+  "data/timeline.ts:48"
+ ],
+ "The Endurance22 expedition located Shackleton's ship 3,008 metres down in the Weddell Sea, remarkably intact, more than a century after it sank.": [
+  "data/timeline.ts:49"
+ ],
+ "Deep blue water beneath the surface of the sea": [
+  "data/timeline.ts:51"
+ ],
+ "October 2016": [
+  "data/timeline.ts:55"
+ ],
+ "Ross Sea marine protected area agreed": [
+  "data/timeline.ts:56"
+ ],
+ "Member nations of CCAMLR agreed to create the world's largest marine protected area in the Ross Sea; it came into force in December 2017.": [
+  "data/timeline.ts:57"
+ ],
+ "Larsen B ice shelf collapses": [
+  "data/timeline.ts:63"
+ ],
+ "Over a few weeks in early 2002, an ice shelf roughly the size of a small country disintegrated off the eastern Antarctic Peninsula, a stark signal of regional warming.": [
+  "data/timeline.ts:64"
+ ],
+ "A fractured ice front meeting the sea": [
+  "data/timeline.ts:66"
+ ],
+ "4 October 1991": [
+  "data/timeline.ts:70"
+ ],
+ "Madrid Protocol signed": [
+  "data/timeline.ts:71"
+ ],
+ "The Protocol on Environmental Protection designated Antarctica a natural reserve devoted to peace and science and banned mineral mining; it entered into force on 14 January 1998.": [
+  "data/timeline.ts:72"
+ ],
+ "An untouched snow ridge": [
+  "data/timeline.ts:74"
+ ],
+ "IAATO founded": [
+  "data/timeline.ts:78"
+ ],
+ "Seven tour operators formed the International Association Antarctica Tour Operators to promote safe and environmentally responsible travel to the continent.": [
+  "data/timeline.ts:79"
+ ],
+ "100th traveller matched": [
+  "data/timeline.ts:8"
+ ],
+ "A gentoo penguin on a rocky shore": [
+  "data/timeline.ts:81"
+ ],
+ "May 1985": [
+  "data/timeline.ts:85"
+ ],
+ "The ozone hole revealed": [
+  "data/timeline.ts:86"
+ ],
+ "Joe Farman, Brian Gardiner and Jonathan Shanklin of the British Antarctic Survey published evidence of severe springtime ozone loss over Antarctica.": [
+  "data/timeline.ts:87"
+ ],
+ "High cloud seen from above": [
+  "data/timeline.ts:89"
+ ],
+ "A milestone for our small team: one hundred travellers matched with the right ship and route. Placeholder — confirm figure and date before launch.": [
+  "data/timeline.ts:9"
+ ],
+ "21 July 1983": [
+  "data/timeline.ts:93"
+ ],
+ "−89.2 °C at Vostok": [
+  "data/timeline.ts:94"
+ ],
+ "Soviet Vostok Station recorded an air temperature of −89.2 °C, the lowest ever measured by a ground-based weather station.": [
+  "data/timeline.ts:95"
+ ],
+ "Fine ice crystals close up": [
+  "data/timeline.ts:97"
+ ],
+ "sc_consent={0}; path=/; max-age={1}; samesite=lax": [
+  "lib/consent.tsx:48"
+ ],
+ "useConsent must be used inside ConsentProvider": [
+  "lib/consent.tsx:73"
+ ],
+ "Shared": [
+  "lib/data.ts:28"
+ ],
+ "{0}–{1} days": [
+  "lib/data.ts:34"
+ ],
+ "{0}{1}w={2}&q={3}": [
+  "lib/image-loader.ts:13"
+ ],
+ "Pick at least one month (or all of them).": [
+  "lib/planner-schema.ts:22"
+ ],
+ "Let us know if your dates are flexible.": [
+  "lib/planner-schema.ts:23"
+ ],
+ "Choose a trip length.": [
+  "lib/planner-schema.ts:24"
+ ],
+ "Choose at least one journey, or “Help me choose”.": [
+  "lib/planner-schema.ts:26"
+ ],
+ "Choose a ship size.": [
+  "lib/planner-schema.ts:28"
+ ],
+ "Choose a cabin type.": [
+  "lib/planner-schema.ts:29"
+ ],
+ "At least one adult.": [
+  "lib/planner-schema.ts:32"
+ ],
+ "Tell us how you feel about the Drake.": [
+  "lib/planner-schema.ts:36"
+ ],
+ "Choose a budget band.": [
+  "lib/planner-schema.ts:37"
+ ],
+ "Please tell us your name.": [
+  "lib/planner-schema.ts:39"
+ ],
+ "Please enter a valid email.": [
+  "lib/planner-schema.ts:40"
+ ],
+ "Use a code like +44.": [
+  "lib/planner-schema.ts:41"
+ ],
+ "Please enter a valid phone number.": [
+  "lib/planner-schema.ts:42"
+ ],
+ "Choose at least one way to reach you.": [
+  "lib/planner-schema.ts:43"
+ ],
+ "Please agree so we can contact you.": [
+  "lib/planner-schema.ts:45"
+ ],
+ "Please add the children's ages.": [
+  "lib/planner-schema.ts:48"
+ ],
+ "{0} | Antarctica expeditions, planned by one polar specialist": [
+  "lib/seo.tsx:23"
+ ],
+ "{0}&w=1200&h=630": [
+  "lib/seo.tsx:24"
+ ]
+}

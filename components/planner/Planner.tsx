@@ -38,6 +38,12 @@ const steps = [
   { key: "contact", label: "Contact", title: ["stay in", "touch"] },
 ];
 
+/** Display labels: the option values stay English for the API. */
+const tripLengthLabels: Record<(typeof tripLengths)[number], string> = {
+  "6–8 days": "6–8 days", "9–12 days": "9–12 days", "13–17 days": "13–17 days", "18–23 days": "18–23 days", "24+ days": "24+ days",
+};
+const contactLabels: Record<(typeof contactMethods)[number], string> = { Email: "Email", Telephone: "Telephone" };
+
 const monthNames: Record<(typeof plannerMonths)[number], string> = {
   Oct: "October", Nov: "November", Dec: "December", Jan: "January", Feb: "February", Mar: "March",
 };
@@ -61,7 +67,7 @@ const defaults: Partial<PlannerInput> = {
   months: [],
   routes: [],
   activities: [],
-  contact: ["Email"],
+  contact: [contactMethods[0]],
   adults: 2,
   children: 0,
   phoneCode: "+1",
@@ -289,7 +295,7 @@ export function Planner({ initialRoute, variant = "page", onClose }: { initialRo
                 </Group>
                 <Group legend="Trip length" error={err(errors, "tripLength")}>
                   {tripLengths.map((t) => (
-                    <Choice key={t} type="radio" reg={register("tripLength")} value={t}>{t}</Choice>
+                    <Choice key={t} type="radio" reg={register("tripLength")} value={t}>{tripLengthLabels[t]}</Choice>
                   ))}
                 </Group>
               </>
@@ -402,7 +408,7 @@ export function Planner({ initialRoute, variant = "page", onClose }: { initialRo
                 </div>
                 <Group legend="How should we contact you?" error={err(errors, "contact")}>
                   {contactMethods.map((c) => (
-                    <Choice key={c} type="checkbox" reg={register("contact")} value={c}>{c}</Choice>
+                    <Choice key={c} type="checkbox" reg={register("contact")} value={c}>{contactLabels[c]}</Choice>
                   ))}
                 </Group>
                 <Field label="Anything else? (optional)" className="mt-[2rem]">

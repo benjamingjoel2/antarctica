@@ -20,6 +20,10 @@ The site follows the reference's design language, re-skinned for Seventh Contine
 - **Colour roles:** deep polar navy `#030b17` (dark), glacier white `#e8f0f8` (light), iceberg blue `#8db8dc` (support), slate grey, and expedition orange `#ff5b1f` as the single accent (the "Plan my expedition" button, focus rings, verify markers).
 - **Hero:** `public/media/hero-background.webp` plus a transparent foreground cut-out (`hero-foreground.webp`) so the headline sits between the layers. Each has pre-resized variants (`-640/-828/-1080/-1440.webp`, served by `lib/image-loader.ts`) and a 1152×1280 centre crop (`-portrait.webp`) for portrait screens (`components/home/HeroLayer.tsx`). Replace all of them together when swapping the photo.
 
+## Languages
+
+English (default, current URLs), French (`/fr`), German (`/de`) and Spanish (`/es`). English pages live in `app/(en)`; `npm run build` first runs `scripts/i18n-build.mjs`, which writes translated copies of the routes to `app/{fr,de,es}` and of `components`, `lib`, `data`, `config` to `.i18n/<locale>` (all git-ignored) using the dictionaries in `i18n/{fr,de,es}.json` (English string -> translation; `file::string` keys for context-specific words, `a|b` keys for split headings) and the translated journal posts in `i18n/content/<locale>/`. Every locale is pre-rendered; no translation code ships to the browser. After changing copy, run `npm run i18n:extract && npm run i18n:missing` and add the new strings to all three dictionaries. Do not write a bare `"/"` string in shared code that must stay a path (the build prefixes it); see `SLASH` in `lib/seo.tsx`.
+
 ## Where things live
 
 | Path | What |

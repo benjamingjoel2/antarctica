@@ -17,5 +17,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...experiences.map((x) => `/experiences/${x.slug}`),
     ...posts.map((p) => `/journal/${p.slug}`),
   ];
-  return [...staticPaths, ...dynamicPaths].map((p) => ({ url: `${site.url}${p}`, changeFrequency: "weekly", priority: p === "" ? 1 : 0.7 }));
+  // Every page in every language (English unprefixed), each with hreflang alternates.
+  const locales = ["", "/fr", "/de", "/es"];
+  return [...staticPaths, ...dynamicPaths].flatMap((p) =>
+    locales.map((l) => ({
+      url: `${site.url}${l}${p}`,
+      changeFrequency: "weekly" as const,
+      priority: p === "" ? 1 : 0.7,
+      alternates: { languages: { en: `${site.url}${p}`, fr: `${site.url}/fr${p}`, de: `${site.url}/de${p}`, es: `${site.url}/es${p}` } },
+    })),
+  );
 }

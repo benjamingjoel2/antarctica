@@ -1,4 +1,4 @@
-/** Privacy policy, booking terms and cookie policy. Plain text; [text](/path) becomes a link. A lawyer should review these before launch. */
+/** Privacy policy, booking terms and cookie policy (English source; translations in i18n/). Plain text; [text](/path) becomes a link. A lawyer should review these before launch. */
 export type LegalDoc = { title: string; description: string; sections: { h: string; p: string[] }[] };
 
 export const legalUpdated = "30 October 2026";
@@ -17,7 +17,7 @@ export const privacy: LegalDoc = {
     {
       "h": "What we collect",
       "p": [
-        "Only what you choose to send us: through the expedition planner, your name, email address, phone number, how you prefer to be contacted, travel dates, the size of your party, your interests, budget and notes; through the newsletter form, your email address. If you write to us by email, we keep that correspondence.",
+        "Only what you choose to send us: through the enquiry form, through the expedition planner, your name, email address, phone number, how you prefer to be contacted, travel dates, the size of your party, your interests, budget and notes; through the newsletter form, your email address. If you write to us by email, we keep that correspondence.",
         "If you book, we also collect what is needed to arrange the trip, such as the names of everyone travelling, dates of birth and passport details where suppliers require them, dietary and access needs, and emergency contacts.",
         "Please do not send payment card details or detailed health information by email or through the form."
       ]
@@ -26,7 +26,7 @@ export const privacy: LegalDoc = {
       "h": "Why we use it",
       "p": [
         "To answer your enquiry, plan a trip with you and, if you go ahead, book and run it. The legal basis is the steps you ask us to take before entering into a contract, the performance of that contract, your consent where we ask for it, and our legitimate interest in replying to people who contact us.",
-        "We do not sell your details. We only send you our newsletter if you sign up for it, and every issue has an unsubscribe link."
+        "We do not sell your details, and we only send you news or offers if you ask us to."
       ]
     },
     {
@@ -170,7 +170,7 @@ export const cookies: LegalDoc = {
     {
       "h": "Short version",
       "p": [
-        "We do not run analytics, personalisation or marketing cookies. If we add any in future, they will only load after you allow them in the cookie settings. This website sets no cookies of its own."
+        "We do not run analytics, personalisation or marketing cookies. If we add any in future, they will only load after you allow them in the cookie settings. The only cookies this website sets itself are the strictly necessary ones listed below."
       ]
     },
     {
@@ -183,7 +183,7 @@ export const cookies: LegalDoc = {
     {
       "h": "Consent",
       "p": [
-        "The consent record, currency, planner and penguin-mode storage above are strictly necessary for features you choose to use, so they do not need your consent. You can review your choices at any time with the cookie settings button below."
+        "Anything listed above is strictly necessary for a feature you choose to use, so it does not need your consent. We will not add analytics or advertising cookies without asking you first."
       ]
     },
     {

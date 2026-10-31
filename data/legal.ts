@@ -177,7 +177,7 @@ export const cookies: LegalDoc = {
       "h": "What the site stores in your browser",
       "p": [
         "Your cookie choices are saved in local storage under sc-consent-v1 and mirrored in a first-party cookie, sc_consent, for 180 days, so we do not ask again. If you change the display currency, your choice is saved in local storage under sc-currency. If you start the [expedition planner](/plan-my-expedition), your answers are saved in local storage under sc-planner-v1 so you can come back to them. They stay on your device until you submit the planner, and are cleared when you do. If you switch on penguin mode, that choice is saved in local storage under sc-penguin.",
-        "Fonts are served from this website. Photos load from the Unsplash image service (images.unsplash.com), which receives your browser's IP address in order to deliver them."
+        "Fonts are served from this website. Photos load from our image delivery provider, which receives your browser's IP address in order to deliver them."
       ]
     },
     {

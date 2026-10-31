@@ -42,7 +42,7 @@ export function DetailHero({
         </div>
       </div>
       <div className="relative -mt-[8rem] h-[85vh] min-h-[30rem] overflow-hidden">
-        <Image src={background.src} alt={background.alt} fill sizes="100vw" className="object-cover" />
+        <Image src={background.src} alt={background.alt} fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-x-0 bottom-0">
           <WaveCards items={waves} tone="dark" />
         </div>

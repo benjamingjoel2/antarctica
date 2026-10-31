@@ -5,6 +5,7 @@ import { Logo } from "@/components/ui/Logo";
 import { Pill, PillButton } from "@/components/ui/Pill";
 import { useUi } from "@/lib/ui";
 import { CurrencySwitcher } from "./CurrencySwitcher";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
   const { menuOpen, setMenuOpen, penguin, setPenguin } = useUi();
@@ -15,6 +16,7 @@ export function Header() {
         <Logo />
       </Link>
       <div className="fixed right-[1.25rem] top-[1.25rem] z-[70] flex items-start gap-[0.3rem]">
+        <LanguageSwitcher className="max-md:hidden" />
         <CurrencySwitcher className="max-lg:hidden" />
         <PillButton className="max-md:hidden" onClick={() => setPenguin(!penguin)} aria-pressed={penguin}>
           {"{Penguin mode}"}

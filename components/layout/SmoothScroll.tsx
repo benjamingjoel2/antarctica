@@ -1,6 +1,6 @@
 "use client";
 
-import Lenis from "lenis";
+import type Lenis from "lenis";
 import { usePathname } from "next/navigation";
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 
@@ -14,16 +14,24 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const l = new Lenis({ duration: 1.15, smoothWheel: true });
-    setLenis(l);
-    const loop = (t: number) => {
-      l.raf(t);
+    // Lenis only smooths wheel scrolling, so touch devices never download it.
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+    let l: Lenis | null = null;
+    let cancelled = false;
+    import("lenis").then(({ default: LenisCtor }) => {
+      if (cancelled) return;
+      l = new LenisCtor({ duration: 1.15, smoothWheel: true });
+      setLenis(l);
+      const loop = (t: number) => {
+        l?.raf(t);
+        raf.current = requestAnimationFrame(loop);
+      };
       raf.current = requestAnimationFrame(loop);
-    };
-    raf.current = requestAnimationFrame(loop);
+    });
     return () => {
+      cancelled = true;
       cancelAnimationFrame(raf.current);
-      l.destroy();
+      l?.destroy();
       setLenis(null);
     };
   }, []);

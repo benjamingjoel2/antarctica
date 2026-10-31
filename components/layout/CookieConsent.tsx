@@ -43,7 +43,7 @@ export function CookieConsent() {
           >
             <p className="text-[0.82rem] leading-[1.3]">
               Cookies, like footprints in snow, leave a trace. Accepting them helps us understand what you read and remember your preferences. See our{" "}
-              <Link href="/legals#cookies" className="underline underline-offset-2">
+              <Link href="/cookies" className="underline underline-offset-2">
                 Privacy Policy
               </Link>{" "}
               for details.

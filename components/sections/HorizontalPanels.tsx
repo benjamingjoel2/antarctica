@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValueEvent, useReducedMotion, useTransform } from "framer-motion";
+import { motion, useMotionValueEvent, useTransform } from "framer-motion";
 import { useSectionProgress } from "@/lib/useSectionProgress";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -9,6 +9,7 @@ import type { Ship } from "@/data/types";
 import { shipSizeLabel } from "@/lib/data";
 import { cn } from "@/lib/cn";
 import { useLenis } from "@/components/layout/SmoothScroll";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 
 function useDesktop() {
   const [ok, setOk] = useState(false);
@@ -60,7 +61,7 @@ function Panel({ ship, index, total }: { ship: Ship; index: number; total: numbe
  */
 export function HorizontalPanels({ ships }: { ships: Ship[] }) {
   const desktop = useDesktop();
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
   const horizontal = desktop && !reduce;
   const ref = useRef<HTMLElement>(null);
   const lenis = useLenis();

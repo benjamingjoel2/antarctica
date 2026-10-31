@@ -7,7 +7,18 @@ import { cn } from "@/lib/cn";
 /**
  * Decorative looping background video with poster, captions track and a
  * pause control (WCAG 2.2.2). Never autoplays for reduced-motion users.
+ *
+ * Performance: nothing (poster or video) loads until the player is near the
+ * viewport, and players that are hidden (e.g. `hidden md:block`) never load.
+ * On phones, coarse pointers and Save-Data the video does not autoplay: the
+ * poster shows, and the video is fetched only when the visitor presses play.
  */
+const autoplayAllowed = () => {
+  const c = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+  if (c?.saveData) return false;
+  return window.matchMedia("(min-width: 768px) and (pointer: fine)").matches;
+};
+
 export function BackgroundVideo({
   src,
   poster,
@@ -28,21 +39,49 @@ export function BackgroundVideo({
   const ref = useRef<HTMLVideoElement>(null);
   const reduce = useReducedMotion();
   const [playing, setPlaying] = useState(false);
+  // near: within 300px of the viewport (poster may load); armed: the video source is attached.
+  const [near, setNear] = useState(false);
+  const [armed, setArmed] = useState(false);
 
   useEffect(() => {
     const v = ref.current;
     if (!v) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setNear(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "300px 0px" },
+    );
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (near && !reduce && autoplayAllowed()) setArmed(true);
+  }, [near, reduce]);
+
+  useEffect(() => {
+    const v = ref.current;
+    if (!v || !armed) return;
     if (reduce) {
       v.pause();
       setPlaying(false);
       return;
     }
+    if (v.networkState === v.NETWORK_EMPTY) v.load();
     v.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
-  }, [reduce]);
+  }, [reduce, armed]);
 
   const toggle = () => {
     const v = ref.current;
     if (!v) return;
+    if (!armed) {
+      setArmed(true); // the play effect above starts it once the source is attached
+      return;
+    }
     if (v.paused) v.play().then(() => setPlaying(true)).catch(() => {});
     else {
       v.pause();
@@ -55,15 +94,15 @@ export function BackgroundVideo({
       <video
         ref={ref}
         className={cn("h-full w-full object-cover", className)}
-        poster={poster}
+        poster={near ? poster : undefined}
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
         aria-label={label}
       >
-        <source src={src} type="video/mp4" />
-        {captions && <track kind="captions" src={captions} srcLang="en" label="English" default />}
+        {armed && <source src={src} type="video/mp4" />}
+        {armed && captions && <track kind="captions" src={captions} srcLang="en" label="English" default />}
       </video>
       {showControl && (
         <button

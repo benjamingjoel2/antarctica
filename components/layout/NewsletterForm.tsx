@@ -56,7 +56,7 @@ export function NewsletterForm() {
       {state === "error" && <p id="nl-error" role="alert" className="mt-[0.5rem] text-[0.8rem] text-orange">{error}</p>}
       <p className="mt-[0.8rem] text-[0.7rem] opacity-60">
         By subscribing, you agree to our{" "}
-        <Link href="/legals#privacy" className="underline">Privacy Policy</Link>.
+        <Link href="/privacy" className="underline">Privacy Policy</Link>.
       </p>
     </div>
   );

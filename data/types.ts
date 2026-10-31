@@ -110,14 +110,6 @@ export interface Fact {
   detail?: string;
 }
 
-export interface Testimonial {
-  quote: string;
-  name: string;
-  trip: string;
-  year: string;
-  placeholder: true;
-}
-
 export interface Faq {
   q: string;
   a: string;

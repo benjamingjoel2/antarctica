@@ -1,9 +1,10 @@
 "use client";
 
-import { motion, useMotionValue, useReducedMotion, useSpring, type MotionValue } from "framer-motion";
+import { motion, useMotionValue, useSpring, type MotionValue } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { PenguinSvg } from "./PenguinSvg";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 
 const gear = [
   "Waterproof parka",
@@ -37,7 +38,7 @@ function Follower({ x, y, delay, size }: { x: MotionValue<number>; y: MotionValu
 }
 
 export function PenguinScene({ compact = false }: { compact?: boolean }) {
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
   const area = useRef<HTMLDivElement>(null);
   const x = useMotionValue(-300);
   const y = useMotionValue(-300);

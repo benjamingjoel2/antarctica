@@ -3,7 +3,7 @@ import { experiences } from "@/data/experiences";
 import { posts } from "@/data/posts";
 import { routes } from "@/data/routes";
 import { ships } from "@/data/ships";
-import type { CabinType, ShipSize } from "@/data/types";
+import type { CabinType, Month, ShipSize } from "@/data/types";
 
 export const getRoute = (slug: string) => routes.find((r) => r.slug === slug);
 export const getShip = (slug: string) => ships.find((s) => s.slug === slug);
@@ -19,6 +19,10 @@ export const shipSizeLabel: Record<ShipSize, string> = {
   mid: "Mid-size",
   luxury: "Luxury",
 };
+
+/** Display labels for month codes (codes stay English in data and forms; labels are translated). */
+export const monthLabel: Record<Month, string> = { Oct: "Oct", Nov: "Nov", Dec: "Dec", Jan: "Jan", Feb: "Feb", Mar: "Mar" };
+export const showMonths = (ms: Month[]) => ms.map((m) => monthLabel[m]);
 
 export const cabinLabel: Record<CabinType, string> = {
   shared: "Shared",

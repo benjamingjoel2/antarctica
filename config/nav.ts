@@ -31,8 +31,9 @@ export const footerNav: { label: string; href: string }[][] = [
   ],
   [
     { label: "About", href: "/about" },
-    { label: "Testimonials", href: "/testimonials" },
     { label: "Contact", href: "/contact" },
-    { label: "Legals", href: "/legals" },
+    { label: "Privacy policy", href: "/privacy" },
+    { label: "Booking terms", href: "/terms" },
+    { label: "Cookie policy", href: "/cookies" },
   ],
 ];

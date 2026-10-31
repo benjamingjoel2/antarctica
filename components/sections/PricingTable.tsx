@@ -10,14 +10,14 @@ export function PricingTable({ cabins, note }: { cabins: Expedition["cabins"]; n
         <thead>
           <tr className="border-b border-ice/30">
             <th scope="col" className="t-mono py-[0.8rem] font-normal opacity-60">Cabin</th>
-            <th scope="col" className="t-mono py-[0.8rem] text-right font-normal opacity-60">From, per person</th>
+            <th scope="col" className="t-mono py-[0.8rem] text-right font-normal opacity-60">Per person</th>
           </tr>
         </thead>
         <tbody>
           {cabins.map((c) => (
             <tr key={c.label} className="border-b border-ice/15">
               <th scope="row" className="t-h3 py-[1rem] font-normal">{c.label}</th>
-              <td className="t-h3 py-[1rem] text-right"><Price usd={c.priceUSD} /></td>
+              <td className="t-h3 py-[1rem] text-right"><Price usd={c.priceUSD} prefix="From" /></td>
             </tr>
           ))}
         </tbody>

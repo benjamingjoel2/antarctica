@@ -3135,7 +3135,7 @@
  "What we collect": [
   "data/legal.ts:18"
  ],
- "Fonts are served from this website. Photos load from the Unsplash image service (images.unsplash.com), which receives your browser's IP address in order to deliver them.": [
+ "Fonts are served from this website. Photos load from our image delivery provider, which receives your browser's IP address in order to deliver them.": [
   "data/legal.ts:180"
  ],
  "Consent": [

@@ -39,8 +39,8 @@ export function DrakeRibbon() {
           <div className="container-site relative">
             <h2 id="drake-title" className="sr-only">Crossing the Drake Passage</h2>
             <div aria-hidden className="relative">
-              <SplitWords as="div" className="t-giant relative z-[1]" lines={[{ text: "crossing", className: "pl-[6%]" }]} />
-              <div className="relative z-[1] flex justify-between">
+              <SplitWords as="div" className="t-giant relative z-[4]" lines={[{ text: "crossing", className: "pl-[6%]" }]} />
+              <div className="relative z-[4] flex justify-between">
                 <SplitWords as="div" className="t-giant" lines={["the"]} delay={0.08} />
                 <SplitWords as="div" className="t-giant" lines={["drake"]} delay={0.16} />
               </div>

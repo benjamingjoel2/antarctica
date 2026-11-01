@@ -22,7 +22,47 @@ export function LegalDocument({ doc, after }: { doc: LegalDoc; after?: ReactNode
             <p className="t-small mt-[0.6rem] opacity-60">Last updated: {legalUpdated}</p>
           </div>
         </div>
-        <NumberedClauses items={doc.sections.map((s) => ({ title: s.h, body: <>{s.p.map((p, i) => <p key={i}>{linkify(p)}</p>)}</> }))} />
+        <NumberedClauses
+          items={doc.sections.map((s) => ({
+            title: s.h,
+            body: (
+              <>
+                {s.p.map((p, i) => (
+                  <p key={i}>{linkify(p)}</p>
+                ))}
+                {s.table && (
+                  <div className="my-[1.5rem] overflow-x-auto">
+                    <table className="w-full border-collapse text-left text-[0.95em] leading-snug">
+                      <thead>
+                        <tr>
+                          {s.table.head.map((c) => (
+                            <th key={c} scope="col" className="border-b border-ink/30 py-[0.5rem] pr-[1rem] align-bottom font-medium">
+                              {c}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {s.table.rows.map((r) => (
+                          <tr key={r.join("|")}>
+                            {r.map((c, i) => (
+                              <td key={i} className="border-b border-ink/15 py-[0.5rem] pr-[1rem] align-top">
+                                {c}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+                {s.after?.map((p, i) => (
+                  <p key={`a${i}`}>{linkify(p)}</p>
+                ))}
+              </>
+            ),
+          }))}
+        />
         {after}
       </div>
     </section>

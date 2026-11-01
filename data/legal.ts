@@ -1,71 +1,103 @@
-/** Privacy policy, booking terms and cookie policy (English source; translations in i18n/). Plain text; [text](/path) becomes a link. A lawyer should review these before launch. */
-export type LegalDoc = { title: string; description: string; sections: { h: string; p: string[] }[] };
+/** Privacy policy, booking terms and cookie policy (English source; translations in i18n/). Plain text; [text](/path) becomes a link. Sections may carry a table and paragraphs after it. */
+export type LegalSection = { h: string; p: string[]; table?: { head: string[]; rows: string[][] }; after?: string[] };
+export type LegalDoc = { title: string; description: string; sections: LegalSection[] };
 
-export const legalUpdated = "30 October 2026";
+export const legalUpdated = "1 November 2026";
 
 export const privacy: LegalDoc = {
   "title": "Privacy policy",
-  "description": "How Seventh Continent collects, uses and protects the personal details you send us.",
+  "description": "How Seventh Continent collects, uses and protects your personal data.",
   "sections": [
     {
       "h": "Who we are",
       "p": [
-        "This website is run by Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. In this policy \"we\", \"us\" and \"our\" mean Seventh Continent.",
-        "For anything about your personal data, email seventhcontinent@tourground.com."
+        "Seventh Continent (“we”, “us”) plans and arranges tailor-made journeys to Antarctica. Seventh Continent is the controller of the personal data described in this policy.",
+        "Business address: Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. Email: seventhcontinent@tourground.com."
       ]
     },
     {
       "h": "What we collect",
       "p": [
-        "Only what you choose to send us: through the enquiry form, through the expedition planner, your name, email address, phone number, how you prefer to be contacted, travel dates, the size of your party, your interests, budget and notes; through the newsletter form, your email address. If you write to us by email, we keep that correspondence.",
-        "If you book, we also collect what is needed to arrange the trip, such as the names of everyone travelling, dates of birth and passport details where suppliers require them, dietary and access needs, and emergency contacts.",
-        "Please do not send payment card details or detailed health information by email or through the form."
+        "When you send an enquiry or use our planning form: your name, email address, country of residence, preferred travel dates, number of travellers (and the ages of any children), interests, budget range and anything else you write in your message.",
+        "When you book: the names of all travellers as shown on their passports, dates of birth, nationality and passport details where a supplier or authority requires them, flight details, dietary requirements, an emergency contact, and records of your payments. If you tell us about a medical condition or mobility needs, we use that information only to arrange your journey safely, with your explicit consent.",
+        "Emails and other messages you exchange with us.",
+        "Technical data when you visit this website: your IP address, browser and device type, the pages requested and the date and time, recorded in our hosting provider’s server logs to deliver the site and keep it secure. We do not use analytics, advertising or tracking tools on this website."
       ]
     },
     {
-      "h": "Why we use it",
+      "h": "Why we use it and our legal bases",
       "p": [
-        "To answer your enquiry, plan a trip with you and, if you go ahead, book and run it. The legal basis is the steps you ask us to take before entering into a contract, the performance of that contract, your consent where we ask for it, and our legitimate interest in replying to people who contact us.",
-        "We do not sell your details, and we only send you news or offers if you ask us to."
+        "To answer your enquiry and prepare proposals: steps taken at your request before entering into a contract (Article 6(1)(b) GDPR).",
+        "To book, arrange and look after your journey, including passing details to the suppliers who provide it: performance of our contract with you (Article 6(1)(b) GDPR).",
+        "To use health or mobility information you choose to give us: your explicit consent (Article 9(2)(a) GDPR), which you can withdraw at any time.",
+        "To keep accounting and tax records: compliance with our legal obligations (Article 6(1)(c) GDPR).",
+        "To keep this website secure, prevent misuse of our forms, improve our service and establish or defend legal claims: our legitimate interests (Article 6(1)(f) GDPR), balanced against your rights.",
+        "To send you occasional news about our journeys, only if you have asked for it: your consent (Article 6(1)(a) GDPR). Every message has an unsubscribe link, or you can simply email us.",
+        "We do not sell your personal data, and we do not make decisions about you by automated means."
       ]
     },
     {
       "h": "Who we share it with",
       "p": [
-        "Your enquiry reaches us through our own website server (hosted by Vercel Inc., United States), which forwards it to our inbox.",
-        "If you book, we share only what is needed with the hotels, lodges, transport companies, guides and local partners in Antarctica and its gateway countries (usually Argentina or Chile) who deliver your trip, and with your travel insurer if you ask us to. Some of them are outside your own country; where that is the case, we share the minimum needed to deliver the service you have asked for.",
-        "We may also disclose information where the law requires it."
+        "Travel suppliers to Antarctica and elsewhere who provide the services in your journey, such as accommodation, transport and activity providers, and only the details each of them needs.",
+        "Service providers who process data on our behalf under a written contract and only on our instructions:",
+        "Vercel Inc. (United States), which hosts this website and keeps short-lived server logs;",
+        "our email provider, which stores the messages you send to seventhcontinent@tourground.com and our replies.",
+        "Public authorities, insurers or professional advisers, where the law requires it, to protect someone’s vital interests, or to establish or defend legal claims."
       ]
     },
     {
-      "h": "Cookies and local storage",
+      "h": "International transfers",
       "p": [
-        "We do not run analytics, personalisation or marketing cookies. If we add any in future, they will only load after you allow them in the cookie settings. See the [cookie policy](/cookies/) for what the site stores in your browser."
+        "Some of the providers above are based in the United States, and arranging your journey means sharing details with suppliers to Antarctica. When personal data leaves the European Economic Area, the United Kingdom or Switzerland, we rely on an adequacy decision (for example the EU–US Data Privacy Framework, where the provider is certified) or on the European Commission’s Standard Contractual Clauses. Transfers to suppliers delivering your journey are also necessary to perform our contract with you. You can ask us for a copy of the safeguards we use."
       ]
     },
     {
       "h": "How long we keep it",
       "p": [
-        "We keep enquiries that do not become a booking for 24 months from our last contact, then delete them. Booking records are kept for as long as accounting and consumer law require, usually six years after the trip."
+        "Enquiries that do not lead to a booking: up to two years after our last contact, then deleted.",
+        "Booking and payment records: seven years after the end of your journey, for accounting, tax and legal claims.",
+        "Health and mobility information: deleted within three months of your return, unless it is needed for a claim.",
+        "Newsletter details: until you unsubscribe. Server logs: a short period set by our hosting provider, then deleted automatically."
       ]
     },
     {
       "h": "How we protect it",
       "p": [
-        "Your details are kept in password-protected email and file storage that only the people planning your trip can reach. The website is served over an encrypted connection (HTTPS)."
+        "This website is served only over an encrypted (HTTPS) connection. Access to your data is limited to the people who need it to plan and look after your journey, and we choose providers for their security standards."
       ]
     },
     {
       "h": "Your rights",
       "p": [
-        "You can ask to see the personal data we hold about you, to correct or delete it, to restrict or object to how we use it, to receive a copy in a portable format, or to withdraw your consent at any time. Email seventhcontinent@tourground.com and we will reply within one month.",
-        "If you are unhappy with how we handle your data, please tell us first so that we can put it right. You also have the right to complain to the data-protection authority in the country where you live."
+        "You have the right to access the personal data we hold about you; to have it rectified; to have it erased; to restrict how we use it; to receive it in a portable format; to object to processing based on our legitimate interests, and at any time to direct marketing; and to withdraw any consent you have given, without affecting what we did before.",
+        "To exercise any of these rights, email seventhcontinent@tourground.com. It is free, and we will reply within one month. We may ask you to confirm your identity first.",
+        "You also have the right to lodge a complaint with a data protection supervisory authority, in particular in the country where you live or work, or where you believe your rights were infringed. We would appreciate the chance to deal with your concern first.",
+        "Because we are based in Argentina, we also handle your personal data in line with Personal Data Protection Law 25,326. You may complain to the Agency for Access to Public Information (AAIP), the Argentine data protection authority."
+      ]
+    },
+    {
+      "h": "Cookies",
+      "p": [
+        "This website stores only what is needed for features you use, and no tracking cookies. Our [Cookie Policy](/cookies) lists every item."
+      ]
+    },
+    {
+      "h": "Children",
+      "p": [
+        "This website is not intended for children under 16, and we do not knowingly collect their data directly. Details of children who travel with their families are provided by, and used on behalf of, a parent or guardian."
       ]
     },
     {
       "h": "Changes to this policy",
       "p": [
-        "We will update this page if the way we use personal data changes. Last updated 30 October 2026."
+        "We may update this policy. The date at the top shows when it last changed; if a change matters to you, we will tell you before it applies."
+      ]
+    },
+    {
+      "h": "Contact",
+      "p": [
+        "Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. Email: seventhcontinent@tourground.com."
       ]
     }
   ]
@@ -73,91 +105,143 @@ export const privacy: LegalDoc = {
 
 export const terms: LegalDoc = {
   "title": "Booking terms",
-  "description": "The terms that apply when you enquire about, and book, a tailor-made trip with Seventh Continent.",
+  "description": "The terms that apply when you book an expedition with Seventh Continent.",
   "sections": [
     {
-      "h": "About these terms",
+      "h": "Who we are",
       "p": [
-        "These terms apply to every trip planned by Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. Please read them before you book. Your written quote and booking confirmation form part of the contract, together with these terms.",
-        "Everything on this website, including itineraries, timings, seasons and experiences, describes the kind of trip we plan. It is not an offer you can accept."
+        "These terms apply to every journey arranged by Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina (email seventhcontinent@tourground.com). By confirming a booking, the lead traveller accepts them on behalf of everyone named on it."
       ]
     },
     {
-      "h": "Enquiries and quotes",
+      "h": "How a booking is made",
       "p": [
-        "Sending an enquiry is free and creates no obligation for you or for us.",
-        "We reply with ideas and questions, then shape the trip with you. When it is right, we send a written quote. A quote is valid for the period stated on it. Prices for flights, accommodation and services can change until the trip is confirmed, and we will tell you before you commit if they do."
+        "Every journey is tailor-made. You tell us what you would like, and we send you a written proposal and quote setting out the itinerary, what is included and excluded, the price and the payment dates.",
+        "Prices on this website are shown “From”: a per-person guide to the starting cost of a journey of that kind. They are not an offer. The final price is the one confirmed to you in writing in your quote, which is valid for the period stated on it and subject to availability until your booking is confirmed.",
+        "The person making the booking must be at least 18 years old and is responsible for payments and for passing on all information about the journey to the other travellers."
       ]
     },
     {
-      "h": "Booking and payment",
+      "h": "Confirmation",
       "p": [
-        "Your booking is confirmed when you accept the quote in writing, pay the deposit stated on it, and we send you a written confirmation. The person who makes the booking accepts these terms for everyone travelling and must be 18 or over.",
-        "The balance is due by the date shown on your quote and confirmation. If it is not paid on time, we may treat the booking as cancelled by you, and the cancellation charges below apply."
+        "Your booking is confirmed, and a contract between you and us is formed, when you have accepted your quote in writing, we have received your deposit, and we have sent you a written booking confirmation. Please check it carefully and tell us straight away if anything is wrong."
+      ]
+    },
+    {
+      "h": "Deposit and balance",
+      "p": [
+        "A deposit of 25% of the total price is payable when you confirm, unless your quote states a different amount. The balance is due 120 days before departure; if you book within 120 days of departure, the full price is payable at booking.",
+        "Some services, such as certain flights, permits or small lodges, must be paid in full when booked; your quote will say so. If the balance is not paid on time, we may treat the booking as cancelled by you and apply the charges below.",
+        "Once your booking is confirmed, we will not increase its price, except to pass on new or higher government taxes, fees or fuel surcharges imposed after confirmation. We will not do so within 20 days of departure, and if an increase would exceed 8% of the total price you may cancel with a full refund."
+      ]
+    },
+    {
+      "h": "What is included",
+      "p": [
+        "Your journey includes exactly the services listed in your quote and booking confirmation, typically accommodation, the transport, transfers and activities named in the itinerary, and the meals stated.",
+        "Unless your quote says otherwise, it does not include international flights, travel insurance, visas and entry fees, vaccinations, meals and drinks not listed, tips, optional activities, excess baggage or personal expenses."
       ]
     },
     {
       "h": "Changes by you",
       "p": [
-        "If you want to change your trip after it is confirmed, tell us in writing. We will do our best to help. Changes are not always possible, and any extra costs charged by suppliers, plus a reasonable fee for our time, will be passed on to you."
+        "If you want to change your arrangements after booking, write to us and we will do our best to help. Changes depend on availability and may carry supplier costs and a reasonable administration charge, which we will confirm before making them. You may transfer your booking to another person who meets its conditions if you tell us at least 7 days before departure; you and they are jointly responsible for the price and any costs of the transfer."
       ]
     },
     {
       "h": "Cancellation by you",
       "p": [
-        "You can cancel at any time by telling us in writing. The deposit is non-refundable. The closer to departure you cancel, the higher the charge, up to the full cost of the trip, because accommodation, transport and other services are reserved and paid for on your behalf. The charges that apply to your trip are set out on your quote and confirmation.",
-        "Travel insurance may cover cancellation charges in some circumstances."
+        "You may cancel at any time by writing to us; cancellation takes effect on the day we receive it. Because we commit money to suppliers on your behalf, the following charges apply, calculated on the total price:"
+      ],
+      "table": {
+        "head": [
+          "When we receive your cancellation",
+          "Cancellation charge"
+        ],
+        "rows": [
+          [
+            "More than 120 days before departure",
+            "The deposit"
+          ],
+          [
+            "120 to 31 days before departure",
+            "50% of the total price"
+          ],
+          [
+            "30 to 15 days before departure",
+            "75% of the total price"
+          ],
+          [
+            "14 days or fewer before departure, or no-show",
+            "100% of the total price"
+          ]
+        ]
+      },
+      "after": [
+        "Services your confirmation lists as non-refundable once booked (such as some flights or permits) are charged in full in addition to the scale above where they exceed it. You will not pay a cancellation charge if unavoidable and extraordinary circumstances at your destination significantly affect the journey. We strongly recommend insurance that covers cancellation from the day you book."
       ]
     },
     {
       "h": "Changes and cancellation by us",
       "p": [
-        "We plan carefully, but sometimes we have to change part of a trip, for example because of weather, road or route closures, or a supplier that cannot honour a booking. We will tell you as soon as possible and offer a comparable alternative.",
-        "If we have to make a significant change or cancel your trip, you can accept the change, take a comparable alternative if one is available, or cancel and receive a full refund of the money you have paid us."
-      ]
-    },
-    {
-      "h": "Events beyond anyone's control",
-      "p": [
-        "We are not liable for changes, delays or cancellations caused by events beyond our reasonable control, such as war or threat of war, civil unrest, natural disaster, epidemics, government action, airport or border closures, or severe weather. Where such an event affects your trip, we will help you make other arrangements and pass on any refunds we receive from suppliers."
+        "Travel is shaped by weather, seasons and local conditions, so minor changes (a different vehicle, a revised route, a comparable lodge) may be needed and do not give rise to compensation.",
+        "If we have to make a significant change before departure, we will tell you as soon as possible and you may accept it, take a comparable alternative, or cancel with a full refund of everything you have paid us. If we must cancel your journey, we will refund all money you have paid us or, if you prefer, offer an alternative. We are not responsible for costs outside your booking with us, such as flights you arranged yourself."
       ]
     },
     {
       "h": "Travel insurance",
       "p": [
-        "Comprehensive travel insurance is a condition of booking. It must cover medical treatment, repatriation and cancellation, and any activities in your trip. Please send us your policy details before you travel."
+        "Comprehensive travel insurance is a condition of travelling with us. It must cover cancellation and curtailment, medical treatment, emergency evacuation and repatriation, and the activities in your itinerary. Please send us your policy details before departure."
       ]
     },
     {
       "h": "Passports, visas and health",
       "p": [
-        "You are responsible for holding a valid passport, any visas or travel authorisations, and any vaccinations or health documents required for Antarctica and its gateway countries (usually Argentina or Chile) and for any country you pass through. Entry rules change, so check them with the relevant embassy and your government's travel advice before you book and again before you travel.",
-        "Please tell us before booking about any medical condition or mobility need that could affect your trip, so that we can plan around it."
+        "Each traveller is responsible for holding a passport valid for the whole journey (many countries require at least six months’ validity beyond your return), any visa or entry authorisation needed, and for meeting all health and vaccination requirements. Requirements depend on your nationality and change, so please check official government sources and take medical advice in good time. Most expeditions start in Ushuaia (Argentina) or Punta Arenas (Chile), so the entry rules of the gateway country apply too.",
+        "We are not liable if you cannot travel, or incur costs, because you do not have the right documents. Please tell us before booking about any medical condition or reduced mobility, so we can check the arrangements suit you."
       ]
     },
     {
-      "h": "Your responsibilities",
+      "h": "Our responsibility",
       "p": [
-        "Please follow local laws and customs, the instructions of guides, drivers, crews and other suppliers, and the safety advice we give you. We may end the trip of anyone whose behaviour puts others at risk or causes serious disruption, without refund."
+        "We arrange your journey with reasonable skill and care and are responsible for providing the services in your booking confirmation. If you are in difficulty during your journey, we will give you prompt and appropriate assistance.",
+        "We are not liable where a problem is caused by you or a member of your party, by a third party unconnected with the services we provide, or by unusual and unforeseeable circumstances beyond our control. Where international conventions limit what a carrier or hotel must pay, our liability is limited in the same way. Except for death or personal injury caused by our negligence, or where the law does not allow a limit, our liability is limited to three times the price of your journey. Nothing in these terms affects your statutory rights as a consumer."
       ]
     },
     {
-      "h": "Our liability",
+      "h": "Behaviour",
       "p": [
-        "We take reasonable care in planning and arranging your trip. We are not liable for loss, injury or damage caused by you, by someone not connected with the trip, or by events beyond our reasonable control.",
-        "Where airlines, hotels and other transport companies are concerned, our liability is limited in the same way as theirs is under the international conventions that apply to them. Nothing in these terms limits our liability for death or personal injury caused by our negligence, or any liability that cannot be limited by law."
+        "Please follow the reasonable instructions of drivers, hosts and suppliers, particularly on safety, and respect local laws, customs and the places you visit. If your behaviour puts others at risk or causes serious disruption or damage, we or a supplier may end your arrangements without refund."
       ]
     },
     {
       "h": "Complaints",
       "p": [
-        "If something is not right during your trip, tell us straight away so that we can try to fix it on the spot. If it cannot be resolved, please write to seventhcontinent@tourground.com within 28 days of your return and we will reply promptly."
+        "If something is not right during your journey, tell the supplier concerned and us straight away, so we can put it right on the spot. If you are still unhappy, write to seventhcontinent@tourground.com within 28 days of your return; we will acknowledge your complaint promptly and reply in full within 28 days."
+      ]
+    },
+    {
+      "h": "Force majeure",
+      "p": [
+        "We are not liable, and pay no compensation, where we cannot perform or must change our obligations because of unavoidable and extraordinary circumstances beyond our control, such as war, civil unrest, terrorism, natural disasters, extreme weather, epidemics, government action or official travel advice against travel, or the closure of airports or borders. If such circumstances lead us to cancel, we will refund what you have paid us as set out above."
+      ]
+    },
+    {
+      "h": "Data protection",
+      "p": [
+        "We use your personal data to arrange your journey as described in our [Privacy Policy](/privacy)."
       ]
     },
     {
       "h": "Governing law",
       "p": [
-        "These terms are governed by the law that applies to the contract you make with us, as set out in your booking confirmation. You may also have the protection of the consumer law of the country where you live."
+        "These terms and any booking are governed by the law of Argentina, and the courts of the City of Buenos Aires have jurisdiction. If you are a consumer, you keep the protection of the mandatory laws of your country of residence and may bring proceedings there where those laws allow. We will always try to resolve a complaint by agreement first."
+      ]
+    },
+    {
+      "h": "Contact",
+      "p": [
+        "Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. Email: seventhcontinent@tourground.com."
       ]
     }
   ]
@@ -165,39 +249,91 @@ export const terms: LegalDoc = {
 
 export const cookies: LegalDoc = {
   "title": "Cookie policy",
-  "description": "Which cookies and similar storage the Seventh Continent website uses, and how to control them.",
+  "description": "Exactly what this website stores on your device, and how to control it.",
   "sections": [
     {
-      "h": "Short version",
+      "h": "What cookies are",
       "p": [
-        "We do not run analytics, personalisation or marketing cookies. If we add any in future, they will only load after you allow them in the cookie settings. The only cookies this website sets itself are the strictly necessary ones listed below."
+        "Cookies are small text files a website places in your browser. Websites can also keep information on your device with similar technologies such as local storage and session storage. This policy covers all of them and applies to seventhcontinent.tourground.com."
       ]
     },
     {
-      "h": "What the site stores in your browser",
+      "h": "What this website stores",
       "p": [
-        "Your cookie choices are saved in local storage under sc-consent-v1 and mirrored in a first-party cookie, sc_consent, for 180 days, so we do not ask again. If you change the display currency, your choice is saved in local storage under sc-currency. If you start the [expedition planner](/plan-my-expedition), your answers are saved in local storage under sc-planner-v1 so you can come back to them. They stay on your device until you submit the planner, and are cleared when you do. If you switch on penguin mode, that choice is saved in local storage under sc-penguin.",
-        "Fonts are served from this website. Photos load from our image delivery provider, which receives your browser's IP address in order to deliver them."
-      ]
+        "We do not use analytics, advertising or social-media cookies, and nothing below is used to track you or is shared with anyone. This is the complete list:"
+      ],
+      "table": {
+        "head": [
+          "Name",
+          "Purpose",
+          "Duration",
+          "Type"
+        ],
+        "rows": [
+          [
+            "sc_consent",
+            "Records the choice you made about optional cookies, so we do not ask again.",
+            "6 months",
+            "First-party cookie, strictly necessary"
+          ],
+          [
+            "sc-consent-v1",
+            "Keeps your cookie choice (with the date you made it) on your device.",
+            "Until you clear it",
+            "Local storage, strictly necessary"
+          ],
+          [
+            "sc-currency",
+            "Remembers the display currency you choose for prices.",
+            "Until you clear it",
+            "Local storage, strictly necessary (preference)"
+          ],
+          [
+            "sc-planner-v1",
+            "Keeps the answers you have typed into the planning form, so they are not lost if you leave the page; cleared when you send the form.",
+            "Until you send the planner or clear it",
+            "Local storage, strictly necessary"
+          ],
+          [
+            "sc-penguin",
+            "Remembers whether you switched on penguin mode.",
+            "Until you clear it",
+            "Local storage, strictly necessary (preference)"
+          ]
+        ]
+      }
     },
     {
       "h": "Consent",
       "p": [
-        "Anything listed above is strictly necessary for a feature you choose to use, so it does not need your consent. We will not add analytics or advertising cookies without asking you first."
+        "The first time you visit, a banner asks whether you allow optional cookies (analytics, personalisation, marketing). The site does not use any optional cookies today, so declining changes nothing about how it works; your choice is simply saved (sc_consent and sc-consent-v1) so we do not ask again. Everything else in the table is strictly necessary for a feature you choose to use and does not need consent. You can change your choice at any time with the “Manage cookie preferences” button on this page or the “Cookie preferences” link in the footer."
       ]
     },
     {
-      "h": "How to remove it or change your mind",
+      "h": "Hosting and third-party content",
       "p": [
-        "You can clear this site's stored data at any time in your browser's settings (usually under Privacy, then Cookies and site data)."
+        "Pages are delivered by our hosting provider, Vercel, which processes your IP address and request details in its server logs to serve the site and protect it from attacks. It sets no tracking cookies on this site.",
+        "Photographs are loaded from an external image delivery service, which receives your IP address and standard request details in order to deliver them. It sets no cookies on this site.",
+        "Fonts are served from our own domain, so no font service receives your data."
+      ]
+    },
+    {
+      "h": "How to manage or delete them",
+      "p": [
+        "You can delete everything this website stores at any time by clearing your browser’s cookies and site data for it, and you can block cookies and site storage in your browser settings. The site will still work; you will simply lose the saved preference."
+      ]
+    },
+    {
+      "h": "Changes",
+      "p": [
+        "We will update this page whenever the way this website stores information changes. The date at the top shows when it last changed."
       ]
     },
     {
       "h": "Contact",
       "p": [
-        "Questions about this policy: email seventhcontinent@tourground.com."
+        "Questions about this policy: seventhcontinent@tourground.com. Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. See also our [Privacy Policy](/privacy)."
       ]
     }
   ]
 };
-

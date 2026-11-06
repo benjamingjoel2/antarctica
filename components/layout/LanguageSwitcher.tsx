@@ -20,10 +20,10 @@ function split(pathname: string): [string, string] {
 }
 
 /** EN · FR · DE · ES: links to the same page in each language (no automatic redirects). */
-export function LanguageSwitcher({ className, tone = "light" }: { className?: string; tone?: "light" | "dark" }) {
+export function LanguageSwitcher({ className, tone = "light" }: { className?: string; tone?: "light" | "dark" | "plain" }) {
   const [current, rest] = split(usePathname() || SLASH);
   return (
-    <nav aria-label="Language" className={cn("inline-flex items-center font-mono text-[1.12rem] uppercase leading-none", tone === "light" ? "bg-ice text-ink" : "bg-ink text-ice", className)}>
+    <nav aria-label="Language" className={cn("inline-flex items-center font-mono text-[1.12rem] uppercase leading-none", tone === "plain" ? "" : tone === "light" ? "bg-ice text-ink" : "bg-ink text-ice", className)}>
       <ul className="flex items-center px-[0.3rem] py-[0.15rem]">
         {LOCALES.map((l, i) => {
           const href = l.code === "en" ? rest : `/${l.code}${rest.length === 1 ? "" : rest}`;

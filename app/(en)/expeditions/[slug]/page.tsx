@@ -7,7 +7,6 @@ import { Itinerary } from "@/components/sections/Itinerary";
 import { MoreStrip } from "@/components/sections/MoreStrip";
 import { ParagraphBlock } from "@/components/sections/ParagraphBlock";
 import { PricingTable } from "@/components/sections/PricingTable";
-import { RouteMap } from "@/components/sections/RouteMap";
 import { Pill } from "@/components/ui/Pill";
 import { Price } from "@/components/ui/Price";
 import { VerifyNote } from "@/components/ui/VerifyNote";
@@ -63,15 +62,10 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
 
       <section id="itinerary" className="scroll-mt-[5rem] bg-ink py-[6rem] text-ice">
         <div className="container-site grid-site gap-y-[3rem]">
-          <div className="col-span-12 lg:col-span-7">
+          <div className="col-span-12 lg:col-span-8">
             <h2 className="t-mono mb-[2rem] opacity-60">Day by day</h2>
             <Itinerary days={e.itinerary} />
             <VerifyNote className="mt-[1rem]">Itineraries are a guide: weather and ice decide the day. {e.verifyNote}</VerifyNote>
-          </div>
-          <div className="col-span-12 lg:col-span-4 lg:col-start-9">
-            <div className="lg:sticky lg:top-[5rem]">
-              <RouteMap routeSlug={e.routeSlug} title={route?.name ?? e.name} />
-            </div>
           </div>
         </div>
       </section>

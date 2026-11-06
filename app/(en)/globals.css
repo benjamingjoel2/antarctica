@@ -53,15 +53,15 @@ html.lenis, html.lenis body { height: auto; }
   .container-site { width: 100%; max-width: 89.16rem; margin-inline: auto; padding-inline: 1.25rem; }
   .grid-site { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 1.25rem; }
 
-  /* Giant uppercase display (reference .text__h1: 9.9rem / 7.9rem, -0.3rem) */
+  /* Display caps, capped at 6rem / 7vw (owner rule: no giant words) */
   .t-giant {
     font-family: var(--font-display);
     font-weight: 400;
     font-stretch: 82%;
     text-transform: uppercase;
     letter-spacing: -0.03em;
-    font-size: clamp(3.4rem, 13.5vw, 9.9rem);
-    line-height: 0.8;
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    line-height: 0.88;
   }
   /* Headings (reference .text__h2 2.9rem / 3.1rem regular) */
   .t-h2 { font-weight: 400; letter-spacing: -0.01em; font-size: clamp(1.55rem, 4.4vw, 2.9rem); line-height: 1.07; }

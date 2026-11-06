@@ -48,10 +48,10 @@ export function CookieConsent() {
               </Link>{" "}
               for details.
             </p>
-            <div className="mt-[0.9rem] flex flex-wrap items-center gap-[0.3rem]">
+            <div className="mt-[0.9rem] flex flex-wrap items-center gap-x-[1.2rem] gap-y-[0.6rem]">
               <PillButton size="sm" onClick={acceptAll}>Accept</PillButton>
               <PillButton size="sm" onClick={rejectAll}>Reject</PillButton>
-              <button type="button" onClick={openPrefs} className="t-mono cursor-pointer px-[0.4rem] text-[1rem] underline underline-offset-2">
+              <button type="button" onClick={openPrefs} className="t-mono cursor-pointer text-[1rem] underline underline-offset-2">
                 Preferences
               </button>
             </div>
@@ -102,7 +102,7 @@ export function CookieConsent() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-[1.3rem] flex flex-wrap gap-[0.4rem]">
+              <div className="mt-[1.3rem] flex flex-wrap gap-[0.6rem]">
                 <PillButton variant="dark" size="sm" onClick={rejectAll}>Reject all</PillButton>
                 <PillButton variant="dark" size="sm" onClick={acceptAll}>Accept all</PillButton>
                 <PillButton variant="accent" size="sm" onClick={() => save(draft)}>Save choices</PillButton>

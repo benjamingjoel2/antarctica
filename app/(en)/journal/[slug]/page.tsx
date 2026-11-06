@@ -25,13 +25,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   return (
     <>
       <article className="bg-ink text-ice">
-        <header className="container-site pt-[6.5rem] text-center md:pt-[5rem]">
+        <header className="container-site pt-[7.5rem] md:pt-[7rem]">
           <p className="t-mono opacity-60">
             <Link href="/journal" className="hover:underline">Journal</Link> · {formatDate(p.date)} · {p.readMinutes} min read
           </p>
-          <SplitWords as="h1" onMount delay={0.5} className="t-giant mt-[1.2rem]" lines={p.titleLines.map((l) => ({ text: l, className: "justify-center" }))} />
+          <SplitWords as="h1" onMount delay={0.5} className="t-giant mt-[1.2rem]" lines={p.titleLines} />
           <span className="sr-only">{p.title}</span>
-          <p className="t-small mx-auto mt-[1.6rem] max-w-[40rem] opacity-80">{p.excerpt}</p>
+          <p className="t-small mt-[1.6rem] max-w-[40rem] opacity-80">{p.excerpt}</p>
         </header>
         <div className="relative mt-[4rem] h-[85vh] min-h-[24rem] overflow-hidden">
           <Image src={p.cover.src} alt={p.cover.alt} fill priority sizes="100vw" className="object-cover" />

@@ -4,10 +4,10 @@ import { currencies, type Currency } from "@/config/currency";
 import { useCurrency } from "@/lib/currency";
 import { cn } from "@/lib/cn";
 
-export function CurrencySwitcher({ className, tone = "light" }: { className?: string; tone?: "light" | "dark" }) {
+export function CurrencySwitcher({ className, tone = "light" }: { className?: string; tone?: "light" | "dark" | "plain" }) {
   const { currency, setCurrency } = useCurrency();
   return (
-    <label className={cn("relative inline-flex items-center font-mono text-[1.12rem] uppercase leading-none", tone === "light" ? "bg-ice text-ink" : "bg-ink text-ice", className)}>
+    <label className={cn("relative inline-flex items-center font-mono text-[1.12rem] uppercase leading-none", tone === "plain" ? "" : tone === "light" ? "bg-ice text-ink" : "bg-ink text-ice", className)}>
       <span className="sr-only">Currency</span>
       <select
         value={currency}

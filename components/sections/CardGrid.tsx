@@ -55,8 +55,7 @@ export function CardGrid({ items, cta = "View" }: { items: CardItem[]; cta?: str
                 <Image src={it.image.src} alt={it.image.alt} fill sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" className="object-cover transition-transform duration-1000 ease-[var(--ease-out-expo)] group-hover:scale-105" />
                 {it.video && <HoverVideo src={it.video} active={hover === i} />}
                 <span className={cn("absolute inset-0 z-[3] flex items-center justify-center gap-[0.63rem] transition-opacity duration-300", hover === i ? "opacity-100 md:opacity-0" : "opacity-0")}>
-                  <PillTag>{it.title}</PillTag>
-                  <PillTag>{it.meta}</PillTag>
+                  <PillTag>{it.title} · {it.meta}</PillTag>
                 </span>
               </span>
               {it.body && <span className="block px-[1.25rem] pt-[1rem]">{it.body}</span>}
@@ -66,10 +65,7 @@ export function CardGrid({ items, cta = "View" }: { items: CardItem[]; cta?: str
         ))}
       </ul>
       <CursorFollow area={area} show={hover !== null}>
-        <span className="flex gap-[0.4rem]">
-          <PillTag>{cur?.title ?? ""}</PillTag>
-          <PillTag>{cur?.meta ?? ""}</PillTag>
-        </span>
+        <PillTag>{cur ? `${cur.title} · ${cur.meta}` : ""}</PillTag>
       </CursorFollow>
     </div>
   );

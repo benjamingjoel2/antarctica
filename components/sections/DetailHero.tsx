@@ -5,9 +5,9 @@ import { SplitWords } from "@/components/ui/SplitWords";
 import { WaveCards } from "@/components/ui/WaveCards";
 
 /**
- * Reference project hero: light panel, giant centred title in dark caps,
- * a short centred description and actions, a centred media card, then a
- * full-bleed photo that closes with dark wave bars.
+ * Project hero: light panel, left-aligned title in dark caps, a short
+ * description and actions, a media card, then a full-bleed photo that
+ * closes with dark wave bars.
  */
 export function DetailHero({
   label,
@@ -28,12 +28,12 @@ export function DetailHero({
 }) {
   return (
     <section className="bg-ice text-ink">
-      <div className="container-site pt-[6.5rem] text-center md:pt-[5rem]">
+      <div className="container-site pt-[7.5rem] md:pt-[7rem]">
         <p className="t-mono opacity-60">{label}</p>
-        <SplitWords as="h1" onMount delay={0.5} className="t-giant mt-[1.2rem]" lines={lines.map((l) => ({ text: l, className: "justify-center" }))} />
-        <div className="t-small mx-auto mt-[1.4rem] max-w-[46rem]">{description}</div>
-        {actions && <div className="mt-[1.4rem] flex flex-wrap justify-center gap-[0.3rem]">{actions}</div>}
-        <div className="relative z-[2] mx-auto mt-[2rem] aspect-[4/3] w-[80%] max-w-[29rem] overflow-hidden rounded-[0.3rem] md:w-[33%]">
+        <SplitWords as="h1" onMount delay={0.5} className="t-giant mt-[1.2rem]" lines={lines} />
+        <div className="t-small mt-[1.4rem] max-w-[46rem]">{description}</div>
+        {actions && <div className="mt-[1.6rem] flex flex-wrap items-center gap-x-[1.6rem] gap-y-[1rem]">{actions}</div>}
+        <div className="relative z-[2] ml-auto mt-[2rem] aspect-[4/3] w-[80%] max-w-[29rem] overflow-hidden rounded-[0.3rem] md:w-[33%]">
           {media.video ? (
             <BackgroundVideo src={media.video} poster={`${media.image.src}&w=900`} label={media.image.alt} />
           ) : (

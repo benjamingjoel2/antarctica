@@ -118,8 +118,8 @@ export function Menu() {
             <div className="container-site mt-[1.25rem] flex flex-wrap items-center justify-between gap-[0.6rem]">
               <p className="t-mono opacity-60">{site.tagline}</p>
               <div className="flex flex-wrap items-center gap-[0.3rem]">
-                <LanguageSwitcher tone="dark" />
-                <CurrencySwitcher tone="dark" className="lg:hidden" />
+                <LanguageSwitcher tone="plain" />
+                <CurrencySwitcher tone="plain" className="lg:hidden" />
                 <Pill href="/plan-my-expedition" variant="accent">Plan my expedition</Pill>
               </div>
             </div>

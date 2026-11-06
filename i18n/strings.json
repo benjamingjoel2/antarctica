@@ -42,7 +42,7 @@
  ],
  "Expeditions": [
   "app/(en)/about/page.tsx:47",
-  "app/(en)/expeditions/[slug]/page.tsx:115",
+  "app/(en)/expeditions/[slug]/page.tsx:109",
   "app/(en)/page.tsx:22"
  ],
  "An expedition-style ship": [
@@ -51,7 +51,7 @@
  "Ships": [
   "app/(en)/about/page.tsx:48",
   "app/(en)/page.tsx:23",
-  "components/home/HeroParallax.tsx:19"
+  "components/sections/HorizontalPanels.tsx:91"
  ],
  "Peaks under a starry sky": [
   "app/(en)/about/page.tsx:49"
@@ -59,7 +59,7 @@
  "Timeline": [
   "app/(en)/about/page.tsx:49",
   "app/(en)/page.tsx:24",
-  "components/home/HeroParallax.tsx:17"
+  "config/nav.ts:26"
  ],
  "Email": [
   "app/(en)/contact/page.tsx:12",
@@ -75,7 +75,7 @@
  "Contact": [
   "app/(en)/contact/page.tsx:16",
   "app/(en)/contact/page.tsx:8",
-  "components/home/HeroParallax.tsx:20"
+  "components/planner/Planner.tsx:38"
  ],
  "Address": [
   "app/(en)/contact/page.tsx:31"
@@ -94,65 +94,65 @@
  "Talk to a polar specialist by email.": [
   "app/(en)/contact/page.tsx:8"
  ],
- "Departures": [
-  "app/(en)/expeditions/[slug]/page.tsx:102"
- ],
  "Enquire": [
-  "app/(en)/expeditions/[slug]/page.tsx:107",
-  "app/(en)/expeditions/[slug]/page.tsx:42"
+  "app/(en)/expeditions/[slug]/page.tsx:101",
+  "app/(en)/expeditions/[slug]/page.tsx:41"
  ],
  "More": [
-  "app/(en)/expeditions/[slug]/page.tsx:115"
+  "app/(en)/expeditions/[slug]/page.tsx:109"
  ],
  "Discover": [
-  "app/(en)/expeditions/[slug]/page.tsx:115",
+  "app/(en)/expeditions/[slug]/page.tsx:109",
   "app/(en)/experiences/page.tsx:21",
   "components/home/DiscoverCounters.tsx:53"
  ],
  "Expedition cruise": [
-  "app/(en)/expeditions/[slug]/page.tsx:123"
+  "app/(en)/expeditions/[slug]/page.tsx:117"
  ],
  "{0} · {1} days": [
-  "app/(en)/expeditions/[slug]/page.tsx:37"
+  "app/(en)/expeditions/[slug]/page.tsx:36"
  ],
  "Expedition": [
-  "app/(en)/expeditions/[slug]/page.tsx:37"
+  "app/(en)/expeditions/[slug]/page.tsx:36"
  ],
  "Season": [
-  "app/(en)/expeditions/[slug]/page.tsx:53"
+  "app/(en)/expeditions/[slug]/page.tsx:52"
  ],
  "per person.": [
-  "app/(en)/expeditions/[slug]/page.tsx:57"
+  "app/(en)/expeditions/[slug]/page.tsx:56"
  ],
  "From": [
-  "app/(en)/expeditions/[slug]/page.tsx:57",
-  "app/(en)/expeditions/[slug]/page.tsx:48",
+  "app/(en)/expeditions/[slug]/page.tsx:56",
+  "app/(en)/expeditions/[slug]/page.tsx:47",
   "app/(en)/experiences/[slug]/page.tsx:36"
  ],
  "Day by day": [
-  "app/(en)/expeditions/[slug]/page.tsx:67",
-  "app/(en)/expeditions/[slug]/page.tsx:43"
+  "app/(en)/expeditions/[slug]/page.tsx:66",
+  "app/(en)/expeditions/[slug]/page.tsx:42"
  ],
  "Itineraries are a guide: weather and ice decide the day.": [
-  "app/(en)/expeditions/[slug]/page.tsx:69"
+  "app/(en)/expeditions/[slug]/page.tsx:68"
  ],
  "Ship & cabins": [
-  "app/(en)/expeditions/[slug]/page.tsx:82"
+  "app/(en)/expeditions/[slug]/page.tsx:76"
  ],
  "Included": [
-  "app/(en)/expeditions/[slug]/page.tsx:89",
+  "app/(en)/expeditions/[slug]/page.tsx:83",
   "app/(en)/experiences/page.tsx:25"
  ],
  "Not included": [
-  "app/(en)/expeditions/[slug]/page.tsx:90"
+  "app/(en)/expeditions/[slug]/page.tsx:84"
  ],
  "Good to know": [
-  "app/(en)/expeditions/[slug]/page.tsx:91",
+  "app/(en)/expeditions/[slug]/page.tsx:85",
   "app/(en)/experiences/[slug]/page.tsx:45",
   "app/(en)/experiences/[slug]/page.tsx:40"
  ],
  "Pricing": [
-  "app/(en)/expeditions/[slug]/page.tsx:98"
+  "app/(en)/expeditions/[slug]/page.tsx:92"
+ ],
+ "Departures": [
+  "app/(en)/expeditions/[slug]/page.tsx:96"
  ],
  "Antarctica expeditions": [
   "app/(en)/expeditions/page.tsx:12"
@@ -199,7 +199,7 @@
  ],
  "Best months": [
   "app/(en)/experiences/[slug]/page.tsx:46",
-  "app/(en)/routes/[slug]/page.tsx:54",
+  "app/(en)/routes/[slug]/page.tsx:52",
   "app/(en)/routes/page.tsx:30"
  ],
  "Routes": [
@@ -457,52 +457,53 @@
   "app/(en)/protect/page.tsx:97"
  ],
  "No Drake crossing": [
-  "app/(en)/routes/[slug]/page.tsx:28"
+  "app/(en)/routes/[slug]/page.tsx:27"
  ],
  "Sail the Drake": [
-  "app/(en)/routes/[slug]/page.tsx:28"
+  "app/(en)/routes/[slug]/page.tsx:27"
  ],
  "Fly over the Drake": [
-  "app/(en)/routes/[slug]/page.tsx:28"
+  "app/(en)/routes/[slug]/page.tsx:27"
  ],
  "Route · from {0}": [
-  "app/(en)/routes/[slug]/page.tsx:32"
+  "app/(en)/routes/[slug]/page.tsx:31"
  ],
  "Plan this route": [
-  "app/(en)/routes/[slug]/page.tsx:35"
+  "app/(en)/routes/[slug]/page.tsx:34"
  ],
  "Disembark: {0}": [
-  "app/(en)/routes/[slug]/page.tsx:51"
+  "app/(en)/routes/[slug]/page.tsx:49"
  ],
  "Embark: {0}": [
-  "app/(en)/routes/[slug]/page.tsx:51"
+  "app/(en)/routes/[slug]/page.tsx:49"
  ],
  "Duration": [
-  "app/(en)/routes/[slug]/page.tsx:51",
-  "app/(en)/routes/page.tsx:30"
+  "app/(en)/routes/[slug]/page.tsx:49",
+  "app/(en)/routes/page.tsx:30",
+  "data/legal.ts:269"
  ],
  "No flight segment": [
-  "app/(en)/routes/[slug]/page.tsx:52"
+  "app/(en)/routes/[slug]/page.tsx:50"
  ],
  "Flight to King George Island": [
-  "app/(en)/routes/[slug]/page.tsx:52"
+  "app/(en)/routes/[slug]/page.tsx:50"
  ],
  "Not crossed by sea": [
-  "app/(en)/routes/[slug]/page.tsx:52"
+  "app/(en)/routes/[slug]/page.tsx:50"
  ],
  "Crossed by sea (around two days each way)": [
-  "app/(en)/routes/[slug]/page.tsx:52"
+  "app/(en)/routes/[slug]/page.tsx:50"
  ],
  "The Drake": [
-  "app/(en)/routes/[slug]/page.tsx:52"
+  "app/(en)/routes/[slug]/page.tsx:50"
  ],
  "Wildlife": [
-  "app/(en)/routes/[slug]/page.tsx:53",
+  "app/(en)/routes/[slug]/page.tsx:51",
   "app/(en)/routes/page.tsx:30",
   "app/(en)/when-to-go/page.tsx:40"
  ],
  "View expedition": [
-  "app/(en)/routes/[slug]/page.tsx:62",
+  "app/(en)/routes/[slug]/page.tsx:60",
   "app/(en)/ships/[slug]/page.tsx:55",
   "components/sections/ExpeditionsExplorer.tsx:96"
  ],
@@ -758,37 +759,18 @@
  "The engines hush, the light turns blue, and the first iceberg slides past the window. You made it.": [
   "components/home/FullscreenVideo.tsx:46"
  ],
- "Protect": [
-  "components/home/HeroParallax.tsx:18",
-  "config/nav.ts:27",
-  "config/nav.ts:12"
+ "Independent Antarctica specialists": [
+  "components/home/HeroCard.tsx:14"
  ],
- "Introduction": [
-  "components/home/HeroParallax.tsx:48"
- ],
- "of the world": [
-  "components/home/HeroParallax.tsx:63"
- ],
- "the edge": [
-  "components/home/HeroParallax.tsx:63"
- ],
- "— the edge of the world is closer than you think.": [
-  "components/home/HeroParallax.tsx:64"
- ],
- "Quick links": [
-  "components/home/HeroParallax.tsx:74"
- ],
- "Watch: penguins on snow — view expeditions": [
-  "components/home/HeroParallax.tsx:80"
- ],
- "Penguins on snow": [
-  "components/home/HeroParallax.tsx:81"
- ],
- "Gentoo penguin": [
-  "components/home/HeroParallax.tsx:93"
+ "The edge of the world is closer than you think.": [
+  "components/home/HeroCard.tsx:16",
+  "config/site.ts:4"
  ],
  "Independent Antarctica specialists. We match every traveller with the right ship, route and season, then one polar specialist plans every detail.": [
-  "components/home/HeroParallax.tsx:97"
+  "components/home/HeroCard.tsx:19"
+ ],
+ "Snow slopes and peaks under a winter sky": [
+  "components/home/HeroCard.tsx:33"
  ],
  "Sailing with": [
   "components/home/SailingWith.tsx:34"
@@ -819,7 +801,7 @@
  ],
  "Close": [
   "components/layout/CookieConsent.tsx:113",
-  "components/layout/Header.tsx:28",
+  "components/layout/Header.tsx:37",
   "components/planner/Planner.tsx:227"
  ],
  "Lets us measure campaigns and show relevant departures on other sites.": [
@@ -874,44 +856,29 @@
  "Currency": [
   "components/layout/CurrencySwitcher.tsx:11"
  ],
- "Mail": [
-  "components/layout/Footer.tsx:16"
- ],
- "Tell us where you dream of standing. One polar specialist will match you with the right ship, route and season, and stay with you until you step back onto dry land.": [
+ "Write to us": [
   "components/layout/Footer.tsx:22"
  ],
+ "Tell us where you dream of standing. One polar specialist will match you with the right ship, route and season, and stay with you until you step back onto dry land.": [
+  "components/layout/Footer.tsx:24"
+ ],
  "Footer {0}": [
-  "components/layout/Footer.tsx:45"
+  "components/layout/Footer.tsx:39"
  ],
  "· Independent Antarctica specialists · Voyages operated by IAATO-member partners": [
-  "components/layout/Footer.tsx:61"
+  "components/layout/Footer.tsx:57"
  ],
  "Cookie preferences": [
-  "components/layout/Footer.tsx:63"
- ],
- "Privacy policy": [
-  "components/layout/Footer.tsx:64",
-  "data/legal.ts:7",
-  "config/nav.ts:35"
- ],
- "Booking terms": [
-  "components/layout/Footer.tsx:65",
-  "data/legal.ts:75",
-  "config/nav.ts:36"
- ],
- "Cookie policy": [
-  "components/layout/Footer.tsx:66",
-  "data/legal.ts:167",
-  "config/nav.ts:37"
+  "components/layout/Footer.tsx:58"
  ],
  "Seventh Continent — home": [
   "components/layout/Header.tsx:15"
  ],
  "{Penguin mode}": [
-  "components/layout/Header.tsx:22"
+  "components/layout/Header.tsx:24"
  ],
  "Menu": [
-  "components/layout/Header.tsx:28"
+  "components/layout/Header.tsx:37"
  ],
  "Español": [
   "components/layout/LanguageSwitcher.tsx:10"
@@ -1144,7 +1111,8 @@
   "components/planner/Planner.tsx:360"
  ],
  "Children": [
-  "components/planner/Planner.tsx:363"
+  "components/planner/Planner.tsx:363",
+  "data/legal.ts:86"
  ],
  "Children's ages": [
   "components/planner/Planner.tsx:367"
@@ -1461,74 +1429,6 @@
  "Indicative prices per person by cabin": [
   "components/sections/PricingTable.tsx:9"
  ],
- "M210 120 C 240 230, 300 300, 300 360 S 260 430, 250 450": [
-  "components/sections/RouteMap.tsx:18",
-  "components/sections/RouteMap.tsx:17"
- ],
- "M150 95 Q 300 200 300 360": [
-  "components/sections/RouteMap.tsx:20"
- ],
- "M300 360 S 260 430, 250 450": [
-  "components/sections/RouteMap.tsx:21"
- ],
- "M210 120 C 290 110, 340 115, 400 120 C 520 130, 640 170, 700 210 C 620 300, 420 330, 300 360 S 260 430, 250 450": [
-  "components/sections/RouteMap.tsx:24"
- ],
- "M210 120 C 240 230, 300 300, 300 360 S 260 430, 250 450 S 220 530, 215 560": [
-  "components/sections/RouteMap.tsx:26"
- ],
- "M210 120 C 260 230, 330 300, 330 370 S 400 440, 440 470": [
-  "components/sections/RouteMap.tsx:27"
- ],
- "Ushuaia": [
-  "components/sections/RouteMap.tsx:31"
- ],
- "Punta Arenas": [
-  "components/sections/RouteMap.tsx:32",
-  "data/expeditions.ts:213",
-  "data/expeditions.ts:162"
- ],
- "Falklands": [
-  "components/sections/RouteMap.tsx:33"
- ],
- "South Georgia": [
-  "components/sections/RouteMap.tsx:34",
-  "data/expeditions.ts:322",
-  "data/expeditions.ts:268"
- ],
- "South Shetlands": [
-  "components/sections/RouteMap.tsx:35"
- ],
- "Lemaire Channel": [
-  "components/sections/RouteMap.tsx:36"
- ],
- "66°33′ S": [
-  "components/sections/RouteMap.tsx:37"
- ],
- "Weddell Sea": [
-  "components/sections/RouteMap.tsx:38"
- ],
- "Route map placeholder: {0}": [
-  "components/sections/RouteMap.tsx:45"
- ],
- "ANTARCTIC CIRCLE 66°33′ S": [
-  "components/sections/RouteMap.tsx:60"
- ],
- "DRAKE PASSAGE": [
-  "components/sections/RouteMap.tsx:61"
- ],
- "ROSS SEA ROUTE — DEDICATED MAP TO COME": [
-  "components/sections/RouteMap.tsx:68"
- ],
- "Indicative route · not to scale": [
-  "components/sections/RouteMap.tsx:81"
- ],
- "Placeholder map": [
-  "components/sections/RouteMap.tsx:82"
- ],
- "Dashed = flight": [
-  "components/sections/RouteMap.tsx:82"
- ],
  "Filter": [
   "components/sections/TimelineRows.tsx:35"
  ],
@@ -1590,6 +1490,10 @@
   "config/nav.ts:23",
   "config/nav.ts:10"
  ],
+ "Protect": [
+  "config/nav.ts:27",
+  "config/nav.ts:12"
+ ],
  "When to go": [
   "config/nav.ts:28"
  ],
@@ -1619,9 +1523,6 @@
  ],
  "7th Continent": [
   "config/site.ts:3"
- ],
- "The edge of the world is closer than you think.": [
-  "config/site.ts:4"
  ],
  "The right Antarctic expedition for you, planned by one dedicated polar specialist.": [
   "config/site.ts:5"
@@ -1815,6 +1716,10 @@
  ],
  "Arrive, briefing and overnight.": [
   "data/expeditions.ts:213"
+ ],
+ "Punta Arenas": [
+  "data/expeditions.ts:213",
+  "data/expeditions.ts:162"
  ],
  "Flight south and boarding in Maxwell Bay, weather permitting.": [
   "data/expeditions.ts:214"
@@ -2035,6 +1940,10 @@
  ],
  "King penguins, elephant seals and Grytviken.": [
   "data/expeditions.ts:322"
+ ],
+ "South Georgia": [
+  "data/expeditions.ts:322",
+  "data/expeditions.ts:268"
  ],
  "Crossing the Scotia Sea.": [
   "data/expeditions.ts:323"
@@ -3036,221 +2945,395 @@
  "Before every landing, boots, clothing and bags are cleaned and checked to prevent introducing non-native species. Ashore, keep at least 5 m (15 ft) from wildlife — more for seals and for animals that react to you — never feed animals, take nothing away and leave nothing behind.": [
   "data/faqs.ts:86"
  ],
- "Changes by you": [
-  "data/legal.ts:100"
+ "Booking terms": [
+  "data/legal.ts:107",
+  "config/nav.ts:36"
  ],
- "If you want to change your trip after it is confirmed, tell us in writing. We will do our best to help. Changes are not always possible, and any extra costs charged by suppliers, plus a reasonable fee for our time, will be passed on to you.": [
-  "data/legal.ts:102"
- ],
- "Cancellation by you": [
-  "data/legal.ts:106"
- ],
- "You can cancel at any time by telling us in writing. The deposit is non-refundable. The closer to departure you cancel, the higher the charge, up to the full cost of the trip, because accommodation, transport and other services are reserved and paid for on your behalf. The charges that apply to your trip are set out on your quote and confirmation.": [
+ "The terms that apply when you book an expedition with Seventh Continent.": [
   "data/legal.ts:108"
  ],
- "Travel insurance may cover cancellation charges in some circumstances.": [
-  "data/legal.ts:109"
- ],
  "Who we are": [
-  "data/legal.ts:11"
+  "data/legal.ts:111",
+  "data/legal.ts:12"
  ],
- "Changes and cancellation by us": [
+ "These terms apply to every journey arranged by Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina (email seventhcontinent@tourground.com). By confirming a booking, the lead traveller accepts them on behalf of everyone named on it.": [
   "data/legal.ts:113"
  ],
- "We plan carefully, but sometimes we have to change part of a trip, for example because of weather, road or route closures, or a supplier that cannot honour a booking. We will tell you as soon as possible and offer a comparable alternative.": [
-  "data/legal.ts:115"
+ "How a booking is made": [
+  "data/legal.ts:117"
  ],
- "If we have to make a significant change or cancel your trip, you can accept the change, take a comparable alternative if one is available, or cancel and receive a full refund of the money you have paid us.": [
-  "data/legal.ts:116"
+ "Every journey is tailor-made. You tell us what you would like, and we send you a written proposal and quote setting out the itinerary, what is included and excluded, the price and the payment dates.": [
+  "data/legal.ts:119"
  ],
- "Events beyond anyone's control": [
+ "Prices on this website are shown “From”: a per-person guide to the starting cost of a journey of that kind. They are not an offer. The final price is the one confirmed to you in writing in your quote, which is valid for the period stated on it and subject to availability until your booking is confirmed.": [
   "data/legal.ts:120"
  ],
- "We are not liable for changes, delays or cancellations caused by events beyond our reasonable control, such as war or threat of war, civil unrest, natural disaster, epidemics, government action, airport or border closures, or severe weather. Where such an event affects your trip, we will help you make other arrangements and pass on any refunds we receive from suppliers.": [
-  "data/legal.ts:122"
+ "The person making the booking must be at least 18 years old and is responsible for payments and for passing on all information about the journey to the other travellers.": [
+  "data/legal.ts:121"
  ],
- "Travel insurance": [
-  "data/legal.ts:126"
+ "Confirmation": [
+  "data/legal.ts:125"
  ],
- "Comprehensive travel insurance is a condition of booking. It must cover medical treatment, repatriation and cancellation, and any activities in your trip. Please send us your policy details before you travel.": [
-  "data/legal.ts:128"
+ "Your booking is confirmed, and a contract between you and us is formed, when you have accepted your quote in writing, we have received your deposit, and we have sent you a written booking confirmation. Please check it carefully and tell us straight away if anything is wrong.": [
+  "data/legal.ts:127"
  ],
- "This website is run by Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. In this policy \"we\", \"us\" and \"our\" mean Seventh Continent.": [
-  "data/legal.ts:13"
+ "Deposit and balance": [
+  "data/legal.ts:131"
  ],
- "Passports, visas and health": [
-  "data/legal.ts:132"
+ "A deposit of 25% of the total price is payable when you confirm, unless your quote states a different amount. The balance is due 120 days before departure; if you book within 120 days of departure, the full price is payable at booking.": [
+  "data/legal.ts:133"
  ],
- "You are responsible for holding a valid passport, any visas or travel authorisations, and any vaccinations or health documents required for Antarctica and its gateway countries (usually Argentina or Chile) and for any country you pass through. Entry rules change, so check them with the relevant embassy and your government's travel advice before you book and again before you travel.": [
+ "Some services, such as certain flights, permits or small lodges, must be paid in full when booked; your quote will say so. If the balance is not paid on time, we may treat the booking as cancelled by you and apply the charges below.": [
   "data/legal.ts:134"
  ],
- "Please tell us before booking about any medical condition or mobility need that could affect your trip, so that we can plan around it.": [
+ "Once your booking is confirmed, we will not increase its price, except to pass on new or higher government taxes, fees or fuel surcharges imposed after confirmation. We will not do so within 20 days of departure, and if an increase would exceed 8% of the total price you may cancel with a full refund.": [
   "data/legal.ts:135"
  ],
- "Your responsibilities": [
+ "What is included": [
   "data/legal.ts:139"
  ],
- "For anything about your personal data, email seventhcontinent@tourground.com.": [
+ "Seventh Continent (“we”, “us”) plans and arranges tailor-made journeys to Antarctica. Seventh Continent is the controller of the personal data described in this policy.": [
   "data/legal.ts:14"
  ],
- "Please follow local laws and customs, the instructions of guides, drivers, crews and other suppliers, and the safety advice we give you. We may end the trip of anyone whose behaviour puts others at risk or causes serious disruption, without refund.": [
+ "Your journey includes exactly the services listed in your quote and booking confirmation, typically accommodation, the transport, transfers and activities named in the itinerary, and the meals stated.": [
   "data/legal.ts:141"
  ],
- "Our liability": [
-  "data/legal.ts:145"
+ "Unless your quote says otherwise, it does not include international flights, travel insurance, visas and entry fees, vaccinations, meals and drinks not listed, tips, optional activities, excess baggage or personal expenses.": [
+  "data/legal.ts:142"
  ],
- "We take reasonable care in planning and arranging your trip. We are not liable for loss, injury or damage caused by you, by someone not connected with the trip, or by events beyond our reasonable control.": [
-  "data/legal.ts:147"
+ "Changes by you": [
+  "data/legal.ts:146"
  ],
- "Where airlines, hotels and other transport companies are concerned, our liability is limited in the same way as theirs is under the international conventions that apply to them. Nothing in these terms limits our liability for death or personal injury caused by our negligence, or any liability that cannot be limited by law.": [
+ "If you want to change your arrangements after booking, write to us and we will do our best to help. Changes depend on availability and may carry supplier costs and a reasonable administration charge, which we will confirm before making them. You may transfer your booking to another person who meets its conditions if you tell us at least 7 days before departure; you and they are jointly responsible for the price and any costs of the transfer.": [
   "data/legal.ts:148"
  ],
- "Complaints": [
+ "Business address: Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. Email: seventhcontinent@tourground.com.": [
+  "data/legal.ts:15"
+ ],
+ "Cancellation by you": [
   "data/legal.ts:152"
  ],
- "If something is not right during your trip, tell us straight away so that we can try to fix it on the spot. If it cannot be resolved, please write to seventhcontinent@tourground.com within 28 days of your return and we will reply promptly.": [
+ "You may cancel at any time by writing to us; cancellation takes effect on the day we receive it. Because we commit money to suppliers on your behalf, the following charges apply, calculated on the total price:": [
   "data/legal.ts:154"
  ],
- "Governing law": [
+ "When we receive your cancellation": [
   "data/legal.ts:158"
  ],
- "These terms are governed by the law that applies to the contract you make with us, as set out in your booking confirmation. You may also have the protection of the consumer law of the country where you live.": [
-  "data/legal.ts:160"
+ "Cancellation charge": [
+  "data/legal.ts:159"
  ],
- "Which cookies and similar storage the Seventh Continent website uses, and how to control them.": [
+ "More than 120 days before departure": [
+  "data/legal.ts:163"
+ ],
+ "The deposit": [
+  "data/legal.ts:164"
+ ],
+ "120 to 31 days before departure": [
+  "data/legal.ts:167"
+ ],
+ "50% of the total price": [
   "data/legal.ts:168"
  ],
- "Short version": [
+ "30 to 15 days before departure": [
   "data/legal.ts:171"
  ],
- "We do not run analytics, personalisation or marketing cookies. If we add any in future, they will only load after you allow them in the cookie settings. The only cookies this website sets itself are the strictly necessary ones listed below.": [
-  "data/legal.ts:173"
+ "75% of the total price": [
+  "data/legal.ts:172"
  ],
- "What the site stores in your browser": [
-  "data/legal.ts:177"
+ "100% of the total price": [
+  "data/legal.ts:176"
  ],
- "Your cookie choices are saved in local storage under sc-consent-v1 and mirrored in a first-party cookie, sc_consent, for 180 days, so we do not ask again. If you change the display currency, your choice is saved in local storage under sc-currency. If you start the [expedition planner](/plan-my-expedition), your answers are saved in local storage under sc-planner-v1 so you can come back to them. They stay on your device until you submit the planner, and are cleared when you do. If you switch on penguin mode, that choice is saved in local storage under sc-penguin.": [
-  "data/legal.ts:179"
+ "Services your confirmation lists as non-refundable once booked (such as some flights or permits) are charged in full in addition to the scale above where they exceed it. You will not pay a cancellation charge if unavoidable and extraordinary circumstances at your destination significantly affect the journey. We strongly recommend insurance that covers cancellation from the day you book.": [
+  "data/legal.ts:181"
+ ],
+ "Changes and cancellation by us": [
+  "data/legal.ts:185"
+ ],
+ "Travel is shaped by weather, seasons and local conditions, so minor changes (a different vehicle, a revised route, a comparable lodge) may be needed and do not give rise to compensation.": [
+  "data/legal.ts:187"
+ ],
+ "If we have to make a significant change before departure, we will tell you as soon as possible and you may accept it, take a comparable alternative, or cancel with a full refund of everything you have paid us. If we must cancel your journey, we will refund all money you have paid us or, if you prefer, offer an alternative. We are not responsible for costs outside your booking with us, such as flights you arranged yourself.": [
+  "data/legal.ts:188"
  ],
  "What we collect": [
-  "data/legal.ts:18"
+  "data/legal.ts:19"
  ],
- "Fonts are served from this website. Photos load from our image delivery provider, which receives your browser's IP address in order to deliver them.": [
-  "data/legal.ts:180"
- ],
- "Consent": [
-  "data/legal.ts:184"
- ],
- "Anything listed above is strictly necessary for a feature you choose to use, so it does not need your consent. We will not add analytics or advertising cookies without asking you first.": [
-  "data/legal.ts:186"
- ],
- "How to remove it or change your mind": [
-  "data/legal.ts:190"
- ],
- "You can clear this site's stored data at any time in your browser's settings (usually under Privacy, then Cookies and site data).": [
+ "Travel insurance": [
   "data/legal.ts:192"
  ],
- "Questions about this policy: email seventhcontinent@tourground.com.": [
+ "Comprehensive travel insurance is a condition of travelling with us. It must cover cancellation and curtailment, medical treatment, emergency evacuation and repatriation, and the activities in your itinerary. Please send us your policy details before departure.": [
+  "data/legal.ts:194"
+ ],
+ "Passports, visas and health": [
   "data/legal.ts:198"
  ],
- "Only what you choose to send us: through the enquiry form, through the expedition planner, your name, email address, phone number, how you prefer to be contacted, travel dates, the size of your party, your interests, budget and notes; through the newsletter form, your email address. If you write to us by email, we keep that correspondence.": [
-  "data/legal.ts:20"
+ "Each traveller is responsible for holding a passport valid for the whole journey (many countries require at least six months’ validity beyond your return), any visa or entry authorisation needed, and for meeting all health and vaccination requirements. Requirements depend on your nationality and change, so please check official government sources and take medical advice in good time. Most expeditions start in Ushuaia (Argentina) or Punta Arenas (Chile), so the entry rules of the gateway country apply too.": [
+  "data/legal.ts:200"
  ],
- "If you book, we also collect what is needed to arrange the trip, such as the names of everyone travelling, dates of birth and passport details where suppliers require them, dietary and access needs, and emergency contacts.": [
+ "We are not liable if you cannot travel, or incur costs, because you do not have the right documents. Please tell us before booking about any medical condition or reduced mobility, so we can check the arrangements suit you.": [
+  "data/legal.ts:201"
+ ],
+ "Our responsibility": [
+  "data/legal.ts:205"
+ ],
+ "We arrange your journey with reasonable skill and care and are responsible for providing the services in your booking confirmation. If you are in difficulty during your journey, we will give you prompt and appropriate assistance.": [
+  "data/legal.ts:207"
+ ],
+ "We are not liable where a problem is caused by you or a member of your party, by a third party unconnected with the services we provide, or by unusual and unforeseeable circumstances beyond our control. Where international conventions limit what a carrier or hotel must pay, our liability is limited in the same way. Except for death or personal injury caused by our negligence, or where the law does not allow a limit, our liability is limited to three times the price of your journey. Nothing in these terms affects your statutory rights as a consumer.": [
+  "data/legal.ts:208"
+ ],
+ "When you send an enquiry or use our planning form: your name, email address, country of residence, preferred travel dates, number of travellers (and the ages of any children), interests, budget range and anything else you write in your message.": [
   "data/legal.ts:21"
  ],
- "Please do not send payment card details or detailed health information by email or through the form.": [
+ "Behaviour": [
+  "data/legal.ts:212"
+ ],
+ "Please follow the reasonable instructions of drivers, hosts and suppliers, particularly on safety, and respect local laws, customs and the places you visit. If your behaviour puts others at risk or causes serious disruption or damage, we or a supplier may end your arrangements without refund.": [
+  "data/legal.ts:214"
+ ],
+ "Complaints": [
+  "data/legal.ts:218"
+ ],
+ "When you book: the names of all travellers as shown on their passports, dates of birth, nationality and passport details where a supplier or authority requires them, flight details, dietary requirements, an emergency contact, and records of your payments. If you tell us about a medical condition or mobility needs, we use that information only to arrange your journey safely, with your explicit consent.": [
   "data/legal.ts:22"
  ],
- "Why we use it": [
-  "data/legal.ts:26"
+ "If something is not right during your journey, tell the supplier concerned and us straight away, so we can put it right on the spot. If you are still unhappy, write to seventhcontinent@tourground.com within 28 days of your return; we will acknowledge your complaint promptly and reply in full within 28 days.": [
+  "data/legal.ts:220"
  ],
- "To answer your enquiry, plan a trip with you and, if you go ahead, book and run it. The legal basis is the steps you ask us to take before entering into a contract, the performance of that contract, your consent where we ask for it, and our legitimate interest in replying to people who contact us.": [
+ "Force majeure": [
+  "data/legal.ts:224"
+ ],
+ "We are not liable, and pay no compensation, where we cannot perform or must change our obligations because of unavoidable and extraordinary circumstances beyond our control, such as war, civil unrest, terrorism, natural disasters, extreme weather, epidemics, government action or official travel advice against travel, or the closure of airports or borders. If such circumstances lead us to cancel, we will refund what you have paid us as set out above.": [
+  "data/legal.ts:226"
+ ],
+ "Emails and other messages you exchange with us.": [
+  "data/legal.ts:23"
+ ],
+ "Data protection": [
+  "data/legal.ts:230"
+ ],
+ "We use your personal data to arrange your journey as described in our [Privacy Policy](/privacy).": [
+  "data/legal.ts:232"
+ ],
+ "Governing law": [
+  "data/legal.ts:236"
+ ],
+ "These terms and any booking are governed by the law of Argentina, and the courts of the City of Buenos Aires have jurisdiction. If you are a consumer, you keep the protection of the mandatory laws of your country of residence and may bring proceedings there where those laws allow. We will always try to resolve a complaint by agreement first.": [
+  "data/legal.ts:238"
+ ],
+ "Technical data when you visit this website: your IP address, browser and device type, the pages requested and the date and time, recorded in our hosting provider’s server logs to deliver the site and keep it secure. We do not use analytics, advertising or tracking tools on this website.": [
+  "data/legal.ts:24"
+ ],
+ "Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. Email: seventhcontinent@tourground.com.": [
+  "data/legal.ts:244",
+  "data/legal.ts:100"
+ ],
+ "Cookie policy": [
+  "data/legal.ts:251",
+  "config/nav.ts:37"
+ ],
+ "Exactly what this website stores on your device, and how to control it.": [
+  "data/legal.ts:252"
+ ],
+ "What cookies are": [
+  "data/legal.ts:255"
+ ],
+ "Cookies are small text files a website places in your browser. Websites can also keep information on your device with similar technologies such as local storage and session storage. This policy covers all of them and applies to seventhcontinent.tourground.com.": [
+  "data/legal.ts:257"
+ ],
+ "What this website stores": [
+  "data/legal.ts:261"
+ ],
+ "We do not use analytics, advertising or social-media cookies, and nothing below is used to track you or is shared with anyone. This is the complete list:": [
+  "data/legal.ts:263"
+ ],
+ "Name": [
+  "data/legal.ts:267"
+ ],
+ "Purpose": [
+  "data/legal.ts:268"
+ ],
+ "Type": [
+  "data/legal.ts:270"
+ ],
+ "Records the choice you made about optional cookies, so we do not ask again.": [
+  "data/legal.ts:275"
+ ],
+ "6 months": [
+  "data/legal.ts:276"
+ ],
+ "First-party cookie, strictly necessary": [
+  "data/legal.ts:277"
+ ],
+ "Why we use it and our legal bases": [
   "data/legal.ts:28"
  ],
- "We do not sell your details, and we only send you news or offers if you ask us to.": [
-  "data/legal.ts:29"
+ "Keeps your cookie choice (with the date you made it) on your device.": [
+  "data/legal.ts:281"
  ],
- "Who we share it with": [
+ "Remembers the display currency you choose for prices.": [
+  "data/legal.ts:287"
+ ],
+ "Keeps the answers you have typed into the planning form, so they are not lost if you leave the page; cleared when you send the form.": [
+  "data/legal.ts:293"
+ ],
+ "Until you send the planner or clear it": [
+  "data/legal.ts:294"
+ ],
+ "Local storage, strictly necessary": [
+  "data/legal.ts:295",
+  "data/legal.ts:283"
+ ],
+ "Remembers whether you switched on penguin mode.": [
+  "data/legal.ts:299"
+ ],
+ "To answer your enquiry and prepare proposals: steps taken at your request before entering into a contract (Article 6(1)(b) GDPR).": [
+  "data/legal.ts:30"
+ ],
+ "Until you clear it": [
+  "data/legal.ts:300",
+  "data/legal.ts:288",
+  "data/legal.ts:282"
+ ],
+ "Local storage, strictly necessary (preference)": [
+  "data/legal.ts:301",
+  "data/legal.ts:289"
+ ],
+ "Consent": [
+  "data/legal.ts:307"
+ ],
+ "The first time you visit, a banner asks whether you allow optional cookies (analytics, personalisation, marketing). The site does not use any optional cookies today, so declining changes nothing about how it works; your choice is simply saved (sc_consent and sc-consent-v1) so we do not ask again. Everything else in the table is strictly necessary for a feature you choose to use and does not need consent. You can change your choice at any time with the “Manage cookie preferences” button on this page or the “Cookie preferences” link in the footer.": [
+  "data/legal.ts:309"
+ ],
+ "To book, arrange and look after your journey, including passing details to the suppliers who provide it: performance of our contract with you (Article 6(1)(b) GDPR).": [
+  "data/legal.ts:31"
+ ],
+ "Hosting and third-party content": [
+  "data/legal.ts:313"
+ ],
+ "Pages are delivered by our hosting provider, Vercel, which processes your IP address and request details in its server logs to serve the site and protect it from attacks. It sets no tracking cookies on this site.": [
+  "data/legal.ts:315"
+ ],
+ "Photographs are loaded from an external image delivery service, which receives your IP address and standard request details in order to deliver them. It sets no cookies on this site.": [
+  "data/legal.ts:316"
+ ],
+ "Fonts are served from our own domain, so no font service receives your data.": [
+  "data/legal.ts:317"
+ ],
+ "To use health or mobility information you choose to give us: your explicit consent (Article 9(2)(a) GDPR), which you can withdraw at any time.": [
+  "data/legal.ts:32"
+ ],
+ "How to manage or delete them": [
+  "data/legal.ts:321"
+ ],
+ "You can delete everything this website stores at any time by clearing your browser’s cookies and site data for it, and you can block cookies and site storage in your browser settings. The site will still work; you will simply lose the saved preference.": [
+  "data/legal.ts:323"
+ ],
+ "Changes": [
+  "data/legal.ts:327"
+ ],
+ "We will update this page whenever the way this website stores information changes. The date at the top shows when it last changed.": [
+  "data/legal.ts:329"
+ ],
+ "To keep accounting and tax records: compliance with our legal obligations (Article 6(1)(c) GDPR).": [
   "data/legal.ts:33"
  ],
- "Your enquiry reaches us through our own website server (hosted by Vercel Inc., United States), which forwards it to our inbox.": [
+ "Questions about this policy: seventhcontinent@tourground.com. Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. See also our [Privacy Policy](/privacy).": [
+  "data/legal.ts:335"
+ ],
+ "To keep this website secure, prevent misuse of our forms, improve our service and establish or defend legal claims: our legitimate interests (Article 6(1)(f) GDPR), balanced against your rights.": [
+  "data/legal.ts:34"
+ ],
+ "To send you occasional news about our journeys, only if you have asked for it: your consent (Article 6(1)(a) GDPR). Every message has an unsubscribe link, or you can simply email us.": [
   "data/legal.ts:35"
  ],
- "If you book, we share only what is needed with the hotels, lodges, transport companies, guides and local partners in Antarctica and its gateway countries (usually Argentina or Chile) who deliver your trip, and with your travel insurer if you ask us to. Some of them are outside your own country; where that is the case, we share the minimum needed to deliver the service you have asked for.": [
+ "We do not sell your personal data, and we do not make decisions about you by automated means.": [
   "data/legal.ts:36"
  ],
- "We may also disclose information where the law requires it.": [
-  "data/legal.ts:37"
+ "Who we share it with": [
+  "data/legal.ts:40"
  ],
- "30 October 2026": [
-  "data/legal.ts:4"
+ "Travel suppliers to Antarctica and elsewhere who provide the services in your journey, such as accommodation, transport and activity providers, and only the details each of them needs.": [
+  "data/legal.ts:42"
  ],
- "Cookies and local storage": [
-  "data/legal.ts:41"
- ],
- "We do not run analytics, personalisation or marketing cookies. If we add any in future, they will only load after you allow them in the cookie settings. See the [cookie policy](/cookies/) for what the site stores in your browser.": [
+ "Service providers who process data on our behalf under a written contract and only on our instructions:": [
   "data/legal.ts:43"
  ],
+ "Vercel Inc. (United States), which hosts this website and keeps short-lived server logs;": [
+  "data/legal.ts:44"
+ ],
+ "our email provider, which stores the messages you send to seventhcontinent@tourground.com and our replies.": [
+  "data/legal.ts:45"
+ ],
+ "Public authorities, insurers or professional advisers, where the law requires it, to protect someone’s vital interests, or to establish or defend legal claims.": [
+  "data/legal.ts:46"
+ ],
+ "1 November 2026": [
+  "data/legal.ts:5"
+ ],
+ "International transfers": [
+  "data/legal.ts:50"
+ ],
+ "Some of the providers above are based in the United States, and arranging your journey means sharing details with suppliers to Antarctica. When personal data leaves the European Economic Area, the United Kingdom or Switzerland, we rely on an adequacy decision (for example the EU–US Data Privacy Framework, where the provider is certified) or on the European Commission’s Standard Contractual Clauses. Transfers to suppliers delivering your journey are also necessary to perform our contract with you. You can ask us for a copy of the safeguards we use.": [
+  "data/legal.ts:52"
+ ],
  "How long we keep it": [
-  "data/legal.ts:47"
+  "data/legal.ts:56"
  ],
- "We keep enquiries that do not become a booking for 24 months from our last contact, then delete them. Booking records are kept for as long as accounting and consumer law require, usually six years after the trip.": [
-  "data/legal.ts:49"
+ "Enquiries that do not lead to a booking: up to two years after our last contact, then deleted.": [
+  "data/legal.ts:58"
  ],
- "How we protect it": [
-  "data/legal.ts:53"
- ],
- "Your details are kept in password-protected email and file storage that only the people planning your trip can reach. The website is served over an encrypted connection (HTTPS).": [
-  "data/legal.ts:55"
- ],
- "Your rights": [
+ "Booking and payment records: seven years after the end of your journey, for accounting, tax and legal claims.": [
   "data/legal.ts:59"
  ],
- "You can ask to see the personal data we hold about you, to correct or delete it, to restrict or object to how we use it, to receive a copy in a portable format, or to withdraw your consent at any time. Email seventhcontinent@tourground.com and we will reply within one month.": [
+ "Health and mobility information: deleted within three months of your return, unless it is needed for a claim.": [
+  "data/legal.ts:60"
+ ],
+ "Newsletter details: until you unsubscribe. Server logs: a short period set by our hosting provider, then deleted automatically.": [
   "data/legal.ts:61"
  ],
- "If you are unhappy with how we handle your data, please tell us first so that we can put it right. You also have the right to complain to the data-protection authority in the country where you live.": [
-  "data/legal.ts:62"
+ "How we protect it": [
+  "data/legal.ts:65"
  ],
- "Changes to this policy": [
-  "data/legal.ts:66"
+ "This website is served only over an encrypted (HTTPS) connection. Access to your data is limited to the people who need it to plan and look after your journey, and we choose providers for their security standards.": [
+  "data/legal.ts:67"
  ],
- "We will update this page if the way we use personal data changes. Last updated 30 October 2026.": [
-  "data/legal.ts:68"
+ "Your rights": [
+  "data/legal.ts:71"
  ],
- "The terms that apply when you enquire about, and book, a tailor-made trip with Seventh Continent.": [
+ "You have the right to access the personal data we hold about you; to have it rectified; to have it erased; to restrict how we use it; to receive it in a portable format; to object to processing based on our legitimate interests, and at any time to direct marketing; and to withdraw any consent you have given, without affecting what we did before.": [
+  "data/legal.ts:73"
+ ],
+ "To exercise any of these rights, email seventhcontinent@tourground.com. It is free, and we will reply within one month. We may ask you to confirm your identity first.": [
+  "data/legal.ts:74"
+ ],
+ "You also have the right to lodge a complaint with a data protection supervisory authority, in particular in the country where you live or work, or where you believe your rights were infringed. We would appreciate the chance to deal with your concern first.": [
+  "data/legal.ts:75"
+ ],
+ "Because we are based in Argentina, we also handle your personal data in line with Personal Data Protection Law 25,326. You may complain to the Agency for Access to Public Information (AAIP), the Argentine data protection authority.": [
   "data/legal.ts:76"
  ],
- "About these terms": [
-  "data/legal.ts:79"
+ "Privacy policy": [
+  "data/legal.ts:8",
+  "config/nav.ts:35"
  ],
- "How Seventh Continent collects, uses and protects the personal details you send us.": [
-  "data/legal.ts:8"
+ "Cookies": [
+  "data/legal.ts:80"
  ],
- "These terms apply to every trip planned by Seventh Continent, Avenida Coronel Niceto Vega 4736, Palermo, Buenos Aires, Argentina. Please read them before you book. Your written quote and booking confirmation form part of the contract, together with these terms.": [
-  "data/legal.ts:81"
- ],
- "Everything on this website, including itineraries, timings, seasons and experiences, describes the kind of trip we plan. It is not an offer you can accept.": [
+ "This website stores only what is needed for features you use, and no tracking cookies. Our [Cookie Policy](/cookies) lists every item.": [
   "data/legal.ts:82"
  ],
- "Enquiries and quotes": [
-  "data/legal.ts:86"
- ],
- "Sending an enquiry is free and creates no obligation for you or for us.": [
+ "This website is not intended for children under 16, and we do not knowingly collect their data directly. Details of children who travel with their families are provided by, and used on behalf of, a parent or guardian.": [
   "data/legal.ts:88"
  ],
- "We reply with ideas and questions, then shape the trip with you. When it is right, we send a written quote. A quote is valid for the period stated on it. Prices for flights, accommodation and services can change until the trip is confirmed, and we will tell you before you commit if they do.": [
-  "data/legal.ts:89"
+ "How Seventh Continent collects, uses and protects your personal data.": [
+  "data/legal.ts:9"
  ],
- "Booking and payment": [
-  "data/legal.ts:93"
+ "Changes to this policy": [
+  "data/legal.ts:92"
  ],
- "Your booking is confirmed when you accept the quote in writing, pay the deposit stated on it, and we send you a written confirmation. The person who makes the booking accepts these terms for everyone travelling and must be 18 or over.": [
-  "data/legal.ts:95"
- ],
- "The balance is due by the date shown on your quote and confirmation. If it is not paid on time, we may treat the booking as cancelled by you, and the cancellation charges below apply.": [
-  "data/legal.ts:96"
+ "We may update this policy. The date at the top shows when it last changed; if a change matters to you, we will tell you before it applies.": [
+  "data/legal.ts:94"
  ],
  "−5 °C to 2 °C on the Peninsula (verify)": [
   "data/months.ts:10"

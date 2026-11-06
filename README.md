@@ -18,7 +18,7 @@ The site follows the reference's design language, re-skinned for Seventh Contine
 
 - **Type:** Archivo (variable width, regular weight) for the giant uppercase display, Inter Tight for text, and VT323 for the small mono labels and buttons. The reference uses Neue Montreal and VCR OSD Mono, which we do not ship.
 - **Colour roles:** deep polar navy `#030b17` (dark), glacier white `#e8f0f8` (light), iceberg blue `#8db8dc` (support), slate grey, and expedition orange `#ff5b1f` as the single accent (the "Plan my expedition" button, focus rings, verify markers).
-- **Hero:** `public/media/hero-background.webp` plus a transparent foreground cut-out (`hero-foreground.webp`) so the headline sits between the layers. Each has pre-resized variants (`-640/-828/-1080/-1440.webp`, served by `lib/image-loader.ts`) and a 1152×1280 centre crop (`-portrait.webp`) for portrait screens (`components/home/HeroLayer.tsx`). Replace all of them together when swapping the photo.
+- **Hero:** an offset photo card (`components/home/HeroCard.tsx`) using `public/media/hero-background.webp`, which has pre-resized variants (`-640/-828/-1080/-1440.webp`, served by `lib/image-loader.ts`). Replace them together when swapping the photo.
 
 ## Languages
 

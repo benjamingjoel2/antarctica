@@ -5,7 +5,7 @@
  * 1920px); every other local file passes through unchanged.
  */
 const HERO_VARIANTS = [640, 828, 1080, 1440];
-const HERO = /^\/media\/(hero-background|hero-foreground)\.webp$/;
+const HERO = /^\/media\/(hero-background)\.webp$/;
 
 export default function loader({ src, width, quality }: { src: string; width: number; quality?: number }) {
   if (src.startsWith("https://images.unsplash.com")) {

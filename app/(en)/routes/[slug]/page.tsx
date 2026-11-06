@@ -4,7 +4,6 @@ import { CreditsGrid } from "@/components/sections/CreditsGrid";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { DetailHero } from "@/components/sections/DetailHero";
 import { ParagraphBlock } from "@/components/sections/ParagraphBlock";
-import { RouteMap } from "@/components/sections/RouteMap";
 import { Pill } from "@/components/ui/Pill";
 import { Price } from "@/components/ui/Price";
 import { VerifyNote } from "@/components/ui/VerifyNote";
@@ -41,7 +40,6 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
       <section className="bg-ink pb-[4rem] text-ice">
         <div className="container-site grid-site">
           <div className="col-span-12 lg:col-span-8 lg:col-start-3">
-            <RouteMap routeSlug={r.slug} title={r.name} />
             <VerifyNote className="mt-[1rem]">{r.verifyNote}</VerifyNote>
           </div>
         </div>

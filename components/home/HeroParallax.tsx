@@ -14,8 +14,8 @@ import { img } from "@/data/images";
 
 /**
  * Reference hero: a 300vh wrapper with a pinned, layered scene —
- * background photo → clouds → giant headline → transparent foreground cut-out.
- * The foreground scales up over the words, clouds part, and the about text
+ * background photo → giant headline → transparent foreground cut-out.
+ * The foreground scales up over the words, and the about text
  * rises over a darkening image before stepped "wave" bars close into the next section.
  */
 export function HeroParallax() {
@@ -27,8 +27,6 @@ export function HeroParallax() {
   const fgY = useTransform(p, [0, 1], ["0%", "-6%"]);
   const titleY = useTransform(p, [0, 0.5], ["0%", "35%"]);
   const titleO = useTransform(p, [0.28, 0.42], [1, 0]);
-  const cloudLX = useTransform(p, [0, 0.6], ["0%", "-55%"]);
-  const cloudRX = useTransform(p, [0, 0.6], ["0%", "55%"]);
   const navO = useTransform(p, [0, 0.15], [1, 0]);
   // Fully black before the about text arrives (reference about mask)
   const mask = useTransform(p, [0.26, 0.4], [0, 1]);
@@ -46,9 +44,6 @@ export function HeroParallax() {
           <HeroLayer name="hero-background" priority className="object-cover object-bottom" />
         </motion.div>
         <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-ink/55 via-ink/10 to-transparent" />
-
-        <motion.img src="/media/cloud-left.svg" alt="" aria-hidden className="absolute -left-[18%] top-[18%] w-[80%] max-w-none opacity-90" style={{ x: cloudLX }} />
-        <motion.img src="/media/cloud-right.svg" alt="" aria-hidden className="absolute -right-[20%] top-[34%] w-[85%] max-w-none opacity-80" style={{ x: cloudRX }} />
 
         {/* Headline sits between background and foreground */}
         <motion.div className="absolute inset-x-0 top-0 pt-[3.6rem] md:pt-[1.35rem]" style={{ y: titleY, opacity: titleO }}>

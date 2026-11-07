@@ -5,7 +5,8 @@ import { useRef } from "react";
 import { footerNav } from "@/config/nav";
 import { site } from "@/config/site";
 import { CursorFollow } from "@/components/ui/CursorFollow";
-import { PenguinSvg } from "@/components/penguin/PenguinSvg";
+import Image from "next/image";
+import { img } from "@/data/images";
 import { useConsent } from "@/lib/consent";
 import { NewsletterForm } from "./NewsletterForm";
 
@@ -60,7 +61,9 @@ export function Footer() {
       </div>
 
       <CursorFollow area={area} offset={{ x: -40, y: -110 }} stiffness={200}>
-        <PenguinSvg pose="wave" className="w-[5.5rem] origin-bottom animate-[waddle_0.9s_ease-in-out_infinite]" />
+        <span className="relative block h-[6.5rem] w-[5.2rem] overflow-hidden rounded-[0.3rem]">
+          <Image src={img.gentooRock} alt="" fill sizes="6rem" className="object-cover" />
+        </span>
       </CursorFollow>
     </footer>
   );

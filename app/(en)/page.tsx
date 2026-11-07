@@ -1,7 +1,7 @@
 import { DiscoverCounters } from "@/components/home/DiscoverCounters";
 import { DrakeRibbon } from "@/components/home/DrakeRibbon";
 import { FullscreenVideo } from "@/components/home/FullscreenVideo";
-import { HeroCard } from "@/components/home/HeroCard";
+import { HeroParallax } from "@/components/home/HeroParallax";
 import { SailingWith } from "@/components/home/SailingWith";
 import { expeditions } from "@/data/expeditions";
 import { seasonFacts } from "@/data/facts";
@@ -15,7 +15,7 @@ export const metadata = buildMetadata({ path: "/" });
 export default function HomePage() {
   return (
     <>
-      <HeroCard />
+      <HeroParallax />
       <DrakeRibbon />
       <DiscoverCounters
         items={[

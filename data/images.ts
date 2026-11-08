@@ -28,7 +28,8 @@ export const img = {
   penguinWalk: u("1598439210625-5067c578f3f6"),
   mistyPeaks: u("1505765050516-f72dcac9c60e"),
   boatNight: u("1534447677768-be436bb09401"),
-  shipDark: u("1569263979104-865ab7cd8d13"),
+  /** Real expedition ship in Antarctica (Wikimedia Commons, credited in public/media/ships/CREDITS.md). */
+  shipDark: "/media/ships/ship-lemaire-channel.jpg",
   tent: u("1476041800959-2f6bb412c8ce"),
 } as const;
 

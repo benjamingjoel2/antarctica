@@ -25,7 +25,7 @@ const EXCLUDED: string[] = [
 export const expeditions: Expedition[] = [
   {
     slug: "classic-peninsula-meridian-south",
-    name: "Classic Antarctic Peninsula aboard MV Meridian South",
+    name: "Classic Antarctic Peninsula on a small expedition ship",
     titleLines: ["classic", "peninsula"],
     routeSlug: "classic-antarctic-peninsula",
     shipSlug: "meridian-south",
@@ -42,7 +42,7 @@ export const expeditions: Expedition[] = [
     fromPriceUSD: 9500,
     summary: "The essential Antarctic voyage on a small, landing-focused ship — ideal for a first time south.",
     overview:
-      "Sail from Ushuaia across the Drake Passage to the Antarctic Peninsula, where each day is shaped around zodiac landings, ice cruising and wildlife. With just over a hundred guests, Meridian South gets everyone ashore quickly and keeps the focus where it belongs: outside.\n\nThe route below is indicative. In Antarctica, weather, ice and wildlife write the real itinerary each morning.",
+      "Sail from Ushuaia across the Drake Passage to the Antarctic Peninsula, where each day is shaped around zodiac landings, ice cruising and wildlife. A small ship gets everyone ashore quickly and keeps the focus where it belongs: outside.\n\nThe route below is indicative. In Antarctica, weather, ice and wildlife write the real itinerary each morning.",
     image: { src: img.icebergsReflect, alt: "Icebergs reflected in a calm Antarctic bay" },
     video: LOOP,
     gallery: [
@@ -79,7 +79,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "classic-peninsula-tern-arc",
-    name: "Peninsula Explorer aboard MV Tern Arc",
+    name: "Peninsula Explorer on an ice-strengthened expedition ship",
     titleLines: ["peninsula", "explorer"],
     routeSlug: "classic-antarctic-peninsula",
     shipSlug: "tern-arc",
@@ -89,13 +89,13 @@ export const expeditions: Expedition[] = [
     months: ["Dec", "Jan", "Feb", "Mar"],
     highlights: [
       "An extra day in the Peninsula for more flexibility with weather",
-      "Glass-walled observation lounge for ice and whale watching",
+      "Time on deck for ice and whale watching",
       "Polar plunge for the brave (optional)",
     ],
     fromPriceUSD: 10400,
     summary: "A slightly longer Peninsula voyage on a comfortable mid-size ship, with room in the schedule for the weather to cooperate.",
     overview:
-      "Twelve days gives the expedition team a precious extra day to play with — to wait out a storm, linger with feeding humpbacks or try again for a landing missed earlier. Tern Arc's strengthened hull and large zodiac fleet make the most of every window.\n\nLate-season departures coincide with peak whale activity and fledging penguin chicks.",
+      "Twelve days gives the expedition team a precious extra day to play with — to wait out a storm, linger with feeding humpbacks or try again for a landing missed earlier. An ice-strengthened ship with a capable expedition team makes the most of every window.\n\nLate-season departures coincide with peak whale activity and fledging penguin chicks.",
     image: { src: img.humpback, alt: "A humpback whale surfacing in Antarctic waters" },
     gallery: [
       { src: img.snowPeaks, alt: "Snow-covered peaks above a channel" },
@@ -133,7 +133,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "fly-the-drake-petrel-light",
-    name: "Fly the Drake aboard MV Petrel Light",
+    name: "Fly the Drake on a small fly-cruise ship",
     titleLines: ["fly", "the drake"],
     routeSlug: "fly-the-drake",
     shipSlug: "petrel-light",
@@ -144,12 +144,12 @@ export const expeditions: Expedition[] = [
     highlights: [
       "Fly from Punta Arenas to King George Island",
       "Board in the South Shetlands and be among penguins the same day",
-      "Citizen-science programme on every departure",
+      "Citizen-science projects on many departures",
     ],
     fromPriceUSD: 12000,
     summary: "Skip the Drake crossing by air and spend your time where it counts — in Antarctic waters.",
     overview:
-      "Fly from Punta Arenas across the Drake Passage to King George Island, then board Petrel Light for a compact voyage through the South Shetlands and along the Peninsula. Ideal if you're short on time or wary of the open ocean.\n\nFlights depend on weather at both ends, so build in buffer days before and after; we'll explain each operator's delay policy before you book.",
+      "Fly from Punta Arenas across the Drake Passage to King George Island, then board a small expedition ship for a compact voyage through the South Shetlands and along the Peninsula. Ideal if you're short on time or wary of the open ocean.\n\nFlights depend on weather at both ends, so build in buffer days before and after; we'll explain each operator's delay policy before you book.",
     image: { src: img.peaksAboveCloud, alt: "Peaks emerging above cloud on the flight south" },
     video: LOOP,
     gallery: [
@@ -185,7 +185,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "fly-the-drake-meridian-south",
-    name: "Fly & Sail Short Escape aboard MV Meridian South",
+    name: "Fly & Sail Short Escape on a small expedition ship",
     titleLines: ["fly", "& sail"],
     routeSlug: "fly-the-drake",
     shipSlug: "meridian-south",
@@ -201,7 +201,7 @@ export const expeditions: Expedition[] = [
     fromPriceUSD: 12400,
     summary: "A tightly focused week: fly over the Drake, sail the islands, fly home.",
     overview:
-      "Designed for travellers with a single week, this fly-cruise packs four days of landings into a seven-day trip. Meridian South's small size keeps landings efficient so none of that precious time is wasted.\n\nAs with all fly-cruises, the schedule bends around the weather at King George Island.",
+      "Designed for travellers with a single week, this fly-cruise packs four days of landings into a seven-day trip. A small ship keeps landings efficient so none of that precious time is wasted.\n\nAs with all fly-cruises, the schedule bends around the weather at King George Island.",
     image: { src: img.gentooRock, alt: "A gentoo penguin on a rocky Antarctic shore" },
     gallery: [
       { src: img.penguinsSnow, alt: "Penguins gathered on snow" },
@@ -235,7 +235,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "falklands-south-georgia-halcyon-ice",
-    name: "Falklands, South Georgia & Antarctica aboard MV Halcyon Ice",
+    name: "Falklands, South Georgia & Antarctica on a long-voyage expedition ship",
     titleLines: ["falklands,", "south georgia", "& antarctica"],
     routeSlug: "falklands-south-georgia-antarctica",
     shipSlug: "halcyon-ice",
@@ -252,7 +252,7 @@ export const expeditions: Expedition[] = [
     fromPriceUSD: 18000,
     summary: "The grand Southern Ocean voyage on a steady, spacious ship built for long passages.",
     overview:
-      "Three weeks across the Southern Ocean: the Falklands, then South Georgia's extraordinary wildlife and Shackleton history, then the Antarctic Peninsula. Halcyon Ice's stabilisers and generous public spaces make the sea days a pleasure rather than an endurance test.\n\nSea days are filled with lectures, seabird watching from the bridge wings and time to simply take it all in.",
+      "Three weeks across the Southern Ocean: the Falklands, then South Georgia's extraordinary wildlife and Shackleton history, then the Antarctic Peninsula. Ships on this route are chosen for long passages, so the sea days are a pleasure rather than an endurance test.\n\nSea days are filled with lectures, seabird watching from the bridge wings and time to simply take it all in.",
     image: { src: img.kingPenguins, alt: "Thousands of king penguins on a South Georgia plain" },
     video: LOOP,
     gallery: [
@@ -291,7 +291,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "south-georgia-southern-lantern",
-    name: "South Georgia & Antarctica in Suites aboard MV Southern Lantern",
+    name: "South Georgia & Antarctica on an all-suite expedition ship",
     titleLines: ["south georgia", "in suites"],
     routeSlug: "falklands-south-georgia-antarctica",
     shipSlug: "southern-lantern",
@@ -300,7 +300,7 @@ export const expeditions: Expedition[] = [
     seasonWindow: "November 2026 – February 2027",
     months: ["Nov", "Jan", "Feb"],
     highlights: [
-      "All-suite ship with balconies throughout",
+      "All-suite ship",
       "Extended time in South Georgia",
       "Spa and fine dining after long days ashore",
     ],
@@ -343,7 +343,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "antarctic-circle-tern-arc",
-    name: "Across the Antarctic Circle aboard MV Tern Arc",
+    name: "Across the Antarctic Circle on an ice-strengthened expedition ship",
     titleLines: ["across", "the circle"],
     routeSlug: "antarctic-circle",
     shipSlug: "tern-arc",
@@ -359,7 +359,7 @@ export const expeditions: Expedition[] = [
     fromPriceUSD: 13000,
     summary: "Push beyond the classic Peninsula towards the Antarctic Circle and Marguerite Bay.",
     overview:
-      "This voyage extends south beyond the busier Peninsula sites, aiming to cross the Antarctic Circle and explore the ice-filled waters beyond. Tern Arc's ice-strengthened hull gives it the reach — but the ice always has the final say.\n\nLater-season departures generally offer the best chance of open water to the south.",
+      "This voyage extends south beyond the busier Peninsula sites, aiming to cross the Antarctic Circle and explore the ice-filled waters beyond. An ice-strengthened ship gives you the reach — but the ice always has the final say.\n\nLater-season departures generally offer the best chance of open water to the south.",
     image: { src: img.snowPeaks, alt: "Snow peaks near the Antarctic Circle" },
     gallery: [
       { src: img.icebergsReflect, alt: "Tabular icebergs in still water" },
@@ -395,7 +395,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "emperor-penguins-katabatic",
-    name: "In Search of Emperors aboard MV Katabatic",
+    name: "In Search of Emperors on a helicopter-equipped expedition ship",
     titleLines: ["emperor", "penguins"],
     routeSlug: "emperor-penguins",
     shipSlug: "katabatic",
@@ -411,7 +411,7 @@ export const expeditions: Expedition[] = [
     fromPriceUSD: 22000,
     summary: "A specialist, helicopter-supported attempt to reach an emperor penguin colony in the Weddell Sea.",
     overview:
-      "Very few voyages each year attempt this. Katabatic heads into the Weddell Sea in late October, aiming for the emperor penguin colony near Snow Hill Island. If ice and weather allow, helicopters carry guests over the sea ice for the final approach on foot.\n\nNothing about this trip is guaranteed — that is what makes it an expedition. We'll share candid context on past conditions before you commit.",
+      "Very few voyages each year attempt this. The ship heads into the Weddell Sea in late October, aiming for the emperor penguin colony near Snow Hill Island. If ice and weather allow, helicopters carry guests over the sea ice for the final approach on foot.\n\nNothing about this trip is guaranteed — that is what makes it an expedition. We'll share candid context on past conditions before you commit.",
     image: { src: img.penguinsSnow, alt: "Penguins standing on sea ice in early season" },
     video: LOOP,
     gallery: [
@@ -446,7 +446,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "ross-sea-halcyon-ice",
-    name: "Ross Sea & East Antarctica aboard MV Halcyon Ice",
+    name: "Ross Sea & East Antarctica on a long-voyage expedition ship",
     titleLines: ["ross sea", "& east antarctica"],
     routeSlug: "ross-sea-east-antarctica",
     shipSlug: "halcyon-ice",
@@ -463,7 +463,7 @@ export const expeditions: Expedition[] = [
     fromPriceUSD: 30000,
     summary: "A month-long voyage from New Zealand to the Ross Sea — the far side of Antarctica, rarely seen.",
     overview:
-      "Depart New Zealand and sail via the sub-Antarctic islands to the Ross Sea, home to the Ross Ice Shelf, Mount Erebus and the preserved huts of the heroic age. Halcyon Ice's long-voyage design makes the many sea days comfortable.\n\nWeather and ice dictate every landing on this route, and helicopter or zodiac access to historic sites cannot be guaranteed.",
+      "Depart New Zealand and sail via the sub-Antarctic islands to the Ross Sea, home to the Ross Ice Shelf, Mount Erebus and the preserved huts of the heroic age. Ships on this route are chosen for long voyages, which makes the many sea days comfortable.\n\nWeather and ice dictate every landing on this route, and helicopter or zodiac access to historic sites cannot be guaranteed.",
     image: { src: img.glacier, alt: "An immense ice face rising from the Ross Sea" },
     gallery: [
       { src: img.nightPeaks, alt: "Volcanic peaks under a polar twilight" },
@@ -499,7 +499,7 @@ export const expeditions: Expedition[] = [
   },
   {
     slug: "luxury-peninsula-southern-lantern",
-    name: "Luxury Antarctic Peninsula aboard MV Southern Lantern",
+    name: "Luxury Antarctic Peninsula on an all-suite expedition ship",
     titleLines: ["luxury", "expeditions"],
     routeSlug: "luxury-expeditions",
     shipSlug: "southern-lantern",
@@ -508,7 +508,7 @@ export const expeditions: Expedition[] = [
     seasonWindow: "December 2026 – February 2027",
     months: ["Dec", "Jan", "Feb"],
     highlights: [
-      "All-suite ship with balconies throughout",
+      "All-suite ship",
       "High guide-to-guest ratio and small landing groups",
       "Spa, fine dining and premium beverages",
       "Optional kayaking with dedicated guides",
@@ -516,7 +516,7 @@ export const expeditions: Expedition[] = [
     fromPriceUSD: 19000,
     summary: "The classic Peninsula voyage aboard an all-suite ship, without losing an ounce of the adventure.",
     overview:
-      "All the landings and wildlife of the classic Peninsula route, aboard a ship where every suite has a balcony and the kitchen is as serious as the expedition team. Small guest numbers make for unhurried landings.\n\nThe Drake is still the Drake — but you'll cross it in considerable comfort.",
+      "All the landings and wildlife of the classic Peninsula route, aboard an all-suite ship where dining is taken as seriously as the expedition. Small guest numbers make for unhurried landings.\n\nThe Drake is still the Drake — but you'll cross it in considerable comfort.",
     image: { src: img.fjordReflect, alt: "A mirror-calm Antarctic bay surrounded by mountains" },
     gallery: [
       { src: img.icebergsReflect, alt: "Icebergs seen from a private balcony" },

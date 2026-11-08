@@ -6,6 +6,8 @@ export type ShipSize = "small" | "mid" | "luxury";
 export interface Img {
   src: string;
   alt: string;
+  /** Attribution for CC BY / CC BY-SA photos (author, licence, source). */
+  credit?: string;
 }
 
 export interface Route {
@@ -62,14 +64,16 @@ export interface Expedition {
 
 export interface Ship {
   slug: Slug;
+  /** An honest class description (e.g. "Small expedition ship"), never an invented vessel name. */
   name: string;
+  /** One or two words for compact lists (e.g. "Fly-cruise"). */
+  shortName: string;
   /** Described by type, not a business name, until partner agreements exist. */
   operator: string;
   size: ShipSize;
-  lengthM: number;
-  passengers: number;
-  iceClass: string;
-  zodiacs: number;
+  /** Typical guest range for this class of ship (a class description, not a specific vessel). */
+  guests: string;
+  /** Cabin types usually found on this class of ship. */
   cabins: CabinType[];
   activities: string[];
   blurb: string;

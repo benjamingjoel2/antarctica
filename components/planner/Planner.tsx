@@ -336,7 +336,7 @@ export function Planner({ initialRoute, variant = "page", onClose }: { initialRo
 
             {step === 2 && (
               <>
-                <Group legend="Ship size" error={err(errors, "shipSize")} hint="Smaller ships usually mean more time ashore: IAATO limits how many guests can land at once. (Verify with partner operators.)">
+                <Group legend="Ship size" error={err(errors, "shipSize")} hint="Smaller ships usually mean more time ashore: IAATO limits how many guests can land at once.">
                   {shipSizes.map((s) => (
                     <Choice key={s} type="radio" reg={register("shipSize")} value={s} sub={shipLabels[s][1]}>{shipLabels[s][0]}</Choice>
                   ))}
@@ -366,7 +366,7 @@ export function Planner({ initialRoute, variant = "page", onClose }: { initialRo
                   {children > 0 && (
                     <Field label="Children's ages" error={err(errors, "childAges")} className="sm:col-span-2">
                       <input type="text" placeholder="e.g. 9, 13" {...register("childAges")} className={inputCls} />
-                      <span className="mt-[0.4rem] block text-[0.82rem] opacity-70">Minimum age rules vary by operator, often 8–12 years. (Verify with partner operators.)</span>
+                      <span className="mt-[0.4rem] block text-[0.82rem] opacity-70">Minimum age rules vary by operator, often 8–12 years.</span>
                     </Field>
                   )}
                   <Field label="Mobility or medical needs (optional)" className="sm:col-span-2">

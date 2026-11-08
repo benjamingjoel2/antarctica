@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import { PlannerFromQuery } from "@/components/planner/PlannerFromQuery";
-import { VerifyNote } from "@/components/ui/VerifyNote";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -21,7 +20,6 @@ export default function PlanPage() {
               Five steps, about three minutes. No payment, no obligation: just enough for your specialist to shortlist the right
               voyages.
             </p>
-            <VerifyNote className="mt-[1.5rem]">Rules and limits mentioned here are placeholders to verify with partner operators and IAATO.</VerifyNote>
           </div>
           <div className="col-span-12 lg:col-span-9">
             <Suspense>

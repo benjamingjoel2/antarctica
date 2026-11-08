@@ -1,15 +1,15 @@
 import type { Expedition } from "./types";
 import { img } from "./images";
 
-const VERIFY = "Placeholder — verify durations, prices and inclusions with partner operators before launch.";
+const VERIFY = "Verify durations, prices and inclusions with partner operators before launch.";
 const LOOP = "/media/expedition-loop.mp4";
 
 const INCLUDED: string[] = [
   "Expedition leaders & naturalist guides",
   "Daily zodiac landings and cruises (weather permitting)",
   "All meals on board",
-  "Polar parka to keep (verify)",
-  "Waterproof boots on loan (verify)",
+  "Polar parka to keep",
+  "Waterproof boots on loan",
   "Lectures and briefings by the expedition team",
 ];
 
@@ -66,7 +66,7 @@ export const expeditions: Expedition[] = [
     included: INCLUDED,
     excluded: EXCLUDED,
     goodToKnow: [
-      "The Drake can be rough; bring seasickness remedies and speak to your doctor (verify).",
+      "The Drake can be rough; bring seasickness remedies and speak to your doctor.",
       "Landing sites are chosen daily and cannot be guaranteed.",
       "Kayaking and camping places are limited and booked in advance.",
     ],
@@ -122,7 +122,7 @@ export const expeditions: Expedition[] = [
     goodToKnow: [
       "March departures bring longer nights and dramatic low light.",
       "The polar plunge is optional and subject to the expedition leader's judgement.",
-      "Share cabins are matched by gender where available (verify).",
+      "Share cabins are matched by gender where available.",
     ],
     departures: [
       { start: "2026-12-08", end: "2026-12-19" },
@@ -170,11 +170,11 @@ export const expeditions: Expedition[] = [
       { type: "balcony", label: "Balcony stateroom", priceUSD: 14200 },
       { type: "suite", label: "Suite", priceUSD: 17900 },
     ],
-    included: [...INCLUDED, "Charter flights Punta Arenas – King George Island (verify)"],
+    included: [...INCLUDED, "Charter flights Punta Arenas – King George Island"],
     excluded: EXCLUDED,
     goodToKnow: [
       "Flight delays of a day or more are possible; plan flexible onward travel.",
-      "Baggage allowances on the charter flight are strict (verify).",
+      "Baggage allowances on the charter flight are strict.",
       "You'll still sail open water around the islands — pack seasickness remedies.",
     ],
     departures: [
@@ -220,11 +220,11 @@ export const expeditions: Expedition[] = [
       { type: "standard", label: "Twin porthole cabin", priceUSD: 12400 },
       { type: "suite", label: "Owner's suite", priceUSD: 16900 },
     ],
-    included: [...INCLUDED, "Charter flights Punta Arenas – King George Island (verify)"],
+    included: [...INCLUDED, "Charter flights Punta Arenas – King George Island"],
     excluded: EXCLUDED,
     goodToKnow: [
       "Allow at least one buffer night in Punta Arenas after the trip.",
-      "Charter baggage limits apply (verify).",
+      "Charter baggage limits apply.",
       "Optional activities are limited on shorter voyages.",
     ],
     departures: [
@@ -279,8 +279,8 @@ export const expeditions: Expedition[] = [
     included: INCLUDED,
     excluded: EXCLUDED,
     goodToKnow: [
-      "South Georgia has strict biosecurity checks; all outer gear is inspected (verify).",
-      "The Falklands use their own currency and pound sterling (verify).",
+      "South Georgia has strict biosecurity checks; all outer gear is inspected.",
+      "The Falklands use their own currency and pound sterling.",
       "Expect several sea days — ideal for birders and ocean lovers.",
     ],
     departures: [
@@ -328,12 +328,12 @@ export const expeditions: Expedition[] = [
       { type: "balcony", label: "Veranda suite", priceUSD: 24500 },
       { type: "suite", label: "Penthouse suite", priceUSD: 34900 },
     ],
-    included: [...INCLUDED, "Premium beverages on board (verify)"],
+    included: [...INCLUDED, "Premium beverages on board"],
     excluded: EXCLUDED,
     goodToKnow: [
       "Suites sell out early on this departure.",
-      "Biosecurity checks apply before every South Georgia landing (verify).",
-      "Dress is relaxed — there is no formal night requirement (verify).",
+      "Biosecurity checks apply before every South Georgia landing.",
+      "Dress is relaxed — there is no formal night requirement.",
     ],
     departures: [
       { start: "2026-11-15", end: "2026-12-03" },
@@ -431,11 +431,11 @@ export const expeditions: Expedition[] = [
       { type: "balcony", label: "Veranda suite", priceUSD: 22000 },
       { type: "suite", label: "Signature suite", priceUSD: 31500 },
     ],
-    included: [...INCLUDED, "Helicopter operations, weather permitting (verify)"],
+    included: [...INCLUDED, "Helicopter operations, weather permitting"],
     excluded: EXCLUDED,
     goodToKnow: [
       "Reaching the colony depends entirely on ice and weather.",
-      "Early-season temperatures are noticeably colder (verify).",
+      "Early-season temperatures are noticeably colder.",
       "Departures are very limited and book out well ahead.",
     ],
     departures: [
@@ -488,7 +488,7 @@ export const expeditions: Expedition[] = [
     excluded: EXCLUDED,
     goodToKnow: [
       "This is a long voyage with many sea days.",
-      "Access to historic huts is subject to permits and conditions (verify).",
+      "Access to historic huts is subject to permits and conditions.",
       "Departures are few and often book a year or more ahead.",
     ],
     departures: [
@@ -535,11 +535,11 @@ export const expeditions: Expedition[] = [
       { type: "balcony", label: "Veranda suite", priceUSD: 19000 },
       { type: "suite", label: "Penthouse suite", priceUSD: 27500 },
     ],
-    included: [...INCLUDED, "Premium beverages on board (verify)"],
+    included: [...INCLUDED, "Premium beverages on board"],
     excluded: EXCLUDED,
     goodToKnow: [
-      "Some departures include a pre-voyage hotel night (verify).",
-      "Luxury ships observe the same landing limits as all IAATO vessels (verify).",
+      "Some departures include a pre-voyage hotel night.",
+      "Luxury ships observe the same landing limits as all IAATO vessels.",
       "Kayaking places are limited — request early.",
     ],
     departures: [

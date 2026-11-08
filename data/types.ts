@@ -63,7 +63,7 @@ export interface Expedition {
 export interface Ship {
   slug: Slug;
   name: string;
-  /** Placeholder operator name — no real operators until agreements exist. */
+  /** Described by type, not a business name, until partner agreements exist. */
   operator: string;
   size: ShipSize;
   lengthM: number;
@@ -76,7 +76,6 @@ export interface Ship {
   body: string;
   image: Img;
   gallery: Img[];
-  placeholder: true;
 }
 
 export interface Experience {
@@ -102,7 +101,6 @@ export interface TimelineEntry {
   body: string;
   category: TimelineCategory;
   image: Img;
-  placeholder?: boolean;
 }
 
 export interface Fact {

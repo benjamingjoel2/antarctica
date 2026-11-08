@@ -7,7 +7,6 @@ import { ImagePairs } from "@/components/sections/ImagePairs";
 import { ParagraphBlock } from "@/components/sections/ParagraphBlock";
 import { Pill } from "@/components/ui/Pill";
 import { Price } from "@/components/ui/Price";
-import { VerifyNote } from "@/components/ui/VerifyNote";
 import { ships } from "@/data/ships";
 import { cabinLabel, expeditionsForShip, getRoute, getShip, shipSizeLabel } from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
@@ -37,14 +36,14 @@ export default async function ShipPage({ params }: { params: Promise<{ slug: str
         background={s.image}
         waves={[`${s.passengers} guests`, `${s.lengthM} m`, s.iceClass, `${s.zodiacs} zodiacs`]}
       />
-      <ParagraphBlock lead={s.body.split("\n\n")[0]} side={<>Operator<br />{s.operator}</>} body={<>{s.body.split("\n\n").slice(1).map((p, i) => <p key={i}>{p}</p>)}<VerifyNote>Placeholder ship and operator. Specifications to verify before launch.</VerifyNote></>} />
+      <ParagraphBlock lead={s.body.split("\n\n")[0]} side={<>Operator<br />{s.operator}</>} body={<>{s.body.split("\n\n").slice(1).map((p, i) => <p key={i}>{p}</p>)}</>} />
       <ImagePairs images={[s.image, ...s.gallery].slice(0, 4)} />
       <CreditsGrid
         columns={[
           { title: "Specifications", items: [`Length ${s.lengthM} m`, `${s.passengers} guests`, s.iceClass, `${s.zodiacs} zodiacs`] },
           { title: "Cabins", items: s.cabins.map((c) => cabinLabel[c]) },
           { title: "Activities", items: s.activities },
-          { title: "Operator", items: [s.operator, "IAATO member (placeholder — verify)"] },
+          { title: "Operator", items: [s.operator] },
         ]}
       />
       <section id="voyages" className="scroll-mt-[5rem] bg-ink pb-[8rem] pt-[2rem] text-ice">

@@ -1,7 +1,7 @@
 import type { Route } from "./types";
 import { img } from "./images";
 
-const VERIFY = "Placeholder — verify durations, prices and inclusions with partner operators before launch.";
+const VERIFY = "Verify durations, prices and inclusions with partner operators before launch.";
 
 export const routes: Route[] = [
   {

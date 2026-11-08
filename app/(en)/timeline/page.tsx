@@ -1,7 +1,6 @@
 import { CtaBand } from "@/components/sections/CtaBand";
 import { PageHero } from "@/components/sections/PageHero";
 import { TimelineRows } from "@/components/sections/TimelineRows";
-import { VerifyNote } from "@/components/ui/VerifyNote";
 import { timeline } from "@/data/timeline";
 import { buildMetadata } from "@/lib/seo";
 
@@ -21,21 +20,17 @@ export default function TimelinePage() {
             { id: "exploration", label: "Exploration" },
             { id: "science", label: "Science" },
             { id: "treaty", label: "Treaty" },
-            { id: "us", label: "Seventh Continent" },
           ]}
           rows={timeline.map((t, i) => ({
             key: `${t.year}-${i}`,
             title: t.title,
             right: String(t.year),
-            sub: t.placeholder ? "Our story · placeholder" : t.date,
+            sub: t.date,
             body: t.body,
             image: t.image,
             tag: t.category,
           }))}
         />
-        <div className="container-site">
-          <VerifyNote className="mt-[2rem]">Seventh Continent milestones are placeholders to confirm before launch.</VerifyNote>
-        </div>
       </section>
       <CtaBand lines={["add your", "own chapter"]} />
     </>

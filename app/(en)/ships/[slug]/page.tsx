@@ -24,7 +24,10 @@ export default async function ShipPage({ params }: { params: Promise<{ slug: str
   const s = getShip((await params).slug);
   if (!s) notFound();
   const voyages = expeditionsForShip(s.slug);
-  const [first, ...rest] = s.name.replace(/^MV\s+/, "").split(" ");
+  const photoCredits = [s.image, ...s.gallery].map((i) => i.credit).filter((c): c is string => Boolean(c));
+  const words = s.name.split(" ");
+  const first = words.slice(0, -1).join(" ") || words[0];
+  const rest = words.length > 1 ? [words[words.length - 1]] : [];
   return (
     <>
       <DetailHero
@@ -34,16 +37,17 @@ export default async function ShipPage({ params }: { params: Promise<{ slug: str
         actions={<Pill href="/plan-my-expedition" variant="accent">Ask about this ship</Pill>}
         media={{ image: s.gallery[0] ?? s.image }}
         background={s.image}
-        waves={[`${s.passengers} guests`, `${s.lengthM} m`, s.iceClass, `${s.zodiacs} zodiacs`]}
+        waves={[shipSizeLabel[s.size], s.guests, "IAATO member"]}
       />
       <ParagraphBlock lead={s.body.split("\n\n")[0]} side={<>Operator<br />{s.operator}</>} body={<>{s.body.split("\n\n").slice(1).map((p, i) => <p key={i}>{p}</p>)}</>} />
       <ImagePairs images={[s.image, ...s.gallery].slice(0, 4)} />
       <CreditsGrid
         columns={[
-          { title: "Specifications", items: [`Length ${s.lengthM} m`, `${s.passengers} guests`, s.iceClass, `${s.zodiacs} zodiacs`] },
-          { title: "Cabins", items: s.cabins.map((c) => cabinLabel[c]) },
+          { title: "At a glance", items: [shipSizeLabel[s.size], s.guests] },
+          { title: "Typical cabins", items: s.cabins.map((c) => cabinLabel[c]) },
           { title: "Activities", items: s.activities },
           { title: "Operator", items: [s.operator] },
+          ...(photoCredits.length ? [{ title: "Photo", items: photoCredits }] : []),
         ]}
       />
       <section id="voyages" className="scroll-mt-[5rem] bg-ink pb-[8rem] pt-[2rem] text-ice">

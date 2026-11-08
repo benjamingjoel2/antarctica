@@ -51,7 +51,7 @@
  "Ships": [
   "app/(en)/about/page.tsx:48",
   "app/(en)/page.tsx:23",
-  "components/sections/HorizontalPanels.tsx:91"
+  "components/sections/HorizontalPanels.tsx:90"
  ],
  "Peaks under a starry sky": [
   "app/(en)/about/page.tsx:49"
@@ -498,7 +498,7 @@
  ],
  "View expedition": [
   "app/(en)/routes/[slug]/page.tsx:60",
-  "app/(en)/ships/[slug]/page.tsx:54",
+  "app/(en)/ships/[slug]/page.tsx:58",
   "components/sections/ExpeditionsExplorer.tsx:96"
  ],
  "Antarctic routes compared": [
@@ -545,29 +545,32 @@
   "app/(en)/routes/page.tsx:58"
  ],
  "Ask about this ship": [
-  "app/(en)/ships/[slug]/page.tsx:34"
+  "app/(en)/ships/[slug]/page.tsx:37"
  ],
- "Length {0} m": [
-  "app/(en)/ships/[slug]/page.tsx:43"
+ "IAATO member": [
+  "app/(en)/ships/[slug]/page.tsx:40"
  ],
- "Specifications": [
-  "app/(en)/ships/[slug]/page.tsx:43"
+ "At a glance": [
+  "app/(en)/ships/[slug]/page.tsx:46"
  ],
- "Cabins": [
-  "app/(en)/ships/[slug]/page.tsx:44"
+ "Typical cabins": [
+  "app/(en)/ships/[slug]/page.tsx:47"
  ],
  "Activities": [
-  "app/(en)/ships/[slug]/page.tsx:45"
+  "app/(en)/ships/[slug]/page.tsx:48"
  ],
  "Operator": [
-  "app/(en)/ships/[slug]/page.tsx:46",
-  "app/(en)/ships/[slug]/page.tsx:39"
+  "app/(en)/ships/[slug]/page.tsx:49",
+  "app/(en)/ships/[slug]/page.tsx:42"
+ ],
+ "Photo": [
+  "app/(en)/ships/[slug]/page.tsx:50"
  ],
  "voyages on board": [
-  "app/(en)/ships/[slug]/page.tsx:51"
+  "app/(en)/ships/[slug]/page.tsx:55"
  ],
  "New departures for this ship are coming soon. Ask your specialist.": [
-  "app/(en)/ships/[slug]/page.tsx:65"
+  "app/(en)/ships/[slug]/page.tsx:69"
  ],
  "Ships ({0})": [
   "app/(en)/ships/page.tsx:17"
@@ -760,10 +763,13 @@
   "components/home/HeroParallax.tsx:77"
  ],
  "Sailing with": [
-  "components/home/SailingWith.tsx:34"
+  "components/home/SailingWith.tsx:33"
  ],
  "IAATO-member operators": [
-  "components/home/SailingWith.tsx:35"
+  "components/home/SailingWith.tsx:34"
+ ],
+ "Photos:": [
+  "components/home/SailingWith.tsx:43"
  ],
  "Anonymous counts of which pages and voyages people read, so we can improve the site.": [
   "components/layout/CookieConsent.tsx:10"
@@ -1270,14 +1276,10 @@
   "components/planner/Planner.tsx:58"
  ],
  "Camping on the ice": [
-  "components/planner/Planner.tsx:58",
-  "data/ships.ts:75",
-  "data/ships.ts:15"
+  "components/planner/Planner.tsx:58"
  ],
  "Sea kayaking": [
-  "components/planner/Planner.tsx:58",
-  "data/ships.ts:115",
-  "data/ships.ts:95"
+  "components/planner/Planner.tsx:58"
  ],
  "Two days each way, part of the journey": [
   "components/planner/Planner.tsx:61"
@@ -1378,23 +1380,14 @@
  "To verify with partner operators and IAATO before launch": [
   "components/sections/FaqList.tsx:19"
  ],
- "m,": [
-  "components/sections/HorizontalPanels.tsx:44"
- ],
- "guests,": [
-  "components/sections/HorizontalPanels.tsx:44"
- ],
  "View ship": [
   "components/sections/HorizontalPanels.tsx:47"
  ],
- "Expeditions on this ship": [
+ "Expeditions on this type of ship": [
   "components/sections/HorizontalPanels.tsx:48"
  ],
- "Deck plan (soon)": [
-  "components/sections/HorizontalPanels.tsx:49"
- ],
  "Partner ships": [
-  "components/sections/HorizontalPanels.tsx:83"
+  "components/sections/HorizontalPanels.tsx:82"
  ],
  "Last updated:": [
   "components/sections/LegalDocument.tsx:22"
@@ -1569,7 +1562,7 @@
  "Lectures and briefings by the expedition team": [
   "data/expeditions.ts:13"
  ],
- "Fly the Drake aboard MV Petrel Light": [
+ "Fly the Drake on a small fly-cruise ship": [
   "data/expeditions.ts:136"
  ],
  "the drake": [
@@ -1583,13 +1576,13 @@
  "Board in the South Shetlands and be among penguins the same day": [
   "data/expeditions.ts:146"
  ],
- "Citizen-science programme on every departure": [
+ "Citizen-science projects on many departures": [
   "data/expeditions.ts:147"
  ],
  "Skip the Drake crossing by air and spend your time where it counts — in Antarctic waters.": [
   "data/expeditions.ts:150"
  ],
- "Fly from Punta Arenas across the Drake Passage to King George Island, then board Petrel Light for a compact voyage through the South Shetlands and along the Peninsula. Ideal if you're short on time or wary of the open ocean.\n\nFlights depend on weather at both ends, so build in buffer days before and after; we'll explain each operator's delay policy before you book.": [
+ "Fly from Punta Arenas across the Drake Passage to King George Island, then board a small expedition ship for a compact voyage through the South Shetlands and along the Peninsula. Ideal if you're short on time or wary of the open ocean.\n\nFlights depend on weather at both ends, so build in buffer days before and after; we'll explain each operator's delay policy before you book.": [
   "data/expeditions.ts:152"
  ],
  "Peaks emerging above cloud on the flight south": [
@@ -1643,7 +1636,7 @@
  "Pre/post hotel nights": [
   "data/expeditions.ts:18"
  ],
- "Fly & Sail Short Escape aboard MV Meridian South": [
+ "Fly & Sail Short Escape on a small expedition ship": [
   "data/expeditions.ts:188"
  ],
  "& sail": [
@@ -1672,7 +1665,7 @@
  "A tightly focused week: fly over the Drake, sail the islands, fly home.": [
   "data/expeditions.ts:202"
  ],
- "Designed for travellers with a single week, this fly-cruise packs four days of landings into a seven-day trip. Meridian South's small size keeps landings efficient so none of that precious time is wasted.\n\nAs with all fly-cruises, the schedule bends around the weather at King George Island.": [
+ "Designed for travellers with a single week, this fly-cruise packs four days of landings into a seven-day trip. A small ship keeps landings efficient so none of that precious time is wasted.\n\nAs with all fly-cruises, the schedule bends around the weather at King George Island.": [
   "data/expeditions.ts:204"
  ],
  "A gentoo penguin on a rocky Antarctic shore": [
@@ -1766,7 +1759,7 @@
  "Optional activities are limited on shorter voyages.": [
   "data/expeditions.ts:228"
  ],
- "Falklands, South Georgia & Antarctica aboard MV Halcyon Ice": [
+ "Falklands, South Georgia & Antarctica on a long-voyage expedition ship": [
   "data/expeditions.ts:238"
  ],
  "& antarctica": [
@@ -1795,7 +1788,7 @@
  "The grand Southern Ocean voyage on a steady, spacious ship built for long passages.": [
   "data/expeditions.ts:253"
  ],
- "Three weeks across the Southern Ocean: the Falklands, then South Georgia's extraordinary wildlife and Shackleton history, then the Antarctic Peninsula. Halcyon Ice's stabilisers and generous public spaces make the sea days a pleasure rather than an endurance test.\n\nSea days are filled with lectures, seabird watching from the bridge wings and time to simply take it all in.": [
+ "Three weeks across the Southern Ocean: the Falklands, then South Georgia's extraordinary wildlife and Shackleton history, then the Antarctic Peninsula. Ships on this route are chosen for long passages, so the sea days are a pleasure rather than an endurance test.\n\nSea days are filled with lectures, seabird watching from the bridge wings and time to simply take it all in.": [
   "data/expeditions.ts:255"
  ],
  "Thousands of king penguins on a South Georgia plain": [
@@ -1849,7 +1842,7 @@
  "Day 21": [
   "data/expeditions.ts:272"
  ],
- "Classic Antarctic Peninsula aboard MV Meridian South": [
+ "Classic Antarctic Peninsula on a small expedition ship": [
   "data/expeditions.ts:28"
  ],
  "South Georgia has strict biosecurity checks; all outer gear is inspected.": [
@@ -1865,7 +1858,7 @@
   "data/expeditions.ts:29",
   "data/routes.ts:10"
  ],
- "South Georgia & Antarctica in Suites aboard MV Southern Lantern": [
+ "South Georgia & Antarctica on an all-suite expedition ship": [
   "data/expeditions.ts:294"
  ],
  "in suites": [
@@ -1953,7 +1946,7 @@
  "Dress is relaxed — there is no formal night requirement.": [
   "data/expeditions.ts:336"
  ],
- "Across the Antarctic Circle aboard MV Tern Arc": [
+ "Across the Antarctic Circle on an ice-strengthened expedition ship": [
   "data/expeditions.ts:346"
  ],
  "the circle": [
@@ -1979,7 +1972,7 @@
  "Push beyond the classic Peninsula towards the Antarctic Circle and Marguerite Bay.": [
   "data/expeditions.ts:360"
  ],
- "This voyage extends south beyond the busier Peninsula sites, aiming to cross the Antarctic Circle and explore the ice-filled waters beyond. Tern Arc's ice-strengthened hull gives it the reach — but the ice always has the final say.\n\nLater-season departures generally offer the best chance of open water to the south.": [
+ "This voyage extends south beyond the busier Peninsula sites, aiming to cross the Antarctic Circle and explore the ice-filled waters beyond. An ice-strengthened ship gives you the reach — but the ice always has the final say.\n\nLater-season departures generally offer the best chance of open water to the south.": [
   "data/expeditions.ts:362"
  ],
  "Snow peaks near the Antarctic Circle": [
@@ -2058,7 +2051,7 @@
  "Small-ship ratios for faster, longer time ashore": [
   "data/expeditions.ts:39"
  ],
- "In Search of Emperors aboard MV Katabatic": [
+ "In Search of Emperors on a helicopter-equipped expedition ship": [
   "data/expeditions.ts:398"
  ],
  "penguins": [
@@ -2091,14 +2084,15 @@
  "A specialist, helicopter-supported attempt to reach an emperor penguin colony in the Weddell Sea.": [
   "data/expeditions.ts:412"
  ],
- "Very few voyages each year attempt this. Katabatic heads into the Weddell Sea in late October, aiming for the emperor penguin colony near Snow Hill Island. If ice and weather allow, helicopters carry guests over the sea ice for the final approach on foot.\n\nNothing about this trip is guaranteed — that is what makes it an expedition. We'll share candid context on past conditions before you commit.": [
+ "Very few voyages each year attempt this. The ship heads into the Weddell Sea in late October, aiming for the emperor penguin colony near Snow Hill Island. If ice and weather allow, helicopters carry guests over the sea ice for the final approach on foot.\n\nNothing about this trip is guaranteed — that is what makes it an expedition. We'll share candid context on past conditions before you commit.": [
   "data/expeditions.ts:414"
  ],
  "Penguins standing on sea ice in early season": [
   "data/expeditions.ts:415"
  ],
  "Wind-carved snow on the sea ice": [
-  "data/expeditions.ts:418"
+  "data/expeditions.ts:418",
+  "data/ships.ts:117"
  ],
  "Misty Weddell Sea coastline": [
   "data/expeditions.ts:419"
@@ -2151,10 +2145,10 @@
  "Departures are very limited and book out well ahead.": [
   "data/expeditions.ts:439"
  ],
- "Ross Sea & East Antarctica aboard MV Halcyon Ice": [
+ "Ross Sea & East Antarctica on a long-voyage expedition ship": [
   "data/expeditions.ts:449"
  ],
- "Sail from Ushuaia across the Drake Passage to the Antarctic Peninsula, where each day is shaped around zodiac landings, ice cruising and wildlife. With just over a hundred guests, Meridian South gets everyone ashore quickly and keeps the focus where it belongs: outside.\n\nThe route below is indicative. In Antarctica, weather, ice and wildlife write the real itinerary each morning.": [
+ "Sail from Ushuaia across the Drake Passage to the Antarctic Peninsula, where each day is shaped around zodiac landings, ice cruising and wildlife. A small ship gets everyone ashore quickly and keeps the focus where it belongs: outside.\n\nThe route below is indicative. In Antarctica, weather, ice and wildlife write the real itinerary each morning.": [
   "data/expeditions.ts:45"
  ],
  "& east antarctica": [
@@ -2187,7 +2181,7 @@
  "A month-long voyage from New Zealand to the Ross Sea — the far side of Antarctica, rarely seen.": [
   "data/expeditions.ts:464"
  ],
- "Depart New Zealand and sail via the sub-Antarctic islands to the Ross Sea, home to the Ross Ice Shelf, Mount Erebus and the preserved huts of the heroic age. Halcyon Ice's long-voyage design makes the many sea days comfortable.\n\nWeather and ice dictate every landing on this route, and helicopter or zodiac access to historic sites cannot be guaranteed.": [
+ "Depart New Zealand and sail via the sub-Antarctic islands to the Ross Sea, home to the Ross Ice Shelf, Mount Erebus and the preserved huts of the heroic age. Ships on this route are chosen for long voyages, which makes the many sea days comfortable.\n\nWeather and ice dictate every landing on this route, and helicopter or zodiac access to historic sites cannot be guaranteed.": [
   "data/expeditions.ts:466"
  ],
  "An immense ice face rising from the Ross Sea": [
@@ -2279,7 +2273,7 @@
  "A humpback whale fluke rising from the sea": [
   "data/expeditions.ts:50"
  ],
- "Luxury Antarctic Peninsula aboard MV Southern Lantern": [
+ "Luxury Antarctic Peninsula on an all-suite expedition ship": [
   "data/expeditions.ts:502"
  ],
  "expeditions": [
@@ -2297,7 +2291,7 @@
  "A glacier calving face along a Peninsula channel": [
   "data/expeditions.ts:51"
  ],
- "All-suite ship with balconies throughout": [
+ "All-suite ship": [
   "data/expeditions.ts:511",
   "data/expeditions.ts:303"
  ],
@@ -2313,7 +2307,7 @@
  "The classic Peninsula voyage aboard an all-suite ship, without losing an ounce of the adventure.": [
   "data/expeditions.ts:517"
  ],
- "All the landings and wildlife of the classic Peninsula route, aboard a ship where every suite has a balcony and the kitchen is as serious as the expedition team. Small guest numbers make for unhurried landings.\n\nThe Drake is still the Drake — but you'll cross it in considerable comfort.": [
+ "All the landings and wildlife of the classic Peninsula route, aboard an all-suite ship where dining is taken as seriously as the expedition. Small guest numbers make for unhurried landings.\n\nThe Drake is still the Drake — but you'll cross it in considerable comfort.": [
   "data/expeditions.ts:519"
  ],
  "A guest in a red parka watching the ice": [
@@ -2326,7 +2320,8 @@
   "data/expeditions.ts:522"
  ],
  "A humpback whale in calm water": [
-  "data/expeditions.ts:523"
+  "data/expeditions.ts:523",
+  "data/ships.ts:99"
  ],
  "A gentoo penguin on rocks": [
   "data/expeditions.ts:524"
@@ -2448,7 +2443,7 @@
  "Expedition leaders & naturalist guides": [
   "data/expeditions.ts:8"
  ],
- "Peninsula Explorer aboard MV Tern Arc": [
+ "Peninsula Explorer on an ice-strengthened expedition ship": [
   "data/expeditions.ts:82"
  ],
  "explorer": [
@@ -2468,7 +2463,7 @@
  "An extra day in the Peninsula for more flexibility with weather": [
   "data/expeditions.ts:91"
  ],
- "Glass-walled observation lounge for ice and whale watching": [
+ "Time on deck for ice and whale watching": [
   "data/expeditions.ts:92"
  ],
  "Polar plunge for the brave (optional)": [
@@ -2477,7 +2472,7 @@
  "A slightly longer Peninsula voyage on a comfortable mid-size ship, with room in the schedule for the weather to cooperate.": [
   "data/expeditions.ts:96"
  ],
- "Twelve days gives the expedition team a precious extra day to play with — to wait out a storm, linger with feeding humpbacks or try again for a landing missed earlier. Tern Arc's strengthened hull and large zodiac fleet make the most of every window.\n\nLate-season departures coincide with peak whale activity and fledging penguin chicks.": [
+ "Twelve days gives the expedition team a precious extra day to play with — to wait out a storm, linger with feeding humpbacks or try again for a landing missed earlier. An ice-strengthened ship with a capable expedition team makes the most of every window.\n\nLate-season departures coincide with peak whale activity and fledging penguin chicks.": [
   "data/expeditions.ts:98"
  ],
  "A humpback whale surfacing in Antarctic waters": [
@@ -3683,161 +3678,185 @@
   "data/routes.ts:97",
   "data/routes.ts:77"
  ],
- "Mountain peaks under a night sky": [
-  "data/ships.ts:101"
+ "An expedition ship at anchor among floating ice in the Lemaire Channel, Antarctica": [
+  "data/ship-photos.ts:11"
  ],
- "Sculpted icebergs drifting in still water": [
-  "data/ships.ts:102"
+ "Gary Bembridge, CC BY 2.0, Wikimedia Commons": [
+  "data/ship-photos.ts:12"
  ],
- "MV Katabatic": [
-  "data/ships.ts:107"
+ "Zodiacs alongside an expedition ship for a landing at King George Island, Antarctica": [
+  "data/ship-photos.ts:16"
+ ],
+ "An ice-strengthened expedition ship moored in fast ice off the Antarctic coast": [
+  "data/ship-photos.ts:21"
+ ],
+ "Jason Auch, CC BY 2.0, Wikimedia Commons": [
+  "data/ship-photos.ts:22"
+ ],
+ "An expedition ship in the flooded caldera of Deception Island, Antarctica": [
+  "data/ship-photos.ts:26"
+ ],
+ "W. Bulach, CC BY-SA 4.0, Wikimedia Commons": [
+  "data/ship-photos.ts:27",
+  "data/ship-photos.ts:17"
+ ],
+ "A zodiac heading out from an expedition ship in Paradise Bay, Antarctica": [
+  "data/ship-photos.ts:31"
+ ],
+ "PhilWolpe, CC BY 2.0, Wikimedia Commons": [
+  "data/ship-photos.ts:32"
+ ],
+ "Guests on the bow of an expedition ship in Pléneau Bay, Antarctica": [
+  "data/ship-photos.ts:36"
+ ],
+ "Liam Quinn, CC BY-SA 2.0, Wikimedia Commons": [
+  "data/ship-photos.ts:37"
+ ],
+ "Helicopter-equipped expedition ship": [
+  "data/ships.ts:104"
+ ],
+ "Helicopter ship": [
+  "data/ships.ts:105"
  ],
  "IAATO-member expedition operator": [
-  "data/ships.ts:108",
+  "data/ships.ts:106",
   "data/ships.ts:88",
-  "data/ships.ts:68"
+  "data/ships.ts:70"
  ],
- "Polar Class 5": [
-  "data/ships.ts:112",
-  "data/ships.ts:52"
+ "Usually fewer than 300 guests": [
+  "data/ships.ts:108",
+  "data/ships.ts:90"
  ],
  "Lectures": [
-  "data/ships.ts:115",
-  "data/ships.ts:95",
-  "data/ships.ts:75"
+  "data/ships.ts:110",
+  "data/ships.ts:92",
+  "data/ships.ts:74"
  ],
- "Spa": [
-  "data/ships.ts:115",
-  "data/ships.ts:95"
+ "Helicopter flights (selected voyages)": [
+  "data/ships.ts:110"
  ],
- "Helicopter operations (selected voyages)": [
-  "data/ships.ts:115"
+ "Zodiac cruising": [
+  "data/ships.ts:110",
+  "data/ships.ts:92",
+  "data/ships.ts:74"
  ],
  "Zodiac landings": [
-  "data/ships.ts:115",
-  "data/ships.ts:95",
-  "data/ships.ts:75"
+  "data/ships.ts:110",
+  "data/ships.ts:92",
+  "data/ships.ts:74"
  ],
- "A high-end polar vessel with the reach for specialist voyages.": [
-  "data/ships.ts:116"
+ "A high-end polar ship that carries helicopters for specialist voyages such as emperor penguin attempts.": [
+  "data/ships.ts:111"
  ],
- "Katabatic pairs luxury suites with genuine polar capability, including a helideck used on selected specialist departures. It's the kind of ship that can take on an emperor penguin voyage in early-season ice and still return you to a heated bathroom floor.": [
-  "data/ships.ts:118"
- ],
- "Misty peaks fading into low polar cloud": [
-  "data/ships.ts:119"
+ "A small number of expedition ships carry helicopters, which makes specialist voyages possible, such as attempts to reach emperor penguin colonies across the sea ice. Flights always depend on ice, weather and the expedition leader's judgement.\n\nThese departures are few and book early. We'll share candid context on past conditions before you commit.": [
+  "data/ships.ts:113"
  ],
  "A group of penguins standing in the snow": [
-  "data/ships.ts:121"
+  "data/ships.ts:116"
  ],
- "A sea of cloud below mountain summits": [
-  "data/ships.ts:122"
+ "Small expedition ship": [
+  "data/ships.ts:14"
  ],
- "A nimble, no-fuss expedition ship built around time ashore.": [
-  "data/ships.ts:16"
- ],
- "Meridian South is the kind of ship expedition staff love: small enough to get everyone ashore quickly, sturdy enough for the Drake, and simple enough that the focus stays outside. Cabins are comfortable rather than lavish, and the lecture lounge doubles as the heart of the ship.": [
-  "data/ships.ts:18"
- ],
- "An expedition ship silhouetted on dark polar water": [
-  "data/ships.ts:19"
- ],
- "Icebergs reflected in calm water seen from the ship": [
-  "data/ships.ts:21"
- ],
- "A traveller in a red parka looking out over the ice": [
-  "data/ships.ts:22"
- ],
- "MV Petrel Light": [
-  "data/ships.ts:27"
- ],
- "Citizen science": [
-  "data/ships.ts:35"
- ],
- "Small-ship intimacy with a strong science and photography focus.": [
-  "data/ships.ts:36"
- ],
- "Petrel Light carries a dedicated citizen-science programme and photography guides on most departures, with a mudroom designed for fast, clean turnarounds between landings. An open bridge policy (at the captain's discretion) lets guests watch ice navigation first-hand.": [
-  "data/ships.ts:38"
- ],
- "A small ship lit up at night in polar waters": [
-  "data/ships.ts:39"
- ],
- "A humpback whale surfacing beside an expedition ship": [
-  "data/ships.ts:41"
- ],
- "A gentoo penguin standing on a rocky shore": [
-  "data/ships.ts:42"
- ],
- "MV Tern Arc": [
-  "data/ships.ts:47"
- ],
- "Snowshoeing": [
-  "data/ships.ts:55",
+ "Small ship": [
   "data/ships.ts:15"
  ],
- "Polar plunge": [
-  "data/ships.ts:55"
+ "Camping (some departures)": [
+  "data/ships.ts:20"
  ],
- "A modern mid-size ship with real range — from the Peninsula to the Circle.": [
+ "A small, landing-focused ship: the classic way to see the Antarctic Peninsula.": [
+  "data/ships.ts:21"
+ ],
+ "Small expedition ships are built around time ashore. IAATO allows no more than 100 visitors on shore at a site at one time, so the fewer guests on board, the fewer landing rotations and the longer each group can spend ashore.\n\nCabins on this kind of ship tend to be comfortable rather than lavish, and the lecture room is the heart of life on board. We'll help you choose a specific ship and departure once we know your dates.": [
+  "data/ships.ts:23"
+ ],
+ "Icebergs reflected in calm water": [
+  "data/ships.ts:26"
+ ],
+ "Small fly-cruise ship": [
+  "data/ships.ts:32"
+ ],
+ "Fly-cruise": [
+  "data/ships.ts:33"
+ ],
+ "Fewer than 200 guests": [
+  "data/ships.ts:36",
+  "data/ships.ts:18"
+ ],
+ "A small ship that meets you in the South Shetland Islands after a flight over the Drake Passage.": [
+  "data/ships.ts:39"
+ ],
+ "On a fly-cruise you fly from Punta Arenas to King George Island and board a small expedition ship there, skipping the two-day sea crossing each way. Flights depend on the weather at both ends, so plans need some flexibility.\n\nOnce on board, days follow the same rhythm as any small-ship voyage: landings and zodiac cruises, with lectures from the expedition team in between.": [
+  "data/ships.ts:41"
+ ],
+ "A humpback whale surfacing": [
+  "data/ships.ts:44"
+ ],
+ "A gentoo penguin standing on a rocky shore": [
+  "data/ships.ts:45",
+  "data/ships.ts:27"
+ ],
+ "Ice-strengthened expedition ship": [
+  "data/ships.ts:50"
+ ],
+ "Ice-strengthened": [
+  "data/ships.ts:51"
+ ],
+ "Polar plunge (some departures)": [
   "data/ships.ts:56"
  ],
- "Tern Arc balances comfort and capability: a strengthened hull for deeper ice, an observation lounge wrapped in glass, and enough zodiacs to run landings in efficient rotations. Its range makes it a regular on Antarctic Circle and South Georgia itineraries.": [
-  "data/ships.ts:58"
+ "A larger ship with the range for longer Peninsula voyages and the Antarctic Circle.": [
+  "data/ships.ts:57"
  ],
- "Snow-covered peaks seen from the deck of a ship": [
+ "Mid-size expedition ships carry more guests, so landings run in rotations to stay within IAATO's limit of 100 people ashore at a time. In return they usually offer more public space and the range for longer itineraries, such as voyages towards the Antarctic Circle.\n\nHow far south any ship gets depends on the ice and weather on the day. We'll explain what a specific ship and departure can realistically aim for before you book.": [
   "data/ships.ts:59"
  ],
  "A glacier face rising above the water": [
-  "data/ships.ts:61"
- ],
- "Penguins walking in a line across the snow": [
   "data/ships.ts:62"
  ],
- "MV Halcyon Ice": [
-  "data/ships.ts:67"
+ "Penguins walking in a line across the snow": [
+  "data/ships.ts:63"
  ],
- "MV Meridian South": [
-  "data/ships.ts:7"
+ "Long-voyage expedition ship": [
+  "data/ships.ts:68"
  ],
- "Mountaineering": [
+ "Long-voyage": [
+  "data/ships.ts:69"
+ ],
+ "Usually 200–500 guests": [
+  "data/ships.ts:72",
+  "data/ships.ts:54"
+ ],
+ "A ship suited to long voyages with many sea days: South Georgia, the Falklands and the Ross Sea.": [
   "data/ships.ts:75"
  ],
- "Spacious and steady, with a long-voyage feel for South Georgia and beyond.": [
-  "data/ships.ts:76"
- ],
- "Halcyon Ice was designed for longer voyages: generous public spaces, a library facing the bow, and stabilisers to ease the sea days between the Falklands, South Georgia and the Peninsula. Its expedition team is large enough to run several activity groups at once.": [
-  "data/ships.ts:78"
- ],
- "The Southern Ocean at dusk under a soft sky": [
-  "data/ships.ts:79"
+ "Longer voyages to South Georgia, the Falklands or the Ross Sea include several days at sea. Ships used on these routes tend to have more public space for lectures and wildlife watching, and stabilisers to ease the crossings.\n\nWe'll match you with a specific ship and departure based on the route, the season and how you like to travel.": [
+  "data/ships.ts:77"
  ],
  "A king penguin lit by low golden light": [
+  "data/ships.ts:80"
+ ],
+ "A large king penguin colony": [
   "data/ships.ts:81"
  ],
- "A rolling wave on the open Southern Ocean": [
-  "data/ships.ts:82"
+ "All-suite expedition ship": [
+  "data/ships.ts:86"
  ],
- "MV Southern Lantern": [
+ "All-suite": [
   "data/ships.ts:87"
  ],
- "Polar Class 6": [
+ "Sea kayaking (some departures)": [
   "data/ships.ts:92",
-  "data/ships.ts:72",
-  "data/ships.ts:32"
+  "data/ships.ts:74",
+  "data/ships.ts:56"
  ],
- "Photography workshops": [
-  "data/ships.ts:95",
-  "data/ships.ts:35"
+ "Suites, a high staff-to-guest ratio and the same landings as any expedition ship.": [
+  "data/ships.ts:93"
  ],
- "All-suite comfort and a high guide-to-guest ratio.": [
-  "data/ships.ts:96"
+ "On an all-suite expedition ship every cabin is a suite, usually with a balcony or large window, and dining and service are part of the experience. Landings follow exactly the same IAATO rules as on any other ship.\n\nComfort varies a great deal between ships in this class. We'll tell you honestly how they compare for your dates.": [
+  "data/ships.ts:95"
  ],
- "Southern Lantern is an all-suite ship where every cabin has a balcony or panoramic window. Dining is a highlight, the spa is a welcome retreat after a cold landing, and a low guest count means more space everywhere — on deck, in the zodiacs and on shore.": [
+ "Sculpted icebergs drifting in still water": [
   "data/ships.ts:98"
- ],
- "A mirror-calm fjord surrounded by snowy mountains": [
-  "data/ships.ts:99"
  ],
  "International Geophysical Year begins": [
   "data/timeline.ts:100"

@@ -75,7 +75,7 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
             title: "Ship & cabins",
             items: [
               ship ? <Link key="s" href={`/ships/${ship.slug}`} className="underline underline-offset-2">{ship.name}</Link> : shipSizeLabel[e.shipType],
-              ship ? `${ship.passengers} guests` : "",
+              ship ? ship.guests : "",
               ...e.cabins.map((c) => `${cabinLabel[c.type]} — ${c.label}`),
             ].filter(Boolean),
           },

@@ -32,21 +32,20 @@ function Panel({ ship, index, total }: { ship: Ship; index: number; total: numbe
         <span className="t-mono absolute bottom-[1.25rem] left-[1.25rem] bg-ink px-[0.3rem] py-[0.15rem] text-ice">
           {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
         </span>
+        {ship.image.credit && <span className="absolute bottom-[1.25rem] right-[1.25rem] max-w-[60%] text-right text-[0.7rem] leading-tight text-white/85 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">{ship.image.credit}</span>}
       </div>
       <div className="flex flex-1 items-center px-[1.25rem] py-[3rem] md:px-[1.25rem] md:pl-[2rem]">
         <div className="max-w-[36rem]">
           <div className="grid h-[13.6rem] w-[13.6rem] place-items-center rounded-[0.3rem] border border-ink/20 text-center">
             <span>
-              <span className="t-mono block opacity-60">MV</span>
-              <span id={`ship-${ship.slug}`} className="block font-display text-[2.6rem] uppercase leading-[0.85] tracking-[-0.03em] [font-stretch:82%]">{ship.name.replace(/^MV\s+/, "")}</span>
+              <span id={`ship-${ship.slug}`} className="block px-[0.8rem] font-display text-[1.9rem] uppercase leading-[0.9] tracking-[-0.02em] [font-stretch:82%]">{ship.name}</span>
             </span>
           </div>
-          <p className="t-h3 mt-[0.6rem]">{ship.blurb} {shipSizeLabel[ship.size]}, {ship.passengers} guests, {ship.lengthM} m, {ship.zodiacs} zodiacs.</p>
+          <p className="t-h3 mt-[0.6rem]">{ship.blurb} {shipSizeLabel[ship.size]} · {ship.guests}</p>
           <p className="t-mono mt-[0.8rem] opacity-60">{ship.operator}</p>
           <div className="mt-[2.2rem] flex flex-col items-start gap-[0.2rem]">
             <UnderlineLink href={`/ships/${ship.slug}`}>View ship</UnderlineLink>
-            <UnderlineLink href={`/ships/${ship.slug}#voyages`}>Expeditions on this ship</UnderlineLink>
-            <span className="t-mono opacity-40">Deck plan (soon)</span>
+            <UnderlineLink href={`/ships/${ship.slug}#voyages`}>Expeditions on this type of ship</UnderlineLink>
           </div>
         </div>
       </div>
@@ -98,7 +97,7 @@ export function HorizontalPanels({ ships }: { ships: Ship[] }) {
                 className={cn("t-mono relative cursor-pointer px-[0.3rem] py-[0.15rem] text-[1rem] transition-colors", active === i ? "text-ice" : "text-ink hover:opacity-60")}
               >
                 {active === i && <motion.span layoutId="ship-highlight" className="absolute inset-0 bg-ink" transition={{ type: "spring", stiffness: 400, damping: 34 }} />}
-                <span className="relative">{s.name.replace(/^MV\s+/, "")}</span>
+                <span className="relative">{s.shortName}</span>
               </button>
             ))}
           </nav>

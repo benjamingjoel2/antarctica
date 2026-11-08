@@ -7,9 +7,8 @@ function Cell({ ship }: { ship: Ship }) {
   return (
     <Link href={`/ships/${ship.slug}`} className="group relative grid aspect-square place-items-center overflow-hidden rounded-[0.3rem] bg-ice ring-1 ring-ink/10">
       <span className="relative z-[1] text-center text-ink">
-        <span className="t-mono block opacity-60">MV</span>
-        <span className="block font-display text-[2.4rem] uppercase leading-[0.85] tracking-[-0.03em] [font-stretch:82%]">{ship.name.replace(/^MV\s+/, "")}</span>
-        <span className="t-mono mt-[0.5rem] block text-[0.9rem] opacity-60">{ship.operator}</span>
+        <span className="block px-[1rem] font-display text-[1.6rem] uppercase leading-[0.9] tracking-[-0.02em] [font-stretch:82%] md:text-[2rem]">{ship.name}</span>
+        <span className="t-mono mt-[0.5rem] block text-[0.9rem] opacity-60">{ship.guests}</span>
       </span>
       <Image
         src={ship.image.src}
@@ -40,6 +39,9 @@ export function SailingWith({ ships }: { ships: Ship[] }) {
             <Cell key={s.slug} ship={s} />
           ))}
         </div>
+        <p className="mt-[1rem] text-[0.75rem] leading-snug opacity-60">
+          Photos: {[a, b, ...rest.slice(0, 3)].map((s) => s.image.credit).filter(Boolean).join(" · ")}
+        </p>
       </div>
     </section>
   );

@@ -26,7 +26,7 @@ export function buildMetadata({
   image?: string;
 }): Metadata {
   const fullTitle = title ? `${title} | ${site.name}` : `${site.name} | Antarctica expeditions, planned by one polar specialist`;
-  const ogImage = `${image}&w=1200&h=630`;
+  const ogImage = image;
   const base = path.replace(/^\/(fr|de|es)(?=\/|$)/, "") || SLASH;
   const canonical = /^en$/.test(locale) ? base : base.length === 1 ? `/${locale}` : `/${locale}${base}`;
   return {
@@ -39,7 +39,7 @@ export function buildMetadata({
       url: canonical,
       siteName: site.name,
       type: "website",
-      images: [{ url: ogImage, width: 1200, height: 630 }],
+      images: [{ url: ogImage }],
     },
     twitter: { card: "summary_large_image", title: fullTitle, description, images: [ogImage] },
   };

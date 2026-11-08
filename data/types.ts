@@ -6,8 +6,6 @@ export type ShipSize = "small" | "mid" | "luxury";
 export interface Img {
   src: string;
   alt: string;
-  /** Attribution for CC BY / CC BY-SA photos (author, licence, source). */
-  credit?: string;
 }
 
 export interface Route {

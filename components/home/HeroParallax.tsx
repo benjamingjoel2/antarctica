@@ -57,8 +57,8 @@ export function HeroParallax() {
 
         {/* Small video embed (reference hero); the boxed quick-link chips stay out (owner rule) */}
         <motion.div className="absolute inset-x-0 top-[42%] md:top-[46%]" style={{ opacity: navO }}>
-          <Link href="/expeditions" aria-label="Watch: penguins on snow — view expeditions" className="absolute right-[1.25rem] top-[3rem] hidden h-[7.6rem] w-[6.2rem] overflow-hidden rounded-[0.3rem] md:right-[5.2rem] md:block">
-            <BackgroundVideo src="/media/expedition-loop.mp4" poster="/media/expedition-loop-poster.jpg" captions="/media/expedition-loop.vtt" label="Penguins on snow" showControl={false} />
+          <Link href="/expeditions" aria-label="Watch: an iceberg in The Gullet, Antarctica — view expeditions" className="absolute right-[1.25rem] top-[3rem] hidden h-[7.6rem] w-[6.2rem] overflow-hidden rounded-[0.3rem] md:right-[5.2rem] md:block">
+            <BackgroundVideo src="/media/expedition-loop.mp4" poster="/media/expedition-loop-poster.jpg" captions="/media/expedition-loop.vtt" label="An iceberg in The Gullet, Antarctica" showControl={false} />
           </Link>
         </motion.div>
 

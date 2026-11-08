@@ -41,7 +41,7 @@ export const ships: Ship[] = [
       "On a fly-cruise you fly from Punta Arenas to King George Island and board a small expedition ship there, skipping the two-day sea crossing each way. Flights depend on the weather at both ends, so plans need some flexibility.\n\nOnce on board, days follow the same rhythm as any small-ship voyage: landings and zodiac cruises, with lectures from the expedition team in between.",
     image: shipPhotos.zodiacsAndShip,
     gallery: [
-      { src: img.humpback, alt: "A humpback whale surfacing" },
+      { src: img.humpback, alt: "A humpback whale raising its tail off the Antarctic Peninsula" },
       { src: img.gentooRock, alt: "A gentoo penguin standing on a rocky shore" },
     ],
   },
@@ -60,7 +60,7 @@ export const ships: Ship[] = [
     image: shipPhotos.shipInIce,
     gallery: [
       { src: img.glacier, alt: "A glacier face rising above the water" },
-      { src: img.penguinWalk, alt: "Penguins walking in a line across the snow" },
+      { src: img.penguinWalk, alt: "An Adélie penguin on snow at Hope Bay, Antarctica" },
     ],
   },
   {
@@ -77,7 +77,7 @@ export const ships: Ship[] = [
       "Longer voyages to South Georgia, the Falklands or the Ross Sea include several days at sea. Ships used on these routes tend to have more public space for lectures and wildlife watching, and stabilisers to ease the crossings.\n\nWe'll match you with a specific ship and departure based on the route, the season and how you like to travel.",
     image: shipPhotos.longVoyage,
     gallery: [
-      { src: img.kingPenguinLight, alt: "A king penguin lit by low golden light" },
+      { src: img.kingPenguinLight, alt: "A king penguin among brown chicks in a South Georgia colony" },
       { src: img.kingPenguins, alt: "A large king penguin colony" },
     ],
   },
@@ -96,7 +96,7 @@ export const ships: Ship[] = [
     image: shipPhotos.luxuryShip,
     gallery: [
       { src: img.icebergsReflect, alt: "Sculpted icebergs drifting in still water" },
-      { src: img.humpback, alt: "A humpback whale in calm water" },
+      { src: img.humpback, alt: "A humpback whale raising its tail off the Antarctic Peninsula" },
     ],
   },
   {
@@ -114,7 +114,7 @@ export const ships: Ship[] = [
     image: shipPhotos.helicopterShip,
     gallery: [
       { src: img.penguinsSnow, alt: "A group of penguins standing in the snow" },
-      { src: img.snowRidge, alt: "Wind-carved snow on the sea ice" },
+      { src: img.snowRidge, alt: "Snow-capped ice cliffs and icebergs in the Lemaire Channel" },
     ],
   },
 ];

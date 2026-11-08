@@ -48,8 +48,8 @@ export const expeditions: Expedition[] = [
     gallery: [
       { src: img.gentooRock, alt: "A gentoo penguin on a rocky landing site" },
       { src: img.humpback, alt: "A humpback whale fluke rising from the sea" },
-      { src: img.glacier, alt: "A glacier calving face along a Peninsula channel" },
-      { src: img.redParka, alt: "A guest in a red parka watching the ice" },
+      { src: img.glacier, alt: "The glacier front in Andvord Bay on the Antarctic Peninsula" },
+      { src: img.redParka, alt: "A kayaker in a red jacket among the ice near Neko Harbour" },
     ],
     itinerary: [
       { day: "Day 1", title: "Ushuaia embarkation", body: "Board in the afternoon and sail down the Beagle Channel as the light fades." },
@@ -96,12 +96,12 @@ export const expeditions: Expedition[] = [
     summary: "A slightly longer Peninsula voyage on a comfortable mid-size ship, with room in the schedule for the weather to cooperate.",
     overview:
       "Twelve days gives the expedition team a precious extra day to play with — to wait out a storm, linger with feeding humpbacks or try again for a landing missed earlier. An ice-strengthened ship with a capable expedition team makes the most of every window.\n\nLate-season departures coincide with peak whale activity and fledging penguin chicks.",
-    image: { src: img.humpback, alt: "A humpback whale surfacing in Antarctic waters" },
+    image: { src: img.humpback, alt: "A humpback whale raising its tail off the Antarctic Peninsula" },
     gallery: [
-      { src: img.snowPeaks, alt: "Snow-covered peaks above a channel" },
-      { src: img.penguinWalk, alt: "Penguins walking along a snow highway" },
-      { src: img.fjordReflect, alt: "A calm fjord with mirror reflections" },
-      { src: img.wave, alt: "A wave breaking on the open ocean" },
+      { src: img.snowPeaks, alt: "Snow-covered mountains on the Antarctic Peninsula" },
+      { src: img.penguinWalk, alt: "An Adélie penguin on snow at Hope Bay, Antarctica" },
+      { src: img.snowRidge, alt: "Snow-capped ice cliffs and icebergs in the Lemaire Channel" },
+      { src: img.wave, alt: "Spray breaking over the bow in the Drake Passage" },
     ],
     itinerary: [
       { day: "Day 1", title: "Ushuaia embarkation", body: "Board and sail the Beagle Channel towards open water." },
@@ -150,13 +150,13 @@ export const expeditions: Expedition[] = [
     summary: "Skip the Drake crossing by air and spend your time where it counts — in Antarctic waters.",
     overview:
       "Fly from Punta Arenas across the Drake Passage to King George Island, then board a small expedition ship for a compact voyage through the South Shetlands and along the Peninsula. Ideal if you're short on time or wary of the open ocean.\n\nFlights depend on weather at both ends, so build in buffer days before and after; we'll explain each operator's delay policy before you book.",
-    image: { src: img.peaksAboveCloud, alt: "Peaks emerging above cloud on the flight south" },
+    image: { src: img.peaksAboveCloud, alt: "Low cloud over the glaciers at Neko Harbour" },
     video: LOOP,
     gallery: [
       { src: img.gentooRock, alt: "A gentoo penguin standing on rocks" },
-      { src: img.boatNight, alt: "The ship lit at anchor in the evening" },
-      { src: img.icebergsReflect, alt: "Icebergs drifting near the South Shetlands" },
-      { src: img.humpback, alt: "A humpback whale near a zodiac" },
+      { src: img.boatNight, alt: "Tabular icebergs at sunset, seen from the ship" },
+      { src: img.icebergsReflect, alt: "Icebergs mirrored in still water in the Lemaire Channel" },
+      { src: img.humpback, alt: "A humpback whale raising its tail off the Antarctic Peninsula" },
     ],
     itinerary: [
       { day: "Day 1", title: "Punta Arenas", body: "Pre-departure briefing and welcome dinner in Patagonia." },
@@ -204,10 +204,10 @@ export const expeditions: Expedition[] = [
       "Designed for travellers with a single week, this fly-cruise packs four days of landings into a seven-day trip. A small ship keeps landings efficient so none of that precious time is wasted.\n\nAs with all fly-cruises, the schedule bends around the weather at King George Island.",
     image: { src: img.gentooRock, alt: "A gentoo penguin on a rocky Antarctic shore" },
     gallery: [
-      { src: img.penguinsSnow, alt: "Penguins gathered on snow" },
+      { src: img.penguinsSnow, alt: "Adélie penguins on snow in the South Shetland Islands" },
       { src: img.glacier, alt: "A glacier spilling into the sea" },
-      { src: img.cloudSea, alt: "A sea of cloud below the summits" },
-      { src: img.redParka, alt: "A guest photographing the landscape" },
+      { src: img.snowPeaks, alt: "Snow-covered mountains on the Antarctic Peninsula" },
+      { src: img.redParka, alt: "A kayaker in a red jacket among the ice near Neko Harbour" },
     ],
     itinerary: [
       { day: "Day 1", title: "Punta Arenas", body: "Arrive, briefing and overnight." },
@@ -256,10 +256,10 @@ export const expeditions: Expedition[] = [
     image: { src: img.kingPenguins, alt: "Thousands of king penguins on a South Georgia plain" },
     video: LOOP,
     gallery: [
-      { src: img.kingPenguinLight, alt: "A king penguin in warm low light" },
+      { src: img.kingPenguinLight, alt: "A king penguin among brown chicks in a South Georgia colony" },
       { src: img.oceanDusk, alt: "The Southern Ocean at dusk" },
-      { src: img.mistyPeaks, alt: "Misty peaks above a South Georgia bay" },
-      { src: img.icebergsReflect, alt: "Icebergs in the Antarctic Sound" },
+      { src: img.mistyPeaks, alt: "Cloud over the mountains above Salisbury Plain, South Georgia" },
+      { src: img.icebergsReflect, alt: "Icebergs mirrored in still water in the Lemaire Channel" },
     ],
     itinerary: [
       { day: "Day 1", title: "Ushuaia embarkation", body: "Board and sail east along the Beagle Channel." },
@@ -308,11 +308,11 @@ export const expeditions: Expedition[] = [
     summary: "The Falklands, South Georgia and the Peninsula, with a suite to return to every evening.",
     overview:
       "A slightly shorter take on the grand voyage, aboard an all-suite ship with a high guide-to-guest ratio. Fewer guests means smoother landing rotations and more time at each site within the limits that apply to every visit.\n\nIdeal for travellers who want South Georgia's wildlife without compromising on comfort.",
-    image: { src: img.kingPenguinLight, alt: "A king penguin standing in soft golden light" },
+    image: { src: img.kingPenguinLight, alt: "A king penguin among brown chicks in a South Georgia colony" },
     gallery: [
       { src: img.kingPenguins, alt: "A vast king penguin colony" },
-      { src: img.fjordReflect, alt: "A reflective bay in South Georgia" },
-      { src: img.nightPeaks, alt: "Peaks under a twilight sky" },
+      { src: img.mistyPeaks, alt: "Cloud over the mountains above Salisbury Plain, South Georgia" },
+      { src: img.snowHut, alt: "The historic hut at Port Lockroy beneath snowy peaks" },
       { src: img.glacier, alt: "A glacier meeting the sea" },
     ],
     itinerary: [
@@ -360,12 +360,12 @@ export const expeditions: Expedition[] = [
     summary: "Push beyond the classic Peninsula towards the Antarctic Circle and Marguerite Bay.",
     overview:
       "This voyage extends south beyond the busier Peninsula sites, aiming to cross the Antarctic Circle and explore the ice-filled waters beyond. An ice-strengthened ship gives you the reach — but the ice always has the final say.\n\nLater-season departures generally offer the best chance of open water to the south.",
-    image: { src: img.snowPeaks, alt: "Snow peaks near the Antarctic Circle" },
+    image: { src: img.snowPeaks, alt: "Snow-covered mountains on the Antarctic Peninsula" },
     gallery: [
-      { src: img.icebergsReflect, alt: "Tabular icebergs in still water" },
-      { src: img.penguinWalk, alt: "Adélie penguins walking across snow" },
-      { src: img.sky, alt: "A wide pale polar sky" },
-      { src: img.snowRidge, alt: "A wind-sculpted snow ridge" },
+      { src: img.icebergsReflect, alt: "Icebergs mirrored in still water in the Lemaire Channel" },
+      { src: img.penguinWalk, alt: "An Adélie penguin on snow at Hope Bay, Antarctica" },
+      { src: img.sky, alt: "Blue sky over Paradise Bay on the Antarctic Peninsula" },
+      { src: img.snowRidge, alt: "Snow-capped ice cliffs and icebergs in the Lemaire Channel" },
     ],
     itinerary: [
       { day: "Day 1", title: "Ushuaia embarkation", body: "Board and sail the Beagle Channel." },
@@ -412,13 +412,13 @@ export const expeditions: Expedition[] = [
     summary: "A specialist, helicopter-supported attempt to reach an emperor penguin colony in the Weddell Sea.",
     overview:
       "Very few voyages each year attempt this. The ship heads into the Weddell Sea in late October, aiming for the emperor penguin colony near Snow Hill Island. If ice and weather allow, helicopters carry guests over the sea ice for the final approach on foot.\n\nNothing about this trip is guaranteed — that is what makes it an expedition. We'll share candid context on past conditions before you commit.",
-    image: { src: img.penguinsSnow, alt: "Penguins standing on sea ice in early season" },
+    image: { src: img.emperor, alt: "An emperor penguin leaping from the water in the Weddell Sea" },
     video: LOOP,
     gallery: [
-      { src: img.snowRidge, alt: "Wind-carved snow on the sea ice" },
-      { src: img.mistyPeaks, alt: "Misty Weddell Sea coastline" },
-      { src: img.snowflake, alt: "A close view of fresh snow crystals" },
-      { src: img.peaksAboveCloud, alt: "Peaks above cloud seen during a helicopter flight" },
+      { src: img.leopardSeal, alt: "A leopard seal resting on ice in the Antarctic Sound" },
+      { src: img.gentooRock, alt: "A gentoo penguin at Brown Bluff on the Antarctic Sound" },
+      { src: img.snowflake, alt: "Close-up of layered glacial ice on an Antarctic iceberg" },
+      { src: img.penguinsSnow, alt: "Adélie penguins on snow in the South Shetland Islands" },
     ],
     itinerary: [
       { day: "Day 1", title: "Ushuaia embarkation", body: "Board and sail for the Drake Passage." },
@@ -464,12 +464,12 @@ export const expeditions: Expedition[] = [
     summary: "A month-long voyage from New Zealand to the Ross Sea — the far side of Antarctica, rarely seen.",
     overview:
       "Depart New Zealand and sail via the sub-Antarctic islands to the Ross Sea, home to the Ross Ice Shelf, Mount Erebus and the preserved huts of the heroic age. Ships on this route are chosen for long voyages, which makes the many sea days comfortable.\n\nWeather and ice dictate every landing on this route, and helicopter or zodiac access to historic sites cannot be guaranteed.",
-    image: { src: img.glacier, alt: "An immense ice face rising from the Ross Sea" },
+    image: { src: img.fjordReflect, alt: "Mount Herschel above Cape Hallett in the Ross Sea" },
     gallery: [
-      { src: img.nightPeaks, alt: "Volcanic peaks under a polar twilight" },
-      { src: img.snowHut, alt: "A snow-covered hut in an Antarctic landscape" },
+      { src: img.nightPeaks, alt: "Nacreous clouds glowing above McMurdo Station at twilight" },
+      { src: img.discoveryHut, alt: "Scott's Discovery Hut on Ross Island" },
       { src: img.oceanDusk, alt: "The Southern Ocean at dusk" },
-      { src: img.icebergsReflect, alt: "Icebergs drifting in the Ross Sea" },
+      { src: img.cloudSea, alt: "Cloud wrapped around Beaufort Island in the Ross Sea" },
     ],
     itinerary: [
       { day: "Day 1", title: "Bluff, New Zealand", body: "Embark and sail south into the Southern Ocean." },
@@ -517,12 +517,12 @@ export const expeditions: Expedition[] = [
     summary: "The classic Peninsula voyage aboard an all-suite ship, without losing an ounce of the adventure.",
     overview:
       "All the landings and wildlife of the classic Peninsula route, aboard an all-suite ship where dining is taken as seriously as the expedition. Small guest numbers make for unhurried landings.\n\nThe Drake is still the Drake — but you'll cross it in considerable comfort.",
-    image: { src: img.fjordReflect, alt: "A mirror-calm Antarctic bay surrounded by mountains" },
+    image: { src: img.icebergsReflect, alt: "Icebergs mirrored in still water in the Lemaire Channel" },
     gallery: [
-      { src: img.icebergsReflect, alt: "Icebergs seen from a private balcony" },
-      { src: img.humpback, alt: "A humpback whale in calm water" },
+      { src: img.snowHut, alt: "The historic hut at Port Lockroy beneath snowy peaks" },
+      { src: img.humpback, alt: "A humpback whale raising its tail off the Antarctic Peninsula" },
       { src: img.gentooRock, alt: "A gentoo penguin on rocks" },
-      { src: img.cloudSea, alt: "Low cloud over Antarctic summits" },
+      { src: img.peaksAboveCloud, alt: "Low cloud over the glaciers at Neko Harbour" },
     ],
     itinerary: [
       { day: "Day 1", title: "Ushuaia embarkation", body: "Board and sail the Beagle Channel." },

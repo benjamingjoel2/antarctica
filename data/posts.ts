@@ -18,7 +18,7 @@ export const posts: Post[] = [
     excerpt: "Two days of open ocean or two hours in the air? An honest look at what you gain and give up either way.",
     date: "2026-05-04",
     readMinutes: 5,
-    cover: { src: img.wave, alt: "A rolling wave on the Drake Passage" },
+    cover: { src: img.wave, alt: "Spray breaking over the bow in the Drake Passage" },
   },
   {
     slug: "what-to-pack-for-antarctica",
@@ -27,7 +27,7 @@ export const posts: Post[] = [
     excerpt: "Layers, not bulk. A practical packing list built around what operators provide and what you really need.",
     date: "2026-07-21",
     readMinutes: 6,
-    cover: { src: img.redParka, alt: "A traveller in a red parka on the ice" },
+    cover: { src: img.redParka, alt: "A kayaker in a red jacket among the ice near Neko Harbour" },
   },
   {
     slug: "when-to-go-for-penguins-and-whales",
@@ -36,6 +36,6 @@ export const posts: Post[] = [
     excerpt: "Courtship, chicks or whale season? How the short Antarctic summer unfolds, month by month.",
     date: "2026-09-08",
     readMinutes: 5,
-    cover: { src: img.humpback, alt: "A humpback whale surfacing near the ice" },
+    cover: { src: img.humpback, alt: "A humpback whale raising its tail off the Antarctic Peninsula" },
   },
 ];

@@ -32,7 +32,6 @@ function Panel({ ship, index, total }: { ship: Ship; index: number; total: numbe
         <span className="t-mono absolute bottom-[1.25rem] left-[1.25rem] bg-ink px-[0.3rem] py-[0.15rem] text-ice">
           {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
         </span>
-        {ship.image.credit && <span className="absolute bottom-[1.25rem] right-[1.25rem] max-w-[60%] text-right text-[0.7rem] leading-tight text-white/85 [text-shadow:0_1px_2px_rgba(0,0,0,0.6)]">{ship.image.credit}</span>}
       </div>
       <div className="flex flex-1 items-center px-[1.25rem] py-[3rem] md:px-[1.25rem] md:pl-[2rem]">
         <div className="max-w-[36rem]">

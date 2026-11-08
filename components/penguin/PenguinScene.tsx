@@ -30,7 +30,7 @@ const spots = [
 export function PenguinScene({ compact = false }: { compact?: boolean }) {
   return (
     <div className={`relative isolate overflow-hidden bg-ink text-white ${compact ? "min-h-[100svh]" : "h-full"}`}>
-      <Image src={img.penguinWalk} alt="A gentoo penguin walking across the snow" fill priority sizes="100vw" className="-z-10 object-cover" />
+      <Image src={img.penguinWalk} alt="An Adélie penguin on snow at Hope Bay, Antarctica" fill priority sizes="100vw" className="-z-10 object-cover" />
       <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/35 via-transparent to-ink/45" />
 
       {/* gear cards */}

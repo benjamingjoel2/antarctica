@@ -21,7 +21,7 @@ export default function AboutPage() {
       <PageHero label="About" lines={["one", "specialist,", "one continent"]} intro="We do one thing: Antarctica. Not cruises in general, not the Arctic on the side. Just the White Continent, and getting you there on the voyage that fits." />
       <section className="bg-ink">
         <div className="relative h-[85vh] min-h-[26rem] overflow-hidden">
-          <Image src={img.redParka} alt="A traveller in a red parka on a snow summit" fill sizes="100vw" className="object-cover" />
+          <Image src={img.redParka} alt="A kayaker in a red jacket among the ice near Neko Harbour" fill sizes="100vw" className="object-cover" />
         </div>
       </section>
       <ParagraphBlock
@@ -45,8 +45,8 @@ export default function AboutPage() {
       <DiscoverCounters
         items={[
           { label: "Expeditions", count: expeditions.length, href: "/expeditions", image: img.icebergsReflect, alt: "Icebergs in still water" },
-          { label: "Ships", count: ships.length, href: "/ships", image: img.shipDark, alt: "An expedition-style ship" },
-          { label: "Timeline", count: timeline.length, href: "/timeline", image: img.nightPeaks, alt: "Peaks under a starry sky" },
+          { label: "Ships", count: ships.length, href: "/ships", image: img.shipDark, alt: "An expedition ship at anchor among ice in the Lemaire Channel" },
+          { label: "Timeline", count: timeline.length, href: "/timeline", image: img.nightPeaks, alt: "Nacreous clouds glowing above McMurdo Station at twilight" },
         ]}
       />
       <CtaBand />

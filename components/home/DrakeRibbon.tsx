@@ -10,14 +10,14 @@ import { img } from "@/data/images";
 
 const ribbon = [
   { src: img.oceanDusk, alt: "The Southern Ocean at dusk" },
-  { src: img.wave, alt: "A rolling swell in the Drake Passage" },
-  { src: img.shipDark, alt: "An expedition-style ship at sea" },
-  { src: img.penguinsSnow, alt: "Chinstrap penguins on snow" },
+  { src: img.wave, alt: "Spray breaking over the bow in the Drake Passage" },
+  { src: img.shipDark, alt: "An expedition ship at anchor among ice in the Lemaire Channel" },
+  { src: img.penguinsSnow, alt: "Adélie penguins on snow in the South Shetland Islands" },
   { src: img.icebergsReflect, alt: "Icebergs reflected in still water" },
-  { src: img.fjordReflect, alt: "A still channel walled by peaks" },
-  { src: img.humpback, alt: "A humpback whale breaching" },
-  { src: img.tent, alt: "A tent pitched for a night on the ice" },
-  { src: img.kingPenguinLight, alt: "A king penguin backlit by low sun" },
+  { src: img.snowRidge, alt: "Snow-capped ice cliffs and icebergs in the Lemaire Channel" },
+  { src: img.humpback, alt: "A humpback whale raising its tail off the Antarctic Peninsula" },
+  { src: img.tent, alt: "Tents at Union Glacier camp in the Antarctic interior" },
+  { src: img.kingPenguinLight, alt: "A king penguin among brown chicks in a South Georgia colony" },
 ];
 
 /**

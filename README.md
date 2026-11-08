@@ -18,7 +18,8 @@ The site follows the reference's design language, re-skinned for Seventh Contine
 
 - **Type:** Archivo (variable width, regular weight) for the giant uppercase display, Inter Tight for text, and VT323 for the small mono labels and buttons. The reference uses Neue Montreal and VCR OSD Mono, which we do not ship.
 - **Colour roles:** deep polar navy `#030b17` (dark), glacier white `#e8f0f8` (light), iceberg blue `#8db8dc` (support), slate grey, and expedition orange `#ff5b1f` as the single accent (the "Plan my expedition" button, focus rings, verify markers).
-- **Hero:** an offset photo card (`components/home/HeroCard.tsx`) using `public/media/hero-background.webp`, which has pre-resized variants (`-640/-828/-1080/-1440.webp`, served by `lib/image-loader.ts`). Replace them together when swapping the photo.
+- **Hero:** a layered parallax photo (`components/home/HeroParallax.tsx`): `public/media/hero-background.webp` (an iceberg in the Lemaire Channel) and `hero-foreground.webp`, the same photo with the sky cut away so the headline sits between the layers. Both have pre-resized variants (`-640/-828/-1080/-1440.webp` and `-portrait.webp`, served by `lib/image-loader.ts`). Replace them together when swapping the photo.
+- **Photos:** `public/media/photos/<name>.jpg` (about 1600px) plus `<name>-800.jpg`; `lib/image-loader.ts` serves the small copy for widths up to 828px.
 
 ## Languages
 
@@ -45,7 +46,7 @@ English (default, current URLs), French (`/fr`), German (`/de`) and Spanish (`/e
 - [ ] Verify every duration, price, rule, limit and requirement with partner operators and IAATO. The "verify" notes stay in `data/` (`verifyNote`, `verify: true`) but `components/ui/VerifyNote.tsx` renders nothing, so they never show on public pages.
 - [ ] Add confirmed Seventh Continent milestones to `data/timeline.ts` (category `"us"`, plus the filter in `app/(en)/timeline/page.tsx`). The unconfirmed ones were removed.
 - [ ] Set up the `seventhcontinent@tourground.com` inbox. The business address is La Maquinita Palermo Soho coworking, Buenos Aires (`config/site.ts`). By the owner's decision there is no phone, WhatsApp, social links, testimonials or licence numbers on the site.
-- [ ] Replace the Unsplash placeholder photos (`data/images.ts`) and the generated video loops in `public/media/` with licensed footage. Keep the `.vtt` caption files.
+- [ ] Photos and the two video loops are real Antarctic, South Georgia and Drake Passage material from Wikimedia Commons (CC BY, CC BY-SA, public domain), registered in `data/images.ts` and credited only on the footer-linked `/photo-credits` page (generated from `data/photo-credits.json` + `data/photo-credits.ts`; also `public/media/photos/CREDITS.md`, `public/media/ships/CREDITS.md`). Swap in the owner's own photography when it exists, keep every photo Antarctic, and never put a credit on or under a photo. The video in both loops comes from a YouTube upload whose CC BY 3.0 licence is still awaiting Commons licence review.
 - [ ] Wire up `/api/plan` and `/api/newsletter`, and gate analytics on `useConsent()`.
 - [ ] Swap the static FX rates in `config/currency.ts` for a live source.
 - [ ] Have a lawyer review the privacy policy, booking terms and cookie policy (`data/legal.ts`, pages `/privacy`, `/terms`, `/cookies`; `/legals` and `/testimonials` redirect).

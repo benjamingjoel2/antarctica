@@ -40,7 +40,7 @@ export const routes: Route[] = [
       "A charter flight from Punta Arenas to King George Island in the South Shetlands, where you board your ship already in Antarctic waters — ideal when time is short or the Drake is a worry.",
     body:
       "Fly-cruise voyages trade the Drake crossing for a short flight across it. You board in the South Shetland Islands and are among glaciers and penguin colonies within hours rather than days, which makes a week-long trip genuinely worthwhile.\n\nThe trade-off is weather: flights to King George Island depend on conditions at a gravel runway at the edge of the world, and delays of a day or more do happen. We'll explain how each operator handles delays, and what your contingency days look like, before you book.",
-    image: { src: img.peaksAboveCloud, alt: "Mountain peaks rising above a layer of cloud seen from the air" },
+    image: { src: img.peaksAboveCloud, alt: "Low cloud over the glaciers at Neko Harbour" },
     fromPriceUSD: 12000,
     verifyNote: VERIFY,
   },
@@ -100,7 +100,7 @@ export const routes: Route[] = [
       "Specialist voyages with very limited departures that head into the Weddell Sea towards the Snow Hill Island area in late October and November, some supported by helicopters.",
     body:
       "Emperor penguins breed on sea ice in the depths of winter, which puts most colonies far beyond the reach of a ship. A handful of voyages each year try for the Snow Hill Island area in the Weddell Sea, where — on some departures — helicopters fly guests over the ice to walk the last stretch towards the colony.\n\nThese are true expeditions. Heavy ice can stop a ship well short of its goal, and nobody can promise a sighting. We'll be candid about success rates and what happens if conditions close in, so you go with your eyes open.",
-    image: { src: img.penguinsSnow, alt: "Penguins standing together on snow and ice" },
+    image: { src: img.emperor, alt: "An emperor penguin leaping from the water in the Weddell Sea" },
     fromPriceUSD: 22000,
     verifyNote: VERIFY,
   },
@@ -120,7 +120,7 @@ export const routes: Route[] = [
       "A month-long voyage from New Zealand or Tasmania via the sub-Antarctic islands to the Ross Sea, the Ross Ice Shelf and the historic huts of the heroic age.",
     body:
       "This is the far side of Antarctica, and few people ever see it. Voyages call at sub-Antarctic islands on the way south, then enter the Ross Sea: the towering face of the Ross Ice Shelf, the smoking summit of Mount Erebus, and the preserved huts from which Scott and Shackleton set out.\n\nDistances are vast and weather governs every plan, so these voyages carry a premium and depart only in the heart of summer. For travellers drawn to polar history, there is nothing else like it.",
-    image: { src: img.glacier, alt: "A vast glacier face meeting dark polar water" },
+    image: { src: img.fjordReflect, alt: "Mount Herschel above Cape Hallett in the Ross Sea" },
     fromPriceUSD: 30000,
     verifyNote: VERIFY,
   },
@@ -140,7 +140,7 @@ export const routes: Route[] = [
       "Smaller, high-end expedition ships with suites, fine dining and generous guide ratios, sailing from Ushuaia or combined with a fly-cruise over the Drake.",
     body:
       "Luxury in Antarctica doesn't mean less adventure. These ships still carry fleets of zodiacs and experienced expedition teams — they simply add spacious suites, often with balconies, excellent kitchens, spa facilities and more staff per guest.\n\nThe smaller guest numbers matter on shore, too: fewer people means more time at each landing within the limits that apply to every visit. We'll help you weigh which inclusions are worth paying for and which are simply polish.",
-    image: { src: img.fjordReflect, alt: "A calm fjord reflecting snow-capped mountains" },
+    image: { src: img.glacier, alt: "The glacier front in Andvord Bay on the Antarctic Peninsula" },
     fromPriceUSD: 19000,
     verifyNote: VERIFY,
   },

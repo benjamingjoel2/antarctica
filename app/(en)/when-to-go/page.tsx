@@ -2,7 +2,6 @@ import Image from "next/image";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { PageHero } from "@/components/sections/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
-import { VerifyNote } from "@/components/ui/VerifyNote";
 import { season } from "@/config/season";
 import { months } from "@/data/months";
 import { buildMetadata } from "@/lib/seo";
@@ -47,7 +46,7 @@ export default function WhenToGoPage() {
             </li>
           ))}
         </ol>
-        <div className="container-site"><VerifyNote className="mt-[2rem]">{season.note}</VerifyNote></div>
+        <div className="container-site"><p className="t-small mt-[2rem] opacity-70">{season.note}</p></div>
       </section>
       <CtaBand lines={["pick", "your month"]} />
     </>

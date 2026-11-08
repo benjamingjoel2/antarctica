@@ -2,7 +2,6 @@ import Image from "next/image";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { Pill } from "@/components/ui/Pill";
 import { Reveal } from "@/components/ui/Reveal";
-import { VerifyNote } from "@/components/ui/VerifyNote";
 import { WaveCards } from "@/components/ui/WaveCards";
 import { protectFacts } from "@/data/facts";
 import { img } from "@/data/images";
@@ -61,7 +60,6 @@ export default function ProtectPage() {
               The International Association of Antarctica Tour Operators was founded in 1991 to advocate and promote safe and
               environmentally responsible travel to Antarctica. Members follow visitor guidelines covering landings, wildlife,
               biosecurity and site management. We only sell voyages run by IAATO members, and we brief every guest before they go.
-              (Verify membership details and current guidelines with IAATO before launch.)
             </p>
           </Reveal>
         </div>
@@ -84,7 +82,7 @@ export default function ProtectPage() {
                 <li key={c} className="t-mono">{c}</li>
               ))}
             </ul>
-            <VerifyNote className="mt-[1.2rem]">* IAATO limits — verify current rules with IAATO</VerifyNote>
+            <p className="t-small mt-[1.2rem] opacity-70">* IAATO limits</p>
           </div>
           <div className="t-small col-span-12 space-y-[1.2em] opacity-90 md:col-span-7 lg:col-span-4 lg:col-start-7">
             <p>
@@ -99,7 +97,7 @@ export default function ProtectPage() {
             </p>
             <p>
               <strong className="font-medium">Wildlife.</strong> Keep your distance (IAATO guidance is typically at least 5 m from penguins and
-              more for seals; verify), give animals right of way, stay low and quiet, and never feed or touch.
+              more for seals), give animals right of way, stay low and quiet, and never feed or touch.
             </p>
             <p>
               <strong className="font-medium">Climate &amp; ice science.</strong> Antarctica holds about 90% of the world&apos;s ice. Many voyages

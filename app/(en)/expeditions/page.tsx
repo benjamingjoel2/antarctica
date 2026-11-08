@@ -2,7 +2,6 @@ import { CtaBand } from "@/components/sections/CtaBand";
 import { DepartureList } from "@/components/sections/DepartureList";
 import { ExpeditionsExplorer } from "@/components/sections/ExpeditionsExplorer";
 import { PageHero } from "@/components/sections/PageHero";
-import { VerifyNote } from "@/components/ui/VerifyNote";
 import { expeditions } from "@/data/expeditions";
 import { routes } from "@/data/routes";
 import { formatDate, getShip } from "@/lib/data";
@@ -26,7 +25,7 @@ export default function ExpeditionsPage() {
       <section className="bg-ink pb-[9rem] text-ice">
         <ExpeditionsExplorer expeditions={expeditions} routes={routes} />
         <div className="container-site mt-[4rem]">
-          <VerifyNote>Prices from, per person, in a shared or standard cabin. Placeholder — verify with partner operators before launch.</VerifyNote>
+          <p className="t-small opacity-70">Prices from, per person, in a shared or standard cabin.</p>
         </div>
       </section>
       <section className="bg-ink pb-[10rem] text-ice">

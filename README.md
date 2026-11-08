@@ -41,9 +41,9 @@ English (default, current URLs), French (`/fr`), German (`/de`) and Spanish (`/e
 
 ## Before launch (checklist)
 
-- [ ] Replace placeholder ships and operators (`data/ships.ts`, `placeholder: true`) once partner agreements exist.
-- [ ] Verify every duration, price, rule, limit and requirement with partner operators and IAATO. Look for `verify` / `Placeholder` strings.
-- [ ] Replace the Seventh Continent milestones in `data/timeline.ts`.
+- [ ] Ships in `data/ships.ts` are sample profiles and operators are described by type ("IAATO-member expedition operator"), not named. Swap in the real ships, operators and specifications once partner agreements exist.
+- [ ] Verify every duration, price, rule, limit and requirement with partner operators and IAATO. The "verify" notes stay in `data/` (`verifyNote`, `verify: true`) but `components/ui/VerifyNote.tsx` renders nothing, so they never show on public pages.
+- [ ] Add confirmed Seventh Continent milestones to `data/timeline.ts` (category `"us"`, plus the filter in `app/(en)/timeline/page.tsx`). The unconfirmed ones were removed.
 - [ ] Set up the `seventhcontinent@tourground.com` inbox. The business address is La Maquinita Palermo Soho coworking, Buenos Aires (`config/site.ts`). By the owner's decision there is no phone, WhatsApp, social links, testimonials or licence numbers on the site.
 - [ ] Replace the Unsplash placeholder photos (`data/images.ts`) and the generated video loops in `public/media/` with licensed footage. Keep the `.vtt` caption files.
 - [ ] Wire up `/api/plan` and `/api/newsletter`, and gate analytics on `useConsent()`.

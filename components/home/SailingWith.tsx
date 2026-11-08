@@ -32,7 +32,7 @@ export function SailingWith({ ships }: { ships: Ship[] }) {
           <div className="order-first col-span-2 grid place-items-center py-[3rem] md:order-none md:col-span-1 md:py-0">
             <div className="text-center">
               <h2 id="sailing-with" className="t-h3">Sailing with</h2>
-              <p className="t-mono mt-[0.8rem] opacity-60">IAATO-member operators · placeholders</p>
+              <p className="t-mono mt-[0.8rem] opacity-60">IAATO-member operators</p>
             </div>
           </div>
           <Cell ship={b} />

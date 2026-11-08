@@ -1,7 +1,7 @@
 import type { Experience } from "./types";
 import { img } from "./images";
 
-const VERIFY = "Placeholder — verify availability, prices and requirements with partner operators before launch.";
+const VERIFY = "Verify availability, prices and requirements with partner operators before launch.";
 
 export const experiences: Experience[] = [
   {
@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
     goodToKnow: [
       "Landings depend on weather, swell and ice and can't be guaranteed.",
       "Waterproof outer layers are essential — spray is part of the ride.",
-      "Visitor numbers ashore are limited at each site (verify).",
+      "Visitor numbers ashore are limited at each site.",
     ],
     verifyNote: VERIFY,
   },
@@ -41,9 +41,9 @@ export const experiences: Experience[] = [
     months: ["Nov", "Dec", "Jan", "Feb", "Mar"],
     addOnFromUSD: 1000,
     goodToKnow: [
-      "Prior kayaking experience is usually required (verify).",
+      "Prior kayaking experience is usually required.",
       "Places are limited — book at the same time as your voyage.",
-      "Sessions are weather-dependent; refunds for missed outings vary (verify).",
+      "Sessions are weather-dependent; refunds for missed outings vary.",
     ],
     verifyNote: VERIFY,
   },
@@ -60,8 +60,8 @@ export const experiences: Experience[] = [
     addOnFromUSD: 500,
     goodToKnow: [
       "Usually a single night, weather permitting.",
-      "No food or drink ashore, and no toilets beyond a portable system (verify).",
-      "Minimum ages and fitness criteria apply (verify).",
+      "No food or drink ashore, and no toilets beyond a portable system.",
+      "Minimum ages and fitness criteria apply.",
     ],
     verifyNote: VERIFY,
   },
@@ -76,8 +76,8 @@ export const experiences: Experience[] = [
     routes: ["classic-antarctic-peninsula", "antarctic-circle", "falklands-south-georgia-antarctica", "luxury-expeditions"],
     months: ["Dec", "Jan", "Feb", "Mar"],
     goodToKnow: [
-      "Water temperatures are typically around 0 °C or just below (verify).",
-      "A waiver and safety line are standard (verify).",
+      "Water temperatures are typically around 0 °C or just below.",
+      "A waiver and safety line are standard.",
       "Seek medical advice if you have any cardiovascular condition.",
     ],
     verifyNote: VERIFY,
@@ -94,7 +94,7 @@ export const experiences: Experience[] = [
     months: ["Nov", "Dec", "Jan", "Feb", "Mar"],
     goodToKnow: [
       "Bring spare batteries and keep them warm in an inside pocket.",
-      "Drones are generally not permitted (verify).",
+      "Drones are generally not permitted.",
       "A dry bag for zodiac rides is strongly recommended.",
     ],
     verifyNote: VERIFY,
@@ -111,7 +111,7 @@ export const experiences: Experience[] = [
     months: ["Jan", "Feb", "Mar"],
     goodToKnow: [
       "February and March usually offer the most whale activity.",
-      "Approach distances for whales are set by guidelines (verify).",
+      "Approach distances for whales are set by guidelines.",
       "Binoculars make a real difference — bring your own.",
     ],
     verifyNote: VERIFY,
@@ -135,7 +135,7 @@ export const experiences: Experience[] = [
     ],
     months: ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar"],
     goodToKnow: [
-      "Keep at least 5 m (15 ft) from wildlife (verify).",
+      "Keep at least 5 m (15 ft) from wildlife.",
       "Never block a penguin highway — they have right of way.",
       "King penguins are seen in South Georgia, not on the Peninsula.",
     ],
@@ -153,7 +153,7 @@ export const experiences: Experience[] = [
     months: ["Nov", "Dec", "Jan", "Feb", "Mar"],
     goodToKnow: [
       "Usually free and open to all guests.",
-      "Programmes vary by ship and departure (verify).",
+      "Programmes vary by ship and departure.",
       "No scientific background needed.",
     ],
     verifyNote: VERIFY,
@@ -170,9 +170,9 @@ export const experiences: Experience[] = [
     months: ["Nov", "Dec", "Jan", "Feb"],
     addOnFromUSD: 800,
     goodToKnow: [
-      "Good fitness is required; experience requirements vary (verify).",
-      "Harnesses, crampons and ropes are usually provided (verify).",
-      "Snowshoeing is often included at no extra cost (verify).",
+      "Good fitness is required; experience requirements vary.",
+      "Harnesses, crampons and ropes are usually provided.",
+      "Snowshoeing is often included at no extra cost.",
     ],
     verifyNote: VERIFY,
   },
@@ -187,9 +187,9 @@ export const experiences: Experience[] = [
     routes: ["falklands-south-georgia-antarctica", "ross-sea-east-antarctica"],
     months: ["Nov", "Dec", "Jan", "Feb"],
     goodToKnow: [
-      "The Stromness walk is weather-dependent and seasonally restricted (verify).",
-      "South Georgia charges a visitor fee, usually included in fares (verify).",
-      "Ross Sea voyages may visit the heroic-age huts of Scott and Shackleton (verify).",
+      "The Stromness walk is weather-dependent and seasonally restricted.",
+      "South Georgia charges a visitor fee, usually included in fares.",
+      "Ross Sea voyages may visit the heroic-age huts of Scott and Shackleton.",
     ],
     verifyNote: VERIFY,
   },

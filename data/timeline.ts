@@ -1,40 +1,8 @@
 import type { TimelineEntry } from "./types";
 import { img } from "./images";
 
-/** Sorted newest first. Entries with `placeholder: true` are about Seventh Continent and must be confirmed before launch. */
+/** Sorted newest first. Seventh Continent milestones (category "us") go here once confirmed; none are published yet. */
 export const timeline: TimelineEntry[] = [
-  {
-    year: 2026,
-    title: "100th traveller matched",
-    body: "A milestone for our small team: one hundred travellers matched with the right ship and route. Placeholder — confirm figure and date before launch.",
-    category: "us",
-    image: { src: img.redParka, alt: "A traveller in a red parka gazing across the ice" },
-    placeholder: true,
-  },
-  {
-    year: 2025,
-    title: "First guests across the Drake",
-    body: "Our first travellers sailed south with a partner operator and came home changed. Placeholder — confirm details before launch.",
-    category: "us",
-    image: { src: img.wave, alt: "A wave rolling across the Drake Passage" },
-    placeholder: true,
-  },
-  {
-    year: 2025,
-    title: "Joined as IAATO associate (placeholder)",
-    body: "We committed to IAATO's standards for safe, environmentally responsible travel. Placeholder — confirm membership status and category before launch.",
-    category: "us",
-    image: { src: img.icebergsReflect, alt: "Icebergs reflected in calm water" },
-    placeholder: true,
-  },
-  {
-    year: 2024,
-    title: "Seventh Continent founded",
-    body: "Founded to give travellers independent, expert advice on choosing an Antarctic expedition. Placeholder — confirm founding story and date before launch.",
-    category: "us",
-    image: { src: img.snowPeaks, alt: "Snow-covered peaks in soft light" },
-    placeholder: true,
-  },
   {
     year: 2023,
     title: "Record-low Antarctic sea ice",

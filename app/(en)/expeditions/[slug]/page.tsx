@@ -9,7 +9,6 @@ import { ParagraphBlock } from "@/components/sections/ParagraphBlock";
 import { PricingTable } from "@/components/sections/PricingTable";
 import { Pill } from "@/components/ui/Pill";
 import { Price } from "@/components/ui/Price";
-import { VerifyNote } from "@/components/ui/VerifyNote";
 import { expeditions } from "@/data/expeditions";
 import { cabinLabel, formatDate, getExpedition, getRoute, getShip, shipSizeLabel } from "@/lib/data";
 import { buildMetadata, JsonLd } from "@/lib/seo";
@@ -65,7 +64,7 @@ export default async function ExpeditionPage({ params }: { params: Promise<{ slu
           <div className="col-span-12 lg:col-span-8">
             <h2 className="t-mono mb-[2rem] opacity-60">Day by day</h2>
             <Itinerary days={e.itinerary} />
-            <VerifyNote className="mt-[1rem]">Itineraries are a guide: weather and ice decide the day. {e.verifyNote}</VerifyNote>
+            <p className="t-small mt-[1rem] opacity-70">Itineraries are a guide: weather and ice decide the day.</p>
           </div>
         </div>
       </section>

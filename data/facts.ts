@@ -38,7 +38,7 @@ export const facts: Fact[] = [
 export const protectFacts: Fact[] = [
   {
     text: "We only work with IAATO-member operators",
-    detail: "IAATO sets standards for safe, environmentally responsible travel, including visitor limits and site guidelines (verify current rules with IAATO).",
+    detail: "IAATO sets standards for safe, environmentally responsible travel, including visitor limits and site guidelines.",
   },
   {
     text: "Governed by the Antarctic Treaty",
@@ -46,17 +46,17 @@ export const protectFacts: Fact[] = [
   },
   {
     text: "Mining is banned under the Madrid Protocol",
-    detail: "The Protocol on Environmental Protection designates Antarctica a natural reserve and requires environmental assessment of all activities (verify specifics).",
+    detail: "The Protocol on Environmental Protection designates Antarctica a natural reserve and requires environmental assessment of all activities.",
   },
   {
     text: "Biosecurity before every landing",
-    detail: "Boots, clothing and bags are cleaned and inspected to stop non-native seeds and pathogens reaching the ice (verify procedures with your operator).",
+    detail: "Boots, clothing and bags are cleaned and inspected to stop non-native seeds and pathogens reaching the ice.",
   },
 ];
 
 export const seasonFacts: Fact[] = [
-  { text: "Season runs roughly November to March (verify)" },
-  { text: "Up to 20+ hours of daylight in December (verify)" },
-  { text: "Peninsula summer temperatures often near 0 °C (verify)" },
-  { text: "Whale sightings peak in February and March (verify)" },
+  { text: "Season runs roughly November to March" },
+  { text: "Up to 20+ hours of daylight in December" },
+  { text: "Peninsula summer temperatures often near 0 °C" },
+  { text: "Whale sightings peak in February and March" },
 ];

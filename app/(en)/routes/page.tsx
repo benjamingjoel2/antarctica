@@ -3,7 +3,6 @@ import Link from "next/link";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { PageHero } from "@/components/sections/PageHero";
 import { Price } from "@/components/ui/Price";
-import { VerifyNote } from "@/components/ui/VerifyNote";
 import { routes } from "@/data/routes";
 import { durationLabel, showMonths } from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
@@ -54,7 +53,6 @@ export default function RoutesPage() {
               </tbody>
             </table>
           </div>
-          <VerifyNote className="mt-[2rem]">Durations, months and prices are placeholders — verify with partner operators before launch.</VerifyNote>
         </div>
       </section>
       <CtaBand lines={["not sure", "which way?"]} text="Seasickness, time off work, budget, wildlife wish-list: tell us what matters and we'll recommend the route, honestly." />

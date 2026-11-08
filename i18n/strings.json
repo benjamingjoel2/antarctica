@@ -310,17 +310,18 @@
  "Antarctica": [
   "app/(en)/layout.tsx:62"
  ],
+ "A gentoo penguin on rock": [
+  "app/(en)/not-found.tsx:11",
+  "app/(en)/protect/page.tsx:53"
+ ],
  "404 · 90° S": [
-  "app/(en)/not-found.tsx:12"
- ],
- "The page you are looking for has drifted off the ice.": [
-  "app/(en)/not-found.tsx:13"
- ],
- "Back to homepage": [
   "app/(en)/not-found.tsx:15"
  ],
- "A lost penguin": [
-  "app/(en)/not-found.tsx:9"
+ "The page you are looking for has drifted off the ice.": [
+  "app/(en)/not-found.tsx:16"
+ ],
+ "Back to homepage": [
+  "app/(en)/not-found.tsx:18"
  ],
  "An expedition-style ship at sea": [
   "app/(en)/page.tsx:23",
@@ -419,9 +420,6 @@
  ],
  "the Antarctic Treaty": [
   "app/(en)/protect/page.tsx:42"
- ],
- "A gentoo penguin on rock": [
-  "app/(en)/protect/page.tsx:53"
  ],
  "About IAATO": [
   "app/(en)/protect/page.tsx:58"
@@ -759,18 +757,29 @@
  "The engines hush, the light turns blue, and the first iceberg slides past the window. You made it.": [
   "components/home/FullscreenVideo.tsx:46"
  ],
- "Independent Antarctica specialists": [
-  "components/home/HeroCard.tsx:14"
+ "Introduction": [
+  "components/home/HeroParallax.tsx:38"
  ],
- "The edge of the world is closer than you think.": [
-  "components/home/HeroCard.tsx:16",
-  "config/site.ts:4"
+ "of the world": [
+  "components/home/HeroParallax.tsx:50"
+ ],
+ "the edge": [
+  "components/home/HeroParallax.tsx:50"
+ ],
+ "— the edge of the world is closer than you think.": [
+  "components/home/HeroParallax.tsx:51"
+ ],
+ "Watch: penguins on snow — view expeditions": [
+  "components/home/HeroParallax.tsx:60"
+ ],
+ "Penguins on snow": [
+  "components/home/HeroParallax.tsx:61"
+ ],
+ "Gentoo penguin": [
+  "components/home/HeroParallax.tsx:73"
  ],
  "Independent Antarctica specialists. We match every traveller with the right ship, route and season, then one polar specialist plans every detail.": [
-  "components/home/HeroCard.tsx:19"
- ],
- "Snow slopes and peaks under a winter sky": [
-  "components/home/HeroCard.tsx:33"
+  "components/home/HeroParallax.tsx:77"
  ],
  "Sailing with": [
   "components/home/SailingWith.tsx:34"
@@ -857,19 +866,19 @@
   "components/layout/CurrencySwitcher.tsx:11"
  ],
  "Write to us": [
-  "components/layout/Footer.tsx:22"
+  "components/layout/Footer.tsx:23"
  ],
  "Tell us where you dream of standing. One polar specialist will match you with the right ship, route and season, and stay with you until you step back onto dry land.": [
-  "components/layout/Footer.tsx:24"
+  "components/layout/Footer.tsx:25"
  ],
  "Footer {0}": [
-  "components/layout/Footer.tsx:39"
+  "components/layout/Footer.tsx:40"
  ],
  "· Independent Antarctica specialists · Voyages operated by IAATO-member partners": [
-  "components/layout/Footer.tsx:57"
+  "components/layout/Footer.tsx:58"
  ],
  "Cookie preferences": [
-  "components/layout/Footer.tsx:58"
+  "components/layout/Footer.tsx:59"
  ],
  "Seventh Continent — home": [
   "components/layout/Header.tsx:15"
@@ -958,55 +967,47 @@
  "Back to serious mode": [
   "components/penguin/PenguinMode.tsx:42"
  ],
- "Waterproof parka": [
+ "Muck boots": [
   "components/penguin/PenguinScene.tsx:10"
  ],
- "Make the penguin belly-slide": [
-  "components/penguin/PenguinScene.tsx:103"
- ],
- "Muck boots": [
+ "Binoculars": [
   "components/penguin/PenguinScene.tsx:11"
  ],
- "Seventh Continent penguin": [
-  "components/penguin/PenguinScene.tsx:110"
- ],
- "Click me · I belly-slide": [
-  "components/penguin/PenguinScene.tsx:113"
- ],
- "Binoculars": [
+ "Polarised sunglasses": [
   "components/penguin/PenguinScene.tsx:12"
  ],
- "Polarised sunglasses": [
+ "Merino base layer": [
   "components/penguin/PenguinScene.tsx:13"
  ],
- "Merino base layer": [
+ "Waterproof trousers": [
   "components/penguin/PenguinScene.tsx:14"
  ],
- "Waterproof trousers": [
+ "Warm hat": [
   "components/penguin/PenguinScene.tsx:15"
  ],
- "Warm hat": [
+ "Liner gloves": [
   "components/penguin/PenguinScene.tsx:16"
  ],
- "Liner gloves": [
+ "Dry bag": [
   "components/penguin/PenguinScene.tsx:17"
  ],
- "Dry bag": [
+ "Seasickness remedy": [
   "components/penguin/PenguinScene.tsx:18"
  ],
- "Seasickness remedy": [
+ "Spare batteries": [
   "components/penguin/PenguinScene.tsx:19"
  ],
- "Spare batteries": [
+ "SPF 50": [
   "components/penguin/PenguinScene.tsx:20"
  ],
- "SPF 50": [
-  "components/penguin/PenguinScene.tsx:21"
+ "A gentoo penguin walking across the snow": [
+  "components/penguin/PenguinScene.tsx:33"
  ],
- "Waddle": [
-  "components/penguin/PenguinScene.tsx:71",
-  "components/penguin/PenguinScene.tsx:70",
-  "components/penguin/PenguinScene.tsx:69"
+ "What to pack for Antarctica": [
+  "components/penguin/PenguinScene.tsx:59"
+ ],
+ "Waterproof parka": [
+  "components/penguin/PenguinScene.tsx:9"
  ],
  "thank you": [
   "components/planner/Planner.tsx:210"
@@ -1523,6 +1524,9 @@
  ],
  "7th Continent": [
   "config/site.ts:3"
+ ],
+ "The edge of the world is closer than you think.": [
+  "config/site.ts:4"
  ],
  "The right Antarctic expedition for you, planned by one dedicated polar specialist.": [
   "config/site.ts:5"

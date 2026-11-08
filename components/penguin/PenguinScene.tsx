@@ -1,10 +1,9 @@
 "use client";
 
-import { motion, useMotionValue, useSpring, type MotionValue } from "framer-motion";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { PenguinSvg } from "./PenguinSvg";
-import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
+import { img } from "@/data/images";
 
 const gear = [
   "Waterproof parka",
@@ -27,51 +26,12 @@ const spots = [
   [26, 80], [78, 76], [4, 34], [90, 58], [46, 86], [64, 28],
 ];
 
-function Follower({ x, y, delay, size }: { x: MotionValue<number>; y: MotionValue<number>; delay: number; size: string }) {
-  const sx = useSpring(x, { stiffness: 120 - delay * 30, damping: 18 + delay * 2 });
-  const sy = useSpring(y, { stiffness: 120 - delay * 30, damping: 18 + delay * 2 });
-  return (
-    <motion.div className="pointer-events-none absolute left-0 top-0 z-20" style={{ x: sx, y: sy }}>
-      <PenguinSvg className={`${size} -translate-x-1/2 -translate-y-full origin-bottom animate-[waddle_0.7s_ease-in-out_infinite]`} />
-    </motion.div>
-  );
-}
-
+/** Penguin mode: a full-bleed photograph of a gentoo penguin on snow with the packing list scattered over it. */
 export function PenguinScene({ compact = false }: { compact?: boolean }) {
-  const reduce = useReducedMotionSafe();
-  const area = useRef<HTMLDivElement>(null);
-  const x = useMotionValue(-300);
-  const y = useMotionValue(-300);
-  const [sliding, setSliding] = useState(0);
-
-  useEffect(() => {
-    const el = area.current;
-    if (!el || reduce) return;
-    const r0 = el.getBoundingClientRect();
-    x.set(r0.width / 2);
-    y.set(r0.height * 0.75);
-    const move = (e: PointerEvent) => {
-      const r = el.getBoundingClientRect();
-      x.set(e.clientX - r.left);
-      y.set(e.clientY - r.top);
-    };
-    el.addEventListener("pointermove", move);
-    return () => el.removeEventListener("pointermove", move);
-  }, [reduce, x, y]);
-
-
   return (
-    <div ref={area} className={`relative isolate overflow-hidden bg-ice text-ink ${compact ? "min-h-[100svh]" : "h-full"}`}>
-      {/* reference shaka grid: the word repeated 3 × 3 in mono */}
-      <div aria-hidden className="absolute inset-0 grid grid-rows-3 px-[1.25rem] py-[4.5rem] select-none">
-        {[0, 1, 2].map((row) => (
-          <div key={row} className="t-mono flex items-start justify-between">
-            <span>Waddle</span>
-            <span>Waddle</span>
-            <span>Waddle</span>
-          </div>
-        ))}
-      </div>
+    <div className={`relative isolate overflow-hidden bg-ink text-white ${compact ? "min-h-[100svh]" : "h-full"}`}>
+      <Image src={img.penguinWalk} alt="A gentoo penguin walking across the snow" fill priority sizes="100vw" className="-z-10 object-cover" />
+      <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/35 via-transparent to-ink/45" />
 
       {/* gear cards */}
       {gear.map((g, i) => (
@@ -94,33 +54,11 @@ export function PenguinScene({ compact = false }: { compact?: boolean }) {
         </motion.div>
       ))}
 
-      {/* hero penguin */}
-      <div className="absolute inset-x-0 bottom-[8%] z-20 flex flex-col items-center">
-        <button
-          type="button"
-          onClick={() => setSliding((s) => s + 1)}
-          className="group cursor-pointer"
-          aria-label="Make the penguin belly-slide"
-        >
-          {sliding % 2 === 1 && !reduce ? (
-            <motion.div key={sliding} initial={{ x: "-60vw" }} animate={{ x: "60vw" }} transition={{ duration: 2.2, ease: "easeInOut" }} onAnimationComplete={() => setSliding((s) => s + 1)}>
-              <PenguinSvg pose="slide" className="w-[14rem]" />
-            </motion.div>
-          ) : (
-            <PenguinSvg pose="wave" title="Seventh Continent penguin" className={`w-[9rem] origin-bottom md:w-[12rem] ${reduce ? "" : "animate-[waddle_0.9s_ease-in-out_infinite]"}`} />
-          )}
-        </button>
-        <p className="t-mono mt-[0.8rem] bg-ink px-[0.3rem] py-[0.15rem] text-ice">Click me · I belly-slide</p>
+      <div className="absolute inset-x-0 top-[6rem] z-20 px-[1.25rem] md:hidden">
+        <Link href="/journal/what-to-pack-for-antarctica" className="t-mono inline-block bg-ink px-[0.3rem] py-[0.15rem] text-ice">
+          What to pack for Antarctica
+        </Link>
       </div>
-
-      {/* cursor queue */}
-      {!reduce && (
-        <>
-          <Follower x={x} y={y} delay={0} size="w-[3.4rem]" />
-          <Follower x={x} y={y} delay={1} size="w-[2.8rem]" />
-          <Follower x={x} y={y} delay={2} size="w-[2.2rem]" />
-        </>
-      )}
     </div>
   );
 }

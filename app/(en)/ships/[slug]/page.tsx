@@ -24,7 +24,6 @@ export default async function ShipPage({ params }: { params: Promise<{ slug: str
   const s = getShip((await params).slug);
   if (!s) notFound();
   const voyages = expeditionsForShip(s.slug);
-  const photoCredits = [s.image, ...s.gallery].map((i) => i.credit).filter((c): c is string => Boolean(c));
   const words = s.name.split(" ");
   const first = words.slice(0, -1).join(" ") || words[0];
   const rest = words.length > 1 ? [words[words.length - 1]] : [];
@@ -47,7 +46,6 @@ export default async function ShipPage({ params }: { params: Promise<{ slug: str
           { title: "Typical cabins", items: s.cabins.map((c) => cabinLabel[c]) },
           { title: "Activities", items: s.activities },
           { title: "Operator", items: [s.operator] },
-          ...(photoCredits.length ? [{ title: "Photo", items: photoCredits }] : []),
         ]}
       />
       <section id="voyages" className="scroll-mt-[5rem] bg-ink pb-[8rem] pt-[2rem] text-ice">

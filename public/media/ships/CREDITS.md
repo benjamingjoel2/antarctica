@@ -1,7 +1,9 @@
 # Ship photo credits
 
-Real photographs of expedition ships in Antarctica, from Wikimedia Commons. Each is
-credited on the page where it appears (home "Sailing with", /ships, ship pages).
+Real photographs of expedition ships in Antarctica, from Wikimedia Commons. Used on the
+home page ("Sailing with"), /ships, the ship pages and the menu. Credits are listed on the
+footer-linked /photo-credits page (generated from `data/photo-credits.json`), never on or
+under the photos.
 Resized to 1600 px wide; otherwise unaltered. CC BY-SA files are shared under the same licence.
 
 | File | Shows | Author | Licence | Source |

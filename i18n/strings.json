@@ -19,10 +19,13 @@
  ],
  "About": [
   "app/(en)/about/page.tsx:21",
+  "data/photo-credits.ts:104",
   "config/nav.ts:33"
  ],
- "A traveller in a red parka on a snow summit": [
-  "app/(en)/about/page.tsx:24"
+ "A kayaker in a red jacket among the ice near Neko Harbour": [
+  "app/(en)/about/page.tsx:24",
+  "data/expeditions.ts:210",
+  "data/expeditions.ts:52"
  ],
  "We don't operate ships. We match people with them. That independence is the whole idea: our advice follows your priorities, not a fleet we need to fill.": [
   "app/(en)/about/page.tsx:28"
@@ -45,21 +48,25 @@
   "app/(en)/expeditions/[slug]/page.tsx:108",
   "app/(en)/page.tsx:22"
  ],
- "An expedition-style ship": [
-  "app/(en)/about/page.tsx:48"
+ "An expedition ship at anchor among ice in the Lemaire Channel": [
+  "app/(en)/about/page.tsx:48",
+  "app/(en)/page.tsx:23",
+  "components/home/DrakeRibbon.tsx:14"
  ],
  "Ships": [
   "app/(en)/about/page.tsx:48",
   "app/(en)/page.tsx:23",
-  "components/sections/HorizontalPanels.tsx:90"
+  "components/sections/HorizontalPanels.tsx:89"
  ],
- "Peaks under a starry sky": [
-  "app/(en)/about/page.tsx:49"
+ "Nacreous clouds glowing above McMurdo Station at twilight": [
+  "app/(en)/about/page.tsx:49",
+  "app/(en)/page.tsx:24",
+  "data/expeditions.ts:469"
  ],
  "Timeline": [
   "app/(en)/about/page.tsx:49",
   "app/(en)/page.tsx:24",
-  "config/nav.ts:26"
+  "data/photo-credits.ts:130"
  ],
  "Email": [
   "app/(en)/contact/page.tsx:12",
@@ -322,17 +329,43 @@
  "Back to homepage": [
   "app/(en)/not-found.tsx:18"
  ],
- "An expedition-style ship at sea": [
-  "app/(en)/page.tsx:23",
-  "components/home/DrakeRibbon.tsx:14"
- ],
- "Snow peaks under the stars": [
-  "app/(en)/page.tsx:24"
- ],
  "Penguin mode": [
   "app/(en)/penguin-mode/page.tsx:9",
   "app/(en)/penguin-mode/page.tsx:4",
   "components/penguin/PenguinMode.tsx:32"
+ ],
+ "noopener noreferrer": [
+  "app/(en)/photo-credits/page.tsx:12"
+ ],
+ "Photo credits": [
+  "app/(en)/photo-credits/page.tsx:22",
+  "app/(en)/photo-credits/page.tsx:7",
+  "config/nav.ts:38"
+ ],
+ "Every photograph and film on this site was taken in Antarctica, South Georgia or the Drake Passage. They come from Wikimedia Commons and are used under the licences listed below, with thanks to the photographers.": [
+  "app/(en)/photo-credits/page.tsx:24"
+ ],
+ "Photographer": [
+  "app/(en)/photo-credits/page.tsx:35"
+ ],
+ "Licence": [
+  "app/(en)/photo-credits/page.tsx:37"
+ ],
+ "Source": [
+  "app/(en)/photo-credits/page.tsx:45"
+ ],
+ "Wikimedia Commons": [
+  "app/(en)/photo-credits/page.tsx:47"
+ ],
+ "Changes": [
+  "app/(en)/photo-credits/page.tsx:49",
+  "data/legal.ts:327"
+ ],
+ "Used on": [
+  "app/(en)/photo-credits/page.tsx:51"
+ ],
+ "Who took the photographs and films on this site, and the licences they are shared under.": [
+  "app/(en)/photo-credits/page.tsx:8"
  ],
  "Expedition planner": [
   "app/(en)/plan-my-expedition/page.tsx:17",
@@ -417,7 +450,7 @@
  "The International Association of Antarctica Tour Operators was founded in 1991 to advocate and promote safe and environmentally responsible travel to Antarctica. Members follow visitor guidelines covering landings, wildlife, biosecurity and site management. We only sell voyages run by IAATO members, and we brief every guest before they go.": [
   "app/(en)/protect/page.tsx:60"
  ],
- "A single snowflake: biosecurity starts small": [
+ "Close-up of glacial ice: biosecurity starts small": [
   "app/(en)/protect/page.tsx:68"
  ],
  "A glacier, an archive of climate": [
@@ -498,7 +531,7 @@
  ],
  "View expedition": [
   "app/(en)/routes/[slug]/page.tsx:60",
-  "app/(en)/ships/[slug]/page.tsx:58",
+  "app/(en)/ships/[slug]/page.tsx:56",
   "components/sections/ExpeditionsExplorer.tsx:96"
  ],
  "Antarctic routes compared": [
@@ -545,32 +578,29 @@
   "app/(en)/routes/page.tsx:58"
  ],
  "Ask about this ship": [
-  "app/(en)/ships/[slug]/page.tsx:37"
+  "app/(en)/ships/[slug]/page.tsx:36"
  ],
  "IAATO member": [
-  "app/(en)/ships/[slug]/page.tsx:40"
+  "app/(en)/ships/[slug]/page.tsx:39"
  ],
  "At a glance": [
-  "app/(en)/ships/[slug]/page.tsx:46"
+  "app/(en)/ships/[slug]/page.tsx:45"
  ],
  "Typical cabins": [
-  "app/(en)/ships/[slug]/page.tsx:47"
+  "app/(en)/ships/[slug]/page.tsx:46"
  ],
  "Activities": [
-  "app/(en)/ships/[slug]/page.tsx:48"
+  "app/(en)/ships/[slug]/page.tsx:47"
  ],
  "Operator": [
-  "app/(en)/ships/[slug]/page.tsx:49",
-  "app/(en)/ships/[slug]/page.tsx:42"
- ],
- "Photo": [
-  "app/(en)/ships/[slug]/page.tsx:50"
+  "app/(en)/ships/[slug]/page.tsx:48",
+  "app/(en)/ships/[slug]/page.tsx:41"
  ],
  "voyages on board": [
-  "app/(en)/ships/[slug]/page.tsx:55"
+  "app/(en)/ships/[slug]/page.tsx:53"
  ],
  "New departures for this ship are coming soon. Ask your specialist.": [
-  "app/(en)/ships/[slug]/page.tsx:69"
+  "app/(en)/ships/[slug]/page.tsx:67"
  ],
  "Ships ({0})": [
   "app/(en)/ships/page.tsx:17"
@@ -670,26 +700,38 @@
   "data/expeditions.ts:471",
   "data/expeditions.ts:260"
  ],
- "A rolling swell in the Drake Passage": [
-  "components/home/DrakeRibbon.tsx:13"
+ "Spray breaking over the bow in the Drake Passage": [
+  "components/home/DrakeRibbon.tsx:13",
+  "data/expeditions.ts:104",
+  "data/experiences.ts:75"
  ],
- "Chinstrap penguins on snow": [
-  "components/home/DrakeRibbon.tsx:15"
+ "Adélie penguins on snow in the South Shetland Islands": [
+  "components/home/DrakeRibbon.tsx:15",
+  "data/expeditions.ts:421",
+  "data/expeditions.ts:207"
  ],
  "Icebergs reflected in still water": [
   "components/home/DrakeRibbon.tsx:16"
  ],
- "A still channel walled by peaks": [
-  "components/home/DrakeRibbon.tsx:17"
+ "Snow-capped ice cliffs and icebergs in the Lemaire Channel": [
+  "components/home/DrakeRibbon.tsx:17",
+  "data/expeditions.ts:368",
+  "data/expeditions.ts:103"
  ],
- "A humpback whale breaching": [
-  "components/home/DrakeRibbon.tsx:18"
+ "A humpback whale raising its tail off the Antarctic Peninsula": [
+  "components/home/DrakeRibbon.tsx:18",
+  "data/expeditions.ts:523",
+  "data/expeditions.ts:159"
  ],
- "A tent pitched for a night on the ice": [
-  "components/home/DrakeRibbon.tsx:19"
+ "Tents at Union Glacier camp in the Antarctic interior": [
+  "components/home/DrakeRibbon.tsx:19",
+  "data/experiences.ts:57",
+  "data/photo-credits.ts:72"
  ],
- "A king penguin backlit by low sun": [
-  "components/home/DrakeRibbon.tsx:20"
+ "A king penguin among brown chicks in a South Georgia colony": [
+  "components/home/DrakeRibbon.tsx:20",
+  "data/expeditions.ts:311",
+  "data/expeditions.ts:259"
  ],
  "Crossing the Drake Passage": [
   "components/home/DrakeRibbon.tsx:40"
@@ -715,7 +757,8 @@
   "components/home/DrakeRibbon.tsx:73"
  ],
  "A calm polar channel walled by snow peaks": [
-  "components/home/FullscreenVideo.tsx:27"
+  "components/home/FullscreenVideo.tsx:27",
+  "data/photo-credits.ts:47"
  ],
  "The bottom of the world": [
   "components/home/FullscreenVideo.tsx:33"
@@ -732,7 +775,7 @@
  "Arriving on the Antarctic Peninsula": [
   "components/home/FullscreenVideo.tsx:43"
  ],
- "64° 49′ S, 63° 30′ W": [
+ "67° 10′ S, 67° 38′ W": [
   "components/home/FullscreenVideo.tsx:44"
  ],
  "The engines hush, the light turns blue, and the first iceberg slides past the window. You made it.": [
@@ -750,11 +793,12 @@
  "— the edge of the world is closer than you think.": [
   "components/home/HeroParallax.tsx:51"
  ],
- "Watch: penguins on snow — view expeditions": [
+ "Watch: an iceberg in The Gullet, Antarctica — view expeditions": [
   "components/home/HeroParallax.tsx:60"
  ],
- "Penguins on snow": [
-  "components/home/HeroParallax.tsx:61"
+ "An iceberg in The Gullet, Antarctica": [
+  "components/home/HeroParallax.tsx:61",
+  "data/photo-credits.ts:48"
  ],
  "Gentoo penguin": [
   "components/home/HeroParallax.tsx:73"
@@ -767,9 +811,6 @@
  ],
  "IAATO-member operators": [
   "components/home/SailingWith.tsx:34"
- ],
- "Photos:": [
-  "components/home/SailingWith.tsx:43"
  ],
  "Anonymous counts of which pages and voyages people read, so we can improve the site.": [
   "components/layout/CookieConsent.tsx:10"
@@ -850,19 +891,19 @@
   "components/layout/CurrencySwitcher.tsx:11"
  ],
  "Write to us": [
-  "components/layout/Footer.tsx:23"
+  "components/layout/Footer.tsx:24"
  ],
  "Tell us where you dream of standing. One polar specialist will match you with the right ship, route and season, and stay with you until you step back onto dry land.": [
-  "components/layout/Footer.tsx:25"
+  "components/layout/Footer.tsx:26"
  ],
  "Footer {0}": [
-  "components/layout/Footer.tsx:40"
+  "components/layout/Footer.tsx:41"
  ],
  "· Independent Antarctica specialists · Voyages operated by IAATO-member partners": [
-  "components/layout/Footer.tsx:58"
+  "components/layout/Footer.tsx:59"
  ],
  "Cookie preferences": [
-  "components/layout/Footer.tsx:59"
+  "components/layout/Footer.tsx:60"
  ],
  "Seventh Continent — home": [
   "components/layout/Header.tsx:15"
@@ -871,7 +912,8 @@
   "components/layout/Header.tsx:24"
  ],
  "Menu": [
-  "components/layout/Header.tsx:37"
+  "components/layout/Header.tsx:37",
+  "data/photo-credits.ts:108"
  ],
  "Español": [
   "components/layout/LanguageSwitcher.tsx:10"
@@ -984,8 +1026,10 @@
  "SPF 50": [
   "components/penguin/PenguinScene.tsx:20"
  ],
- "A gentoo penguin walking across the snow": [
-  "components/penguin/PenguinScene.tsx:33"
+ "An Adélie penguin on snow at Hope Bay, Antarctica": [
+  "components/penguin/PenguinScene.tsx:33",
+  "data/expeditions.ts:366",
+  "data/expeditions.ts:102"
  ],
  "What to pack for Antarctica": [
   "components/penguin/PenguinScene.tsx:59"
@@ -1311,9 +1355,6 @@
  "when you are": [
   "components/sections/CtaBand.tsx:5"
  ],
- "{0}&w=900": [
-  "components/sections/DetailHero.tsx:38"
- ],
  "Mar": [
   "components/sections/ExpeditionsExplorer.tsx:10",
   "lib/data.ts:24",
@@ -1381,13 +1422,13 @@
   "components/sections/FaqList.tsx:19"
  ],
  "View ship": [
-  "components/sections/HorizontalPanels.tsx:47"
+  "components/sections/HorizontalPanels.tsx:46"
  ],
  "Expeditions on this type of ship": [
-  "components/sections/HorizontalPanels.tsx:48"
+  "components/sections/HorizontalPanels.tsx:47"
  ],
  "Partner ships": [
-  "components/sections/HorizontalPanels.tsx:82"
+  "components/sections/HorizontalPanels.tsx:81"
  ],
  "Last updated:": [
   "components/sections/LegalDocument.tsx:22"
@@ -1437,46 +1478,21 @@
  "en-CA": [
   "config/currency.ts:22"
  ],
- "Traveller in a red parka on snow": [
-  "config/nav.ts:10"
- ],
- "Snow peaks under a starry sky": [
-  "config/nav.ts:11"
- ],
  "Gentoo penguin standing on rock": [
   "config/nav.ts:12"
  ],
  "Mountains rising through mist": [
   "config/nav.ts:13"
  ],
- "Two king penguins": [
-  "config/nav.ts:14"
- ],
- "Home": [
-  "config/nav.ts:19"
- ],
  "Experiences": [
   "config/nav.ts:23",
   "config/nav.ts:10"
- ],
- "Protect": [
-  "config/nav.ts:27",
-  "config/nav.ts:12"
- ],
- "When to go": [
-  "config/nav.ts:28"
  ],
  "FAQ": [
   "config/nav.ts:30"
  ],
  "Icebergs reflected in still polar water": [
   "config/nav.ts:7"
- ],
- "Open ocean at dusk": [
-  "config/nav.ts:8"
- ],
- "Expedition-style ship at sea": [
-  "config/nav.ts:9"
  ],
  "November to March": [
   "config/season.ts:3"
@@ -1504,18 +1520,6 @@
  ],
  "All meals on board": [
   "data/expeditions.ts:10"
- ],
- "Snow-covered peaks above a channel": [
-  "data/expeditions.ts:101"
- ],
- "Penguins walking along a snow highway": [
-  "data/expeditions.ts:102"
- ],
- "A calm fjord with mirror reflections": [
-  "data/expeditions.ts:103"
- ],
- "A wave breaking on the open ocean": [
-  "data/expeditions.ts:104"
  ],
  "Board and sail the Beagle Channel towards open water.": [
   "data/expeditions.ts:107"
@@ -1585,20 +1589,13 @@
  "Fly from Punta Arenas across the Drake Passage to King George Island, then board a small expedition ship for a compact voyage through the South Shetlands and along the Peninsula. Ideal if you're short on time or wary of the open ocean.\n\nFlights depend on weather at both ends, so build in buffer days before and after; we'll explain each operator's delay policy before you book.": [
   "data/expeditions.ts:152"
  ],
- "Peaks emerging above cloud on the flight south": [
-  "data/expeditions.ts:153"
- ],
  "A gentoo penguin standing on rocks": [
   "data/expeditions.ts:156"
  ],
- "The ship lit at anchor in the evening": [
-  "data/expeditions.ts:157"
- ],
- "Icebergs drifting near the South Shetlands": [
-  "data/expeditions.ts:158"
- ],
- "A humpback whale near a zodiac": [
-  "data/expeditions.ts:159"
+ "Tabular icebergs at sunset, seen from the ship": [
+  "data/expeditions.ts:157",
+  "data/months.ts:62",
+  "data/photo-credits.ts:65"
  ],
  "Pre-departure briefing and welcome dinner in Patagonia.": [
   "data/expeditions.ts:162"
@@ -1671,20 +1668,11 @@
  "A gentoo penguin on a rocky Antarctic shore": [
   "data/expeditions.ts:205"
  ],
- "Penguins gathered on snow": [
-  "data/expeditions.ts:207"
- ],
  "A glacier spilling into the sea": [
   "data/expeditions.ts:208"
  ],
- "A sea of cloud below the summits": [
-  "data/expeditions.ts:209"
- ],
  "Gratuities for crew and expedition staff": [
   "data/expeditions.ts:21"
- ],
- "A guest photographing the landscape": [
-  "data/expeditions.ts:210"
  ],
  "Arrive, briefing and overnight.": [
   "data/expeditions.ts:213"
@@ -1794,15 +1782,6 @@
  "Thousands of king penguins on a South Georgia plain": [
   "data/expeditions.ts:256"
  ],
- "A king penguin in warm low light": [
-  "data/expeditions.ts:259"
- ],
- "Misty peaks above a South Georgia bay": [
-  "data/expeditions.ts:261"
- ],
- "Icebergs in the Antarctic Sound": [
-  "data/expeditions.ts:262"
- ],
  "Board and sail east along the Beagle Channel.": [
   "data/expeditions.ts:265"
  ],
@@ -1885,17 +1864,13 @@
  "A slightly shorter take on the grand voyage, aboard an all-suite ship with a high guide-to-guest ratio. Fewer guests means smoother landing rotations and more time at each site within the limits that apply to every visit.\n\nIdeal for travellers who want South Georgia's wildlife without compromising on comfort.": [
   "data/expeditions.ts:310"
  ],
- "A king penguin standing in soft golden light": [
-  "data/expeditions.ts:311"
- ],
  "A vast king penguin colony": [
   "data/expeditions.ts:313"
  ],
- "A reflective bay in South Georgia": [
-  "data/expeditions.ts:314"
- ],
- "Peaks under a twilight sky": [
-  "data/expeditions.ts:315"
+ "Cloud over the mountains above Salisbury Plain, South Georgia": [
+  "data/expeditions.ts:314",
+  "data/expeditions.ts:261",
+  "data/experiences.ts:186"
  ],
  "A glacier meeting the sea": [
   "data/expeditions.ts:316"
@@ -1975,20 +1950,15 @@
  "This voyage extends south beyond the busier Peninsula sites, aiming to cross the Antarctic Circle and explore the ice-filled waters beyond. An ice-strengthened ship gives you the reach — but the ice always has the final say.\n\nLater-season departures generally offer the best chance of open water to the south.": [
   "data/expeditions.ts:362"
  ],
- "Snow peaks near the Antarctic Circle": [
-  "data/expeditions.ts:363"
+ "Snow-covered mountains on the Antarctic Peninsula": [
+  "data/expeditions.ts:363",
+  "data/expeditions.ts:209",
+  "data/expeditions.ts:101"
  ],
- "Tabular icebergs in still water": [
-  "data/expeditions.ts:365"
- ],
- "Adélie penguins walking across snow": [
-  "data/expeditions.ts:366"
- ],
- "A wide pale polar sky": [
-  "data/expeditions.ts:367"
- ],
- "A wind-sculpted snow ridge": [
-  "data/expeditions.ts:368"
+ "Blue sky over Paradise Bay on the Antarctic Peninsula": [
+  "data/expeditions.ts:367",
+  "data/photo-credits.ts:56",
+  "data/timeline.ts:103"
  ],
  "Cross the Drake Passage with albatrosses in the ship's wake": [
   "data/expeditions.ts:37"
@@ -2087,21 +2057,23 @@
  "Very few voyages each year attempt this. The ship heads into the Weddell Sea in late October, aiming for the emperor penguin colony near Snow Hill Island. If ice and weather allow, helicopters carry guests over the sea ice for the final approach on foot.\n\nNothing about this trip is guaranteed — that is what makes it an expedition. We'll share candid context on past conditions before you commit.": [
   "data/expeditions.ts:414"
  ],
- "Penguins standing on sea ice in early season": [
-  "data/expeditions.ts:415"
+ "An emperor penguin leaping from the water in the Weddell Sea": [
+  "data/expeditions.ts:415",
+  "data/photo-credits.ts:63",
+  "data/routes.ts:103"
  ],
- "Wind-carved snow on the sea ice": [
+ "A leopard seal resting on ice in the Antarctic Sound": [
   "data/expeditions.ts:418",
-  "data/ships.ts:117"
+  "data/photo-credits.ts:59"
  ],
- "Misty Weddell Sea coastline": [
-  "data/expeditions.ts:419"
+ "A gentoo penguin at Brown Bluff on the Antarctic Sound": [
+  "data/expeditions.ts:419",
+  "data/photo-credits.ts:58"
  ],
- "A close view of fresh snow crystals": [
-  "data/expeditions.ts:420"
- ],
- "Peaks above cloud seen during a helicopter flight": [
-  "data/expeditions.ts:421"
+ "Close-up of layered glacial ice on an Antarctic iceberg": [
+  "data/expeditions.ts:420",
+  "data/photo-credits.ts:51",
+  "data/timeline.ts:65"
  ],
  "Board and sail for the Drake Passage.": [
   "data/expeditions.ts:424"
@@ -2184,17 +2156,20 @@
  "Depart New Zealand and sail via the sub-Antarctic islands to the Ross Sea, home to the Ross Ice Shelf, Mount Erebus and the preserved huts of the heroic age. Ships on this route are chosen for long voyages, which makes the many sea days comfortable.\n\nWeather and ice dictate every landing on this route, and helicopter or zodiac access to historic sites cannot be guaranteed.": [
   "data/expeditions.ts:466"
  ],
- "An immense ice face rising from the Ross Sea": [
-  "data/expeditions.ts:467"
+ "Mount Herschel above Cape Hallett in the Ross Sea": [
+  "data/expeditions.ts:467",
+  "data/experiences.ts:92",
+  "data/photo-credits.ts:67"
  ],
- "Volcanic peaks under a polar twilight": [
-  "data/expeditions.ts:469"
+ "Scott's Discovery Hut on Ross Island": [
+  "data/expeditions.ts:470",
+  "data/photo-credits.ts:69",
+  "data/timeline.ts:173"
  ],
- "A snow-covered hut in an Antarctic landscape": [
-  "data/expeditions.ts:470"
- ],
- "Icebergs drifting in the Ross Sea": [
-  "data/expeditions.ts:472"
+ "Cloud wrapped around Beaufort Island in the Ross Sea": [
+  "data/expeditions.ts:472",
+  "data/photo-credits.ts:68",
+  "data/timeline.ts:202"
  ],
  "Embark and sail south into the Southern Ocean.": [
   "data/expeditions.ts:475"
@@ -2288,8 +2263,10 @@
   "data/expeditions.ts:508",
   "data/expeditions.ts:142"
  ],
- "A glacier calving face along a Peninsula channel": [
-  "data/expeditions.ts:51"
+ "The glacier front in Andvord Bay on the Antarctic Peninsula": [
+  "data/expeditions.ts:51",
+  "data/photo-credits.ts:54",
+  "data/routes.ts:143"
  ],
  "All-suite ship": [
   "data/expeditions.ts:511",
@@ -2310,24 +2287,23 @@
  "All the landings and wildlife of the classic Peninsula route, aboard an all-suite ship where dining is taken as seriously as the expedition. Small guest numbers make for unhurried landings.\n\nThe Drake is still the Drake — but you'll cross it in considerable comfort.": [
   "data/expeditions.ts:519"
  ],
- "A guest in a red parka watching the ice": [
-  "data/expeditions.ts:52"
+ "Icebergs mirrored in still water in the Lemaire Channel": [
+  "data/expeditions.ts:520",
+  "data/expeditions.ts:365",
+  "data/expeditions.ts:262"
  ],
- "A mirror-calm Antarctic bay surrounded by mountains": [
-  "data/expeditions.ts:520"
- ],
- "Icebergs seen from a private balcony": [
-  "data/expeditions.ts:522"
- ],
- "A humpback whale in calm water": [
-  "data/expeditions.ts:523",
-  "data/ships.ts:99"
+ "The historic hut at Port Lockroy beneath snowy peaks": [
+  "data/expeditions.ts:522",
+  "data/expeditions.ts:315",
+  "data/photo-credits.ts:57"
  ],
  "A gentoo penguin on rocks": [
   "data/expeditions.ts:524"
  ],
- "Low cloud over Antarctic summits": [
-  "data/expeditions.ts:525"
+ "Low cloud over the glaciers at Neko Harbour": [
+  "data/expeditions.ts:525",
+  "data/expeditions.ts:153",
+  "data/photo-credits.ts:53"
  ],
  "Board and sail the Beagle Channel.": [
   "data/expeditions.ts:528",
@@ -2475,9 +2451,6 @@
  "Twelve days gives the expedition team a precious extra day to play with — to wait out a storm, linger with feeding humpbacks or try again for a landing missed earlier. An ice-strengthened ship with a capable expedition team makes the most of every window.\n\nLate-season departures coincide with peak whale activity and fledging penguin chicks.": [
   "data/expeditions.ts:98"
  ],
- "A humpback whale surfacing in Antarctic waters": [
-  "data/expeditions.ts:99"
- ],
  "landings": [
   "data/experiences.ts:10"
  ],
@@ -2498,9 +2471,6 @@
  ],
  "As the season advances, the Peninsula's bays fill with whales. Humpbacks bubble-net feed alongside zodiacs, minke whales surface among the brash ice and orca pods patrol the channels.\n\nLate season — February and March — is generally the best time, when whales have fattened on krill and linger close to shore. Expedition teams keep a respectful distance and let curious animals approach on their own terms.": [
   "data/experiences.ts:108"
- ],
- "A humpback whale surfacing near the Antarctic coast": [
-  "data/experiences.ts:109"
  ],
  "The heartbeat of every expedition: small inflatable boats that carry you from ship to shore and in among the ice.": [
   "data/experiences.ts:11"
@@ -2529,9 +2499,6 @@
  "Standing at the edge of a penguin colony is a full-sensory experience: the clamour of thousands of birds, the comic purpose of their 'penguin highways', and yes, the smell. Each species and season tells a different story, from courtship and nest-building to downy chicks and fledging.\n\nWildlife-watching guidelines ask visitors to keep their distance and give right of way. Penguins often approach on their own — the trick is to stay still and let them.": [
   "data/experiences.ts:125"
  ],
- "Penguins walking in single file across the snow": [
-  "data/experiences.ts:126"
- ],
  "Zodiacs are how Antarctica is actually experienced. Twice a day, conditions permitting, the expedition team lowers the boats and ferries guests ashore to penguin colonies, historic huts and viewpoints — or simply cruises among icebergs where landing isn't possible.\n\nDrivers are experienced guides who read the ice, the swell and the wildlife constantly. Getting in and out uses a firm sailor's grip and takes a little practice; every operator runs a thorough briefing before the first landing.": [
   "data/experiences.ts:13"
  ],
@@ -2540,9 +2507,6 @@
  ],
  "Never block a penguin highway — they have right of way.": [
   "data/experiences.ts:139"
- ],
- "Icebergs viewed at water level from a zodiac": [
-  "data/experiences.ts:14"
  ],
  "King penguins are seen in South Georgia, not on the Peninsula.": [
   "data/experiences.ts:140"
@@ -2562,8 +2526,10 @@
  "Many expedition ships now run citizen-science programmes that feed into international research projects: photographing whale flukes for identification, logging cloud observations for satellite calibration, sampling phytoplankton or counting seabirds.\n\nIt's a meaningful way to give something back to a place that gives so much, and the expedition team will explain how your observations are used.": [
   "data/experiences.ts:150"
  ],
- "Clear water beneath the surface of the Southern Ocean": [
-  "data/experiences.ts:151"
+ "Beneath the sea ice in McMurdo Sound, Antarctica": [
+  "data/experiences.ts:151",
+  "data/photo-credits.ts:71",
+  "data/timeline.ts:19"
  ],
  "Usually free and open to all guests.": [
   "data/experiences.ts:155"
@@ -2589,9 +2555,6 @@
  "On selected voyages, qualified mountain guides lead small, roped groups onto glaciers and up modest peaks above the landing sites. Early in the season, deep snow makes snowshoeing the best way to travel inland.\n\nRoutes are chosen on the day for safety and conditions. You don't need to be an alpinist, but you do need good fitness and a head for open, exposed terrain.": [
   "data/experiences.ts:167"
  ],
- "A wind-sculpted snow ridge under a blue sky": [
-  "data/experiences.ts:168"
- ],
  "Good fitness is required; experience requirements vary.": [
   "data/experiences.ts:173"
  ],
@@ -2615,9 +2578,6 @@
  ],
  "South Georgia is where Shackleton's story both ends and turns. In 1916, after the loss of Endurance, he crossed the island's unmapped mountains on foot to reach the whaling station at Stromness and raise a rescue. He returned in 1922 and died aboard his ship at Grytviken, where he is buried.\n\nVoyages typically visit Grytviken's whaling station, museum and cemetery, where guests traditionally raise a toast to 'the Boss'. Conditions permitting, some walk the final stretch of his route towards Stromness.": [
   "data/experiences.ts:185"
- ],
- "Misty mountains rising above a South Georgia bay": [
-  "data/experiences.ts:186"
  ],
  "The Stromness walk is weather-dependent and seasonally restricted.": [
   "data/experiences.ts:190"
@@ -2652,9 +2612,6 @@
  "From a kayak, Antarctica's scale becomes personal. Small groups paddle with dedicated guides, usually close to the ship, threading between floating ice and along glacier fronts while penguins porpoise past.\n\nMost operators run kayaking as a pre-booked programme with limited places, and require some prior paddling experience. Drysuits and specialist gear are typically provided.": [
   "data/experiences.ts:38"
  ],
- "A still bay among mountains, ideal for kayaking": [
-  "data/experiences.ts:39"
- ],
  "Verify availability, prices and requirements with partner operators before launch.": [
   "data/experiences.ts:4"
  ],
@@ -2682,9 +2639,6 @@
  "Camping in Antarctica is beautifully simple: a sleeping bag, a bivvy sack, a shallow trench in the snow and the company of a few fellow travellers. No tents on most programmes — just the open sky, the distant calving of ice and perhaps a penguin's call.\n\nNothing is left behind, including human waste, and the night can be cancelled at short notice if the weather turns. Few who do it ever forget it.": [
   "data/experiences.ts:56"
  ],
- "A small camp set up in a snowy landscape": [
-  "data/experiences.ts:57"
- ],
  "Usually a single night, weather permitting.": [
   "data/experiences.ts:62"
  ],
@@ -2708,9 +2662,6 @@
  ],
  "On many voyages, the expedition team sets aside time for brave guests to leap into the Southern Ocean, from the shore or from the ship's gangway or marina. It is over in moments, followed by towels, cheers and usually a warming drink.\n\nIt's entirely optional, carefully supervised and always subject to conditions. Anyone with heart conditions should seek medical advice first.": [
   "data/experiences.ts:74"
- ],
- "Cold, clear Southern Ocean water": [
-  "data/experiences.ts:75"
  ],
  "Water temperatures are typically around 0 °C or just below.": [
   "data/experiences.ts:79"
@@ -2738,9 +2689,6 @@
  ],
  "Antarctica is extraordinarily photogenic and surprisingly difficult: bright snow fools meters, cold drains batteries and wildlife moves fast. Photography-focused departures carry professional guides who teach on deck, in zodiacs and in the lecture room.\n\nWorkshops typically run at no extra charge on these voyages, and suit everyone from phone photographers to those carrying long lenses.": [
   "data/experiences.ts:91"
- ],
- "A photographer in a red parka overlooking the ice": [
-  "data/experiences.ts:92"
  ],
  "Bring spare batteries and keep them warm in an inside pocket.": [
   "data/experiences.ts:96"
@@ -3200,9 +3148,6 @@
  "You can delete everything this website stores at any time by clearing your browser’s cookies and site data for it, and you can block cookies and site storage in your browser settings. The site will still work; you will simply lose the saved preference.": [
   "data/legal.ts:323"
  ],
- "Changes": [
-  "data/legal.ts:327"
- ],
  "We will update this page whenever the way this website stores information changes. The date at the top shows when it last changed.": [
   "data/legal.ts:329"
  ],
@@ -3321,9 +3266,6 @@
  "Early season is Antarctica at its most untouched. Deep, clean snow blankets the landscape, sea ice still lingers in the bays and penguins are busy courting and building nests from stones. Fewer ships are about, and prices can be a little lower.\n\nExpect colder temperatures and the occasional landing blocked by ice — part of the drama.": [
   "data/months.ts:13"
  ],
- "Fresh, untouched snow on an Antarctic ridge": [
-  "data/months.ts:14"
- ],
  "The longest days and the first chicks": [
   "data/months.ts:20"
  ],
@@ -3367,9 +3309,6 @@
  "January is the heart of summer. Chicks are growing fast, adults shuttle food from the sea, and whale numbers rise steadily. Sea ice is at its least, opening routes further south and into the Ross Sea.\n\nIt's the most popular month, so the best cabins go early.": [
   "data/months.ts:37"
  ],
- "Penguins walking across snow in summer light": [
-  "data/months.ts:38"
- ],
  "Whale season builds as chicks prepare to fledge": [
   "data/months.ts:44"
  ],
@@ -3392,9 +3331,6 @@
  "By February the Peninsula's bays are alive with feeding humpbacks, and penguin chicks are moulting into their waterproof feathers. Retreating ice gives the best odds of crossing the Antarctic Circle.\n\nSunsets return, bringing long golden evenings that photographers love.": [
   "data/months.ts:49"
  ],
- "A humpback whale surfacing in a calm bay": [
-  "data/months.ts:50"
- ],
  "Peak whales, dramatic light and the season's close": [
   "data/months.ts:56"
  ],
@@ -3416,11 +3352,56 @@
  "The last voyages of the season see whales at their most abundant and the light at its most theatrical, with real sunsets and sunrises once more. Colonies thin out as young penguins take to the sea.\n\nWeather becomes more changeable, and late-season deals sometimes appear.": [
   "data/months.ts:61"
  ],
- "Peaks under a deepening late-season sky": [
-  "data/months.ts:62"
- ],
  "Pristine snow and the season's first footprints": [
   "data/months.ts:8"
+ ],
+ "Protect": [
+  "data/photo-credits.ts:105",
+  "config/nav.ts:27",
+  "config/nav.ts:12"
+ ],
+ "Page not found": [
+  "data/photo-credits.ts:107"
+ ],
+ "Footer": [
+  "data/photo-credits.ts:109"
+ ],
+ "When to go": [
+  "data/photo-credits.ts:131",
+  "config/nav.ts:28"
+ ],
+ "No credit for {0} in data/photo-credits.json": [
+  "data/photo-credits.ts:142"
+ ],
+ "Resized": [
+  "data/photo-credits.ts:41"
+ ],
+ "Cropped and resized": [
+  "data/photo-credits.ts:42"
+ ],
+ "Resized; the sky is cut away in a second layer for the home page hero": [
+  "data/photo-credits.ts:46"
+ ],
+ "An iceberg below snowy peaks in the Lemaire Channel": [
+  "data/photo-credits.ts:46"
+ ],
+ "Short excerpt, resized and re-encoded": [
+  "data/photo-credits.ts:47"
+ ],
+ "Short excerpt, cropped to portrait and re-encoded": [
+  "data/photo-credits.ts:48"
+ ],
+ "Sunset over the Southern Ocean": [
+  "data/photo-credits.ts:64",
+  "config/nav.ts:8"
+ ],
+ "A king penguin colony on Salisbury Plain, South Georgia": [
+  "data/photo-credits.ts:73",
+  "config/nav.ts:14"
+ ],
+ "Home": [
+  "data/photo-credits.ts:82",
+  "config/nav.ts:19"
  ],
  "Icebergs mirrored in a calm Antarctic bay": [
   "data/posts.ts:12"
@@ -3434,9 +3415,6 @@
  "Two days of open ocean or two hours in the air? An honest look at what you gain and give up either way.": [
   "data/posts.ts:18"
  ],
- "A rolling wave on the Drake Passage": [
-  "data/posts.ts:21"
- ],
  "What to Pack for Antarctica": [
   "data/posts.ts:25"
  ],
@@ -3448,9 +3426,6 @@
  ],
  "Layers, not bulk. A practical packing list built around what operators provide and what you really need.": [
   "data/posts.ts:27"
- ],
- "A traveller in a red parka on the ice": [
-  "data/posts.ts:30"
  ],
  "When to Go for Penguins and Whales": [
   "data/posts.ts:34"
@@ -3466,9 +3441,6 @@
  ],
  "Courtship, chicks or whale season? How the short Antarctic summer unfolds, month by month.": [
   "data/posts.ts:36"
- ],
- "A humpback whale surfacing near the ice": [
-  "data/posts.ts:39"
  ],
  "How to Choose an Antarctica Expedition": [
   "data/posts.ts:7"
@@ -3487,9 +3459,6 @@
  ],
  "Emperor penguins breed on sea ice in the depths of winter, which puts most colonies far beyond the reach of a ship. A handful of voyages each year try for the Snow Hill Island area in the Weddell Sea, where — on some departures — helicopters fly guests over the ice to walk the last stretch towards the colony.\n\nThese are true expeditions. Heavy ice can stop a ship well short of its goal, and nobody can promise a sighting. We'll be candid about success rates and what happens if conditions close in, so you go with your eyes open.": [
   "data/routes.ts:102"
- ],
- "Penguins standing together on snow and ice": [
-  "data/routes.ts:103"
  ],
  "Ross Sea & East Antarctica": [
   "data/routes.ts:109"
@@ -3531,9 +3500,6 @@
  "This is the far side of Antarctica, and few people ever see it. Voyages call at sub-Antarctic islands on the way south, then enter the Ross Sea: the towering face of the Ross Ice Shelf, the smoking summit of Mount Erebus, and the preserved huts from which Scott and Shackleton set out.\n\nDistances are vast and weather governs every plan, so these voyages carry a premium and depart only in the heart of summer. For travellers drawn to polar history, there is nothing else like it.": [
   "data/routes.ts:122"
  ],
- "A vast glacier face meeting dark polar water": [
-  "data/routes.ts:123"
- ],
  "Luxury Expeditions": [
   "data/routes.ts:129"
  ],
@@ -3574,9 +3540,6 @@
  "Luxury in Antarctica doesn't mean less adventure. These ships still carry fleets of zodiacs and experienced expedition teams — they simply add spacious suites, often with balconies, excellent kitchens, spa facilities and more staff per guest.\n\nThe smaller guest numbers matter on shore, too: fewer people means more time at each landing within the limits that apply to every visit. We'll help you weigh which inclusions are worth paying for and which are simply polish.": [
   "data/routes.ts:142"
  ],
- "A calm fjord reflecting snow-capped mountains": [
-  "data/routes.ts:143"
- ],
  "The voyage most people mean when they say Antarctica: a sea crossing of the Drake Passage followed by five or so days among the channels, bays and colonies of the Antarctic Peninsula.": [
   "data/routes.ts:20"
  ],
@@ -3603,9 +3566,6 @@
  ],
  "Fly-cruise voyages trade the Drake crossing for a short flight across it. You board in the South Shetland Islands and are among glaciers and penguin colonies within hours rather than days, which makes a week-long trip genuinely worthwhile.\n\nThe trade-off is weather: flights to King George Island depend on conditions at a gravel runway at the edge of the world, and delays of a day or more do happen. We'll explain how each operator handles delays, and what your contingency days look like, before you book.": [
   "data/routes.ts:42"
- ],
- "Mountain peaks rising above a layer of cloud seen from the air": [
-  "data/routes.ts:43"
  ],
  "Falklands, South Georgia & Antarctica": [
   "data/routes.ts:49"
@@ -3681,36 +3641,20 @@
  "An expedition ship at anchor among floating ice in the Lemaire Channel, Antarctica": [
   "data/ship-photos.ts:11"
  ],
- "Gary Bembridge, CC BY 2.0, Wikimedia Commons": [
-  "data/ship-photos.ts:12"
- ],
  "Zodiacs alongside an expedition ship for a landing at King George Island, Antarctica": [
-  "data/ship-photos.ts:16"
+  "data/ship-photos.ts:15"
  ],
  "An ice-strengthened expedition ship moored in fast ice off the Antarctic coast": [
-  "data/ship-photos.ts:21"
- ],
- "Jason Auch, CC BY 2.0, Wikimedia Commons": [
-  "data/ship-photos.ts:22"
+  "data/ship-photos.ts:19"
  ],
  "An expedition ship in the flooded caldera of Deception Island, Antarctica": [
-  "data/ship-photos.ts:26"
- ],
- "W. Bulach, CC BY-SA 4.0, Wikimedia Commons": [
-  "data/ship-photos.ts:27",
-  "data/ship-photos.ts:17"
+  "data/ship-photos.ts:23"
  ],
  "A zodiac heading out from an expedition ship in Paradise Bay, Antarctica": [
-  "data/ship-photos.ts:31"
- ],
- "PhilWolpe, CC BY 2.0, Wikimedia Commons": [
-  "data/ship-photos.ts:32"
+  "data/ship-photos.ts:27"
  ],
  "Guests on the bow of an expedition ship in Pléneau Bay, Antarctica": [
-  "data/ship-photos.ts:36"
- ],
- "Liam Quinn, CC BY-SA 2.0, Wikimedia Commons": [
-  "data/ship-photos.ts:37"
+  "data/ship-photos.ts:31"
  ],
  "Helicopter-equipped expedition ship": [
   "data/ships.ts:104"
@@ -3788,9 +3732,6 @@
  "On a fly-cruise you fly from Punta Arenas to King George Island and board a small expedition ship there, skipping the two-day sea crossing each way. Flights depend on the weather at both ends, so plans need some flexibility.\n\nOnce on board, days follow the same rhythm as any small-ship voyage: landings and zodiac cruises, with lectures from the expedition team in between.": [
   "data/ships.ts:41"
  ],
- "A humpback whale surfacing": [
-  "data/ships.ts:44"
- ],
  "A gentoo penguin standing on a rocky shore": [
   "data/ships.ts:45",
   "data/ships.ts:27"
@@ -3813,9 +3754,6 @@
  "A glacier face rising above the water": [
   "data/ships.ts:62"
  ],
- "Penguins walking in a line across the snow": [
-  "data/ships.ts:63"
- ],
  "Long-voyage expedition ship": [
   "data/ships.ts:68"
  ],
@@ -3831,9 +3769,6 @@
  ],
  "Longer voyages to South Georgia, the Falklands or the Ross Sea include several days at sea. Ships used on these routes tend to have more public space for lectures and wildlife watching, and stabilisers to ease the crossings.\n\nWe'll match you with a specific ship and departure based on the route, the season and how you like to travel.": [
   "data/ships.ts:77"
- ],
- "A king penguin lit by low golden light": [
-  "data/ships.ts:80"
  ],
  "A large king penguin colony": [
   "data/ships.ts:81"
@@ -3864,20 +3799,11 @@
  "From July 1957 to December 1958, twelve nations established dozens of Antarctic stations in an unprecedented burst of scientific cooperation.": [
   "data/timeline.ts:101"
  ],
- "A wide polar sky": [
-  "data/timeline.ts:103"
- ],
  "A station at the South Pole": [
   "data/timeline.ts:107"
  ],
  "The United States began building the first station at the geographic South Pole; it was completed in early 1957 and later named Amundsen–Scott.": [
   "data/timeline.ts:108"
- ],
- "A pale sky over open polar water": [
-  "data/timeline.ts:11"
- ],
- "A white polar plateau beneath snowy peaks": [
-  "data/timeline.ts:110"
  ],
  "29 November 1929": [
   "data/timeline.ts:114"
@@ -3888,9 +3814,6 @@
  "Richard E. Byrd and his crew flew from their base on the Ross Ice Shelf over the South Pole and back.": [
   "data/timeline.ts:116"
  ],
- "Mountains seen from the air": [
-  "data/timeline.ts:118"
- ],
  "5 January 1922": [
   "data/timeline.ts:122"
  ],
@@ -3899,9 +3822,6 @@
  ],
  "On his final expedition, Sir Ernest Shackleton died of a heart attack aboard Quest at South Georgia; he is buried at Grytviken.": [
   "data/timeline.ts:124"
- ],
- "Misty mountains above South Georgia": [
-  "data/timeline.ts:126"
  ],
  "20 May 1916": [
   "data/timeline.ts:130"
@@ -3912,9 +3832,6 @@
  "After an open-boat voyage from Elephant Island and a crossing of South Georgia's mountains, Shackleton, Worsley and Crean walked into the whaling station at Stromness. Every man of the Weddell Sea party survived.": [
   "data/timeline.ts:132"
  ],
- "A king penguin in golden South Georgia light": [
-  "data/timeline.ts:134"
- ],
  "21 November 1915": [
   "data/timeline.ts:138"
  ],
@@ -3923,9 +3840,6 @@
  ],
  "Crushed by the pack ice of the Weddell Sea, Shackleton's ship slipped beneath the ice, leaving her crew camped on the floes.": [
   "data/timeline.ts:140"
- ],
- "Pack ice and icebergs in still water": [
-  "data/timeline.ts:142"
  ],
  "17 January 1912": [
   "data/timeline.ts:146"
@@ -3939,9 +3853,6 @@
  "5 March 2022": [
   "data/timeline.ts:15"
  ],
- "Wind-blown snow on the polar plateau": [
-  "data/timeline.ts:150"
- ],
  "14 December 1911": [
   "data/timeline.ts:154"
  ],
@@ -3950,9 +3861,6 @@
  ],
  "Roald Amundsen and four companions became the first people to stand at the geographic South Pole, travelling by ski and dog sledge.": [
   "data/timeline.ts:156"
- ],
- "Snow peaks on the route to the Pole": [
-  "data/timeline.ts:158"
  ],
  "Endurance found": [
   "data/timeline.ts:16"
@@ -3978,29 +3886,17 @@
  "Robert Falcon Scott, Ernest Shackleton and Edward Wilson pushed south across the Ross Ice Shelf to a new farthest south, beginning the great era of inland exploration.": [
   "data/timeline.ts:171"
  ],
- "A hut half-buried in snow": [
-  "data/timeline.ts:173"
- ],
  "First winter on the continent": [
   "data/timeline.ts:177"
  ],
  "Carsten Borchgrevink's Southern Cross expedition became the first to overwinter on the Antarctic mainland, in huts at Cape Adare.": [
   "data/timeline.ts:178"
  ],
- "Peaks under a dark polar night": [
-  "data/timeline.ts:180"
- ],
  "Belgica trapped in the ice": [
   "data/timeline.ts:184"
  ],
  "Adrien de Gerlache's Belgica became the first ship to overwinter in Antarctic waters, locked in the pack ice of the Bellingshausen Sea through 1898–99.": [
   "data/timeline.ts:185"
- ],
- "A ship in darkness among polar ice": [
-  "data/timeline.ts:187"
- ],
- "Deep blue water beneath the surface of the sea": [
-  "data/timeline.ts:19"
  ],
  "24 January 1895": [
   "data/timeline.ts:191"
@@ -4011,17 +3907,11 @@
  "Men from the whaling ship Antarctic landed at Cape Adare, among the first confirmed landings on the Antarctic continent.": [
   "data/timeline.ts:193"
  ],
- "A penguin on a rocky landing beach": [
-  "data/timeline.ts:195"
- ],
  "Ross discovers the Ross Sea": [
   "data/timeline.ts:199"
  ],
  "James Clark Ross sailed Erebus and Terror into the sea that now bears his name, charting the great ice barrier — the Ross Ice Shelf — and Mount Erebus.": [
   "data/timeline.ts:200"
- ],
- "A towering wall of ice": [
-  "data/timeline.ts:202"
  ],
  "7 February 1821": [
   "data/timeline.ts:206"
@@ -4043,9 +3933,6 @@
  ],
  "Within days of each other, Fabian von Bellingshausen and Mikhail Lazarev (27–28 January) and Edward Bransfield (30 January) became the first to sight the Antarctic mainland or its ice shelves.": [
   "data/timeline.ts:216"
- ],
- "Distant peaks emerging from cloud": [
-  "data/timeline.ts:218"
  ],
  "17 January 1773": [
   "data/timeline.ts:222"
@@ -4086,9 +3973,6 @@
  "The Protocol on Environmental Protection designated Antarctica a natural reserve devoted to peace and science and banned mineral mining; it entered into force on 14 January 1998.": [
   "data/timeline.ts:40"
  ],
- "An untouched snow ridge": [
-  "data/timeline.ts:42"
- ],
  "IAATO founded": [
   "data/timeline.ts:46"
  ],
@@ -4107,9 +3991,6 @@
  "Joe Farman, Brian Gardiner and Jonathan Shanklin of the British Antarctic Survey published evidence of severe springtime ozone loss over Antarctica.": [
   "data/timeline.ts:55"
  ],
- "High cloud seen from above": [
-  "data/timeline.ts:57"
- ],
  "21 July 1983": [
   "data/timeline.ts:61"
  ],
@@ -4119,17 +4000,11 @@
  "Soviet Vostok Station recorded an air temperature of −89.2 °C, the lowest ever measured by a ground-based weather station.": [
   "data/timeline.ts:63"
  ],
- "Fine ice crystals close up": [
-  "data/timeline.ts:65"
- ],
  "The first tourist expedition": [
   "data/timeline.ts:69"
  ],
  "Lars-Eric Lindblad led the first expedition cruise for paying travellers to Antarctica, pioneering the model of education-led polar travel.": [
   "data/timeline.ts:70"
- ],
- "A ship silhouetted on polar water": [
-  "data/timeline.ts:72"
  ],
  "23 June 1961": [
   "data/timeline.ts:76"
@@ -4143,9 +4018,6 @@
  "Record-low Antarctic sea ice": [
   "data/timeline.ts:8"
  ],
- "Peaks rising above a layer of cloud": [
-  "data/timeline.ts:80"
- ],
  "1 December 1959": [
   "data/timeline.ts:84"
  ],
@@ -4154,9 +4026,6 @@
  ],
  "Twelve nations signed the Antarctic Treaty in Washington, D.C., agreeing that the continent would be used for peaceful purposes only.": [
   "data/timeline.ts:86"
- ],
- "Mountains beneath a night sky": [
-  "data/timeline.ts:88"
  ],
  "Winter sea ice around Antarctica fell far below anything in the satellite record, alarming scientists and sharpening questions about the Southern Ocean's future.": [
   "data/timeline.ts:9"
@@ -4170,9 +4039,6 @@
  "Vivian Fuchs's Commonwealth Trans-Antarctic Expedition completed the first land crossing of the continent via the South Pole, supported by Edmund Hillary's New Zealand party.": [
   "data/timeline.ts:94"
  ],
- "A snow-bound hut in a polar landscape": [
-  "data/timeline.ts:96"
- ],
  "sc_consent={0}; path=/; max-age={1}; samesite=lax": [
   "lib/consent.tsx:48"
  ],
@@ -4184,9 +4050,6 @@
  ],
  "{0}–{1} days": [
   "lib/data.ts:34"
- ],
- "{0}{1}w={2}&q={3}": [
-  "lib/image-loader.ts:13"
  ],
  "Pick at least one month (or all of them).": [
   "lib/planner-schema.ts:22"
@@ -4238,8 +4101,5 @@
  ],
  "{0} | Antarctica expeditions, planned by one polar specialist": [
   "lib/seo.tsx:28"
- ],
- "{0}&w=1200&h=630": [
-  "lib/seo.tsx:29"
  ]
 }

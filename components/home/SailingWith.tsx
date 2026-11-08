@@ -39,9 +39,6 @@ export function SailingWith({ ships }: { ships: Ship[] }) {
             <Cell key={s.slug} ship={s} />
           ))}
         </div>
-        <p className="mt-[1rem] text-[0.75rem] leading-snug opacity-60">
-          Photos: {[a, b, ...rest.slice(0, 3)].map((s) => s.image.credit).filter(Boolean).join(" · ")}
-        </p>
       </div>
     </section>
   );

@@ -3,7 +3,6 @@
  "Buenos Aires",
  "Avenida Coronel Niceto Vega 4736, Palermo",
  "Antarctica",
- "64° 49′ S, 63° 30′ W",
  "Escape",
  "inset(0 0 100% 0)",
  "inset(0 0 0% 0)",
@@ -89,5 +88,9 @@
  "Jason Auch, CC BY 2.0, Wikimedia Commons",
  "W. Bulach, CC BY-SA 4.0, Wikimedia Commons",
  "PhilWolpe, CC BY 2.0, Wikimedia Commons",
- "Liam Quinn, CC BY-SA 2.0, Wikimedia Commons"
+ "Liam Quinn, CC BY-SA 2.0, Wikimedia Commons",
+ "67° 10′ S, 67° 38′ W",
+ "Wikimedia Commons",
+ "noopener noreferrer",
+ "No credit for {0} in data/photo-credits.json"
 ]

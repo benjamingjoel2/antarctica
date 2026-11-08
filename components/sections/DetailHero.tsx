@@ -1,4 +1,5 @@
 import Image from "next/image";
+import imageLoader from "@/lib/image-loader";
 import type { ReactNode } from "react";
 import { BackgroundVideo } from "@/components/ui/BackgroundVideo";
 import { SplitWords } from "@/components/ui/SplitWords";
@@ -35,7 +36,7 @@ export function DetailHero({
         {actions && <div className="mt-[1.4rem] flex flex-wrap justify-center gap-[0.3rem]">{actions}</div>}
         <div className="relative z-[2] mx-auto mt-[2rem] aspect-[4/3] w-[80%] max-w-[29rem] overflow-hidden rounded-[0.3rem] md:w-[33%]">
           {media.video ? (
-            <BackgroundVideo src={media.video} poster={`${media.image.src}&w=900`} label={media.image.alt} />
+            <BackgroundVideo src={media.video} poster={imageLoader({ src: media.image.src, width: 800 })} label={media.image.alt} />
           ) : (
             <Image src={media.image.src} alt={media.image.alt} fill priority sizes="(min-width:768px) 33vw, 80vw" className="object-cover" />
           )}

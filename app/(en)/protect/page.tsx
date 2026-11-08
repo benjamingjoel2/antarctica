@@ -65,7 +65,7 @@ export default function ProtectPage() {
         </div>
         <div className="grid grid-cols-3">
           {[
-            { src: img.snowflake, alt: "A single snowflake: biosecurity starts small" },
+            { src: img.snowflake, alt: "Close-up of glacial ice: biosecurity starts small" },
             { src: img.glacier, alt: "A glacier, an archive of climate" },
             { src: img.kingPenguins, alt: "King penguins at a distance" },
           ].map((im) => (

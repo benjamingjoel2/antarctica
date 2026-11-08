@@ -5,13 +5,13 @@ export type NavItem = { label: string; href: string; image: string; alt: string 
 /** Image-led menu: one tile per item. */
 export const mainNav: NavItem[] = [
   { label: "Expeditions", href: "/expeditions", image: img.icebergsReflect, alt: "Icebergs reflected in still polar water" },
-  { label: "Routes", href: "/routes", image: img.oceanDusk, alt: "Open ocean at dusk" },
-  { label: "Ships", href: "/ships", image: img.shipDark, alt: "Expedition-style ship at sea" },
-  { label: "Experiences", href: "/experiences", image: img.redParka, alt: "Traveller in a red parka on snow" },
-  { label: "Timeline", href: "/timeline", image: img.nightPeaks, alt: "Snow peaks under a starry sky" },
+  { label: "Routes", href: "/routes", image: img.oceanDusk, alt: "Sunset over the Southern Ocean" },
+  { label: "Ships", href: "/ships", image: img.shipDark, alt: "An expedition ship at anchor among ice in the Lemaire Channel" },
+  { label: "Experiences", href: "/experiences", image: img.redParka, alt: "A kayaker in a red jacket among the ice near Neko Harbour" },
+  { label: "Timeline", href: "/timeline", image: img.nightPeaks, alt: "Nacreous clouds glowing above McMurdo Station at twilight" },
   { label: "Protect", href: "/protect", image: img.gentooRock, alt: "Gentoo penguin standing on rock" },
   { label: "Journal", href: "/journal", image: img.mistyPeaks, alt: "Mountains rising through mist" },
-  { label: "Contact", href: "/contact", image: img.kingPenguins, alt: "Two king penguins" },
+  { label: "Contact", href: "/contact", image: img.kingPenguins, alt: "A king penguin colony on Salisbury Plain, South Georgia" },
 ];
 
 export const footerNav: { label: string; href: string }[][] = [
@@ -35,5 +35,6 @@ export const footerNav: { label: string; href: string }[][] = [
     { label: "Privacy policy", href: "/privacy" },
     { label: "Booking terms", href: "/terms" },
     { label: "Cookie policy", href: "/cookies" },
+    { label: "Photo credits", href: "/photo-credits" },
   ],
 ];

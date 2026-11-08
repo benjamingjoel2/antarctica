@@ -41,7 +41,7 @@ export function FullscreenVideo({ facts }: { facts: string[] }) {
           </div>
           <div className="mt-[1.6rem] flex flex-col justify-between gap-[0.5rem] md:flex-row">
             <p className="t-mono">Arriving on the Antarctic Peninsula</p>
-            <p className="t-mono">64° 49′ S, 63° 30′ W</p>
+            <p className="t-mono">67° 10′ S, 67° 38′ W</p>
           </div>
           <p className="mt-[1.5rem] max-w-[24rem] t-small opacity-90">The engines hush, the light turns blue, and the first iceberg slides past the window. You made it.</p>
         </div>

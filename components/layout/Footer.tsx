@@ -8,6 +8,7 @@ import { CursorFollow } from "@/components/ui/CursorFollow";
 import Image from "next/image";
 import { img } from "@/data/images";
 import { useConsent } from "@/lib/consent";
+import { localHref } from "@/lib/locale";
 import { NewsletterForm } from "./NewsletterForm";
 
 /** Letter sign-off footer: a short signed note with the email on the left, link columns and the newsletter on the right. */
@@ -41,7 +42,7 @@ export function Footer() {
                   <ul className="space-y-[0.35rem]">
                     {col.map((l) => (
                       <li key={l.href}>
-                        <Link href={l.href} className="t-mono hover:opacity-50">{l.label}</Link>
+                        <Link href={localHref(l.href)} className="t-mono hover:opacity-50">{l.label}</Link>
                       </li>
                     ))}
                   </ul>

@@ -8,7 +8,7 @@ export const timeline: TimelineEntry[] = [
     title: "Record-low Antarctic sea ice",
     body: "Winter sea ice around Antarctica fell far below anything in the satellite record, alarming scientists and sharpening questions about the Southern Ocean's future.",
     category: "science",
-    image: { src: img.sky, alt: "A pale sky over open polar water" },
+    image: { src: img.sky, alt: "Blue sky over Paradise Bay on the Antarctic Peninsula" },
   },
   {
     year: 2022,
@@ -16,7 +16,7 @@ export const timeline: TimelineEntry[] = [
     title: "Endurance found",
     body: "The Endurance22 expedition located Shackleton's ship 3,008 metres down in the Weddell Sea, remarkably intact, more than a century after it sank.",
     category: "exploration",
-    image: { src: img.underwater, alt: "Deep blue water beneath the surface of the sea" },
+    image: { src: img.underwater, alt: "Beneath the sea ice in McMurdo Sound, Antarctica" },
   },
   {
     year: 2016,
@@ -24,7 +24,7 @@ export const timeline: TimelineEntry[] = [
     title: "Ross Sea marine protected area agreed",
     body: "Member nations of CCAMLR agreed to create the world's largest marine protected area in the Ross Sea; it came into force in December 2017.",
     category: "treaty",
-    image: { src: img.oceanDusk, alt: "The Southern Ocean at dusk" },
+    image: { src: img.fjordReflect, alt: "Mount Herschel above Cape Hallett in the Ross Sea" },
   },
   {
     year: 2002,
@@ -39,7 +39,7 @@ export const timeline: TimelineEntry[] = [
     title: "Madrid Protocol signed",
     body: "The Protocol on Environmental Protection designated Antarctica a natural reserve devoted to peace and science and banned mineral mining; it entered into force on 14 January 1998.",
     category: "treaty",
-    image: { src: img.snowRidge, alt: "An untouched snow ridge" },
+    image: { src: img.snowRidge, alt: "Snow-capped ice cliffs and icebergs in the Lemaire Channel" },
   },
   {
     year: 1991,
@@ -54,7 +54,7 @@ export const timeline: TimelineEntry[] = [
     title: "The ozone hole revealed",
     body: "Joe Farman, Brian Gardiner and Jonathan Shanklin of the British Antarctic Survey published evidence of severe springtime ozone loss over Antarctica.",
     category: "science",
-    image: { src: img.cloudSea, alt: "High cloud seen from above" },
+    image: { src: img.nightPeaks, alt: "Nacreous clouds glowing above McMurdo Station at twilight" },
   },
   {
     year: 1983,
@@ -62,14 +62,14 @@ export const timeline: TimelineEntry[] = [
     title: "−89.2 °C at Vostok",
     body: "Soviet Vostok Station recorded an air temperature of −89.2 °C, the lowest ever measured by a ground-based weather station.",
     category: "science",
-    image: { src: img.snowflake, alt: "Fine ice crystals close up" },
+    image: { src: img.snowflake, alt: "Close-up of layered glacial ice on an Antarctic iceberg" },
   },
   {
     year: 1966,
     title: "The first tourist expedition",
     body: "Lars-Eric Lindblad led the first expedition cruise for paying travellers to Antarctica, pioneering the model of education-led polar travel.",
     category: "exploration",
-    image: { src: img.shipDark, alt: "A ship silhouetted on polar water" },
+    image: { src: img.shipDark, alt: "An expedition ship at anchor among ice in the Lemaire Channel" },
   },
   {
     year: 1961,
@@ -77,7 +77,7 @@ export const timeline: TimelineEntry[] = [
     title: "Antarctic Treaty enters into force",
     body: "With ratification complete, the Treaty took effect, setting aside territorial claims and preserving the continent for peaceful purposes and scientific cooperation.",
     category: "treaty",
-    image: { src: img.peaksAboveCloud, alt: "Peaks rising above a layer of cloud" },
+    image: { src: img.peaksAboveCloud, alt: "Low cloud over the glaciers at Neko Harbour" },
   },
   {
     year: 1959,
@@ -85,7 +85,7 @@ export const timeline: TimelineEntry[] = [
     title: "Antarctic Treaty signed",
     body: "Twelve nations signed the Antarctic Treaty in Washington, D.C., agreeing that the continent would be used for peaceful purposes only.",
     category: "treaty",
-    image: { src: img.nightPeaks, alt: "Mountains beneath a night sky" },
+    image: { src: img.snowPeaks, alt: "Snow-covered mountains on the Antarctic Peninsula" },
   },
   {
     year: 1958,
@@ -93,21 +93,21 @@ export const timeline: TimelineEntry[] = [
     title: "First overland crossing of Antarctica",
     body: "Vivian Fuchs's Commonwealth Trans-Antarctic Expedition completed the first land crossing of the continent via the South Pole, supported by Edmund Hillary's New Zealand party.",
     category: "exploration",
-    image: { src: img.snowHut, alt: "A snow-bound hut in a polar landscape" },
+    image: { src: img.snowHut, alt: "The historic hut at Port Lockroy beneath snowy peaks" },
   },
   {
     year: 1957,
     title: "International Geophysical Year begins",
     body: "From July 1957 to December 1958, twelve nations established dozens of Antarctic stations in an unprecedented burst of scientific cooperation.",
     category: "science",
-    image: { src: img.sky, alt: "A wide polar sky" },
+    image: { src: img.sky, alt: "Blue sky over Paradise Bay on the Antarctic Peninsula" },
   },
   {
     year: 1956,
     title: "A station at the South Pole",
     body: "The United States began building the first station at the geographic South Pole; it was completed in early 1957 and later named Amundsen–Scott.",
     category: "science",
-    image: { src: img.snowPeaks, alt: "A white polar plateau beneath snowy peaks" },
+    image: { src: img.snowPeaks, alt: "Snow-covered mountains on the Antarctic Peninsula" },
   },
   {
     year: 1929,
@@ -115,7 +115,7 @@ export const timeline: TimelineEntry[] = [
     title: "First flight over the South Pole",
     body: "Richard E. Byrd and his crew flew from their base on the Ross Ice Shelf over the South Pole and back.",
     category: "exploration",
-    image: { src: img.peaksAboveCloud, alt: "Mountains seen from the air" },
+    image: { src: img.peaksAboveCloud, alt: "Low cloud over the glaciers at Neko Harbour" },
   },
   {
     year: 1922,
@@ -123,7 +123,7 @@ export const timeline: TimelineEntry[] = [
     title: "Shackleton dies at Grytviken",
     body: "On his final expedition, Sir Ernest Shackleton died of a heart attack aboard Quest at South Georgia; he is buried at Grytviken.",
     category: "exploration",
-    image: { src: img.mistyPeaks, alt: "Misty mountains above South Georgia" },
+    image: { src: img.mistyPeaks, alt: "Cloud over the mountains above Salisbury Plain, South Georgia" },
   },
   {
     year: 1916,
@@ -131,7 +131,7 @@ export const timeline: TimelineEntry[] = [
     title: "Shackleton reaches Stromness",
     body: "After an open-boat voyage from Elephant Island and a crossing of South Georgia's mountains, Shackleton, Worsley and Crean walked into the whaling station at Stromness. Every man of the Weddell Sea party survived.",
     category: "exploration",
-    image: { src: img.kingPenguinLight, alt: "A king penguin in golden South Georgia light" },
+    image: { src: img.kingPenguinLight, alt: "A king penguin among brown chicks in a South Georgia colony" },
   },
   {
     year: 1915,
@@ -139,7 +139,7 @@ export const timeline: TimelineEntry[] = [
     title: "Endurance sinks",
     body: "Crushed by the pack ice of the Weddell Sea, Shackleton's ship slipped beneath the ice, leaving her crew camped on the floes.",
     category: "exploration",
-    image: { src: img.icebergsReflect, alt: "Pack ice and icebergs in still water" },
+    image: { src: img.icebergsReflect, alt: "Icebergs mirrored in still water in the Lemaire Channel" },
   },
   {
     year: 1912,
@@ -147,7 +147,7 @@ export const timeline: TimelineEntry[] = [
     title: "Scott reaches the South Pole",
     body: "Robert Falcon Scott's party reached the Pole to find Amundsen's tent; all five men died on the return journey.",
     category: "exploration",
-    image: { src: img.snowRidge, alt: "Wind-blown snow on the polar plateau" },
+    image: { src: img.snowRidge, alt: "Snow-capped ice cliffs and icebergs in the Lemaire Channel" },
   },
   {
     year: 1911,
@@ -155,7 +155,7 @@ export const timeline: TimelineEntry[] = [
     title: "Amundsen reaches the South Pole",
     body: "Roald Amundsen and four companions became the first people to stand at the geographic South Pole, travelling by ski and dog sledge.",
     category: "exploration",
-    image: { src: img.snowPeaks, alt: "Snow peaks on the route to the Pole" },
+    image: { src: img.snowPeaks, alt: "Snow-covered mountains on the Antarctic Peninsula" },
   },
   {
     year: 1909,
@@ -170,21 +170,21 @@ export const timeline: TimelineEntry[] = [
     title: "Scott's Discovery expedition",
     body: "Robert Falcon Scott, Ernest Shackleton and Edward Wilson pushed south across the Ross Ice Shelf to a new farthest south, beginning the great era of inland exploration.",
     category: "exploration",
-    image: { src: img.snowHut, alt: "A hut half-buried in snow" },
+    image: { src: img.discoveryHut, alt: "Scott's Discovery Hut on Ross Island" },
   },
   {
     year: 1899,
     title: "First winter on the continent",
     body: "Carsten Borchgrevink's Southern Cross expedition became the first to overwinter on the Antarctic mainland, in huts at Cape Adare.",
     category: "exploration",
-    image: { src: img.nightPeaks, alt: "Peaks under a dark polar night" },
+    image: { src: img.nightPeaks, alt: "Nacreous clouds glowing above McMurdo Station at twilight" },
   },
   {
     year: 1898,
     title: "Belgica trapped in the ice",
     body: "Adrien de Gerlache's Belgica became the first ship to overwinter in Antarctic waters, locked in the pack ice of the Bellingshausen Sea through 1898–99.",
     category: "exploration",
-    image: { src: img.boatNight, alt: "A ship in darkness among polar ice" },
+    image: { src: img.boatNight, alt: "Tabular icebergs at sunset, seen from the ship" },
   },
   {
     year: 1895,
@@ -192,14 +192,14 @@ export const timeline: TimelineEntry[] = [
     title: "Landing at Cape Adare",
     body: "Men from the whaling ship Antarctic landed at Cape Adare, among the first confirmed landings on the Antarctic continent.",
     category: "exploration",
-    image: { src: img.gentooRock, alt: "A penguin on a rocky landing beach" },
+    image: { src: img.penguinsSnow, alt: "Adélie penguins on snow in the South Shetland Islands" },
   },
   {
     year: 1841,
     title: "Ross discovers the Ross Sea",
     body: "James Clark Ross sailed Erebus and Terror into the sea that now bears his name, charting the great ice barrier — the Ross Ice Shelf — and Mount Erebus.",
     category: "exploration",
-    image: { src: img.glacier, alt: "A towering wall of ice" },
+    image: { src: img.cloudSea, alt: "Cloud wrapped around Beaufort Island in the Ross Sea" },
   },
   {
     year: 1821,
@@ -215,7 +215,7 @@ export const timeline: TimelineEntry[] = [
     title: "Antarctica first sighted",
     body: "Within days of each other, Fabian von Bellingshausen and Mikhail Lazarev (27–28 January) and Edward Bransfield (30 January) became the first to sight the Antarctic mainland or its ice shelves.",
     category: "exploration",
-    image: { src: img.peaksAboveCloud, alt: "Distant peaks emerging from cloud" },
+    image: { src: img.peaksAboveCloud, alt: "Low cloud over the glaciers at Neko Harbour" },
   },
   {
     year: 1773,

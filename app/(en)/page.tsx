@@ -20,8 +20,8 @@ export default function HomePage() {
       <DiscoverCounters
         items={[
           { label: "Expeditions", count: expeditions.length, href: "/expeditions", image: img.icebergsReflect, alt: "Icebergs in still water" },
-          { label: "Ships", count: ships.length, href: "/ships", image: img.shipDark, alt: "An expedition-style ship at sea" },
-          { label: "Timeline", count: timeline.length, href: "/timeline", image: img.nightPeaks, alt: "Snow peaks under the stars" },
+          { label: "Ships", count: ships.length, href: "/ships", image: img.shipDark, alt: "An expedition ship at anchor among ice in the Lemaire Channel" },
+          { label: "Timeline", count: timeline.length, href: "/timeline", image: img.nightPeaks, alt: "Nacreous clouds glowing above McMurdo Station at twilight" },
         ]}
       />
       <FullscreenVideo facts={seasonFacts.map((f) => f.text)} />

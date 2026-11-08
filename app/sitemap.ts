@@ -9,7 +9,7 @@ import { ships } from "@/data/ships";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/expeditions", "/routes", "/ships", "/experiences", "/timeline", "/protect", "/when-to-go", "/about", "/faq", "/contact", "/journal", "/plan-my-expedition", "/privacy", "/terms", "/cookies"];
+  const staticPaths = ["", "/expeditions", "/routes", "/ships", "/experiences", "/timeline", "/protect", "/when-to-go", "/about", "/faq", "/contact", "/journal", "/plan-my-expedition", "/privacy", "/terms", "/cookies", "/photo-credits"];
   const dynamicPaths = [
     ...expeditions.map((e) => `/expeditions/${e.slug}`),
     ...routes.map((r) => `/routes/${r.slug}`),

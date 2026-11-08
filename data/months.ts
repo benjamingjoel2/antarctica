@@ -11,7 +11,7 @@ export const months: MonthGuide[] = [
     wildlife: ["Penguin courtship and nest-building", "Elephant seals hauled out in South Georgia", "Seabirds returning to breed"],
     body:
       "Early season is Antarctica at its most untouched. Deep, clean snow blankets the landscape, sea ice still lingers in the bays and penguins are busy courting and building nests from stones. Fewer ships are about, and prices can be a little lower.\n\nExpect colder temperatures and the occasional landing blocked by ice — part of the drama.",
-    image: { src: img.snowRidge, alt: "Fresh, untouched snow on an Antarctic ridge" },
+    image: { src: img.snowRidge, alt: "Snow-capped ice cliffs and icebergs in the Lemaire Channel" },
     verify: true,
   },
   {
@@ -35,7 +35,7 @@ export const months: MonthGuide[] = [
     wildlife: ["Downy penguin chicks", "Humpback and minke whales", "Leopard seals patrolling colonies"],
     body:
       "January is the heart of summer. Chicks are growing fast, adults shuttle food from the sea, and whale numbers rise steadily. Sea ice is at its least, opening routes further south and into the Ross Sea.\n\nIt's the most popular month, so the best cabins go early.",
-    image: { src: img.penguinWalk, alt: "Penguins walking across snow in summer light" },
+    image: { src: img.penguinWalk, alt: "An Adélie penguin on snow at Hope Bay, Antarctica" },
     verify: true,
   },
   {
@@ -47,7 +47,7 @@ export const months: MonthGuide[] = [
     wildlife: ["Whale activity near its peak", "Penguin chicks fledging", "Fur seals across the Peninsula"],
     body:
       "By February the Peninsula's bays are alive with feeding humpbacks, and penguin chicks are moulting into their waterproof feathers. Retreating ice gives the best odds of crossing the Antarctic Circle.\n\nSunsets return, bringing long golden evenings that photographers love.",
-    image: { src: img.humpback, alt: "A humpback whale surfacing in a calm bay" },
+    image: { src: img.humpback, alt: "A humpback whale raising its tail off the Antarctic Peninsula" },
     verify: true,
   },
   {
@@ -59,7 +59,7 @@ export const months: MonthGuide[] = [
     wildlife: ["Peak whale watching", "Fledged penguins heading to sea", "Fur seals and leopard seals"],
     body:
       "The last voyages of the season see whales at their most abundant and the light at its most theatrical, with real sunsets and sunrises once more. Colonies thin out as young penguins take to the sea.\n\nWeather becomes more changeable, and late-season deals sometimes appear.",
-    image: { src: img.nightPeaks, alt: "Peaks under a deepening late-season sky" },
+    image: { src: img.boatNight, alt: "Tabular icebergs at sunset, seen from the ship" },
     verify: true,
   },
 ];
